@@ -1,0 +1,52 @@
+# Environment Variables (CRITICAL: Do not commit your LINE secrets!)
+config/.env
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Rasa Chatbot
+app/rasa/models/*
+!app/rasa/models/.gitkeep
+app/rasa/.rasa/
+app/rasa/results/
+
+# Logs
+logs/*
+!logs/.gitkeep
+*.log
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Data files (Exclude large datasets, but keep folder structure)
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/chatbot_dataset_full.csv  # ลบเครื่องหมาย ! ออกถ้าไฟล์นี้ใหญ่มากและไม่อยากเอาขึ้น
+data/processed/*
+!data/processed/.gitkeep
+
+# Pytest and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Rasa generated graphs and visualizations
+app/rasa/story_graph.dot
+app/rasa/graph.html
+

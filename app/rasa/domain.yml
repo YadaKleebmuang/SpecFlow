@@ -1,0 +1,48 @@
+version: "3.1"
+
+intents:
+  - greet
+  - build_pc
+  - upgrade_pc
+  - inform_budget
+  - inform_usage
+
+entities:
+  - budget
+  - usage
+
+slots:
+  budget:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: budget
+  usage:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: usage
+
+forms:
+  build_pc_form:
+    required_slots:
+      - budget
+      - usage
+
+actions:
+  - action_recommend_pc
+
+responses:
+  utter_greet:
+  - text: "สวัสดีครับ ยินดีต้อนรับสู่ SpecFlow มีอะไรให้ผมช่วยจัดสเปค หรืออัปเกรดคอมไหมครับ?"
+  
+  utter_ask_budget:
+  - text: "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+
+  utter_ask_usage:
+  - text: "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, ทำงานตัดต่อ)"
+
+  utter_ask_upgrade_details:
+  - text: "คุณต้องการอัปเกรดคอมพิวเตอร์เพื่อนำไปทำอะไร และปัจจุบันใช้สเปคอะไรอยู่บ้างครับ พอบอกคร่าวๆ ได้ไหมครับ?"

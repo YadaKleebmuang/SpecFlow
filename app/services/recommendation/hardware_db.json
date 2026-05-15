@@ -1,0 +1,162 @@
+{
+  "cpu": [
+    {
+      "id": "cpu001",
+      "name": "AMD Ryzen 5 5600",
+      "brand": "AMD",
+      "socket": "AM4",
+      "cores": 6,
+      "threads": 12,
+      "base_clock": 3.5,
+      "boost_clock": 4.4,
+      "tdp": 65,
+      "integrated_graphics": false,
+      "price": 4500,
+      "gaming_score": 8.5,
+      "productivity_score": 7.8,
+      "recommended_for": [
+        "gaming",
+        "general",
+        "streaming"
+      ]
+    }
+  ],
+
+  "gpu": [
+    {
+      "id": "gpu001",
+      "name": "NVIDIA RTX 4060",
+      "brand": "NVIDIA",
+      "vram": 8,
+      "power_draw": 115,
+      "ray_tracing": true,
+      "recommended_resolution": "1080p",
+      "price": 12000,
+      "gaming_score": 9.0,
+      "ai_score": 7.5,
+      "recommended_for": [
+        "gaming",
+        "streaming",
+        "ai"
+      ]
+    }
+  ],
+
+  "ram": [
+    {
+      "id": "ram001",
+      "name": "Corsair Vengeance 16GB",
+      "brand": "Corsair",
+      "capacity": 16,
+      "speed": 3200,
+      "type": "DDR4",
+      "modules": "8x2",
+      "rgb": true,
+      "price": 1800,
+      "recommended_for": [
+        "gaming",
+        "general"
+      ]
+    }
+  ],
+
+  "storage": [
+    {
+      "id": "storage001",
+      "name": "Samsung 990 EVO 1TB",
+      "brand": "Samsung",
+      "type": "NVMe SSD",
+      "capacity": 1000,
+      "interface": "PCIe Gen4",
+      "read_speed": 5000,
+      "write_speed": 4200,
+      "price": 3200,
+      "recommended_for": [
+        "gaming",
+        "editing",
+        "general"
+      ]
+    }
+  ],
+
+  "motherboard": [
+    {
+      "id": "mb001",
+      "name": "MSI B550M PRO-VDH",
+      "brand": "MSI",
+      "socket": "AM4",
+      "chipset": "B550",
+      "form_factor": "Micro-ATX",
+      "ram_type": "DDR4",
+      "max_ram": 128,
+      "wifi": false,
+      "m2_slots": 2,
+      "price": 3200,
+      "recommended_for": [
+        "gaming",
+        "general"
+      ]
+    }
+  ],
+
+  "psu": [
+    {
+      "id": "psu001",
+      "name": "Corsair CX650",
+      "brand": "Corsair",
+      "wattage": 650,
+      "efficiency": "80+ Bronze",
+      "modular": false,
+      "pcie_connectors": 2,
+      "price": 2400,
+      "recommended_for": [
+        "gaming",
+        "general"
+      ]
+    }
+  ],
+
+  "case": [
+    {
+      "id": "case001",
+      "name": "NZXT H5 Flow",
+      "brand": "NZXT",
+      "form_factor_support": [
+        "ATX",
+        "Micro-ATX",
+        "Mini-ITX"
+      ],
+      "max_gpu_length": 365,
+      "preinstalled_fans": 2,
+      "rgb": false,
+      "side_panel": "Tempered Glass",
+      "price": 2900,
+      "recommended_for": [
+        "gaming",
+        "showcase"
+      ]
+    }
+  ],
+
+  "cooler": [
+    {
+      "id": "cooler001",
+      "name": "DeepCool AK400",
+      "brand": "DeepCool",
+      "type": "Air Cooler",
+      "socket_support": [
+        "AM4",
+        "AM5",
+        "LGA1700"
+      ],
+      "rgb": false,
+      "fan_size": 120,
+      "tdp_support": 220,
+      "price": 1200,
+      "recommended_for": [
+        "gaming",
+        "general"
+      ]
+    }
+  ]
+}

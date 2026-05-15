@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+- rule: Say hello whenever the user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Activate build_pc form
+  steps:
+  - intent: build_pc
+  - action: build_pc_form
+  - active_loop: build_pc_form
+
+- rule: Submit build_pc form
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - action: build_pc_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_recommend_pc
