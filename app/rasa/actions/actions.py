@@ -43,3 +43,28 @@ class ActionRecommendPC(Action):
             dispatcher.utter_message(text=str(result))
 
         return []
+
+class ActionRecommendUpgrade(Action):
+
+    def name(self) -> Text:
+        return "action_recommend_upgrade"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        current_specs = tracker.get_slot("current_specs")
+        usage = tracker.get_slot("usage")
+
+        from app.services.recommendation.upgrade_advisor import UpgradeAdvisor
+        advisor = UpgradeAdvisor()
+        result = advisor.analyze_upgrade(current_specs, usage)
+
+        if isinstance(result, dict) and result.get("status") == "success":
+            dispatcher.utter_message(text=result["text"])
+        elif isinstance(result, dict):
+            dispatcher.utter_message(text=result.get("text", "เกิดข้อผิดพลาดในการวิเคราะห์สเปคครับ"))
+        else:
+            dispatcher.utter_message(text=str(result))
+
+        return []

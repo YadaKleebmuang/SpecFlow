@@ -1,7 +1,7 @@
 version: "3.1"
 
 stories:
-- story: Upgrade PC request
+- story: Greet
   steps:
-  - intent: upgrade_pc
-  - action: utter_ask_upgrade_details
+  - intent: greet
+  - action: utter_greet

@@ -21,3 +21,19 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_recommend_pc
+
+- rule: Activate upgrade_pc form
+  steps:
+  - intent: upgrade_pc
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+
+- rule: Submit upgrade_pc form
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - action: upgrade_pc_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_recommend_upgrade

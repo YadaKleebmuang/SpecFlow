@@ -1,0 +1,113 @@
+import json
+import os
+
+db = {
+  "cpu": [
+    # AMD AM4
+    {"id": "cpu001", "name": "AMD Ryzen 5 4600G", "brand": "AMD", "socket": "AM4", "cores": 6, "threads": 12, "tdp": 65, "integrated_graphics": True, "price": 3200},
+    {"id": "cpu002", "name": "AMD Ryzen 5 5600", "brand": "AMD", "socket": "AM4", "cores": 6, "threads": 12, "tdp": 65, "integrated_graphics": False, "price": 4500},
+    {"id": "cpu003", "name": "AMD Ryzen 7 5700X", "brand": "AMD", "socket": "AM4", "cores": 8, "threads": 16, "tdp": 65, "integrated_graphics": False, "price": 6200},
+    {"id": "cpu004", "name": "AMD Ryzen 7 5800X3D", "brand": "AMD", "socket": "AM4", "cores": 8, "threads": 16, "tdp": 105, "integrated_graphics": False, "price": 11000},
+    # AMD AM5
+    {"id": "cpu005", "name": "AMD Ryzen 5 7600", "brand": "AMD", "socket": "AM5", "cores": 6, "threads": 12, "tdp": 65, "integrated_graphics": True, "price": 7500},
+    {"id": "cpu006", "name": "AMD Ryzen 7 7700X", "brand": "AMD", "socket": "AM5", "cores": 8, "threads": 16, "tdp": 105, "integrated_graphics": True, "price": 11500},
+    {"id": "cpu007", "name": "AMD Ryzen 7 7800X3D", "brand": "AMD", "socket": "AM5", "cores": 8, "threads": 16, "tdp": 120, "integrated_graphics": True, "price": 14500},
+    {"id": "cpu008", "name": "AMD Ryzen 9 7950X", "brand": "AMD", "socket": "AM5", "cores": 16, "threads": 32, "tdp": 170, "integrated_graphics": True, "price": 22000},
+    # Intel LGA1700
+    {"id": "cpu009", "name": "Intel Core i3-12100F", "brand": "Intel", "socket": "LGA1700", "cores": 4, "threads": 8, "tdp": 58, "integrated_graphics": False, "price": 3100},
+    {"id": "cpu010", "name": "Intel Core i5-12400F", "brand": "Intel", "socket": "LGA1700", "cores": 6, "threads": 12, "tdp": 65, "integrated_graphics": False, "price": 4600},
+    {"id": "cpu011", "name": "Intel Core i5-13400F", "brand": "Intel", "socket": "LGA1700", "cores": 10, "threads": 16, "tdp": 65, "integrated_graphics": False, "price": 7500},
+    {"id": "cpu012", "name": "Intel Core i5-13600K", "brand": "Intel", "socket": "LGA1700", "cores": 14, "threads": 20, "tdp": 125, "integrated_graphics": True, "price": 11500},
+    {"id": "cpu013", "name": "Intel Core i7-13700K", "brand": "Intel", "socket": "LGA1700", "cores": 16, "threads": 24, "tdp": 125, "integrated_graphics": True, "price": 14800},
+    {"id": "cpu014", "name": "Intel Core i9-14900K", "brand": "Intel", "socket": "LGA1700", "cores": 24, "threads": 32, "tdp": 125, "integrated_graphics": True, "price": 22500}
+  ],
+  "gpu": [
+    # Budget
+    {"id": "gpu001", "name": "NVIDIA GTX 1650", "brand": "NVIDIA", "vram": 4, "power_draw": 75, "price": 4500},
+    {"id": "gpu002", "name": "AMD Radeon RX 6500 XT", "brand": "AMD", "vram": 4, "power_draw": 107, "price": 5200},
+    {"id": "gpu003", "name": "AMD Radeon RX 6600", "brand": "AMD", "vram": 8, "power_draw": 132, "price": 7500},
+    # Mid-range
+    {"id": "gpu004", "name": "NVIDIA RTX 3060", "brand": "NVIDIA", "vram": 12, "power_draw": 170, "price": 9900},
+    {"id": "gpu005", "name": "NVIDIA RTX 4060", "brand": "NVIDIA", "vram": 8, "power_draw": 115, "price": 11500},
+    {"id": "gpu006", "name": "AMD Radeon RX 7600", "brand": "AMD", "vram": 8, "power_draw": 165, "price": 10500},
+    {"id": "gpu007", "name": "NVIDIA RTX 4060 Ti", "brand": "NVIDIA", "vram": 8, "power_draw": 160, "price": 14500},
+    # High-end
+    {"id": "gpu008", "name": "NVIDIA RTX 4070 SUPER", "brand": "NVIDIA", "vram": 12, "power_draw": 220, "price": 23500},
+    {"id": "gpu009", "name": "AMD Radeon RX 7800 XT", "brand": "AMD", "vram": 16, "power_draw": 263, "price": 19900},
+    {"id": "gpu010", "name": "NVIDIA RTX 4070 Ti SUPER", "brand": "NVIDIA", "vram": 16, "power_draw": 285, "price": 31500},
+    {"id": "gpu011", "name": "NVIDIA RTX 4080 SUPER", "brand": "NVIDIA", "vram": 16, "power_draw": 320, "price": 39500},
+    {"id": "gpu012", "name": "NVIDIA RTX 4090", "brand": "NVIDIA", "vram": 24, "power_draw": 450, "price": 75000}
+  ],
+  "motherboard": [
+    # AM4
+    {"id": "mb001", "name": "GIGABYTE A520M K V2", "socket": "AM4", "ram_type": "DDR4", "form_factor": "Micro-ATX", "price": 1800},
+    {"id": "mb002", "name": "ASUS PRIME B550M-A", "socket": "AM4", "ram_type": "DDR4", "form_factor": "Micro-ATX", "price": 3100},
+    {"id": "mb003", "name": "MSI MAG B550 TOMAHAWK", "socket": "AM4", "ram_type": "DDR4", "form_factor": "ATX", "price": 5500},
+    # AM5
+    {"id": "mb004", "name": "ASRock A620M-HDV/M.2", "socket": "AM5", "ram_type": "DDR5", "form_factor": "Micro-ATX", "price": 3500},
+    {"id": "mb005", "name": "MSI PRO B650M-A WIFI", "socket": "AM5", "ram_type": "DDR5", "form_factor": "Micro-ATX", "price": 5900},
+    {"id": "mb006", "name": "ASUS TUF GAMING X670E-PLUS", "socket": "AM5", "ram_type": "DDR5", "form_factor": "ATX", "price": 10500},
+    # LGA1700
+    {"id": "mb007", "name": "ASUS PRIME H610M-K", "socket": "LGA1700", "ram_type": "DDR4", "form_factor": "Micro-ATX", "price": 2500},
+    {"id": "mb008", "name": "GIGABYTE B760M DS3H", "socket": "LGA1700", "ram_type": "DDR4", "form_factor": "Micro-ATX", "price": 3800},
+    {"id": "mb009", "name": "MSI PRO B760M-A WIFI", "socket": "LGA1700", "ram_type": "DDR5", "form_factor": "Micro-ATX", "price": 5500},
+    {"id": "mb010", "name": "ASUS ROG STRIX Z790-F GAMING WIFI", "socket": "LGA1700", "ram_type": "DDR5", "form_factor": "ATX", "price": 14500}
+  ],
+  "ram": [
+    # DDR4
+    {"id": "ram001", "name": "Kingston FURY Beast 16GB (8x2) DDR4 3200MHz", "type": "DDR4", "price": 1400},
+    {"id": "ram002", "name": "Corsair Vengeance LPX 16GB (8x2) DDR4 3200MHz", "type": "DDR4", "price": 1500},
+    {"id": "ram003", "name": "Kingston FURY Beast RGB 32GB (16x2) DDR4 3200MHz", "type": "DDR4", "price": 2800},
+    {"id": "ram004", "name": "Corsair Vengeance RGB PRO 32GB (16x2) DDR4 3600MHz", "type": "DDR4", "price": 3200},
+    # DDR5
+    {"id": "ram005", "name": "Kingston FURY Beast 16GB (8x2) DDR5 5200MHz", "type": "DDR5", "price": 2400},
+    {"id": "ram006", "name": "Corsair Vengeance 32GB (16x2) DDR5 5600MHz", "type": "DDR5", "price": 4200},
+    {"id": "ram007", "name": "G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz", "type": "DDR5", "price": 4900},
+    {"id": "ram008", "name": "Corsair Dominator Platinum RGB 64GB (32x2) DDR5 6000MHz", "type": "DDR5", "price": 8900}
+  ],
+  "storage": [
+    {"id": "storage001", "name": "Kingston NV2 500GB PCIe 4.0 NVMe", "price": 1300},
+    {"id": "storage002", "name": "WD Blue SN580 1TB PCIe 4.0 NVMe", "price": 2300},
+    {"id": "storage003", "name": "Samsung 980 1TB PCIe 3.0 NVMe", "price": 2800},
+    {"id": "storage004", "name": "WD Black SN850X 1TB PCIe 4.0 NVMe", "price": 3800},
+    {"id": "storage005", "name": "Samsung 990 PRO 2TB PCIe 4.0 NVMe", "price": 6900}
+  ],
+  "psu": [
+    {"id": "psu001", "name": "Silverstone ST50F-ES230 500W 80+ White", "wattage": 500, "price": 1100},
+    {"id": "psu002", "name": "Thermaltake Smart BX1 650W 80+ Bronze", "wattage": 650, "price": 1900},
+    {"id": "psu003", "name": "Corsair CV650 650W 80+ Bronze", "wattage": 650, "price": 2100},
+    {"id": "psu004", "name": "Corsair RM750e 750W 80+ Gold Fully Modular", "wattage": 750, "price": 3900},
+    {"id": "psu005", "name": "MSI MPG A850G 850W 80+ Gold PCIe 5.0", "wattage": 850, "price": 4900},
+    {"id": "psu006", "name": "Corsair RM1000e 1000W 80+ Gold Fully Modular", "wattage": 1000, "price": 6200}
+  ],
+  "case": [
+    {"id": "case001", "name": "AEROCOOL Cylon Mini", "form_factor_support": ["Micro-ATX", "Mini-ITX"], "price": 900},
+    {"id": "case002", "name": "Montech AIR 100 ARGB", "form_factor_support": ["Micro-ATX", "Mini-ITX"], "price": 1500},
+    {"id": "case003", "name": "NZXT H5 Flow", "form_factor_support": ["ATX", "Micro-ATX", "Mini-ITX"], "price": 2900},
+    {"id": "case004", "name": "Lian Li Lancool 216", "form_factor_support": ["ATX", "Micro-ATX", "Mini-ITX"], "price": 3300},
+    {"id": "case005", "name": "Hyte Y60", "form_factor_support": ["ATX", "Micro-ATX", "Mini-ITX"], "price": 6900}
+  ],
+  "cooler": [
+    {"id": "cooler001", "name": "DeepCool AG400 ARGB", "socket_support": ["AM4", "AM5", "LGA1700"], "price": 790},
+    {"id": "cooler002", "name": "Thermalright Peerless Assassin 120 SE", "socket_support": ["AM4", "AM5", "LGA1700"], "price": 1400},
+    {"id": "cooler003", "name": "NZXT Kraken 240 RGB", "socket_support": ["AM4", "AM5", "LGA1700"], "price": 5500},
+    {"id": "cooler004", "name": "Corsair iCUE H150i ELITE LCD XT", "socket_support": ["AM4", "AM5", "LGA1700"], "price": 10500}
+  ]
+}
+
+def generate_db():
+    output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../services/recommendation/hardware_db.json'))
+    
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(db, f, indent=2, ensure_ascii=False)
+        
+    print(f"✅ Generated comprehensive hardware_db.json successfully!")
+    print(f"Total components generated:")
+    for key, value in db.items():
+        print(f" - {key.upper()}: {len(value)} items")
+
+if __name__ == "__main__":
+    generate_db()

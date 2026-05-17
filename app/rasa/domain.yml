@@ -6,6 +6,7 @@ intents:
   - upgrade_pc
   - inform_budget
   - inform_usage
+  - inform_current_specs
 
 entities:
   - budget
@@ -18,21 +19,44 @@ slots:
     mappings:
     - type: from_entity
       entity: budget
+    - type: from_text
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: budget
   usage:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: usage
+    - type: from_text
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: usage
+      - active_loop: upgrade_pc_form
+        requested_slot: usage
+  current_specs:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: upgrade_pc_form
+        requested_slot: current_specs
 
 forms:
   build_pc_form:
     required_slots:
       - budget
       - usage
+  upgrade_pc_form:
+    required_slots:
+      - usage
+      - current_specs
 
 actions:
   - action_recommend_pc
+  - action_recommend_upgrade
 
 responses:
   utter_greet:
@@ -44,5 +68,5 @@ responses:
   utter_ask_usage:
   - text: "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, ทำงานตัดต่อ)"
 
-  utter_ask_upgrade_details:
-  - text: "คุณต้องการอัปเกรดคอมพิวเตอร์เพื่อนำไปทำอะไร และปัจจุบันใช้สเปคอะไรอยู่บ้างครับ พอบอกคร่าวๆ ได้ไหมครับ?"
+  utter_ask_current_specs:
+  - text: "ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (เช่น CPU, การ์ดจอ, แรม) พอบอกคร่าวๆ ได้ไหมครับ?"
