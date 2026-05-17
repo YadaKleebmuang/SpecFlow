@@ -57,3 +57,8 @@ rules:
   steps:
   - intent: ask_ssd_hdd_diff
   - action: utter_faq_ssd_hdd
+
+- rule: Provide Performance Optimization Advice
+  steps:
+  - intent: optimize_performance
+  - action: utter_optimize_performance
