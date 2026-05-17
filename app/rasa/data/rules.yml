@@ -37,3 +37,23 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_recommend_upgrade
+
+- rule: Answer FAQ CPU
+  steps:
+  - intent: ask_cpu_info
+  - action: utter_faq_cpu
+
+- rule: Answer FAQ GPU
+  steps:
+  - intent: ask_gpu_info
+  - action: utter_faq_gpu
+
+- rule: Answer FAQ RAM
+  steps:
+  - intent: ask_ram_info
+  - action: utter_faq_ram
+
+- rule: Answer FAQ SSD vs HDD
+  steps:
+  - intent: ask_ssd_hdd_diff
+  - action: utter_faq_ssd_hdd
