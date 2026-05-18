@@ -29,7 +29,7 @@ class SpecRecommender:
             return 'office'
         return 'gaming' # Default
 
-    def get_recommendation(self, budget_str: str, usage: str) -> str:
+    def get_recommendation(self, budget_str: str, usage: str, future_upgrade: bool = False) -> dict:
         if not budget_str or not usage:
             return {"status": "error", "text": "ขออภัยครับ ข้อมูลงบประมาณหรือการใช้งานไม่ครบถ้วน ผมจึงยังไม่สามารถจัดสเปคให้ได้ครับ"}
             
@@ -80,21 +80,37 @@ class SpecRecommender:
         selected = {}
         
         # 1. CPU
-        selected['cpu'] = get_best_part('cpu', budgets['cpu'])
+        def cpu_filter(x):
+            if future_upgrade:
+                # Force newer sockets (AM5 or LGA1700)
+                if x.get('socket') not in ['AM5', 'LGA1700']:
+                    return False
+            return True
+            
+        selected['cpu'] = get_best_part('cpu', budgets['cpu'], cpu_filter)
         if not selected['cpu']:
-            return "ไม่พบ CPU ที่เหมาะสมในฐานข้อมูลครับ"
+            return {"status": "error", "text": "ไม่พบ CPU ที่เหมาะสมในฐานข้อมูลครับ"}
             
         # 2. Motherboard (filter socket)
         cpu_socket = selected['cpu'].get('socket')
-        selected['motherboard'] = get_best_part('motherboard', budgets['motherboard'], lambda x: x.get('socket') == cpu_socket)
+        def mb_filter(x):
+            if x.get('socket') != cpu_socket:
+                return False
+            if future_upgrade:
+                # Force DDR5 for better upgradability if user wants future-proof
+                if x.get('ram_type') != 'DDR5':
+                    return False
+            return True
+            
+        selected['motherboard'] = get_best_part('motherboard', budgets['motherboard'], mb_filter)
         if not selected['motherboard']:
-            return "ไม่พบ Motherboard ที่เข้ากันได้กับ CPU ในระบบครับ"
+            return {"status": "error", "text": "ไม่พบ Motherboard ที่เข้ากันได้กับ CPU ในระบบครับ"}
             
         # 3. RAM (filter RAM type)
         mb_ram_type = selected['motherboard'].get('ram_type')
         selected['ram'] = get_best_part('ram', budgets['ram'], lambda x: x.get('type') == mb_ram_type)
         if not selected['ram']:
-            return "ไม่พบ RAM ที่เข้ากันได้กับ Motherboard ในระบบครับ"
+            return {"status": "error", "text": "ไม่พบ RAM ที่เข้ากันได้กับ Motherboard ในระบบครับ"}
             
         # 4. GPU
         selected['gpu'] = get_best_part('gpu', budgets['gpu'])

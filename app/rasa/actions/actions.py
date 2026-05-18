@@ -20,9 +20,17 @@ class ActionRecommendPC(Action):
 
         budget = tracker.get_slot("budget")
         usage = tracker.get_slot("usage")
+        future_upgrade_slot = tracker.get_slot("future_upgrade")
+        
+        # Convert to boolean. True if it's explicitly True or a string meaning yes.
+        is_future = False
+        if future_upgrade_slot is True:
+            is_future = True
+        elif isinstance(future_upgrade_slot, str) and future_upgrade_slot.lower() in ['true', 'yes', 'ใช่', 'เผื่อ', 'เผื่อด้วย']:
+            is_future = True
 
         recommender = SpecRecommender()
-        result = recommender.get_recommendation(budget, usage)
+        result = recommender.get_recommendation(budget, usage, future_upgrade=is_future)
 
         if isinstance(result, dict) and result.get("status") == "success":
             # Generate Flex Message payload

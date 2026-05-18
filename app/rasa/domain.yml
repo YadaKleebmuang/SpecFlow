@@ -12,6 +12,9 @@ intents:
   - ask_ram_info
   - ask_ssd_hdd_diff
   - optimize_performance
+  - inform_future_upgrade
+  - affirm
+  - deny
 entities:
   - budget
   - usage
@@ -47,12 +50,35 @@ slots:
       conditions:
       - active_loop: upgrade_pc_form
         requested_slot: current_specs
+  future_upgrade:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: from_intent
+      value: true
+      intent: affirm
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
+    - type: from_intent
+      value: true
+      intent: inform_future_upgrade
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
+    - type: from_intent
+      value: false
+      intent: deny
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
 
 forms:
   build_pc_form:
     required_slots:
       - budget
       - usage
+      - future_upgrade
   upgrade_pc_form:
     required_slots:
       - usage
@@ -74,6 +100,9 @@ responses:
 
   utter_ask_current_specs:
   - text: "ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (เช่น CPU, การ์ดจอ, แรม) พอบอกคร่าวๆ ได้ไหมครับ?"
+
+  utter_ask_future_upgrade:
+  - text: "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
 
   utter_faq_cpu:
   - text: "CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ"
