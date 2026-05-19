@@ -23,9 +23,21 @@ class SpecRecommender:
 
     def _determine_usage_type(self, usage: str) -> str:
         usage = usage.lower()
-        if any(word in usage for word in ['ตัดต่อ', 'edit', 'เรนเดอร์', 'work']):
+        editing_keywords = [
+            'ตัดต่อ', 'เรนเดอร์', 'กราฟิก', 'วาดรูป', 'ออกแบบ', 'สตรีม', 'เขียนโค้ด', 'โปรแกรม', 
+            'เขียนแบบ', 'โมเดล', 'ทำเพลง', 'edit', 'render', 'work', 'graphic', 'design', 
+            'stream', 'code', 'develop', '3d', 'photoshop', 'illustrator', 'premiere', 
+            'after effect', 'autocad', 'blender', 'sketchup', 'lightroom', 'cad'
+        ]
+        office_keywords = [
+            'ทั่วไป', 'ออฟฟิศ', 'พิมพ์งาน', 'เอกสาร', 'เรียน', 'เทรด', 'ดูหนัง', 'ฟังเพลง', 
+            'สำนักงาน', 'บัญชี', 'ศึกษา', 'office', 'study', 'learn', 'trade', 'excel', 
+            'word', 'powerpoint', 'youtube', 'netflix', 'surf', 'browse'
+        ]
+        
+        if any(word in usage for word in editing_keywords):
             return 'editing'
-        if any(word in usage for word in ['ทั่วไป', 'ออฟฟิศ', 'office', 'พิมพ์งาน']):
+        if any(word in usage for word in office_keywords):
             return 'office'
         return 'gaming' # Default
 
