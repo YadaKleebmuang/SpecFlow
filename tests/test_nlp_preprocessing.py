@@ -57,8 +57,21 @@ class TestThaiNLPPreprocessing(unittest.TestCase):
         self.assertIn("เอกสาร", result)
         self.assertIn("ออฟฟิศ", result)
 
+    def test_brand_normalization(self):
+        # 4. ทดสอบการแปลงชื่อค่ายแบรนด์ไอทีภาษาไทยให้เป็นภาษาอังกฤษสากล
+        text = "อยากจัดคอมค่ายอินเทลกับการ์ดจอเอ็นวิเดียและเมนบอร์ดเอซุสค่ะ"
+        result = preprocess_thai_text(text)
+        print(f"[Test 4] Original: '{text}' \n         Result:   '{result}'")
+        
+        self.assertIn("intel", result)
+        self.assertIn("nvidia", result)
+        self.assertIn("asus", result)
+        self.assertNotIn("อินเทล", result)
+        self.assertNotIn("เอ็นวิเดีย", result)
+        self.assertNotIn("เอซุส", result)
+
     def test_empty_and_null_input(self):
-        # 4. ทดสอบความทนทานต่อค่าว่าง หรือ Null Input
+        # 5. ทดสอบความทนทานต่อค่าว่าง หรือ Null Input
         self.assertEqual(preprocess_thai_text(""), "")
         self.assertEqual(preprocess_thai_text(None), "")
 

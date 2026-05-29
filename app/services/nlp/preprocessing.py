@@ -41,10 +41,13 @@ class ThaiPreprocessor:
             return ""
             
         # 1. ดำเนินการทดแทนคำสะกดผิดที่ระดับข้อความดิบ ก่อนการตัดคำ (String-level replacement)
-        # วิธีนี้ช่วยป้องกันไม่ให้คำยาว เช่น "กาดจอ" ถูก PyThaiNLP แยกออกเป็น "กาด" และ "จอ" ตั้งแต่แรก
-        for typo, replacement in self.typo_dict.items():
+        # โดยการเรียงลำดับคีย์จากยาวไปสั้น (descending by length) เพื่อป้องกันคำสั้นทับซ้อนคำยาว (เช่น "บอร์ด" โดนแทนที่ก่อน "เมนบอร์ด")
+        sorted_typos = sorted(self.typo_dict.keys(), key=len, reverse=True)
+        for typo in sorted_typos:
             if typo in cleaned:
-                cleaned = cleaned.replace(typo, replacement)
+                replacement = self.typo_dict[typo]
+                # เพิ่มเว้นวรรคซ้ายขวารอบตัวแปลภาษาอังกฤษ เพื่อป้องกันไม่ให้คำอักษรภาษาอังกฤษที่ถูกแทนที่ติดกับคำอื่น
+                cleaned = cleaned.replace(typo, f" {replacement} ")
             
         # 2. ทำการตัดคำภาษาไทยด้วยโมเดล newmm ของ PyThaiNLP
         tokens = word_tokenize(cleaned, keep_whitespace=False)
