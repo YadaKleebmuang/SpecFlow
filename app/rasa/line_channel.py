@@ -83,12 +83,17 @@ class LineInput(InputChannel):
                 logger.error("Invalid LINE signature.")
                 return response.text("Invalid signature", status=400)
 
+            from app.services.nlp.preprocessing import preprocess_thai_text
+
             for event in events:
                 if isinstance(event, MessageEvent) and isinstance(event.message, TextMessage):
                     sender_id = event.source.user_id
                     text = event.message.text
+                    # ดำเนินการตัดคำและทำความสะอาดคำภาษาไทยเบื้องต้นก่อนเข้าสู่สมองบอท Rasa NLU
+                    preprocessed_text = preprocess_thai_text(text)
+                    logger.info(f"LINE Input - Original: '{text}' | Preprocessed: '{preprocessed_text}'")
                     out_channel = LineOutput(self.line_bot_api)
-                    user_msg = UserMessage(text, out_channel, sender_id, input_channel=self.name())
+                    user_msg = UserMessage(preprocessed_text, out_channel, sender_id, input_channel=self.name())
                     await on_new_message(user_msg)
 
             return response.text("OK")
