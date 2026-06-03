@@ -16,8 +16,15 @@ from pythainlp import word_tokenize
 )
 class ThaiTokenizer(Tokenizer):
     def __init__(self, config: Dict[Text, Any]) -> None:
-        super().__init__(config)
-        self.case_sensitive = config.get("case_sensitive", True)
+        # กำหนดค่าคอนฟิกเริ่มต้นของ Rasa Tokenizer เพื่อป้องกัน KeyError
+        default_config = {
+            "intent_tokenization_flag": False,
+            "intent_split_symbol": "_",
+            "case_sensitive": True,
+        }
+        merged_config = {**default_config, **config}
+        super().__init__(merged_config)
+        self.case_sensitive = merged_config.get("case_sensitive", True)
 
     @classmethod
     def create(
