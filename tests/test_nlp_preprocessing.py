@@ -75,5 +75,24 @@ class TestThaiNLPPreprocessing(unittest.TestCase):
         self.assertEqual(preprocess_thai_text(""), "")
         self.assertEqual(preprocess_thai_text(None), "")
 
+    def test_thai_tokenizer(self):
+        # 6. ทดสอบการตัดคำภาษาไทยแบบ Custom Tokenizer ของ Rasa
+        from app.rasa.thai_tokenizer import ThaiTokenizer
+        from rasa.shared.nlu.training_data.message import Message
+
+        tokenizer = ThaiTokenizer({"case_sensitive": True})
+        msg = Message.build(text="จัดสเปคคอมงบ30000เล่นเกม")
+        tokens = tokenizer.tokenize(msg, "text")
+        token_texts = [t.text for t in tokens]
+        print(f"[Test Tokenizer] Original: 'จัดสเปคคอมงบ30000เล่นเกม' \n                 Tokens:   {token_texts}")
+        
+        self.assertTrue(len(tokens) > 0)
+        self.assertIn("จัด", token_texts)
+        self.assertIn("สเปค", token_texts)
+        self.assertIn("คอม", token_texts)
+        self.assertIn("30000", token_texts)
+        self.assertIn("เล่น", token_texts)
+        self.assertIn("เกม", token_texts)
+
 if __name__ == "__main__":
     unittest.main()
