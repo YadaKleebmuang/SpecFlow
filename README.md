@@ -123,8 +123,12 @@ SpecFlow/
 * ทำการติดตั้ง Virtual Environment และเปิดใช้งานก่อนเริ่มติดตั้ง:
   ```bash
   python -m venv venv
+  
   # สำหรับ Windows (PowerShell):
   .\venv\Scripts\Activate.ps1
+  
+  # สำหรับ Git Bash (MINGW64):
+  source venv/Scripts/activate
   ```
 
 ### 2. การติดตั้ง Dependencies
@@ -146,7 +150,13 @@ python -m unittest tests/test_nlp_preprocessing.py
    หากมีการปรับเปลี่ยนข้อมูลฝึกสอนในโฟลเดอร์ `data/` หรือแก้ไขไฟล์ตั้งค่าการตัดคำ ให้ทำการเทรนโมเดลใหม่ก่อน:
    ```bash
    cd app/rasa
+   
+   # สำหรับ CMD / PowerShell:
    ..\..\venv\Scripts\rasa train
+   
+   # สำหรับ Git Bash:
+   ../../venv/Scripts/rasa train
+   
    cd ../..
    ```
 

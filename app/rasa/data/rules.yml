@@ -62,3 +62,8 @@ rules:
   steps:
   - intent: optimize_performance
   - action: utter_optimize_performance
+
+- rule: Say goodbye whenever the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
