@@ -94,5 +94,46 @@ class TestThaiNLPPreprocessing(unittest.TestCase):
         self.assertIn("เล่น", token_texts)
         self.assertIn("เกม", token_texts)
 
+    def test_sqlite_analytics_logging(self):
+        # 7. ทดสอบการเชื่อมต่อและการบันทึกสถิติลงฐานข้อมูล SQLite (analytics.db)
+        from app.rasa.actions.actions import log_search, DB_PATH
+        import sqlite3
+        import os
+        
+        # ลบไฟล์ DB เก่าถ้ามีอยู่ เพื่อความถูกต้องในการทดสอบ
+        if os.path.exists(DB_PATH):
+            try:
+                os.remove(DB_PATH)
+            except Exception:
+                pass
+                
+        # เรียกใช้งาน log_search บันทึกข้อมูลจำลอง
+        log_search(
+            user_id="U1234567890abcdef",
+            usage_type="เล่นเกม",
+            budget_requested=25000,
+            allocated_total_price=24500
+        )
+        
+        # ตรวจสอบว่าไฟล์ถูกสร้างขึ้นจริง
+        self.assertTrue(os.path.exists(DB_PATH))
+        
+        # ตรวจสอบความถูกต้องของข้อมูลในตาราง
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM user_searches")
+        rows = cursor.fetchall()
+        conn.close()
+        
+        self.assertEqual(len(rows), 1)
+        row = rows[0]
+        # คอลัมน์: id, timestamp, user_id, usage_type, budget_requested, allocated_total_price
+        self.assertEqual(row[0], 1) # id
+        self.assertEqual(row[2], "U1234567890abcdef") # user_id
+        self.assertEqual(row[3], "เล่นเกม") # usage_type
+        self.assertEqual(row[4], 25000) # budget_requested
+        self.assertEqual(row[5], 24500) # allocated_total_price
+        print(f"\n[Test SQLite] Logged search successfully in DB. Row data: {row}")
+
 if __name__ == "__main__":
     unittest.main()
