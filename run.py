@@ -4,6 +4,18 @@ import sys
 import os
 import signal
 
+# บังคับใช้รหัสภาษา UTF-8 สำหรับแสดงผลบนคอนโซลของ Windows เพื่อป้องกัน UnicodeEncodeError
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+if hasattr(sys.stderr, 'reconfigure'):
+    try:
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 # ค้นหาตำแหน่งโฟลเดอร์หลักของโปรเจกต์ (Project Root)
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 VENV_PYTHON = os.path.join(PROJECT_ROOT, "venv", "Scripts", "python.exe")
@@ -47,7 +59,7 @@ try:
     # 1. รัน Rasa Action Server (พอร์ต 5055)
     print("1️⃣  กำลังสตาร์ท Rasa Action Server (Port: 5055)...")
     action_process = subprocess.Popen(
-        [VENV_RASA, "run", "actions", "--actions", "app.rasa.actions.actions"],
+        [VENV_RASA, "run", "actions"],
         cwd=RASA_DIR,
         stdout=subprocess.DEVNULL,  # ซ่อน Log ของ Action เพื่อไม่ให้รบกวนหน้าจอหลัก
         stderr=subprocess.STDOUT

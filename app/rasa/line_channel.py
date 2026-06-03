@@ -1,7 +1,14 @@
 import inspect
 import json
 import logging
+import os
+import sys
 from typing import Text, Callable, Awaitable, Any, Dict, List, Optional
+
+# บังคับเพิ่มพาธหลักของโครงการใน sys.path เพื่อให้สามารถเรียกโมดูล app ได้อย่างถูกต้อง
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
 from sanic import Blueprint, response
 from sanic.request import Request
