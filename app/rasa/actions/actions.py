@@ -1,6 +1,7 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 import sys
 import os
 import sqlite3
@@ -94,17 +95,18 @@ class ActionRecommendPC(Action):
         result = recommender.get_recommendation(budget, usage, future_upgrade=is_future)
 
         if isinstance(result, dict) and result.get("status") == "success":
-            # Generate Flex Message payload
+            # Generate Flex Message payload (including warning if present)
             flex_payload = generate_spec_flex_message(
                 total_price=result["total_price"], 
                 components=result["components"],
-                usage=usage
+                usage=usage,
+                warning=result.get("warning", "")
             )
-            # Send text as fallback for unsupported clients, and flex for LINE
-            dispatcher.utter_message(
-                text=result["text"],
-                custom=flex_payload
-            )
+            # Send only the Flex Message for LINE to avoid sending two messages, fallback to text for others
+            if tracker.get_latest_input_channel() == "line":
+                dispatcher.utter_message(custom=flex_payload)
+            else:
+                dispatcher.utter_message(text=result["text"])
 
             # บันทึกสถิติการใช้งานลงฐานข้อมูล SQLite
             try:
@@ -126,7 +128,11 @@ class ActionRecommendPC(Action):
             # Fallback if result is just a string
             dispatcher.utter_message(text=str(result))
 
-        return []
+        return [
+            SlotSet("budget", None),
+            SlotSet("usage", None),
+            SlotSet("future_upgrade", None)
+        ]
 
 class ActionRecommendUpgrade(Action):
 
@@ -169,4 +175,7 @@ class ActionRecommendUpgrade(Action):
         else:
             dispatcher.utter_message(text=str(result))
 
-        return []
+        return [
+            SlotSet("usage", None),
+            SlotSet("current_specs", None)
+        ]

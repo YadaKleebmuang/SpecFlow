@@ -1,4 +1,4 @@
-def generate_spec_flex_message(total_price, components, usage):
+def generate_spec_flex_message(total_price, components, usage, warning=""):
     """
     Generate a LINE Flex Message payload for PC recommendations.
     components is a dict mapping category name to the part dictionary.
@@ -141,4 +141,37 @@ def generate_spec_flex_message(total_price, components, usage):
             }
         }
     }
+    # If warning is provided, append it to the body contents
+    if warning:
+        flex_message["contents"]["body"]["contents"].extend([
+            {
+                "type": "separator",
+                "margin": "md"
+            },
+            {
+                "type": "text",
+                "text": f"⚠️ คำเตือน: {warning}",
+                "color": "#D35400",
+                "size": "xxs",
+                "wrap": True,
+                "margin": "md"
+            }
+        ])
+        
+    # Always append the disclaimer
+    flex_message["contents"]["body"]["contents"].extend([
+        {
+            "type": "separator",
+            "margin": "md"
+        },
+        {
+            "type": "text",
+            "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+            "color": "#95A5A6",
+            "size": "xxs",
+            "wrap": True,
+            "margin": "md"
+        }
+    ])
+
     return flex_message
