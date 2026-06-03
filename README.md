@@ -140,22 +140,22 @@ pip install -r requirements/rasa.txt
 python -m unittest tests/test_nlp_preprocessing.py
 ```
 
-### 4. การรันระบบแชทบอท (Running Rasa Server)
+### 4. การรันระบบและใช้งานแชทบอท (Running SpecFlow Server)
 
-1. **การรัน Action Server (สำหรับรันโค้ด Custom Actions ใน `app/rasa/actions`):**
+1. **การเทรนโมเดลแชทบอท (Train Rasa Model):**
+   หากมีการปรับเปลี่ยนข้อมูลฝึกสอนในโฟลเดอร์ `data/` หรือแก้ไขไฟล์ตั้งค่าการตัดคำ ให้ทำการเทรนโมเดลใหม่ก่อน:
    ```bash
-   rasa run actions --actions app.rasa.actions.actions
+   cd app/rasa
+   ..\..\venv\Scripts\rasa train
+   cd ../..
    ```
 
-2. **การเทรนบอท (Train Rasa Model):**
+2. **การเปิดใช้งานระบบเซิร์ฟเวอร์ทั้งหมดในจุดเดียว (All-in-One Start):**
+   คุณสามารถเปิดการทำงานของ Rasa Server, Action Server และ Ngrok Tunneling ได้พร้อมกันผ่านจุดเดียวโดยรันสคริปต์:
    ```bash
-   rasa train
+   python run.py
    ```
-
-3. **การรันเซิร์ฟเวอร์แชทบอท (Rasa Server):**
-   ```bash
-   rasa run
-   ```
+   *หมายเหตุ: สคริปต์จะเริ่มทำงานเซิร์ฟเวอร์ย่อยทั้งหมดในพื้นหลังแบบอัตโนมัติ และคุณสามารถสั่งหยุดการทำงานของเซิร์ฟเวอร์ทั้งหมดพร้อมกันเพื่อคืนค่าพอร์ตได้ทันทีโดยการกด `Ctrl+C` ที่หน้าต่างคอมมานด์นี้ครับ*
 
 ---
 📄 **License:** MIT License
