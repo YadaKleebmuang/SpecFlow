@@ -69,7 +69,8 @@ class UpgradeAdvisor:
         if not recommendations:
             return {
                 "status": "success",
-                "text": f"จากสเปคที่คุณแจ้งมา (\"{current_specs}\") ถือว่ายังใช้งานได้ดีครับ แต่ถ้าต้องการอัปเกรดเพื่อรองรับการทำงานด้าน {usage} ผมแนะนำให้ลองเพิ่ม RAM เป็น 32GB หรือเปลี่ยนการ์ดจอรุ่นใหม่ขึ้นครับ"
+                "text": f"จากสเปคที่คุณแจ้งมา (\"{current_specs}\") ถือว่ายังใช้งานได้ดีครับ แต่ถ้าต้องการอัปเกรดเพื่อรองรับการทำงานด้าน {usage} ผมแนะนำให้ลองเพิ่ม RAM เป็น 32GB หรือเปลี่ยนการ์ดจอรุ่นใหม่ขึ้นครับ",
+                "total_price": 0
             }
 
         response_text = f"จากการวิเคราะห์สเปคปัจจุบันของคุณ (\"{current_specs}\") และการนำไปใช้งานด้าน {usage} ผมขอแนะนำให้อัปเกรดชิ้นส่วนดังนี้ครับ:\n\n"
@@ -78,5 +79,6 @@ class UpgradeAdvisor:
 
         return {
             "status": "success",
-            "text": response_text
+            "text": response_text,
+            "total_price": total_price
         }

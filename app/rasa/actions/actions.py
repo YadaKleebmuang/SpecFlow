@@ -47,6 +47,26 @@ def log_search(user_id: str, usage_type: str, budget_requested: int, allocated_t
     except Exception as e:
         print(f"Error logging search to database: {e}")
 
+def get_usage_type_db(usage: str) -> str:
+    usage_lower = usage.lower() if usage else ""
+    editing_keywords = [
+        'ตัดต่อ', 'เรนเดอร์', 'กราฟิก', 'วาดรูป', 'ออกแบบ', 'สตรีม', 'เขียนโค้ด', 'โปรแกรม', 
+        'เขียนแบบ', 'โมเดล', 'ทำเพลง', 'edit', 'render', 'work', 'graphic', 'design', 
+        'stream', 'code', 'develop', '3d', 'photoshop', 'illustrator', 'premiere', 
+        'after effect', 'autocad', 'blender', 'sketchup', 'lightroom', 'cad'
+    ]
+    office_keywords = [
+        'ทั่วไป', 'ออฟฟิศ', 'พิมพ์งาน', 'เอกสาร', 'เรียน', 'เทรด', 'ดูหนัง', 'ฟังเพลง', 
+        'สำนักงาน', 'บัญชี', 'ศึกษา', 'office', 'study', 'learn', 'trade', 'excel', 
+        'word', 'powerpoint', 'youtube', 'netflix', 'surf', 'browse'
+    ]
+    if any(word in usage_lower for word in editing_keywords):
+        return "กราฟิก"
+    elif any(word in usage_lower for word in office_keywords):
+        return "ออฟฟิศ"
+    else:
+        return "เล่นเกม"
+
 # เรียกใช้งานเตรียมระบบฐานข้อมูลเบื้องหลังตั้งแต่เริ่มโหลดไฟล์
 init_db()
 
@@ -89,27 +109,7 @@ class ActionRecommendPC(Action):
             # บันทึกสถิติการใช้งานลงฐานข้อมูล SQLite
             try:
                 user_id = tracker.sender_id or "anonymous"
-                usage_lower = usage.lower() if usage else ""
-
-                # จัดกลุ่มและแมปภาษาไทยตามข้อกำหนด
-                editing_keywords = [
-                    'ตัดต่อ', 'เรนเดอร์', 'กราฟิก', 'วาดรูป', 'ออกแบบ', 'สตรีม', 'เขียนโค้ด', 'โปรแกรม', 
-                    'เขียนแบบ', 'โมเดล', 'ทำเพลง', 'edit', 'render', 'work', 'graphic', 'design', 
-                    'stream', 'code', 'develop', '3d', 'photoshop', 'illustrator', 'premiere', 
-                    'after effect', 'autocad', 'blender', 'sketchup', 'lightroom', 'cad'
-                ]
-                office_keywords = [
-                    'ทั่วไป', 'ออฟฟิศ', 'พิมพ์งาน', 'เอกสาร', 'เรียน', 'เทรด', 'ดูหนัง', 'ฟังเพลง', 
-                    'สำนักงาน', 'บัญชี', 'ศึกษา', 'office', 'study', 'learn', 'trade', 'excel', 
-                    'word', 'powerpoint', 'youtube', 'netflix', 'surf', 'browse'
-                ]
-
-                if any(word in usage_lower for word in editing_keywords):
-                    usage_type_db = "กราฟิก"
-                elif any(word in usage_lower for word in office_keywords):
-                    usage_type_db = "ออฟฟิศ"
-                else:
-                    usage_type_db = "เล่นเกม"
+                usage_type_db = get_usage_type_db(usage)
 
                 # แปลงงบประมาณเป็นจำนวนเต็ม
                 digits = re.sub(r'[^\d]', '', budget) if budget else ""
@@ -146,6 +146,24 @@ class ActionRecommendUpgrade(Action):
 
         if isinstance(result, dict) and result.get("status") == "success":
             dispatcher.utter_message(text=result["text"])
+
+            # บันทึกสถิติการอัปเกรดคอมพิวเตอร์ลงฐานข้อมูล SQLite
+            try:
+                user_id = tracker.sender_id or "anonymous"
+                usage_type_db = get_usage_type_db(usage)
+
+                # ตรวจสอบงบประมาณถ้ามีระบุใน slot (หรือบันทึกเป็น 0 หากไม่มี)
+                budget = tracker.get_slot("budget")
+                digits = re.sub(r'[^\d]', '', budget) if budget else ""
+                budget_val = int(digits) if digits else 0
+
+                # งบประมาณเฉลี่ยรวมที่แนะนำในการอัปเกรด
+                allocated_total_price = result.get("total_price", 0)
+
+                log_search(user_id, usage_type_db, budget_val, allocated_total_price)
+            except Exception as ex:
+                print(f"Error logging upgrade search data: {ex}")
+
         elif isinstance(result, dict):
             dispatcher.utter_message(text=result.get("text", "เกิดข้อผิดพลาดในการวิเคราะห์สเปคครับ"))
         else:
