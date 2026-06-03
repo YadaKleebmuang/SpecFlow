@@ -19,6 +19,8 @@ intents:
 entities:
   - budget
   - usage
+  - component_type
+  - future_upgrade
 
 slots:
   budget:

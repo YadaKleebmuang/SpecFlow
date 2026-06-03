@@ -102,45 +102,45 @@ nlu:
   examples: |
     - ตอนนี้ ใช้ i 5 10400 f
     - สเปค ตอนนี้ gtx 1050 ti
-    - ใช้ การ์ด จอ rtx 2060
-    - แค่ แรม 8 gb
-    - ใช้ hdd 1 tb
+    - ใช้ [การ์ด จอ](component_type) rtx 2060
+    - แค่ [แรม](component_type) 8 gb
+    - ใช้ [hdd](component_type) 1 tb
     - สเปค เดิม คือ ryzen 5 3600
-    - ใช้ i 3 gen 10 การ์ด จอ 1650
+    - ใช้ i 3 gen 10 [การ์ด จอ](component_type) 1650
     - ปัจจุบัน ใช้ โน้ตบุ๊ก i 7
-    - สเปค คอม ตอนนี้ คือ i 5 gen 4 , ram 8 gb , gtx 970
+    - สเปค คอม ตอนนี้ คือ i 5 gen 4 , [ram](component_type) 8 gb , gtx 970
 
 - intent: ask_cpu_info
   examples: |
-    - cpu คือ อะไร
-    - cpu ทำหน้าที่ อะไร
-    - อยากรู้ ว่า cpu สำคัญ ยังไง
-    - cpu มีผล กับ อะไร บ้าง
-    - อธิบาย cpu ฟัง
+    - [cpu](component_type) คือ อะไร
+    - [cpu](component_type) ทำหน้าที่ อะไร
+    - อยากรู้ ว่า [cpu](component_type) สำคัญ ยังไง
+    - [cpu](component_type) มีผล กับ อะไร บ้าง
+    - อธิบาย [cpu](component_type) ฟัง
 
 - intent: ask_gpu_info
   examples: |
-    - การ์ด จอ คือ อะไร
-    - gpu สำคัญ ยังไง
-    - การ์ด จอ เอาไว้ ทำ อะไร
-    - ทำไม ต้อง ซื้อ การ์ด จอ แพง ๆ
-    - อธิบาย gpu ฟัง
+    - [การ์ด จอ](component_type) คือ อะไร
+    - [gpu](component_type) สำคัญ ยังไง
+    - [การ์ด จอ](component_type) เอาไว้ ทำ อะไร
+    - ทำไม ต้อง ซื้อ [การ์ด จอ](component_type) แพง ๆ
+    - อธิบาย [gpu](component_type) ฟัง
 
 - intent: ask_ram_info
   examples: |
-    - ram คือ อะไร
-    - ทำไม ต้อง เพิ่ม แรม
-    - แรม เยอะ อะไร
-    - แรม 16 gb ต่าง กับ 8 gb ยังไง
-    - อธิบาย ram ฟัง
+    - [ram](component_type) คือ อะไร
+    - ทำไม ต้อง เพิ่ม [แรม](component_type)
+    - [แรม](component_type) เยอะ อะไร
+    - [แรม](component_type) 16 gb ต่าง กับ 8 gb ยังไง
+    - อธิบาย [ram](component_type) ฟัง
 
 - intent: ask_ssd_hdd_diff
   examples: |
-    - ssd กับ hdd ต่างกัน ยังไง
-    - ควร ใช้ ssd หรือ hdd
-    - hdd กับ ssd อัน ไหน ดีกว่า กัน
-    - ทำไม ssd ถึง แพง กว่า
-    - hdd ธรรมดา กับ ssd ต่างกัน ตรงไหน
+    - [ssd](component_type) กับ [hdd](component_type) ต่างกัน ยังไง
+    - ควร ใช้ [ssd](component_type) หรือ [hdd](component_type)
+    - [hdd](component_type) กับ [ssd](component_type) อัน ไหน ดีกว่า กัน
+    - ทำไม [ssd](component_type) ถึง แพง กว่า
+    - [hdd](component_type) ธรรมดา กับ [ssd](component_type) ต่างกัน ตรงไหน
 
 - intent: optimize_performance
   examples: |
@@ -154,17 +154,17 @@ nlu:
 
 - intent: inform_future_upgrade
   examples: |
-    - เผื่อ อัปเกรด
-    - ใช้ นานๆ
-    - รองรับ อนาคต
-    - เผื่อ อนาคต
-    - รุ่นใหม่ ๆ
+    - [เผื่อ อัปเกรด](future_upgrade)
+    - [ใช้ นานๆ](future_upgrade)
+    - [รองรับ อนาคต](future_upgrade)
+    - [เผื่อ อนาคต](future_upgrade)
+    - [รุ่นใหม่ ๆ](future_upgrade)
 
 - intent: affirm
   examples: |
     - ใช่
     - เอา
-    - เผื่อ
+    - [เผื่อ](future_upgrade)
     - ใช่
     - ต้องการ
 
