@@ -1,0 +1,66 @@
+{
+  "type": "flex",
+  "altText": "การปรับแต่งประสิทธิภาพคอมพิวเตอร์เบื้องต้น",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#283747",
+      "contents": [
+        {
+          "type": "text",
+          "text": "🚀 ปรับแต่งประสิทธิภาพเครื่อง",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "sm",
+      "contents": [
+        {
+          "type": "text",
+          "text": "เบื้องต้นแนะนำขั้นตอนรีดความเร็วระบบดังนี้ครับ:",
+          "weight": "bold",
+          "size": "sm"
+        },
+        {
+          "type": "text",
+          "text": "1. อัปเดตไดรเวอร์การ์ดจอให้เป็นเวอร์ชันล่าสุด",
+          "size": "xs",
+          "wrap": true
+        },
+        {
+          "type": "text",
+          "text": "2. ปิด Startup Programs ที่ไม่ได้รันใช้งานใน Task Manager",
+          "size": "xs",
+          "wrap": true
+        },
+        {
+          "type": "text",
+          "text": "3. ทำความสะอาดดิสก์ขยะ (Disk Cleanup) และไม่ให้ไดรฟ์ C เต็ม",
+          "size": "xs",
+          "wrap": true
+        },
+        {
+          "type": "text",
+          "text": "4. เปิด Game Mode และตั้ง Power Plan เป็น High Performance",
+          "size": "xs",
+          "wrap": true
+        },
+        {
+          "type": "text",
+          "text": "*หากยังช้าอยู่ อาจต้องการอัปเกรดชิ้นส่วน (พิมพ์ว่า 'อัปเกรดคอม' เพื่อให้ช่วยวิเคราะห์ได้ครับ)*",
+          "size": "xs",
+          "color": "#7F8C8D",
+          "margin": "md",
+          "wrap": true
+        }
+      ]
+    }
+  }
+}

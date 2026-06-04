@@ -1,0 +1,70 @@
+[
+  {
+    "type": "flex",
+    "altText": "สวัสดีครับ ยินดีต้อนรับสู่ SpecFlow",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💻 SpecFlow Assistant",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สวัสดีครับ ยินดีต้อนรับสู่ SpecFlow มีอะไรให้ผมช่วยจัดสเปค หรืออัปเกรดคอมไหมครับ?",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "สวัสดีค่ะ ยินดีต้อนรับสู่ SpecFlow",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#1ABC9C",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🤖 SpecFlow ยินดีให้บริการค่ะ",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สวัสดีค่ะ! วันนี้อยากให้หนูช่วยจัดคอม หรือวิเคราะห์อัปเกรดเครื่องดีคะ? พิมพ์บอกหนูได้เลยนะ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  }
+]

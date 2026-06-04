@@ -81,5 +81,6 @@ class UpgradeAdvisor:
         return {
             "status": "success",
             "text": response_text,
-            "total_price": total_price
+            "total_price": total_price,
+            "recommendations": recommendations
         }

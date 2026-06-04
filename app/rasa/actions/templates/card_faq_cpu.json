@@ -1,0 +1,34 @@
+{
+  "type": "flex",
+  "altText": "CPU ทำหน้าที่อะไร?",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#2E4053",
+      "contents": [
+        {
+          "type": "text",
+          "text": "🧠 CPU คืออะไร?",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ",
+          "wrap": true,
+          "size": "sm",
+          "color": "#333333"
+        }
+      ]
+    }
+  }
+}

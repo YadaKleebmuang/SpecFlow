@@ -1,0 +1,34 @@
+{
+  "type": "flex",
+  "altText": "RAM ทำหน้าที่อะไร?",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#17A589",
+      "contents": [
+        {
+          "type": "text",
+          "text": "⚡ RAM (แรม) คืออะไร?",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "RAM (แรม) คือหน่วยความจำชั่วคราว ยิ่งมี RAM เยอะ (เช่น 16GB หรือ 32GB) คอมพิวเตอร์ก็จะสามารถเปิดหลายๆ โปรแกรมพร้อมกัน หรือเปิดแท็บเบราว์เซอร์เยอะๆ ได้โดยที่เครื่องไม่ค้างครับ",
+          "wrap": true,
+          "size": "sm",
+          "color": "#333333"
+        }
+      ]
+    }
+  }
+}

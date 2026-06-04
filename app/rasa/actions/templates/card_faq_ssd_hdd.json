@@ -1,0 +1,34 @@
+{
+  "type": "flex",
+  "altText": "SSD กับ HDD ต่างกันยังไง?",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#7D3C98",
+      "contents": [
+        {
+          "type": "text",
+          "text": "💾 SSD vs HDD ต่างกันยังไง?",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "SSD และ HDD เป็นตัวเก็บข้อมูลทั้งคู่ครับ แต่ SSD จะเร็วกว่า HDD หลายสิบเท่า ทำให้เปิดเครื่องและโหลดเกมไวมาก ส่วน HDD จะมีราคาถูกกว่าในความจุที่เท่ากัน แนะนำให้ใช้ SSD ลงวินโดว์และโปรแกรมหลัก แล้วใช้ HDD เก็บไฟล์งานทั่วไปครับ",
+          "wrap": true,
+          "size": "sm",
+          "color": "#333333"
+        }
+      ]
+    }
+  }
+}

@@ -7,11 +7,16 @@ import os
 import sqlite3
 import datetime
 import re
+import random
 
 # Add the project root to sys.path to allow importing from the app package
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
 from app.services.recommendation.spec_recommender import SpecRecommender
-from app.rasa.actions.flex import generate_spec_flex_message
+from app.rasa.actions.flex import (
+    generate_spec_flex_message, 
+    generate_upgrade_flex_message, 
+    load_static_card
+)
 
 # ฐานข้อมูล SQLite เก็บไว้ในโฟลเดอร์ data/ ของโครงการ
 DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../data/analytics.db"))
@@ -71,8 +76,114 @@ def get_usage_type_db(usage: str) -> str:
 # เรียกใช้งานเตรียมระบบฐานข้อมูลเบื้องหลังตั้งแต่เริ่มโหลดไฟล์
 init_db()
 
-class ActionRecommendPC(Action):
+class ActionGreet(Action):
+    def name(self) -> Text:
+        return "action_greet"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                greet_cards = load_static_card("card_greet.json")
+                selected_card = random.choice(greet_cards)
+                dispatcher.utter_message(custom=selected_card)
+            except Exception as e:
+                print(f"Error loading greet template: {e}")
+                dispatcher.utter_message(text="สวัสดีครับ ยินดีต้อนรับสู่ SpecFlow มีอะไรให้ผมช่วยจัดสเปค หรืออัปเกรดคอมไหมครับ?")
+        else:
+            dispatcher.utter_message(text="สวัสดีครับ ยินดีต้อนรับสู่ SpecFlow มีอะไรให้ผมช่วยจัดสเปค หรืออัปเกรดคอมไหมครับ?")
+        return []
+
+class ActionGoodbye(Action):
+    def name(self) -> Text:
+        return "action_goodbye"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                goodbye_cards = load_static_card("card_goodbye.json")
+                selected_card = random.choice(goodbye_cards)
+                dispatcher.utter_message(custom=selected_card)
+            except Exception as e:
+                print(f"Error loading goodbye template: {e}")
+                dispatcher.utter_message(text="ยินดีที่ได้ช่วยเหลือครับ! หากต้องการจัดสเปคคอมพิวเตอร์หรือขอคำแนะนำอีก พิมพ์มาบอกผมได้ตลอดเลยนะครับ บ๊ายบายครับ! 💻👋")
+        else:
+            dispatcher.utter_message(text="ยินดีที่ได้ช่วยเหลือครับ! หากต้องการจัดสเปคคอมพิวเตอร์หรือขอคำแนะนำอีก พิมพ์มาบอกผมได้ตลอดเลยนะครับ บ๊ายบายครับ! 💻👋")
+        return []
+
+class ActionFAQ(Action):
+    def name(self) -> Text:
+        return "action_faq"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        latest_intent = tracker.latest_message.get("intent", {}).get("name", "")
+        
+        intent_map = {
+            "ask_cpu_info": {
+                "file": "card_faq_cpu.json",
+                "text": "CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ"
+            },
+            "ask_gpu_info": {
+                "file": "card_faq_gpu.json",
+                "text": "GPU (การ์ดจอ) ทำหน้าที่ประมวลผลภาพและกราฟิกครับ ถ้าคุณเน้นเล่นเกม 3D หรือทำงานตัดต่อ/เรนเดอร์วิดีโอ การ์ดจอที่แรงจะช่วยให้ภาพลื่นไหลและทำงานเสร็จไวขึ้นมากครับ"
+            },
+            "ask_ram_info": {
+                "file": "card_faq_ram.json",
+                "text": "RAM (แรม) คือหน่วยความจำชั่วคราว ยิ่งมี RAM เยอะ (เช่น 16GB หรือ 32GB) คอมพิวเตอร์ก็จะสามารถเปิดหลายๆ โปรแกรมพร้อมกัน หรือเปิดแท็บเบราว์เซอร์เยอะๆ ได้โดยที่เครื่องไม่ค้างครับ"
+            },
+            "ask_ssd_hdd_diff": {
+                "file": "card_faq_ssd_hdd.json",
+                "text": "SSD และ HDD เป็นตัวเก็บข้อมูลทั้งคู่ครับ แต่ SSD จะเร็วกว่า HDD หลายสิบเท่า ทำให้เปิดเครื่องและโหลดเกมไวมาก ส่วน HDD จะมีราคาถูกกว่าในความจุที่เท่ากัน แนะนำให้ใช้ SSD ลงวินโดว์และโปรแกรมหลัก แล้วใช้ HDD เก็บไฟล์งานทั่วไปครับ"
+            }
+        }
+        
+        cfg = intent_map.get(latest_intent)
+        if cfg:
+            if tracker.get_latest_input_channel() == "line":
+                try:
+                    card_payload = load_static_card(cfg["file"])
+                    dispatcher.utter_message(custom=card_payload)
+                except Exception as e:
+                    print(f"Error loading FAQ card {cfg['file']}: {e}")
+                    dispatcher.utter_message(text=cfg["text"])
+            else:
+                dispatcher.utter_message(text=cfg["text"])
+        else:
+            dispatcher.utter_message(text="ขออภัยครับ ผมยังไม่มีข้อมูลสำหรับคำถามนี้ครับ")
+        return []
+
+class ActionOptimizePerformance(Action):
+    def name(self) -> Text:
+        return "action_optimize_performance"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        fallback_text = (
+            "สำหรับการเพิ่มความเร็วและการปรับแต่งให้คอมพิวเตอร์ทำงานลื่นไหลขึ้น เบื้องต้นผมขอแนะนำดังนี้ครับ:\n"
+            "1. **อัปเดตไดรเวอร์**: โดยเฉพาะไดรเวอร์การ์ดจอ ให้เป็นเวอร์ชันล่าสุดเสมอ\n"
+            "2. **ปิด Startup Programs**: ปิดโปรแกรมที่ไม่ได้ใช้แต่รันขึ้นมาพร้อมวินโดวส์\n"
+            "3. **เคลียร์ไฟล์ขยะ (Disk Cleanup)**: และตรวจสอบไม่ให้ไดรฟ์ C: เต็มจนเกินไป\n"
+            "4. **เปิด Game Mode / High Performance Power Plan**: ในตั้งค่า Windows เพื่อรีดประสิทธิภาพสูงสุดครับ\n\n"
+            "*หากทำตามนี้แล้วยังช้าอยู่ อาจถึงเวลาต้องอัปเกรดฮาร์ดแวร์ (สามารถพิมพ์ว่า 'อยากอัปเกรดคอม' เพื่อให้ผมช่วยวิเคราะห์ได้ครับ)*"
+        )
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                card_payload = load_static_card("card_optimize_performance.json")
+                dispatcher.utter_message(custom=card_payload)
+            except Exception as e:
+                print(f"Error loading optimize template: {e}")
+                dispatcher.utter_message(text=fallback_text)
+        else:
+            dispatcher.utter_message(text=fallback_text)
+        return []
+
+class ActionRecommendPC(Action):
     def name(self) -> Text:
         return "action_recommend_pc"
 
@@ -135,7 +246,6 @@ class ActionRecommendPC(Action):
         ]
 
 class ActionRecommendUpgrade(Action):
-
     def name(self) -> Text:
         return "action_recommend_upgrade"
 
@@ -151,7 +261,20 @@ class ActionRecommendUpgrade(Action):
         result = advisor.analyze_upgrade(current_specs, usage)
 
         if isinstance(result, dict) and result.get("status") == "success":
-            dispatcher.utter_message(text=result["text"])
+            # Send Flex Message for LINE if recommendations list is present, fallback to text for others
+            if tracker.get_latest_input_channel() == "line" and result.get("recommendations"):
+                try:
+                    flex_payload = generate_upgrade_flex_message(
+                        total_price=result["total_price"],
+                        recommendations=result["recommendations"],
+                        usage=usage
+                    )
+                    dispatcher.utter_message(custom=flex_payload)
+                except Exception as e:
+                    print(f"Error generating upgrade Flex Message: {e}")
+                    dispatcher.utter_message(text=result["text"])
+            else:
+                dispatcher.utter_message(text=result["text"])
 
             # บันทึกสถิติการอัปเกรดคอมพิวเตอร์ลงฐานข้อมูล SQLite
             try:

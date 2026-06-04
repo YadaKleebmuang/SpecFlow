@@ -1,0 +1,34 @@
+{
+  "type": "flex",
+  "altText": "GPU ทำหน้าที่อะไร?",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#D35400",
+      "contents": [
+        {
+          "type": "text",
+          "text": "🎮 GPU (การ์ดจอ) คืออะไร?",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "GPU (การ์ดจอ) ทำหน้าที่ประมวลผลภาพและกราฟิกครับ ถ้าคุณเน้นเล่นเกม 3D หรือทำงานตัดต่อ/เรนเดอร์วิดีโอ การ์ดจอที่แรงจะช่วยให้ภาพลื่นไหลและทำงานเสร็จไวขึ้นมากครับ",
+          "wrap": true,
+          "size": "sm",
+          "color": "#333333"
+        }
+      ]
+    }
+  }
+}

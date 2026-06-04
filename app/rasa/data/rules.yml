@@ -4,7 +4,7 @@ rules:
 - rule: Say hello whenever the user greets
   steps:
   - intent: greet
-  - action: utter_greet
+  - action: action_greet
 
 - rule: Activate build_pc form
   steps:
@@ -41,29 +41,29 @@ rules:
 - rule: Answer FAQ CPU
   steps:
   - intent: ask_cpu_info
-  - action: utter_faq_cpu
+  - action: action_faq
 
 - rule: Answer FAQ GPU
   steps:
   - intent: ask_gpu_info
-  - action: utter_faq_gpu
+  - action: action_faq
 
 - rule: Answer FAQ RAM
   steps:
   - intent: ask_ram_info
-  - action: utter_faq_ram
+  - action: action_faq
 
 - rule: Answer FAQ SSD vs HDD
   steps:
   - intent: ask_ssd_hdd_diff
-  - action: utter_faq_ssd_hdd
+  - action: action_faq
 
 - rule: Provide Performance Optimization Advice
   steps:
   - intent: optimize_performance
-  - action: utter_optimize_performance
+  - action: action_optimize_performance
 
 - rule: Say goodbye whenever the user says goodbye
   steps:
   - intent: goodbye
-  - action: utter_goodbye
+  - action: action_goodbye

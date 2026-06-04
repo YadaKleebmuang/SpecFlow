@@ -1,0 +1,96 @@
+{
+  "type": "flex",
+  "altText": "SpecFlow: แนะนำการอัปเกรดคอมพิวเตอร์",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#6C3483",
+      "contents": [
+        {
+          "type": "text",
+          "text": "SpecFlow Upgrade Advisor",
+          "color": "#FFFFFF",
+          "weight": "bold",
+          "size": "lg"
+        },
+        {
+          "type": "text",
+          "text": "สำหรับ: <USAGE>",
+          "color": "#F5B041",
+          "size": "sm"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ชิ้นส่วนแนะนำให้อัปเกรด",
+          "weight": "bold",
+          "size": "sm",
+          "margin": "md"
+        },
+        {
+          "type": "separator",
+          "margin": "xxl"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "margin": "xxl",
+          "spacing": "sm",
+          "contents": []
+        },
+        {
+          "type": "separator",
+          "margin": "xxl"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "margin": "md",
+          "contents": [
+            {
+              "type": "text",
+              "text": "งบประเมินรวมอัปเกรด",
+              "size": "xs",
+              "color": "#aaaaaa",
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "฿<TOTAL_PRICE>",
+              "color": "#E74C3C",
+              "size": "md",
+              "align": "end",
+              "weight": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "sm",
+      "contents": [
+        {
+          "type": "button",
+          "style": "primary",
+          "height": "sm",
+          "color": "#3498DB",
+          "action": {
+            "type": "message",
+            "label": "จัดสเปคคอมใหม่",
+            "text": "จัดสเปคคอม"
+          }     
+        }
+      ],
+      "flex": 0
+    }
+  }
+}
