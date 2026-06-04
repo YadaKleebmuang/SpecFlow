@@ -20,12 +20,16 @@ class UpgradeAdvisor:
         specs_lower = current_specs.lower()
         usage_lower = usage.lower() if usage else "gaming"
         
+        # ลบเว้นวรรคออกทั้งหมดเพื่อแก้ไขปัญหาการตัดคำภาษาไทยที่อาจใส่เว้นวรรคระหว่างอักษรและตัวเลข (เช่น "i 3", "4 gb")
+        specs_normalized = specs_lower.replace(" ", "")
+        usage_normalized = usage_lower.replace(" ", "")
+        
         upgrades = []
         recommendations = []
         total_price = 0
 
         # 1. Check RAM
-        if "4gb" in specs_lower or "8gb" in specs_lower:
+        if "4gb" in specs_normalized or "8gb" in specs_normalized or "ram4" in specs_normalized or "ram8" in specs_normalized:
             upgrades.append("RAM")
             ram_options = self.db.get('ram', [])
             if ram_options:
@@ -34,7 +38,7 @@ class UpgradeAdvisor:
                 total_price += best_ram['price']
 
         # 2. Check Storage
-        if "hdd" in specs_lower or "harddisk" in specs_lower or "ฮาร์ดดิสก์" in specs_lower:
+        if "hdd" in specs_normalized or "harddisk" in specs_normalized or "ฮาร์ดดิสก์" in specs_normalized:
             upgrades.append("Storage (SSD)")
             storage_options = self.db.get('storage', [])
             if storage_options:
@@ -43,11 +47,11 @@ class UpgradeAdvisor:
                 total_price += best_ssd['price']
 
         # 3. Check GPU
-        old_gpus = ["1050", "1060", "1650", "970", "rx 570", "rx 580"]
-        needs_gpu_upgrade = any(gpu in specs_lower for gpu in old_gpus)
-        if needs_gpu_upgrade or "เล่นเกมหนัก" in usage_lower or "ตัดต่อ" in usage_lower:
+        old_gpus = ["1050", "1060", "1650", "970", "rx570", "rx580", "1050ti", "1650super", "1660"]
+        needs_gpu_upgrade = any(gpu in specs_normalized for gpu in old_gpus)
+        if needs_gpu_upgrade or "เล่นเกมหนัก" in usage_normalized or "ตัดต่อ" in usage_normalized:
             # If user has an old GPU or needs heavy usage, recommend a new one
-            if any(gpu in specs_lower for gpu in old_gpus) or ("gpu" not in specs_lower and "การ์ดจอ" not in specs_lower):
+            if needs_gpu_upgrade or ("gpu" not in specs_normalized and "การ์ดจอ" not in specs_normalized):
                 upgrades.append("การ์ดจอ (GPU)")
                 gpu_options = self.db.get('gpu', [])
                 if gpu_options:
@@ -56,8 +60,8 @@ class UpgradeAdvisor:
                     total_price += best_gpu['price']
 
         # 4. Check CPU
-        old_cpus = ["i3", "gen 4", "gen 6", "gen 7", "gen 8", "gen 9", "gen 10", "ryzen 3"]
-        if any(cpu in specs_lower for cpu in old_cpus):
+        old_cpus = ["i3", "gen4", "gen6", "gen7", "gen8", "gen9", "gen10", "ryzen3"]
+        if any(cpu in specs_normalized for cpu in old_cpus):
             upgrades.append("ซีพียู (CPU)")
             cpu_options = self.db.get('cpu', [])
             if cpu_options:

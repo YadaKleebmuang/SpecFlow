@@ -58,10 +58,15 @@ try:
 
     # 1. รัน Rasa Action Server (พอร์ต 5055)
     print("1️⃣  กำลังสตาร์ท Rasa Action Server (Port: 5055)...")
+    # ตรวจสอบและสร้างโฟลเดอร์ logs หากยังไม่มี
+    os.makedirs(os.path.join(PROJECT_ROOT, "logs"), exist_ok=True)
+    action_log_path = os.path.join(PROJECT_ROOT, "logs", "action_server.log")
+    action_log_file = open(action_log_path, "w", encoding="utf-8")
+    
     action_process = subprocess.Popen(
         [VENV_RASA, "run", "actions"],
         cwd=RASA_DIR,
-        stdout=subprocess.DEVNULL,  # ซ่อน Log ของ Action เพื่อไม่ให้รบกวนหน้าจอหลัก
+        stdout=action_log_file,
         stderr=subprocess.STDOUT
     )
     processes.append(action_process)
