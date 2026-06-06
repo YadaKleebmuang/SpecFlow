@@ -1,34 +1,104 @@
-{
-  "type": "flex",
-  "altText": "SSD กับ HDD ต่างกันยังไง?",
-  "contents": {
-    "type": "bubble",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "backgroundColor": "#2C3E50",
-      "contents": [
-        {
-          "type": "text",
-          "text": "💾 SSD vs HDD ต่างกันยังไง?",
-          "color": "#FFFFFF",
-          "weight": "bold",
-          "size": "lg"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "SSD และ HDD เป็นตัวเก็บข้อมูลทั้งคู่ครับ แต่ SSD จะเร็วกว่า HDD หลายสิบเท่า ทำให้เปิดเครื่องและโหลดเกมไวมาก ส่วน HDD จะมีราคาถูกกว่าในความจุที่เท่ากัน แนะนำให้ใช้ SSD ลงวินโดว์และโปรแกรมหลัก แล้วใช้ HDD เก็บไฟล์งานทั่วไปครับ",
-          "wrap": true,
-          "size": "sm",
-          "color": "#333333"
-        }
-      ]
+[
+  {
+    "type": "flex",
+    "altText": "SSD กับ HDD ต่างกันยังไง?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 SSD vs HDD ต่างกันยังไง?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "SSD และ HDD เป็นตัวเก็บข้อมูลทั้งคู่ครับ แต่ SSD จะเร็วกว่า HDD หลายสิบเท่า ทำให้เปิดเครื่องและโหลดเกมไวมาก ส่วน HDD จะมีราคาถูกกว่าในความจุที่เท่ากัน แนะนำให้ใช้ SSD ลงวินโดว์และโปรแกรมหลัก แล้วใช้ HDD เก็บไฟล์งานทั่วไปครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "รู้จักประเภทของ SSD",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 สาระน่ารู้: SATA vs NVMe M.2",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "SSD เองก็แบ่งเป็นสองแบบหลักๆ คือ SATA (ความเร็วประมาณ 500 MB/s) และ PCIe NVMe M.2 (ความเร็วสูงถึง 3000-7000 MB/s) แนะนำให้เลือกซื้อแบบ NVMe M.2 เพื่อความเร็วในการโอนถ่ายข้อมูลที่คุ้มค่าที่สุดในปัจจุบันครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "ความทนทานของ SSD และ HDD",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 การรักษาข้อมูล: SSD vs HDD",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ความทนทานและการเก็บรักษาข้อมูล: HDD ใช้จานแม่เหล็กหมุน มีโอกาสเสียหากได้รับการกระแทกขณะทำงาน ส่วน SSD ใช้ชิปหน่วยความจำทนแรงกระแทกได้ดีกว่า แต่อายุการใช้งาน SSD จะนับตามปริมาณการเขียนข้อมูล (TBW) ครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
     }
   }
-}
+]

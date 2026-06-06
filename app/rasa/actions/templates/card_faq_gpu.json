@@ -1,34 +1,104 @@
-{
-  "type": "flex",
-  "altText": "GPU ทำหน้าที่อะไร?",
-  "contents": {
-    "type": "bubble",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "backgroundColor": "#2C3E50",
-      "contents": [
-        {
-          "type": "text",
-          "text": "🎮 GPU (การ์ดจอ) คืออะไร?",
-          "color": "#FFFFFF",
-          "weight": "bold",
-          "size": "lg"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "GPU (การ์ดจอ) ทำหน้าที่ประมวลผลภาพและกราฟิกครับ ถ้าคุณเน้นเล่นเกม 3D หรือทำงานตัดต่อ/เรนเดอร์วิดีโอ การ์ดจอที่แรงจะช่วยให้ภาพลื่นไหลและทำงานเสร็จไวขึ้นมากครับ",
-          "wrap": true,
-          "size": "sm",
-          "color": "#333333"
-        }
-      ]
+[
+  {
+    "type": "flex",
+    "altText": "GPU ทำหน้าที่อะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎮 GPU (การ์ดจอ) คืออะไร?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "GPU (การ์ดจอ) ทำหน้าที่ประมวลผลภาพและกราฟิกครับ ถ้าคุณเน้นเล่นเกม 3D หรือทำงานตัดต่อ/เรนเดอร์วิดีโอ การ์ดจอที่แรงจะช่วยให้ภาพลื่นไหลและทำงานเสร็จไวขึ้นมากครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "การ์ดจอกับ VRAM",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎮 สาระน่ารู้: VRAM บนการ์ดจอ",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "GPU ทำงานร่วมกับ VRAM (หน่วยความจำบนการ์ดจอ) หากคุณเปิดจอความละเอียดสูง (2K/4K) หรือทำงานกราฟิกขนาดใหญ่ การเลือกการ์ดจอที่มี VRAM ขนาด 8GB ขึ้นไป จะช่วยลดปัญหาเฟรมเรตร่วงและอาการภาพโหลดช้าได้ดีครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "เปรียบเทียบการ์ดจอ NVIDIA กับ AMD",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎮 NVIDIA vs AMD เลือกแบบไหนดี?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ควรเลือกการ์ดจอค่ายไหนดี? การ์ดจอ NVIDIA เด่นเรื่องเทคโนโลยี Ray Tracing และ DLSS ที่ช่วยเร่งประสิทธิภาพในเกม รวมถึงมีโปรแกรมเฉพาะทางรองรับเยอะ ส่วนค่าย AMD จะเด่นเรื่องความคุ้มค่าต่อราคาและปริมาณ VRAM ที่ให้มาเยอะครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
     }
   }
-}
+]

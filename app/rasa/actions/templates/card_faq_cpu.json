@@ -1,34 +1,104 @@
-{
-  "type": "flex",
-  "altText": "CPU ทำหน้าที่อะไร?",
-  "contents": {
-    "type": "bubble",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "backgroundColor": "#2C3E50",
-      "contents": [
-        {
-          "type": "text",
-          "text": "🧠 CPU คืออะไร?",
-          "color": "#FFFFFF",
-          "weight": "bold",
-          "size": "lg"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ",
-          "wrap": true,
-          "size": "sm",
-          "color": "#333333"
-        }
-      ]
+[
+  {
+    "type": "flex",
+    "altText": "CPU ทำหน้าที่อะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧠 CPU คืออะไร?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "เลือก CPU ยังไงดี?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧠 สาระน่ารู้: เลือก CPU อย่างไร?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "CPU ทำหน้าที่ประมวลผลกลาง คล้ายกับสมองส่วนสั่งการครับ หากต้องการเปิดโปรแกรมหลายตัวพร้อมกัน หรือทำงานประมวลผลหนัก แนะนำให้เลือก CPU ที่มี Cores/Threads เยอะ เช่น Intel Core i5/i7 หรือ AMD Ryzen 5/7 ครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "ความสำคัญของ CPU ในการเล่นเกม",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧠 CPU กับการเล่นเกม",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "สำหรับสายเล่นเกม นอกจากการ์ดจอแล้ว ความเร็วสัญญาณนาฬิกา (Clock Speed / GHz) ของ CPU ก็สำคัญมากครับ เพราะจะช่วยให้การคำนวณเฟรมเรตในเกมมีความนิ่งและลื่นไหลไม่มีสะดุดครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
     }
   }
-}
+]

@@ -1,34 +1,104 @@
-{
-  "type": "flex",
-  "altText": "RAM ทำหน้าที่อะไร?",
-  "contents": {
-    "type": "bubble",
-    "header": {
-      "type": "box",
-      "layout": "vertical",
-      "backgroundColor": "#2C3E50",
-      "contents": [
-        {
-          "type": "text",
-          "text": "⚡ RAM (แรม) คืออะไร?",
-          "color": "#FFFFFF",
-          "weight": "bold",
-          "size": "lg"
-        }
-      ]
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "contents": [
-        {
-          "type": "text",
-          "text": "RAM (แรม) คือหน่วยความจำชั่วคราว ยิ่งมี RAM เยอะ (เช่น 16GB หรือ 32GB) คอมพิวเตอร์ก็จะสามารถเปิดหลายๆ โปรแกรมพร้อมกัน หรือเปิดแท็บเบราว์เซอร์เยอะๆ ได้โดยที่เครื่องไม่ค้างครับ",
-          "wrap": true,
-          "size": "sm",
-          "color": "#333333"
-        }
-      ]
+[
+  {
+    "type": "flex",
+    "altText": "RAM ทำหน้าที่อะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ RAM (แรม) คืออะไร?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "RAM (แรม) คือหน่วยความจำชั่วคราว ยิ่งมี RAM เยอะ (เช่น 16GB หรือ 32GB) คอมพิวเตอร์ก็จะสามารถเปิดหลายๆ โปรแกรมพร้อมกัน หรือเปิดแท็บเบราว์เซอร์เยอะๆ ได้โดยที่เครื่องไม่ค้างครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "ความแตกต่าง DDR4 กับ DDR5",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ สาระน่ารู้: DDR4 vs DDR5",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ปัจจุบันแรมมีทั้ง DDR4 และ DDR5 ครับ โดย DDR5 จะมีความเร็วบัสการรับส่งข้อมูล (Speed) ที่เร็วกว่า ประหยัดพลังงานมากกว่า แต่จะต้องใช้ร่วมกับเมนบอร์ดและ CPU รุ่นใหม่ที่รองรับเท่านั้น ไม่สามารถใส่ปนกันได้ครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "แรมเท่าไหร่ถึงจะพอใช้งาน?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ ควรเลือก RAM ขนาดเท่าไหร่ดี?",
+            "color": "#FFFFFF",
+            "weight": "bold",
+            "size": "lg"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ความจุ RAM เท่าไหร่ถึงจะพอในปัจจุบัน? ขนาด 8GB เหมาะกับการใช้งานเอกสาร/ท่องเว็บทั่วไป ขนาด 16GB เป็นมาตรฐานสำหรับการเล่นเกมยุคใหม่ ส่วนขนาด 32GB ขึ้นไป เหมาะกับสายตัดต่อกราฟิก ทำงาน 3D หรือสตรีมเกมครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          }
+        ]
+      }
     }
   }
-}
+]
