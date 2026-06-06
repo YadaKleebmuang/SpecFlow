@@ -41,11 +41,11 @@
       "header": {
         "type": "box",
         "layout": "vertical",
-        "backgroundColor": "#1ABC9C",
+        "backgroundColor": "#2C3E50",
         "contents": [
           {
             "type": "text",
-            "text": "🤖 SpecFlow ยินดีให้บริการค่ะ",
+            "text": "🤖 SpecFlow ยินดีให้บริการครับ",
             "color": "#FFFFFF",
             "weight": "bold",
             "size": "lg"
@@ -58,7 +58,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "สวัสดีค่ะ! วันนี้อยากให้หนูช่วยจัดคอม หรือวิเคราะห์อัปเกรดเครื่องดีคะ? พิมพ์บอกหนูได้เลยนะ",
+            "text": "สวัสดีครับ! วันนี้อยากให้ช่วยจัดคอม หรือวิเคราะห์อัปเกรดเครื่องดีครับ? พิมพ์บอกได้เลยนะครับ",
             "wrap": true,
             "size": "sm",
             "color": "#333333"

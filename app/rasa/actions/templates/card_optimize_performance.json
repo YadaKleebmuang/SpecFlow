@@ -6,7 +6,7 @@
     "header": {
       "type": "box",
       "layout": "vertical",
-      "backgroundColor": "#283747",
+      "backgroundColor": "#2C3E50",
       "contents": [
         {
           "type": "text",
