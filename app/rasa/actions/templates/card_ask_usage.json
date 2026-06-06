@@ -1,0 +1,32 @@
+{
+  "type": "text",
+  "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+  "quickReply": {
+    "items": [
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "เล่นเกม 🎮",
+          "text": "เล่นเกม"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "งานกราฟิก/วิดีโอ 🎨",
+          "text": "งานกราฟิก"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "งานสำนักงาน 💼",
+          "text": "งานสำนักงาน"
+        }
+      }
+    ]
+  }
+}

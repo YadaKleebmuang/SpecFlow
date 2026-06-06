@@ -1,0 +1,32 @@
+{
+  "type": "text",
+  "text": "ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (สามารถพิมพ์บอกหรือเลือกสเปคตัวอย่างด้านล่างได้เลยครับ) ⚙️",
+  "quickReply": {
+    "items": [
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "i3 Gen 4, 4GB, HDD",
+          "text": "i3 gen 4, ram 4gb, hdd 1tb"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "i5 Gen 8, 8GB, SSD",
+          "text": "i5 gen 8, ram 8gb, ssd 500gb"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "Ryzen 3, 8GB, HDD",
+          "text": "ryzen 3, ram 8gb, hdd 1tb"
+        }
+      }
+    ]
+  }
+}

@@ -302,3 +302,60 @@ class ActionRecommendUpgrade(Action):
             SlotSet("usage", None),
             SlotSet("current_specs", None)
         ]
+
+
+class ActionAskUsage(Action):
+    def name(self) -> Text:
+        return "action_ask_usage"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                card_payload = load_static_card("card_ask_usage.json")
+                dispatcher.utter_message(custom=card_payload)
+            except Exception as e:
+                print(f"Error loading ask_usage template: {e}")
+                dispatcher.utter_message(text="คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิกหรือวิดีโอ, งานสำนักงาน)")
+        else:
+            dispatcher.utter_message(text="คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิกหรือวิดีโอ, งานสำนักงาน)")
+        return []
+
+
+class ActionAskCurrentSpecs(Action):
+    def name(self) -> Text:
+        return "action_ask_current_specs"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                card_payload = load_static_card("card_ask_current_specs.json")
+                dispatcher.utter_message(custom=card_payload)
+            except Exception as e:
+                print(f"Error loading ask_current_specs template: {e}")
+                dispatcher.utter_message(text="ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (เช่น CPU, การ์ดจอ, แรม) พอบอกคร่าวๆ ได้ไหมครับ?")
+        else:
+            dispatcher.utter_message(text="ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (เช่น CPU, การ์ดจอ, แรม) พอบอกคร่าวๆ ได้ไหมครับ?")
+        return []
+
+
+class ActionAskFutureUpgrade(Action):
+    def name(self) -> Text:
+        return "action_ask_future_upgrade"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if tracker.get_latest_input_channel() == "line":
+            try:
+                card_payload = load_static_card("card_ask_future_upgrade.json")
+                dispatcher.utter_message(custom=card_payload)
+            except Exception as e:
+                print(f"Error loading ask_future_upgrade template: {e}")
+                dispatcher.utter_message(text="คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ")
+        else:
+            dispatcher.utter_message(text="คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ")
+        return []

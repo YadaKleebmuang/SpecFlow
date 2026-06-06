@@ -94,16 +94,10 @@ actions:
   - action_goodbye
   - action_faq
   - action_optimize_performance
+  - action_ask_usage
+  - action_ask_current_specs
+  - action_ask_future_upgrade
 
 responses:
   utter_ask_budget:
   - text: "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
-
-  utter_ask_usage:
-  - text: "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิกหรือวิดีโอ, งานสำนักงาน)"
-
-  utter_ask_current_specs:
-  - text: "ปัจจุบันคุณใช้คอมพิวเตอร์สเปคอะไรอยู่บ้างครับ? (เช่น CPU, การ์ดจอ, แรม) พอบอกคร่าวๆ ได้ไหมครับ?"
-
-  utter_ask_future_upgrade:
-  - text: "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"

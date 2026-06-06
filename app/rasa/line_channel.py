@@ -39,9 +39,14 @@ class LineOutput(OutputChannel):
 
     async def send_custom_json(self, recipient_id: Text, json_message: Dict[Text, Any], **kwargs: Any) -> None:
         try:
+            logger.info(f"Sending custom JSON to LINE: {json.dumps(json_message, ensure_ascii=False)}")
             if json_message.get("type") == "flex":
                 alt_text = json_message.get("altText", "This is a Flex Message")
                 message = FlexSendMessage(alt_text=alt_text, contents=json_message.get("contents"))
+                self.line_bot_api.push_message(recipient_id, message)
+            elif json_message.get("type") == "text":
+                # รองรับข้อความธรรมดาที่มี Quick Reply ด้วยโครงสร้างแบบ JSON
+                message = TextSendMessage.new_from_json_dict(json_message)
                 self.line_bot_api.push_message(recipient_id, message)
             else:
                 logger.warning(f"Unsupported custom message type: {json_message.get('type')}")
