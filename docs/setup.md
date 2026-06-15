@@ -21,6 +21,10 @@
      ```powershell
      .\venv\Scripts\activate.ps1
      ```
+   * **สำหรับ Git Bash (bash):**
+     ```bash
+     source venv/Scripts/activate
+     ```
    *(เมื่อสำเร็จ จะมีข้อความขึ้นต้นบรรทัดคำสั่งเป็น `(venv)` เสมอ เพื่อยืนยันว่าใช้ไลบรารีในระบบถูกต้องแล้ว)*
 
 ---

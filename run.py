@@ -76,7 +76,7 @@ try:
     print("2️⃣  กำลังเชื่อมต่อระบบ Ngrok Tunnel (Port: 5005)...")
     try:
         ngrok_process = subprocess.Popen(
-            ["ngrok", "http", "5005"],
+            ["C:\\Users\\thirs\\Downloads\\ngrok.exe", "http", "5005"],
             stdout=subprocess.DEVNULL,
             stderr=subprocess.STDOUT
         )
