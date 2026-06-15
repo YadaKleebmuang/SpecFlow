@@ -16,9 +16,27 @@ class SpecRecommender:
     def _parse_budget(self, budget_str: str) -> int:
         if not budget_str:
             return 0
-        digits = re.sub(r'[^\d]', '', budget_str)
+            
+        # ลบช่องว่างออกเพื่อการเปรียบเทียบคำภาษาไทยได้ง่ายขึ้น
+        budget_str_clean = budget_str.replace(" ", "")
+        
+        # ค้นหาตัวเลขในข้อความงบประมาณก่อน
+        digits = re.sub(r'[^\d]', '', budget_str_clean)
         if digits:
             return int(digits)
+            
+        # หากไม่มีตัวเลข ให้แปลความหมายคำพูดเชิงระดับงบประมาณ (ขอบเขต 1.4.1.3)
+        low_keywords = ['น้อย', 'ต่ำ', 'ประหยัด', 'เริ่มต้น', 'ไม่แพง', 'ถูก']
+        mid_keywords = ['ปานกลาง', 'กลาง', 'พอดี', 'ทั่วไป', 'กลางๆ']
+        high_keywords = ['สูง', 'เยอะ', 'แรง', 'จัดเต็ม', 'แพง', 'ไม่อั้น', 'สุด', 'แพงๆ']
+        
+        if any(w in budget_str_clean for w in low_keywords):
+            return 15000  # กำหนดงบประมาณระดับต่ำเริ่มต้นที่ 15,000 บาท
+        if any(w in budget_str_clean for w in mid_keywords):
+            return 30000  # กำหนดงบประมาณระดับกลางเริ่มต้นที่ 30,000 บาท
+        if any(w in budget_str_clean for w in high_keywords):
+            return 60000  # กำหนดงบประมาณระดับสูงเริ่มต้นที่ 60,000 บาท
+            
         return 0
 
     def _determine_usage_type(self, usage: str) -> str:
@@ -51,13 +69,18 @@ class SpecRecommender:
 
         usage_type = self._determine_usage_type(usage)
         
+        # ตรวจสอบความต้องการชิปกราฟิกในตัว (Integrated GPU) สำหรับงบประมาณระดับประหยัดต่ำกว่า 16,000 บาท
+        use_integrated = budget < 16000
+        
         # Layer 1: Budget Allocation
-        # เราแบ่งงบ 75% ให้กับอุปกรณ์หลัก (GPU, CPU, RAM, Storage) ตามสัดส่วนที่คุณระบุ
-        # และเหลือ 25% สำหรับส่วนที่เหลือ (Motherboard, PSU, Case, Cooler)
+        # แบ่งงบประมาณหลัก (Core Components) และงบส่วนอื่น (Secondary Components)
         core_budget = budget * 0.75
         other_budget = budget * 0.25
         
-        if usage_type == 'gaming':
+        if use_integrated:
+            # งบประหยัดมาก: ตัดค่าการ์ดจอแยกออกเป็น 0% เพื่อเอาไปลงกับ CPU (มีชิปจอในตัว), RAM, และ Storage แทน
+            alloc = {'gpu': 0.0, 'cpu': 0.45, 'ram': 0.25, 'storage': 0.30}
+        elif usage_type == 'gaming':
             alloc = {'gpu': 0.40, 'cpu': 0.30, 'ram': 0.15, 'storage': 0.15}
         elif usage_type == 'editing':
             alloc = {'gpu': 0.30, 'cpu': 0.35, 'ram': 0.20, 'storage': 0.15}
@@ -97,6 +120,10 @@ class SpecRecommender:
                 # Force newer sockets (AM5 or LGA1700)
                 if x.get('socket') not in ['AM5', 'LGA1700']:
                     return False
+            if use_integrated:
+                # Force CPUs with integrated graphics
+                if not x.get('integrated_graphics'):
+                    return False
             return True
             
         selected['cpu'] = get_best_part('cpu', budgets['cpu'], cpu_filter)
@@ -125,7 +152,10 @@ class SpecRecommender:
             return {"status": "error", "text": "ไม่พบ RAM ที่เข้ากันได้กับ Motherboard ในระบบครับ"}
             
         # 4. GPU
-        selected['gpu'] = get_best_part('gpu', budgets['gpu'])
+        if use_integrated:
+            selected['gpu'] = None
+        else:
+            selected['gpu'] = get_best_part('gpu', budgets['gpu'])
         
         # 5. Storage
         selected['storage'] = get_best_part('storage', budgets['storage'])
@@ -148,6 +178,8 @@ class SpecRecommender:
         
         # Build response
         response = f"จากงบประมาณ {budget:,} บาท และเน้นการใช้งาน {usage}\n"
+        if use_integrated:
+            response += f"*(ระบบเลือกใช้ CPU ที่มีชิปประมวลผลกราฟิกในตัว (Integrated GPU) เพื่อประหยัดงบและไม่ใช้การ์ดจอแยก)*\n"
         response += f"ผมได้จัดสรรงบและคัดกรองความเข้ากันได้ของอุปกรณ์ (Layer 1 & 2) ให้เรียบร้อยครับ:\n\n"
         response += f"💻 **สเปคที่แนะนำ** (ราคารวมประมาณ {total_price:,} บาท):\n"
         
