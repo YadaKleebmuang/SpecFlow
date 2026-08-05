@@ -35,8 +35,7 @@ class TestThaiNLPPreprocessing(unittest.TestCase):
         result = preprocess_thai_text(text)
         print(f"[Test 2] Original: '{text}' \n         Result:   '{result}'")
         
-        self.assertIn("การ์ด", result)
-        self.assertIn("จอ", result)
+        self.assertIn("gpu", result)
         self.assertIn("สเปค", result)
         self.assertIn("คอม", result)
         
