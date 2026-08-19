@@ -1,0 +1,69 @@
+version: "3.1"
+
+rules:
+- rule: Say hello whenever the user greets
+  steps:
+  - intent: greet
+  - action: action_greet
+
+- rule: Activate build_pc form
+  steps:
+  - intent: build_pc
+  - action: build_pc_form
+  - active_loop: build_pc_form
+
+- rule: Submit build_pc form
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - action: build_pc_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_recommend_pc
+
+- rule: Activate upgrade_pc form
+  steps:
+  - intent: upgrade_pc
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+
+- rule: Submit upgrade_pc form
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - action: upgrade_pc_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_recommend_upgrade
+
+- rule: Answer FAQ CPU
+  steps:
+  - intent: ask_cpu_info
+  - action: action_faq
+
+- rule: Answer FAQ GPU
+  steps:
+  - intent: ask_gpu_info
+  - action: action_faq
+
+- rule: Answer FAQ RAM
+  steps:
+  - intent: ask_ram_info
+  - action: action_faq
+
+- rule: Answer FAQ SSD vs HDD
+  steps:
+  - intent: ask_ssd_hdd_diff
+  - action: action_faq
+
+- rule: Provide Performance Optimization Advice
+  steps:
+  - intent: optimize_performance
+  - action: action_optimize_performance
+
+- rule: Say goodbye whenever the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: action_goodbye

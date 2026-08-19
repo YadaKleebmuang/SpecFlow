@@ -1,0 +1,103 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - build_pc
+  - upgrade_pc
+  - inform_budget
+  - inform_usage
+  - inform_current_specs
+  - ask_cpu_info
+  - ask_gpu_info
+  - ask_ram_info
+  - ask_ssd_hdd_diff
+  - optimize_performance
+  - inform_future_upgrade
+  - affirm
+  - deny
+entities:
+  - budget
+  - usage
+  - component_type
+  - future_upgrade
+
+slots:
+  budget:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: budget
+    - type: from_text
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: budget
+  usage:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: usage
+    - type: from_text
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: usage
+      - active_loop: upgrade_pc_form
+        requested_slot: usage
+  current_specs:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: upgrade_pc_form
+        requested_slot: current_specs
+  future_upgrade:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: from_intent
+      value: true
+      intent: affirm
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
+    - type: from_intent
+      value: true
+      intent: inform_future_upgrade
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
+    - type: from_intent
+      value: false
+      intent: deny
+      conditions:
+      - active_loop: build_pc_form
+        requested_slot: future_upgrade
+
+forms:
+  build_pc_form:
+    required_slots:
+      - budget
+      - usage
+      - future_upgrade
+  upgrade_pc_form:
+    required_slots:
+      - usage
+      - current_specs
+
+actions:
+  - action_recommend_pc
+  - action_recommend_upgrade
+  - action_greet
+  - action_goodbye
+  - action_faq
+  - action_optimize_performance
+  - action_ask_usage
+  - action_ask_current_specs
+  - action_ask_future_upgrade
+
+responses:
+  utter_ask_budget:
+  - text: "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
