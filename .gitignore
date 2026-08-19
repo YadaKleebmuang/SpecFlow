@@ -50,3 +50,4 @@ htmlcov/
 app/rasa/story_graph.dot
 app/rasa/graph.html
 
+.agents
