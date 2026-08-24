@@ -1,0 +1,105 @@
+{
+  "runtime_environment": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "nlu_pipeline": [
+    "thai_tokenizer.ThaiTokenizer",
+    "RegexFeaturizer",
+    "LexicalSyntacticFeaturizer",
+    "CountVectorsFeaturizer",
+    "CountVectorsFeaturizer",
+    "DIETClassifier",
+    "EntitySynonymMapper",
+    "ResponseSelector",
+    "FallbackClassifier"
+  ],
+  "dialogue_policies": [
+    "MemoizationPolicy",
+    "RulePolicy",
+    "UnexpecTEDIntentPolicy",
+    "TEDPolicy"
+  ],
+  "intents_count": 15,
+  "intents": [
+    "greet",
+    "goodbye",
+    "build_pc",
+    "upgrade_pc",
+    "inform_budget",
+    "inform_usage",
+    "inform_current_specs",
+    "ask_cpu_info",
+    "ask_gpu_info",
+    "ask_ram_info",
+    "ask_ssd_hdd_diff",
+    "optimize_performance",
+    "inform_future_upgrade",
+    "affirm",
+    "deny"
+  ],
+  "entities_count": 4,
+  "entities": [
+    "budget",
+    "usage",
+    "component_type",
+    "future_upgrade"
+  ],
+  "slots_count": 4,
+  "slots": [
+    "budget",
+    "usage",
+    "current_specs",
+    "future_upgrade"
+  ],
+  "forms_count": 2,
+  "forms": [
+    "build_pc_form",
+    "upgrade_pc_form"
+  ],
+  "custom_actions": [
+    "action_recommend_pc",
+    "action_recommend_upgrade",
+    "action_cpu_info",
+    "action_gpu_info",
+    "action_ram_info",
+    "action_ssd_hdd_diff",
+    "action_optimize_performance"
+  ],
+  "hardware_database": {
+    "path": "app/services/recommendation/hardware_db.json",
+    "sha256": "341659f6384ee83ebb803964c8c7a6bb06f249aa345a59b0ea540f16529245b4",
+    "total_records": 64,
+    "category_counts": {
+      "cpu": 14,
+      "gpu": 12,
+      "motherboard": 10,
+      "ram": 8,
+      "storage": 5,
+      "psu": 6,
+      "case": 5,
+      "cooler": 4
+    }
+  },
+  "analytics_database": {
+    "path": "data/analytics.db",
+    "table": "user_searches",
+    "columns": [
+      "id",
+      "timestamp",
+      "user_id",
+      "usage_type",
+      "budget_requested",
+      "allocated_total_price"
+    ],
+    "storage_scope": "STRUCTURED_AGGREGATE_METRICS_ONLY (No raw personal chat transcripts)"
+  },
+  "fallback_configuration": {
+    "classifier": "FallbackClassifier",
+    "threshold": 0.3,
+    "ambiguity_threshold": 0.1,
+    "rule": "nlu_fallback -> utter_fallback"
+  }
+}

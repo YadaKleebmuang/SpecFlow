@@ -1,0 +1,53 @@
+{
+  "fold": 2,
+  "train_path": "cv_folds/fold_2/train/nlu.yml",
+  "train_sha256": "cbb208e5ba762b0b3cf38004e70078cbb80d98bdd9330eebae64a500dfeb7d46",
+  "validation_path": "cv_folds/fold_2/val.yml",
+  "validation_sha256": "4e2a31c80d24ffbae5864d5e23ddbc216763af73f0d4ac0f76ed98d4bfe8274c",
+  "validation_rows": 160,
+  "model_path": "cv_results/model_fold_2/nlu-20260820-135515-lenient-stock.tar.gz",
+  "model_size_bytes": 38612466,
+  "model_sha256": "747387d1b8e6d4bf15828713acd34085d1d97eec94a1f64a5bc008f0d20be6a5",
+  "model_mtime": 1787211599,
+  "training_exit_code": "EXIT_CODE_NOT_PERSISTED",
+  "existing_intent_report_path": "cv_results/fold_2/intent_report.json",
+  "fresh_intent_report_path": "tmp_salvage/fold_2/candidate_nlu-20260820-135515-lenient-stock/intent_report.json",
+  "fresh_inference_exit_code": 0,
+  "prediction_csv_path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-2-predictions.csv",
+  "prediction_csv_size_bytes": 85642,
+  "prediction_csv_sha256": "3d7f60fd14fc0ca6ef9905bfd20dd36c1b738ad5915f373ac5723fdb031908fd",
+  "prediction_rows": 160,
+  "unique_example_ids": 160,
+  "prediction_vector_sha256": "c86a4048fd9c1bea6100a8e97f40b19a059838d99eb2fe2ff41cc29db4dd10cf",
+  "prediction_vector_hash_method": "sha256_canonical_json_v1",
+  "correct": 147,
+  "errors": 13,
+  "accuracy": 0.91875,
+  "macro_precision": 0.9470766488413548,
+  "macro_recall": 0.8942209198431087,
+  "macro_f1": 0.9080507063628088,
+  "weighted_precision": 0.9258840240641713,
+  "weighted_recall": 0.91875,
+  "weighted_f1": 0.9156396368568839,
+  "metric_reconciliation_max_delta": 2.220446049250313e-16,
+  "model_selection_status": "EQUIVALENT_ON_VALIDATION",
+  "model_selection_basis": "identical_160_prediction_vectors_across_2_candidates_selected_canonical_first",
+  "candidate_models_checked": [
+    "cv_results/model_fold_2/nlu-20260820-135515-lenient-stock.tar.gz",
+    "cv_results/model_fold_2/nlu-20260820-144005-average-himalayan.tar.gz"
+  ],
+  "matching_candidates": [
+    "cv_results/model_fold_2/nlu-20260820-135515-lenient-stock.tar.gz",
+    "cv_results/model_fold_2/nlu-20260820-144005-average-himalayan.tar.gz"
+  ],
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "holdout_evaluated": false,
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4",
+    "thai_tokenizer_import": "PASS"
+  }
+}

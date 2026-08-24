@@ -1,0 +1,112 @@
+{
+  "run_id": "run-20260825-012754",
+  "timestamp": "2026-08-25T01:28:10.567083+07:00",
+  "final_model": {
+    "path": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "sha256": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7",
+    "load_verified": true
+  },
+  "freeze_manifest": {
+    "path": "docs/final-readiness/final-configuration-freeze/final-configuration-freeze-manifest.json",
+    "sha256": "aaa9aaf7408032147995bd42c1f1ed822d26bc837e405c093727a0843769cc2c"
+  },
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "test_cases": [
+    {
+      "case_id": "RT-01",
+      "objective": "Final Model Load",
+      "status": "PASS",
+      "evidence": "Agent loaded in 12.08s, is_ready=True"
+    },
+    {
+      "case_id": "RT-02",
+      "objective": "build_pc_form flow",
+      "status": "PASS",
+      "evidence": "Activated, slot progression (budget='35000', usage='ทำงานกราฟิก ตัดต่อวิดีโอ'), completed, executed action_recommend_pc"
+    },
+    {
+      "case_id": "RT-03",
+      "objective": "upgrade_pc_form flow",
+      "status": "PASS",
+      "evidence": "Activated, slot progression (usage='เล่นเกมหนักๆ สตรีมมิ่ง', current_specs='ryzen 5 3600...'), completed, executed action_recommend_upgrade"
+    },
+    {
+      "case_id": "RT-04",
+      "objective": "nlu_fallback NLU activation",
+      "status": "PASS",
+      "evidence": "Out-of-scope messages mapped to nlu_fallback with low confidence (conf < 0.3)"
+    },
+    {
+      "case_id": "RT-05",
+      "objective": "fallback dialogue handling",
+      "status": "PASS",
+      "evidence": "Rule 'Handle NLU fallback' executed utter_fallback response"
+    },
+    {
+      "case_id": "RT-06",
+      "objective": "Custom Action Server integration",
+      "status": "PASS",
+      "evidence": "Communication with Action Server verified for action_recommend_pc and action_recommend_upgrade"
+    },
+    {
+      "case_id": "RT-07",
+      "objective": "Build recommendation response sanity",
+      "status": "PASS",
+      "evidence": "Valid PC build specification and component recommendations returned"
+    },
+    {
+      "case_id": "RT-08",
+      "objective": "Upgrade recommendation response sanity",
+      "status": "PASS",
+      "evidence": "Valid hardware upgrade advice and cost estimation returned"
+    }
+  ],
+  "forms": {
+    "build_pc_form": {
+      "activated": true,
+      "slot_progression_verified": true,
+      "completed": true,
+      "post_form_action": "action_recommend_pc"
+    },
+    "upgrade_pc_form": {
+      "activated": true,
+      "slot_progression_verified": true,
+      "completed": true,
+      "post_form_action": "action_recommend_upgrade"
+    }
+  },
+  "fallback": {
+    "threshold": 0.3,
+    "ambiguity_threshold": 0.1,
+    "nlu_fallback_emitted": true,
+    "dialogue_handler": "utter_fallback",
+    "runtime_verified": true
+  },
+  "action_server": {
+    "required": true,
+    "started": true,
+    "reachable": true,
+    "relevant_actions_verified": [
+      "action_recommend_pc",
+      "action_recommend_upgrade"
+    ]
+  },
+  "recommendation_sanity": {
+    "build": "PASS",
+    "upgrade": "PASS"
+  },
+  "protected_shas": {
+    "development": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+    "oof": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+    "holdout": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "final_model": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7"
+  },
+  "training_executed": false,
+  "holdout_used": false,
+  "final_model_runtime_verified": true
+}

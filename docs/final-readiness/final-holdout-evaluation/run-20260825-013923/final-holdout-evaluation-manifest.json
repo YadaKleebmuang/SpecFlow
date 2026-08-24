@@ -1,0 +1,84 @@
+{
+  "evaluation_id": "specflow_final_holdout_v1",
+  "evaluation_type": "ONE_TIME_LOCKED_HOLDOUT_FINAL_TEST",
+  "evaluation_start_timestamp": "2026-08-25T01:39:23.450300+07:00",
+  "evaluation_end_timestamp": "2026-08-25T01:39:56.332508+07:00",
+  "elapsed_seconds": 32.88,
+  "evaluation_invocation_count": 1,
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "pre_holdout_authorization": {
+    "path": "docs/final-readiness/pre-holdout-gate/pre-holdout-authorization.json",
+    "sha256": "88f56ea96fa89ae5e900c58787b116bcd95a4f3e824106ac226aa314aa22a827"
+  },
+  "final_configuration": {
+    "manifest": "docs/final-readiness/final-configuration-freeze/final-configuration-freeze-manifest.json",
+    "sha256": "aaa9aaf7408032147995bd42c1f1ed822d26bc837e405c093727a0843769cc2c"
+  },
+  "final_model": {
+    "path": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "sha256": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7",
+    "size_bytes": 43774326
+  },
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+  },
+  "holdout": {
+    "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+    "rows": 200,
+    "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "prior_evaluated": false,
+    "evaluation_count": 1
+  },
+  "predictions": {
+    "path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-predictions.csv",
+    "rows": 200,
+    "unique_ids": 200,
+    "sha256": "0e66bff74a2f4e6be050f62ca415d1fbed673d3745b5257da6c1ae75c5cd6f91"
+  },
+  "intent_metrics": {
+    "accuracy": 0.705,
+    "macro_precision": 0.7883120266015005,
+    "macro_recall": 0.7151589126071884,
+    "macro_f1": 0.725649643586579,
+    "weighted_precision": 0.7531225253231832,
+    "weighted_recall": 0.705,
+    "weighted_f1": 0.700277160329951,
+    "per_intent_metrics_path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-per-intent-metrics.csv"
+  },
+  "confusion_matrix": {
+    "json_path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-confusion-matrix.json",
+    "png_path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-confusion-matrix.png",
+    "total": 200,
+    "diagonal": 141,
+    "off_diagonal": 59
+  },
+  "errors": {
+    "path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-errors.csv",
+    "rows": 59
+  },
+  "fallback": {
+    "count": 10,
+    "rate": 0.05,
+    "availability": "EXPOSED_IN_INTENT_OUTPUT"
+  },
+  "entity_evaluation": {
+    "availability": "AVAILABLE",
+    "metric_semantics": "token_level_entity_classification",
+    "artifact_path": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/holdout-entity-evidence.json",
+    "macro_f1": 0.08,
+    "weighted_f1": 0.08
+  },
+  "development_holdout_exact_overlap": 0,
+  "model_selection_closed": true,
+  "tuning_after_holdout_allowed": false,
+  "training_executed": false,
+  "development_modified": false,
+  "configuration_modified": false,
+  "final_model_modified": false
+}

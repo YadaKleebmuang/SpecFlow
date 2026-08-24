@@ -1,0 +1,44 @@
+{
+  "decision_id": "development_error_decision_v1",
+  "development_path": "app/rasa/data/nlu.yml",
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "oof_path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+  "oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+  "error_analysis_manifest_path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/error-analysis-manifest.json",
+  "error_analysis_manifest_sha256": "5ee255873fe448178d9fefe07ad0c91b3586564d038fe2292ba7f6602b57c798",
+  "errors_analyzed": 70,
+  "annotation_issues": 0,
+  "training_coverage_gap_count": 5,
+  "systematic_pattern_count": 5,
+  "pattern_decisions": {
+    "PAT-01": "DOCUMENTATION_CLARIFICATION_REQUIRED (Prospective vs. immediate upgrade boundary clarified in guidelines; no NLU change)",
+    "PAT-02": "DIALOGUE_RUNTIME_TEST_REQUIRED (Compound budget+goal expressions resolved via runtime Form slot extractors; no NLU change)",
+    "PAT-03": "DIALOGUE_RUNTIME_TEST_REQUIRED (Context-dependent single-turn slot fragments resolved via Form active loops; dedicated Form test required)",
+    "PAT-04": "NO_CHANGE_REQUIRED (Accepted lexical bag-of-words / n-gram component dominance limitation in static single turns)",
+    "PAT-05": "NO_CHANGE_REQUIRED (Accepted sparse conversational greeting/farewell outliers; no post-hoc dataset distortion)"
+  },
+  "development_dataset_change_required": false,
+  "nlu_pipeline_tuning_required": false,
+  "annotation_change_required": false,
+  "form_runtime_verification_required": true,
+  "primary_decision": "ACCEPT CURRENT BASELINE NLU (NO DEVELOPMENT DATASET CHANGE REQUIRED, NO NLU PIPELINE TUNING REQUIRED)",
+  "decision_rationale": "Stratified 5-Fold CV establishes a strong, verified 91.25% Accuracy and 0.9136 Macro F1 baseline on Development 800 with 0 annotation errors. The 70 OOF errors consist of multi-intent compound utterances (24.3%), surface lexical overlaps (24.3%), isolated form slot fragments (21.4%), and natural semantic boundary overlap (18.6%). These represent acceptable model boundaries and runtime-mitigated dialogue behaviors. Modifying data or tuning parameters to force fit these 70 cases would risk distribution distortion and overfitting before the locked Holdout evaluation.",
+  "accepted_limitations": [
+    "Semantic boundary overlap between prospective future upgrade and immediate upgrade requests",
+    "Compound multi-intent utterances combining budget figures and build/upgrade desires in a single turn",
+    "Context-dependent isolated slot fragments evaluated without preceding dialogue tracker context",
+    "Lexical dominance of specific hardware component names in bag-of-words featurizers",
+    "Sparse colloquial phrasing in short conversational greetings and farewells",
+    "Inherent statistical generalization errors on subtle linguistic variations"
+  ],
+  "separate_non_nlu_must_items": [
+    "Credential Security Refactoring (Replace hardcoded tokens in credentials.yml with environment variable interpolation)",
+    "Fallback Rule Wiring (Wire nlu_fallback rule in rules.yml to handle out-of-scope utterances gracefully)",
+    "Form Runtime Verification (Execute automated form tracker test suite to physically verify runtime slot-fragment handling)"
+  ],
+  "holdout_used": false,
+  "training_executed": false,
+  "development_modified": false,
+  "config_modified": false,
+  "rules_modified": false
+}

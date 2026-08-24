@@ -1,0 +1,322 @@
+{
+  "freeze_id": "specflow_final_configuration_v1",
+  "freeze_timestamp": "2026-08-25T00:15:40.857568+07:00",
+  "repository_root": "/Users/ploy/Desktop/mini_project/SpecFlow",
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "rows": 800,
+    "intents": 15,
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+    "status": "FINAL_LOCKED"
+  },
+  "holdout": {
+    "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+    "rows": 200,
+    "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "evaluated": false,
+    "status": "LOCKED_UNEVALUATED"
+  },
+  "baseline_oof": {
+    "path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+    "sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+    "status": "FINAL_LOCKED"
+  },
+  "error_decision": {
+    "primary_decision": "ACCEPT CURRENT BASELINE NLU",
+    "development_dataset_change_required": false,
+    "nlu_pipeline_tuning_required": false
+  },
+  "training_inputs": [
+    {
+      "path": "app/rasa/config.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 1295,
+      "sha256": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0"
+    },
+    {
+      "path": "app/rasa/domain.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 2618,
+      "sha256": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857"
+    },
+    {
+      "path": "app/rasa/data/nlu.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 252131,
+      "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+    },
+    {
+      "path": "app/rasa/data/rules.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 1455,
+      "sha256": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5"
+    },
+    {
+      "path": "app/rasa/data/stories.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 92,
+      "sha256": "45e869d2b571bec45926228cf9537d099b3d6002484a985a0bcf09913c492985"
+    }
+  ],
+  "config": {
+    "path": "app/rasa/config.yml",
+    "sha256": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0",
+    "pipeline": [
+      {
+        "name": "thai_tokenizer.ThaiTokenizer"
+      },
+      {
+        "name": "RegexFeaturizer"
+      },
+      {
+        "name": "LexicalSyntacticFeaturizer"
+      },
+      {
+        "name": "CountVectorsFeaturizer"
+      },
+      {
+        "name": "CountVectorsFeaturizer",
+        "analyzer": "char_wb",
+        "min_ngram": 1,
+        "max_ngram": 4
+      },
+      {
+        "name": "DIETClassifier",
+        "epochs": 100,
+        "constrain_similarities": true
+      },
+      {
+        "name": "EntitySynonymMapper"
+      },
+      {
+        "name": "ResponseSelector",
+        "epochs": 100,
+        "constrain_similarities": true
+      },
+      {
+        "name": "FallbackClassifier",
+        "threshold": 0.3,
+        "ambiguity_threshold": 0.1
+      }
+    ],
+    "policies": [
+      {
+        "name": "MemoizationPolicy"
+      },
+      {
+        "name": "RulePolicy"
+      },
+      {
+        "name": "UnexpecTEDIntentPolicy",
+        "max_history": 5,
+        "epochs": 100
+      },
+      {
+        "name": "TEDPolicy",
+        "max_history": 5,
+        "epochs": 100,
+        "constrain_similarities": true
+      }
+    ]
+  },
+  "domain": {
+    "path": "app/rasa/domain.yml",
+    "sha256": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857",
+    "counts": {
+      "intents": 15,
+      "entities": 4,
+      "slots": 4,
+      "forms": 2,
+      "actions": 9,
+      "responses": 2
+    }
+  },
+  "rules": {
+    "path": "app/rasa/data/rules.yml",
+    "sha256": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5",
+    "fallback_wired": true,
+    "total_rules": 12
+  },
+  "dialogue_training_files": [
+    "app/rasa/data/rules.yml",
+    "app/rasa/data/stories.yml"
+  ],
+  "hardware_db": {
+    "path": "app/services/recommendation/hardware_db.json",
+    "sha256": "341659f6384ee83ebb803964c8c7a6bb06f249aa345a59b0ea540f16529245b4",
+    "total_records": 64,
+    "category_counts": {
+      "cpu": 14,
+      "gpu": 12,
+      "motherboard": 10,
+      "ram": 8,
+      "storage": 5,
+      "psu": 6,
+      "case": 5,
+      "cooler": 4
+    }
+  },
+  "preprocessing": {
+    "thai_tokenizer_path": "app/rasa/thai_tokenizer.py",
+    "thai_tokenizer_sha256": "5e08d295028634e1797afc8f703bb354babea7220235c2d387a7c1d50a06dde6",
+    "engine": "pythainlp.word_tokenize(engine='newmm')",
+    "typo_dict_path": "app/services/nlp/typo_dict.json",
+    "typo_dict_count": 35,
+    "custom_stopwords_count": 30
+  },
+  "security": {
+    "credentials_path": "app/rasa/credentials.yml",
+    "credentials_sha256": "c065d11a89bebb9beb4cf213eb82aba34ad156b3f01805fc942b0c93ea71945a",
+    "current_tracked_active_secrets": 0,
+    "environment_variable_names": [
+      "LINE_CHANNEL_SECRET",
+      "LINE_CHANNEL_ACCESS_TOKEN"
+    ],
+    "credential_rotation_required": true,
+    "credential_rotation_completed": false
+  },
+  "fallback": {
+    "threshold": 0.3,
+    "ambiguity_threshold": 0.1,
+    "intent": "nlu_fallback",
+    "handler": "utter_fallback",
+    "static_wiring_verified": true,
+    "final_model_runtime_verified": false
+  },
+  "forms": {
+    "build_pc_form_present": true,
+    "upgrade_pc_form_present": true,
+    "final_model_runtime_verified": false
+  },
+  "tests": {
+    "rasa_data_validate_exit_code": 0,
+    "tests_run": 13,
+    "passed": 13,
+    "failed": 0,
+    "skipped": 0
+  },
+  "response_selector": {
+    "configured": true,
+    "retrieval_intents_present": false,
+    "runtime_role": "UNUSED_FOR_FAQ_RETRIEVAL"
+  },
+  "frozen_files": [
+    {
+      "path": "app/rasa/config.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 1295,
+      "sha256": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0"
+    },
+    {
+      "path": "app/rasa/domain.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 2618,
+      "sha256": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857"
+    },
+    {
+      "path": "app/rasa/data/nlu.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 252131,
+      "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+    },
+    {
+      "path": "app/rasa/data/rules.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 1455,
+      "sha256": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5"
+    },
+    {
+      "path": "app/rasa/data/stories.yml",
+      "classification": "TRAINING_INPUT",
+      "size_bytes": 92,
+      "sha256": "45e869d2b571bec45926228cf9537d099b3d6002484a985a0bcf09913c492985"
+    },
+    {
+      "path": "app/rasa/thai_tokenizer.py",
+      "classification": "NLU_RUNTIME_SOURCE",
+      "size_bytes": 1883,
+      "sha256": "5e08d295028634e1797afc8f703bb354babea7220235c2d387a7c1d50a06dde6"
+    },
+    {
+      "path": "app/services/nlp/preprocessing.py",
+      "classification": "PREPROCESSING_SOURCE",
+      "size_bytes": 4393,
+      "sha256": "2ddb512a71faadcd52cade5603f136900bba06d0bab2a14937b524af2f857b41"
+    },
+    {
+      "path": "app/services/nlp/typo_dict.json",
+      "classification": "PREPROCESSING_SOURCE",
+      "size_bytes": 1330,
+      "sha256": "b3efa3268e7a9b8be54b7f02531652f17e61a5975d65d1e765721a6a85b4fecb"
+    },
+    {
+      "path": "app/rasa/line_channel.py",
+      "classification": "LINE_CHANNEL_SOURCE",
+      "size_bytes": 5428,
+      "sha256": "d24ac03290d3c04bbab82500288e71955101dcae0aab81c8bfb46a2b0727da8d"
+    },
+    {
+      "path": "app/rasa/actions/actions.py",
+      "classification": "ACTION_SOURCE",
+      "size_bytes": 26527,
+      "sha256": "4ec2276851bd74a1b0ce257479c1c4fe4cc04d32f6d0c586c6272801938b9acd"
+    },
+    {
+      "path": "app/services/recommendation/spec_recommender.py",
+      "classification": "RECOMMENDATION_SOURCE",
+      "size_bytes": 12996,
+      "sha256": "732fe38630ad63acbb2af5be26a3cbaad57efdb764e48e15686a40463e554968"
+    },
+    {
+      "path": "app/services/recommendation/upgrade_advisor.py",
+      "classification": "RECOMMENDATION_SOURCE",
+      "size_bytes": 10422,
+      "sha256": "5967e5a77a8849ad172fe83d78e8d019beaf068d69736a8f0f9df41ee46c15f1"
+    },
+    {
+      "path": "app/rasa/actions/flex.py",
+      "classification": "ACTION_SOURCE",
+      "size_bytes": 7074,
+      "sha256": "4fd2f324a6c565aa9f59f9d9349668e4c23e1efb36c7865e412c93afeecce75e"
+    },
+    {
+      "path": "app/services/recommendation/hardware_db.json",
+      "classification": "HARDWARE_DATA",
+      "size_bytes": 10885,
+      "sha256": "341659f6384ee83ebb803964c8c7a6bb06f249aa345a59b0ea540f16529245b4"
+    },
+    {
+      "path": "app/rasa/credentials.yml",
+      "classification": "SECURITY_CONFIG",
+      "size_bytes": 228,
+      "sha256": "c065d11a89bebb9beb4cf213eb82aba34ad156b3f01805fc942b0c93ea71945a"
+    },
+    {
+      "path": "app/rasa/endpoints.yml",
+      "classification": "SECURITY_CONFIG",
+      "size_bytes": 57,
+      "sha256": "86ff2cecaae39f2d4b569c3c9d171f6dcb1b0555aff104679ddc404647eaae49"
+    },
+    {
+      "path": ".env.example",
+      "classification": "SECURITY_CONFIG",
+      "size_bytes": 211,
+      "sha256": "052fdadc2a6e641df188b3a623e35689b5807d0a880c7b24f7a0f341154464f4"
+    },
+    {
+      "path": ".gitignore",
+      "classification": "SECURITY_CONFIG",
+      "size_bytes": 1289,
+      "sha256": "5d691af74ebac702908d9aecccfbd676239640386e824b0e184df12b2a284161"
+    }
+  ],
+  "final_training_ready": true,
+  "training_executed": false,
+  "holdout_used": false
+}

@@ -67,3 +67,8 @@ rules:
   steps:
   - intent: goodbye
   - action: action_goodbye
+
+- rule: Handle NLU fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback

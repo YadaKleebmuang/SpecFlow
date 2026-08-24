@@ -1,0 +1,89 @@
+{
+  "gate_id": "specflow_pre_holdout_gate_v1",
+  "timestamp": "2026-08-25T01:33:45.980014+07:00",
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "rows": 800,
+    "intents": 15,
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+    "status": "FINAL_LOCKED"
+  },
+  "holdout": {
+    "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+    "rows": 200,
+    "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "evaluated_before_gate": false,
+    "tuning_usage": false,
+    "status": "LOCKED_UNEVALUATED"
+  },
+  "baseline_cv": {
+    "oof_path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+    "oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+    "accuracy": 0.9125,
+    "macro_f1": 0.91355855,
+    "status": "FINAL_LOCKED"
+  },
+  "error_decision": {
+    "status": "CLOSED",
+    "primary_decision": "ACCEPT CURRENT BASELINE NLU (NO DEVELOPMENT DATASET CHANGE REQUIRED, NO NLU PIPELINE TUNING REQUIRED)",
+    "development_change_required": false,
+    "nlu_tuning_required": false
+  },
+  "entity_baseline": {
+    "evidence_manifest": "docs/dataset-engineering/entity-evaluation/baseline/entity-baseline-evidence-manifest.json",
+    "evidence_manifest_sha256": "c40c1bf5227271aa57da4fd92dd487c65de5b59d11d7a3f9ad1661f66497c4fc",
+    "aggregate_status": "AUTHORITATIVE ENTITY 5-FOLD AGGREGATION POSSIBLE",
+    "metric_semantics": "TOKEN_LEVEL_DIET_EVALUATION",
+    "chapter4_reporting_approved": true
+  },
+  "final_configuration": {
+    "manifest": "docs/final-readiness/final-configuration-freeze/final-configuration-freeze-manifest.json",
+    "sha256": "aaa9aaf7408032147995bd42c1f1ed822d26bc837e405c093727a0843769cc2c",
+    "frozen_input_shas": {
+      "config.yml": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0",
+      "domain.yml": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857",
+      "nlu.yml": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+      "rules.yml": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5",
+      "stories.yml": "45e869d2b571bec45926228cf9537d099b3d6002484a985a0bcf09913c492985"
+    },
+    "status": "LOCKED"
+  },
+  "final_model": {
+    "path": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "sha256": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7",
+    "training_manifest": "docs/final-readiness/final-model-training/run-20260825-001846/final-model-training-manifest.json",
+    "training_manifest_sha256": "4bd8ef1f1879c093c0be00abff0737e3f8512d82e10e00325dedddf62aea121c",
+    "status": "FINAL_LOCKED"
+  },
+  "runtime_verification": {
+    "manifest": "docs/final-readiness/final-model-runtime-verification/run-20260825-012754/final-model-runtime-verification-manifest.json",
+    "sha256": "15056ebdb4290af0ca09f8a9702faca45c00195f05c14a14ce218313ca849939",
+    "total_tests": 8,
+    "passed": 8,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "fallback": {
+    "threshold": 0.3,
+    "ambiguity_threshold": 0.1,
+    "rule": "nlu_fallback -> utter_fallback",
+    "runtime_verified": true
+  },
+  "security": {
+    "current_active_secrets": 0,
+    "environment_variable_loading": true,
+    "credential_rotation_required": true,
+    "credential_rotation_completed": false,
+    "blocks_offline_holdout_evaluation": false
+  },
+  "open_decisions": {
+    "development_change": false,
+    "nlu_tuning": false,
+    "model_selection": false,
+    "configuration_change": false
+  },
+  "holdout_one_time_policy_acknowledged": true,
+  "training_executed_during_gate": false,
+  "holdout_evaluated_during_gate": false,
+  "authorization": "AUTHORIZED FOR ONE-TIME LOCKED HOLDOUT 200 EVALUATION"
+}

@@ -1,0 +1,24 @@
+{
+  "evaluation_level": "token_level_entity_classification",
+  "gold_spans_total": 15,
+  "gold_spans_by_entity": {
+    "budget": 15
+  },
+  "token_level_support_total": 15,
+  "macro_precision": 0.1,
+  "macro_recall": 0.06666666666666667,
+  "macro_f1": 0.08,
+  "weighted_precision": 0.1,
+  "weighted_recall": 0.06666666666666667,
+  "weighted_f1": 0.08,
+  "micro_f1": 0.08,
+  "per_entity": {
+    "budget": {
+      "precision": 0.1,
+      "recall": 0.06666666666666667,
+      "f1-score": 0.08,
+      "support": 15,
+      "confused_with": {}
+    }
+  }
+}

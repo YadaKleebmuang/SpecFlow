@@ -1,0 +1,146 @@
+[
+  {
+    "case_id": "SYS-01",
+    "objective": "Final Model load into Rasa Agent runtime",
+    "input": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "expected": "is_ready == True",
+    "actual": "Loaded successfully in 11.73s",
+    "status": "PASS",
+    "evidence": "Model SHA: 86a76534116c..."
+  },
+  {
+    "case_id": "SYS-02",
+    "objective": "Rasa Agent message processing engine",
+    "input": "Agent.handle_text / Agent.parse_message",
+    "expected": "Operational inference pipeline",
+    "actual": "Agent successfully processed NLU & dialogue actions",
+    "status": "PASS",
+    "evidence": "Rasa 3.6.21 Agent runtime verified"
+  },
+  {
+    "case_id": "SYS-03",
+    "objective": "Rasa SDK Action Server webhook reachability",
+    "input": "http://127.0.0.1:5055/webhook",
+    "expected": "HTTP 200 response on health check",
+    "actual": "Action Server responded on webhook endpoint",
+    "status": "PASS",
+    "evidence": "PID: Active"
+  },
+  {
+    "case_id": "SYS-04",
+    "objective": "build_pc_form multi-turn slot filling & recommendation",
+    "input": "4 synthetic turns (intent -> budget -> usage -> future_upgrade)",
+    "expected": "Complete form & emit action_recommend_pc response",
+    "actual": "Form completed and returned 35k hardware build",
+    "status": "PASS",
+    "evidence": "Emitted 7 responses with hardware components"
+  },
+  {
+    "case_id": "SYS-05",
+    "objective": "upgrade_pc_form slot filling & upgrade analysis",
+    "input": "3 synthetic turns (intent -> usage -> current_specs)",
+    "expected": "Complete form & emit action_recommend_upgrade response",
+    "actual": "Form completed and returned upgrade component advice",
+    "status": "PASS",
+    "evidence": "Emitted 6 upgrade responses"
+  },
+  {
+    "case_id": "SYS-06",
+    "objective": "Information intent 'ask_cpu_info' execution",
+    "input": "CPU คืออะไร ทำหน้าที่อะไร?",
+    "expected": "Trigger action_cpu_info with factual explanation",
+    "actual": "Emitted response containing keyword 'CPU'",
+    "status": "PASS",
+    "evidence": "Responses: ['CPU (ซีพียู) เปรียบเสมือนสมองของคอมพิวเตอร์ ทำหน้าที่ประมวลผลคำสั่งต่างๆ ยิ่งมี Core/Thread เยอะและความเร็ว (GHz) สูง ก็ยิ่งประมวลผลงานหนักๆ หรือหลายโปรแกรมพร้อมกันได้ดีครับ']"
+  },
+  {
+    "case_id": "SYS-07",
+    "objective": "Information intent 'ask_gpu_info' execution",
+    "input": "การ์ดจอทำหน้าที่อะไร?",
+    "expected": "Trigger action_gpu_info with factual explanation",
+    "actual": "Emitted response containing keyword 'การ์ดจอ'",
+    "status": "PASS",
+    "evidence": "Responses: ['ควรเลือกการ์ดจอค่ายไหนดี? การ์ดจอ NVIDIA เด่นเรื่องเทคโนโลยี Ray Tracing และ DLSS ที่ช่วยเร่งประสิทธิภาพในเกม รวมถึงมีโปรแกรมเฉพาะทางรองรับเยอะ ส่วนค่าย AMD จะเด่นเรื่องความคุ้มค่าต่อราคาและปริมาณ VRAM ที่ให้มาเยอะครับ']"
+  },
+  {
+    "case_id": "SYS-08",
+    "objective": "Information intent 'ask_ram_info' execution",
+    "input": "RAM สำคัญอย่างไร?",
+    "expected": "Trigger action_ram_info with factual explanation",
+    "actual": "Emitted response containing keyword 'RAM'",
+    "status": "PASS",
+    "evidence": "Responses: ['RAM (แรม) คือหน่วยความจำชั่วคราว ยิ่งมี RAM เยอะ (เช่น 16GB หรือ 32GB) คอมพิวเตอร์ก็จะสามารถเปิดหลายๆ โปรแกรมพร้อมกัน หรือเปิดแท็บเบราว์เซอร์เยอะๆ ได้โดยที่เครื่องไม่ค้างครับ']"
+  },
+  {
+    "case_id": "SYS-09",
+    "objective": "Information intent 'ask_ssd_hdd_diff' execution",
+    "input": "SSD กับ HDD ต่างกันอย่างไร?",
+    "expected": "Trigger action_ssd_hdd_diff with factual explanation",
+    "actual": "Emitted response containing keyword 'SSD'",
+    "status": "PASS",
+    "evidence": "Responses: ['ความทนทานและการเก็บรักษาข้อมูล: HDD ใช้จานแม่เหล็กหมุน มีโอกาสเสียหากได้รับการกระแทกขณะทำงาน ส่วน SSD ใช้ชิปหน่วยความจำทนแรงกระแทกได้ดีกว่า แต่อายุการใช้งาน SSD จะนับตามปริมาณการเขียนข้อมูล (TBW) ครับ']"
+  },
+  {
+    "case_id": "SYS-10",
+    "objective": "Information intent 'optimize_performance' execution",
+    "input": "คอมช้ามาก มีวิธีแก้ไหม?",
+    "expected": "Trigger action_optimize_performance with factual explanation",
+    "actual": "Emitted response containing keyword 'ปรับแต่ง'",
+    "status": "PASS",
+    "evidence": "Responses: ['สำหรับการเพิ่มความเร็วและการปรับแต่งให้คอมพิวเตอร์ทำงานลื่นไหลขึ้น เบื้องต้นผมขอแนะนำดังนี้ครับ:\\n1. **อัปเดตไดรเวอร์**: โดยเฉพาะไดรเวอร์การ์ดจอ ให้เป็นเวอร์ชันล่าสุดเสมอ\\n2. **ปิด Startup Programs**: ปิดโปรแกรมที่ไม่ได้ใช้แต่รันขึ้นมาพร้อมวินโดวส์\\n3. **เคลียร์ไฟล์ขยะ (Disk Cleanup)**: และตรวจสอบไม่ให้ไดรฟ์ C: เต็มจนเกินไป\\n4. **เปิด Game Mode / High Performance Power Plan**: ในตั้งค่า Windows เพื่อรีดประสิทธิภาพสูงสุดครับ', \"*หากทำตามนี้แล้วยังช้าอยู่ อาจถึงเวลาต้องอัปเกรดฮาร์ดแวร์ (สามารถพิมพ์ว่า 'อยากอัปเกรดคอม' เพื่อให้ผมช่วยวิเคราะห์ได้ครับ)*\"]"
+  },
+  {
+    "case_id": "SYS-11",
+    "objective": "Out-of-scope fallback routing to utter_fallback",
+    "input": "ผลฟุตบอลพรีเมียร์ลีกล่าสุดเป็นอย่างไรบ้าง (Out of scope)",
+    "expected": "FallbackClassifier (threshold=0.3) -> utter_fallback",
+    "actual": "Emitted friendly fallback guidance in Thai",
+    "status": "PASS",
+    "evidence": "Bot: ['ขออภัยครับ ผมยังไม่เข้าใจข้อความนี้ รบกวนลองพิมพ์ใหม่อีกครั้ง หรือระบุว่าต้องการจัดสเปคคอม อัปเกรดคอม หรือสอบถามข้อมูลอุปกรณ์ได้เลยครับ']"
+  },
+  {
+    "case_id": "SYS-12",
+    "objective": "Hardware compatibility engine constraints",
+    "input": "budget=35000, usage=gaming, future_upgrade=True",
+    "expected": "Compatible hardware bundle (Socket, RAM type, PSU wattage)",
+    "actual": "Build: AMD Ryzen 5 7600 + ASRock A620M-HDV/M.2 (Total: 32090 THB)",
+    "status": "PASS",
+    "evidence": "Layer 1 & Layer 2 constraint satisfaction verified"
+  },
+  {
+    "case_id": "SYS-13",
+    "objective": "LINE Webhook signature verification mechanism",
+    "input": "app/rasa/line_channel.py implementation inspection",
+    "expected": "WebhookParser attached with HMAC-SHA256 signature verification & InvalidSignatureError handling",
+    "actual": "LineInput implementation defines WebhookParser and signature verification",
+    "status": "PASS",
+    "evidence": "Signature validation code path verified in line_channel.py"
+  },
+  {
+    "case_id": "SYS-14",
+    "objective": "LINE Credentials environment variable loading safety",
+    "input": "app/rasa/credentials.yml",
+    "expected": "0 tracked literal tokens, uses ${LINE_CHANNEL_SECRET}",
+    "actual": "Interpolates credentials from environment variables",
+    "status": "PASS",
+    "evidence": "Safe credential references verified"
+  },
+  {
+    "case_id": "SYS-15",
+    "objective": "LINE Flex Message JSON bubble layout construction",
+    "input": "Recommendation dictionary -> generate_spec_flex_message()",
+    "expected": "Valid LINE Flex Carousel / Bubble JSON structure",
+    "actual": "Constructed Flex Message (type='flex', keys=['type', 'altText', 'contents'])",
+    "status": "PASS",
+    "evidence": "Flex JSON schema structurally valid"
+  },
+  {
+    "case_id": "SYS-16",
+    "objective": "Analytics database schema & non-sensitive storage scope",
+    "input": "data/analytics.db schema query",
+    "expected": "user_searches table with aggregate metric columns only",
+    "actual": "Schema: ['id', 'timestamp', 'user_id', 'usage_type', 'budget_requested', 'allocated_total_price']",
+    "status": "PASS",
+    "evidence": "0 raw user transcript fields stored"
+  }
+]

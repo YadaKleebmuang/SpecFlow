@@ -1,0 +1,1 @@
+PYTHONPATH="$(pwd)/app/rasa" .venv-rasa-cv/bin/rasa train --config app/rasa/config.yml --domain app/rasa/domain.yml --data app/rasa/data/nlu.yml app/rasa/data/rules.yml app/rasa/data/stories.yml --out final_models/run-20260825-001846

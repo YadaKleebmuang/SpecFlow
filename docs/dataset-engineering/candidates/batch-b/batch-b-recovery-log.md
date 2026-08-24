@@ -1,0 +1,26 @@
+# Batch B Recovery Log
+
+- Corrupted source copied to: /Users/ploy/Desktop/mini_project/SpecFlow/docs/dataset-engineering/candidates/batch-b/recovery/batch-b-candidates-corrupted-3811.yml
+- Corrupted SHA-256: a59c35051ef3aa93a6915c58312f74389fa7468ecaa8404708c9e2b492602a8a
+- Recovered candidates written to: /Users/ploy/Desktop/mini_project/SpecFlow/docs/dataset-engineering/candidates/batch-b/batch-b-candidates.yml
+- Recovered SHA-256: 8757a73a48ebe7c2941ad4fc0a7bdebadefa47f5d8b88b4feec8a2ebd6df0a5a
+- Total recovered examples: 248
+- Intent distribution after trimming:
+  - greet: 5
+  - goodbye: 5
+  - build_pc: 49
+  - upgrade_pc: 42
+  - inform_budget: 21
+  - inform_usage: 24
+  - inform_current_specs: 22
+  - ask_cpu_info: 4
+  - ask_gpu_info: 4
+  - ask_ram_info: 4
+  - ask_ssd_hdd_diff: 4
+  - optimize_performance: 34
+  - inform_future_upgrade: 18
+  - affirm: 6
+  - deny: 6
+- Deficits detected (will require controlled replacements):
+  - build_pc: missing 1
+  - inform_future_upgrade: missing 1

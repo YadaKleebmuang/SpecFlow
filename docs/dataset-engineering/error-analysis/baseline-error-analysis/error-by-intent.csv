@@ -1,0 +1,16 @@
+intent,support,correct,false_negative_count,false_negative_rate,percentage_of_all_70_errors
+greet,19,17,2,0.1053,2.86%
+goodbye,20,18,2,0.1000,2.86%
+build_pc,145,136,9,0.0621,12.86%
+upgrade_pc,117,111,6,0.0513,8.57%
+inform_budget,61,51,10,0.1639,14.29%
+inform_usage,73,64,9,0.1233,12.86%
+inform_current_specs,68,66,2,0.0294,2.86%
+ask_cpu_info,23,21,2,0.0870,2.86%
+ask_gpu_info,23,20,3,0.1304,4.29%
+ask_ram_info,23,19,4,0.1739,5.71%
+ask_ssd_hdd_diff,23,21,2,0.0870,2.86%
+optimize_performance,98,92,6,0.0612,8.57%
+inform_future_upgrade,58,52,6,0.1034,8.57%
+affirm,24,20,4,0.1667,5.71%
+deny,25,22,3,0.1200,4.29%

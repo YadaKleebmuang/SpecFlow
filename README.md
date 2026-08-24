@@ -168,4 +168,11 @@ python -m unittest tests/test_nlp_preprocessing.py
    *หมายเหตุ: สคริปต์จะเริ่มทำงานเซิร์ฟเวอร์ย่อยทั้งหมดในพื้นหลังแบบอัตโนมัติ และคุณสามารถสั่งหยุดการทำงานของเซิร์ฟเวอร์ทั้งหมดพร้อมกันเพื่อคืนค่าพอร์ตได้ทันทีโดยการกด `Ctrl+C` ที่หน้าต่างคอมมานด์นี้ครับ*
 
 ---
+
+## 📚 เอกสารโครงสร้างและการประเมินผลเชิงประจักษ์ (Project Documentation & Evidence)
+- **[PROJECT_FILES.md](PROJECT_FILES.md)**: คำอธิบายโครงสร้างไฟล์ บทบาทหน้าที่ และสถานะของแต่ละไฟล์ในระบบ
+- **[docs/README_PROJECT_STRUCTURE.md](docs/README_PROJECT_STRUCTURE.md)**: Quick Navigation สำหรับเข้าถึงโมเดล ชุดข้อมูล และผลการทดสอบ
+- **[docs/final-readiness/master-final-values/](docs/final-readiness/master-final-values/)**: ผลการทดสอบโมเดลอย่างเป็นทางการ (Baseline 5-Fold CV, Final Holdout 200, System Verification)
+
+---
 📄 **License:** MIT License

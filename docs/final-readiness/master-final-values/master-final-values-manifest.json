@@ -1,0 +1,260 @@
+{
+  "master_id": "specflow_master_final_values_v1",
+  "timestamp": "2026-08-25T01:50:35.174716+07:00",
+  "source_evidence": {
+    "development": {
+      "path": "app/rasa/data/nlu.yml",
+      "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+    },
+    "holdout": {
+      "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+      "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961"
+    },
+    "baseline_cv": {
+      "manifest": "docs/dataset-engineering/cross-validation/baseline/results/baseline-cv-manifest.json"
+    },
+    "error_decision": {
+      "record": "docs/dataset-engineering/error-analysis/baseline-error-analysis/error-decision-record.json"
+    },
+    "entity_baseline": {
+      "manifest": "docs/dataset-engineering/entity-evaluation/baseline/entity-baseline-evidence-manifest.json"
+    },
+    "final_configuration": {
+      "manifest": "docs/final-readiness/final-configuration-freeze/final-configuration-freeze-manifest.json",
+      "sha256": "aaa9aaf7408032147995bd42c1f1ed822d26bc837e405c093727a0843769cc2c"
+    },
+    "final_training": {
+      "manifest": "docs/final-readiness/final-model-training/run-20260825-001846/final-model-training-manifest.json",
+      "sha256": "4bd8ef1f1879c093c0be00abff0737e3f8512d82e10e00325dedddf62aea121c"
+    },
+    "runtime_verification": {
+      "manifest": "docs/final-readiness/final-model-runtime-verification/run-20260825-012754/final-model-runtime-verification-manifest.json",
+      "sha256": "15056ebdb4290af0ca09f8a9702faca45c00195f05c14a14ce218313ca849939"
+    },
+    "final_holdout": {
+      "manifest": "docs/final-readiness/final-holdout-evaluation/run-20260825-013923/final-holdout-evaluation-manifest.json",
+      "sha256": "864013f9d5b7667b5bd81bdc3817d1ddaa4c2b8bec7c692b8899066847875716"
+    },
+    "system_e2e": {
+      "manifest": "docs/final-readiness/system-e2e-evidence/run-20260825-014623/system-e2e-evidence-manifest.json",
+      "sha256": "7d7a256f530884c73ec01abb763b75de8788845aec40b97bb849ddbaef7c3d28"
+    }
+  },
+  "final_dataset_values": {
+    "development_800": {
+      "path": "app/rasa/data/nlu.yml",
+      "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+      "rows": 800,
+      "unique_rows": 800,
+      "intents_count": 15,
+      "distribution_type": "INTENTIONALLY_UNEQUAL_DESIGNED_COVERAGE",
+      "distribution": {
+        "greet": 19,
+        "goodbye": 20,
+        "build_pc": 145,
+        "upgrade_pc": 117,
+        "inform_budget": 61,
+        "inform_usage": 73,
+        "inform_current_specs": 68,
+        "ask_cpu_info": 23,
+        "ask_gpu_info": 23,
+        "ask_ram_info": 23,
+        "ask_ssd_hdd_diff": 23,
+        "optimize_performance": 98,
+        "inform_future_upgrade": 58,
+        "affirm": 24,
+        "deny": 25
+      },
+      "entity_spans_total": 187,
+      "entity_spans_by_type": {
+        "component_type": 96,
+        "budget": 46,
+        "usage": 33,
+        "future_upgrade": 12
+      }
+    },
+    "locked_holdout_200": {
+      "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+      "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+      "rows": 200,
+      "unique_rows": 200,
+      "intents_count": 15,
+      "distribution": {
+        "greet": 5,
+        "goodbye": 5,
+        "build_pc": 36,
+        "upgrade_pc": 29,
+        "inform_budget": 15,
+        "inform_usage": 18,
+        "inform_current_specs": 17,
+        "ask_cpu_info": 6,
+        "ask_gpu_info": 6,
+        "ask_ram_info": 6,
+        "ask_ssd_hdd_diff": 6,
+        "optimize_performance": 25,
+        "inform_future_upgrade": 14,
+        "affirm": 6,
+        "deny": 6
+      },
+      "exact_duplicate_overlap_with_dev": 0,
+      "evaluation_status": "FINAL_EVALUATED_CLOSED",
+      "evaluation_count": 1
+    }
+  },
+  "final_runtime_values": {
+    "python": "3.9.6",
+    "rasa": "3.6.21",
+    "rasa_sdk": "3.6.2",
+    "pythainlp": "5.3.4"
+  },
+  "baseline_cv_metrics": {
+    "evaluation_name": "Baseline Development Stratified 5-Fold Cross-Validation",
+    "scope": "Development 800 examples",
+    "oof_rows": 800,
+    "correct": 730,
+    "errors": 70,
+    "oof_metrics": {
+      "accuracy": 0.9125,
+      "macro_precision": 0.93456081,
+      "macro_recall": 0.89567678,
+      "macro_f1": 0.91355855,
+      "weighted_precision": 0.91474247,
+      "weighted_recall": 0.9125,
+      "weighted_f1": 0.91247033
+    },
+    "fold_mean_sample_sd": {
+      "accuracy": "0.91250000 ± 0.01397542",
+      "macro_precision": "0.93883481 ± 0.01566618",
+      "macro_recall": "0.89436763 ± 0.02618612",
+      "macro_f1": "0.90846876 ± 0.02069854",
+      "weighted_precision": "0.91847530 ± 0.01429771",
+      "weighted_recall": "0.91250000 ± 0.01397542",
+      "weighted_f1": "0.91044731 ± 0.01349372"
+    },
+    "error_decision": "ACCEPT CURRENT BASELINE NLU (NO DEVELOPMENT DATASET CHANGE REQUIRED, NO NLU PIPELINE TUNING REQUIRED)"
+  },
+  "baseline_entity_metrics": {
+    "semantics": "TOKEN_LEVEL_DIET_EVALUATION",
+    "macro_precision": "0.4199 ± 0.0921",
+    "macro_recall": "0.5938 ± 0.1582",
+    "macro_f1": "0.4568 ± 0.0761",
+    "weighted_precision": "0.4870 ± 0.0714",
+    "weighted_recall": "0.6443 ± 0.1306",
+    "weighted_f1": "0.5264 ± 0.0481",
+    "micro_f1": "0.5288 ± 0.0742",
+    "per_entity_mean_sd": {
+      "component_type": {
+        "precision": "0.5414 ± 0.1240",
+        "recall": "0.7470 ± 0.2533",
+        "f1": "0.6116 ± 0.1577"
+      },
+      "budget": {
+        "precision": "0.3490 ± 0.1009",
+        "recall": "0.7379 ± 0.1246",
+        "f1": "0.4667 ± 0.0996"
+      },
+      "usage": {
+        "precision": "0.4953 ± 0.1634",
+        "recall": "0.5819 ± 0.1032",
+        "f1": "0.5271 ± 0.1316"
+      },
+      "future_upgrade": {
+        "precision": "0.2940 ± 0.3640",
+        "recall": "0.3082 ± 0.3757",
+        "f1": "0.2217 ± 0.2934"
+      }
+    }
+  },
+  "final_holdout_metrics": {
+    "evaluation_name": "One-Time Locked Holdout 200 Final Evaluation",
+    "type": "ONE_TIME_LOCKED_HOLDOUT_FINAL_TEST",
+    "holdout_rows": 200,
+    "correct": 141,
+    "errors": 59,
+    "intent_metrics": {
+      "accuracy": 0.705,
+      "macro_precision": 0.78831203,
+      "macro_recall": 0.71515891,
+      "macro_f1": 0.72564964,
+      "weighted_precision": 0.75312253,
+      "weighted_recall": 0.705,
+      "weighted_f1": 0.70027716
+    },
+    "fallback_observation": {
+      "count": 10,
+      "rate": 0.05,
+      "description": "FallbackClassifier was triggered on 10 Holdout utterances according to the configured fallback decision criteria (confidence < 0.3)"
+    },
+    "entity_evidence": {
+      "semantics": "TOKEN_LEVEL_DIET_EVALUATION",
+      "coverage": "BUDGET_ANNOTATIONS_ONLY",
+      "gold_spans": 15,
+      "token_support": 15,
+      "metrics": {
+        "precision": 0.1,
+        "recall": 0.0667,
+        "f1_score": 0.08
+      },
+      "limitation": "The Holdout entity evaluation contained 15 annotated budget spans; observed final entity metrics reflect only the budget entity present in evaluable Holdout evidence."
+    },
+    "cv_vs_holdout_comparison": {
+      "accuracy": {
+        "cv_mean": 0.9125,
+        "holdout": 0.705,
+        "delta": -0.2075
+      },
+      "macro_f1": {
+        "cv_mean": 0.90846876,
+        "holdout": 0.72564964,
+        "delta": -0.18281912
+      }
+    }
+  },
+  "runtime_test_results": {
+    "total_cases": 8,
+    "passed": 8,
+    "failed": 0,
+    "status": "FINAL_MODEL_RUNTIME_LOCKED"
+  },
+  "system_test_results": {
+    "total_cases": 16,
+    "passed": 16,
+    "failed": 0,
+    "verification_level": "BACKEND_E2E_VERIFIED_LIVE_LINE_NOT_VERIFIED",
+    "hardware_catalog_records": 64,
+    "hardware_catalog_sha256": "341659f6384ee83ebb803964c8c7a6bb06f249aa345a59b0ea540f16529245b4"
+  },
+  "security_status": {
+    "tracked_active_secrets": 0,
+    "credential_source": "ENVIRONMENT_VARIABLES (LINE_CHANNEL_SECRET, LINE_CHANNEL_ACCESS_TOKEN)",
+    "signature_verification": "IMPLEMENTED_AND_VERIFIED (HMAC-SHA256 via linebot.WebhookParser)",
+    "credential_rotation_required": true,
+    "credential_rotation_completed": "UNKNOWN",
+    "production_action": "PRODUCTION SECURITY ACTION OUTSTANDING (Rotate tokens before public deployment)"
+  },
+  "analytics_status": {
+    "database_path": "data/analytics.db",
+    "technology": "SQLite",
+    "table": "user_searches",
+    "columns": [
+      "id",
+      "timestamp",
+      "user_id",
+      "usage_type",
+      "budget_requested",
+      "allocated_total_price"
+    ],
+    "storage_scope": "STRUCTURED_AGGREGATE_METRICS_ONLY (No raw personal chat transcripts stored)"
+  },
+  "reporting_constraints": {
+    "chapter3_fact_sheet": "docs/final-readiness/master-final-values/chapter-3-facts.md",
+    "chapter4_fact_sheet": "docs/final-readiness/master-final-values/chapter-4-facts.md",
+    "chapter5_fact_sheet": "docs/final-readiness/master-final-values/chapter-5-facts.md",
+    "report_safe_claims": "docs/final-readiness/master-final-values/report-safe-claims.md"
+  },
+  "post_holdout": {
+    "training_executed": false,
+    "tuning_performed": false,
+    "holdout_reevaluated": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "source": "PURPOSE_BUILT_RUNTIME_SMOKE_TEST",
+  "holdout_used": false,
+  "development_reused": false,
+  "test_cases": [
+    {
+      "case_id": "RT-01",
+      "objective": "Final Model Load",
+      "status": "PASS",
+      "evidence": "Agent loaded in 12.08s, is_ready=True"
+    },
+    {
+      "case_id": "RT-02",
+      "objective": "build_pc_form flow",
+      "status": "PASS",
+      "evidence": "Activated, slot progression (budget='35000', usage='ทำงานกราฟิก ตัดต่อวิดีโอ'), completed, executed action_recommend_pc"
+    },
+    {
+      "case_id": "RT-03",
+      "objective": "upgrade_pc_form flow",
+      "status": "PASS",
+      "evidence": "Activated, slot progression (usage='เล่นเกมหนักๆ สตรีมมิ่ง', current_specs='ryzen 5 3600...'), completed, executed action_recommend_upgrade"
+    },
+    {
+      "case_id": "RT-04",
+      "objective": "nlu_fallback NLU activation",
+      "status": "PASS",
+      "evidence": "Out-of-scope messages mapped to nlu_fallback with low confidence (conf < 0.3)"
+    },
+    {
+      "case_id": "RT-05",
+      "objective": "fallback dialogue handling",
+      "status": "PASS",
+      "evidence": "Rule 'Handle NLU fallback' executed utter_fallback response"
+    },
+    {
+      "case_id": "RT-06",
+      "objective": "Custom Action Server integration",
+      "status": "PASS",
+      "evidence": "Communication with Action Server verified for action_recommend_pc and action_recommend_upgrade"
+    },
+    {
+      "case_id": "RT-07",
+      "objective": "Build recommendation response sanity",
+      "status": "PASS",
+      "evidence": "Valid PC build specification and component recommendations returned"
+    },
+    {
+      "case_id": "RT-08",
+      "objective": "Upgrade recommendation response sanity",
+      "status": "PASS",
+      "evidence": "Valid hardware upgrade advice and cost estimation returned"
+    }
+  ]
+}

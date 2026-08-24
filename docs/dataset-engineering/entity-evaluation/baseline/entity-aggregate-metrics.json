@@ -1,0 +1,33 @@
+{
+  "evaluation_level": "token_level_entity_classification",
+  "fold_count": 5,
+  "total_support_tokens": 467,
+  "macro_precision": {
+    "mean": 0.41992908384376265,
+    "sample_sd": 0.09208159924973024
+  },
+  "macro_recall": {
+    "mean": 0.5937562850269874,
+    "sample_sd": 0.15822271988471248
+  },
+  "macro_f1": {
+    "mean": 0.4567519297895192,
+    "sample_sd": 0.07606145114874271
+  },
+  "weighted_precision": {
+    "mean": 0.486956698821718,
+    "sample_sd": 0.07137546951812379
+  },
+  "weighted_recall": {
+    "mean": 0.6443317857852742,
+    "sample_sd": 0.1305925425913371
+  },
+  "weighted_f1": {
+    "mean": 0.5264412626001832,
+    "sample_sd": 0.04809083605551722
+  },
+  "micro_f1": {
+    "mean": 0.528847934085299,
+    "sample_sd": 0.07418108577207387
+  }
+}

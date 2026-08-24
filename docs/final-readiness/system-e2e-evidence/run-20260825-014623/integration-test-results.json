@@ -1,0 +1,50 @@
+{
+  "verified_connections": [
+    {
+      "from": "Rasa Agent Runtime",
+      "to": "DIETClassifier / NLU Pipeline",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "Rasa Agent Runtime",
+      "to": "RulePolicy / MemoizationPolicy",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "Rasa Dialogue",
+      "to": "build_pc_form / upgrade_pc_form",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "Rasa Forms",
+      "to": "Rasa Action Server (port 5055)",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "Action Server",
+      "to": "RecommendationEngine",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "RecommendationEngine",
+      "to": "hardware_db.json",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "RecommendationEngine",
+      "to": "flex_builder.py",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "Action Server",
+      "to": "analytics.db",
+      "status": "PHYSICALLY_VERIFIED"
+    },
+    {
+      "from": "LINE Messaging API",
+      "to": "LineInput Webhook Handler",
+      "status": "IMPLEMENTED_LOCAL_VERIFIED_LIVE_NOT_PROVEN"
+    }
+  ],
+  "overall_e2e_verification_level": "BACKEND_E2E_VERIFIED_LIVE_LINE_NOT_VERIFIED"
+}

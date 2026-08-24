@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "SYS-01",
+    "objective": "Final Model load into Rasa Agent runtime",
+    "input": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "expected": "is_ready == True"
+  },
+  {
+    "case_id": "SYS-02",
+    "objective": "Rasa Agent message processing engine",
+    "input": "Agent.handle_text / Agent.parse_message",
+    "expected": "Operational inference pipeline"
+  },
+  {
+    "case_id": "SYS-03",
+    "objective": "Rasa SDK Action Server webhook reachability",
+    "input": "http://127.0.0.1:5055/webhook",
+    "expected": "HTTP 200 response on health check"
+  },
+  {
+    "case_id": "SYS-04",
+    "objective": "build_pc_form multi-turn slot filling & recommendation",
+    "input": "4 synthetic turns (intent -> budget -> usage -> future_upgrade)",
+    "expected": "Complete form & emit action_recommend_pc response"
+  },
+  {
+    "case_id": "SYS-05",
+    "objective": "upgrade_pc_form slot filling & upgrade analysis",
+    "input": "3 synthetic turns (intent -> usage -> current_specs)",
+    "expected": "Complete form & emit action_recommend_upgrade response"
+  },
+  {
+    "case_id": "SYS-06",
+    "objective": "Information intent 'ask_cpu_info' execution",
+    "input": "CPU คืออะไร ทำหน้าที่อะไร?",
+    "expected": "Trigger action_cpu_info with factual explanation"
+  },
+  {
+    "case_id": "SYS-07",
+    "objective": "Information intent 'ask_gpu_info' execution",
+    "input": "การ์ดจอทำหน้าที่อะไร?",
+    "expected": "Trigger action_gpu_info with factual explanation"
+  },
+  {
+    "case_id": "SYS-08",
+    "objective": "Information intent 'ask_ram_info' execution",
+    "input": "RAM สำคัญอย่างไร?",
+    "expected": "Trigger action_ram_info with factual explanation"
+  },
+  {
+    "case_id": "SYS-09",
+    "objective": "Information intent 'ask_ssd_hdd_diff' execution",
+    "input": "SSD กับ HDD ต่างกันอย่างไร?",
+    "expected": "Trigger action_ssd_hdd_diff with factual explanation"
+  },
+  {
+    "case_id": "SYS-10",
+    "objective": "Information intent 'optimize_performance' execution",
+    "input": "คอมช้ามาก มีวิธีแก้ไหม?",
+    "expected": "Trigger action_optimize_performance with factual explanation"
+  },
+  {
+    "case_id": "SYS-11",
+    "objective": "Out-of-scope fallback routing to utter_fallback",
+    "input": "ผลฟุตบอลพรีเมียร์ลีกล่าสุดเป็นอย่างไรบ้าง (Out of scope)",
+    "expected": "FallbackClassifier (threshold=0.3) -> utter_fallback"
+  },
+  {
+    "case_id": "SYS-12",
+    "objective": "Hardware compatibility engine constraints",
+    "input": "budget=35000, usage=gaming, future_upgrade=True",
+    "expected": "Compatible hardware bundle (Socket, RAM type, PSU wattage)"
+  },
+  {
+    "case_id": "SYS-13",
+    "objective": "LINE Webhook signature verification mechanism",
+    "input": "app/rasa/line_channel.py implementation inspection",
+    "expected": "WebhookParser attached with HMAC-SHA256 signature verification & InvalidSignatureError handling"
+  },
+  {
+    "case_id": "SYS-14",
+    "objective": "LINE Credentials environment variable loading safety",
+    "input": "app/rasa/credentials.yml",
+    "expected": "0 tracked literal tokens, uses ${LINE_CHANNEL_SECRET}"
+  },
+  {
+    "case_id": "SYS-15",
+    "objective": "LINE Flex Message JSON bubble layout construction",
+    "input": "Recommendation dictionary -> generate_spec_flex_message()",
+    "expected": "Valid LINE Flex Carousel / Bubble JSON structure"
+  },
+  {
+    "case_id": "SYS-16",
+    "objective": "Analytics database schema & non-sensitive storage scope",
+    "input": "data/analytics.db schema query",
+    "expected": "user_searches table with aggregate metric columns only"
+  }
+]

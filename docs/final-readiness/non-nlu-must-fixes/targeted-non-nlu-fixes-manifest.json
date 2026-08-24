@@ -1,0 +1,50 @@
+{
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+  "config_sha256": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0",
+  "post_fix_file_shas": {
+    "app/rasa/credentials.yml": "c065d11a89bebb9beb4cf213eb82aba34ad156b3f01805fc942b0c93ea71945a",
+    "app/rasa/domain.yml": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857",
+    "app/rasa/data/rules.yml": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5",
+    "app/rasa/line_channel.py": "d24ac03290d3c04bbab82500288e71955101dcae0aab81c8bfb46a2b0727da8d",
+    ".gitignore": "5d691af74ebac702908d9aecccfbd676239640386e824b0e184df12b2a284161",
+    ".env.example": "052fdadc2a6e641df188b3a623e35689b5807d0a880c7b24f7a0f341154464f4",
+    "tests/test_fallback_wiring.py": "55745d448dd1656bc3e9df925169de2f1aac51bd9f232c6e887d0031fb974b90"
+  },
+  "changed_files": [
+    "app/rasa/credentials.yml",
+    "app/rasa/domain.yml",
+    "app/rasa/data/rules.yml",
+    "app/rasa/line_channel.py",
+    ".gitignore",
+    ".env.example",
+    "tests/test_fallback_wiring.py"
+  ],
+  "security": {
+    "active_secrets_in_current_tracked_source": false,
+    "environment_based_loading": true,
+    "environment_variable_names": [
+      "LINE_CHANNEL_SECRET",
+      "LINE_CHANNEL_ACCESS_TOKEN"
+    ],
+    "credential_rotation_required": true,
+    "credential_rotation_completed": false
+  },
+  "fallback": {
+    "classifier_threshold": 0.3,
+    "ambiguity_threshold": 0.1,
+    "handling_wired": true,
+    "response_or_action": "utter_fallback",
+    "static_validation": true,
+    "runtime_inference_verified": false
+  },
+  "forms": {
+    "build_pc_form_present": true,
+    "upgrade_pc_form_present": true,
+    "runtime_verification_status": "DEFER UNTIL FINAL MODEL IS TRAINED"
+  },
+  "rasa_data_validate_exit_code": 0,
+  "training_executed": false,
+  "holdout_used": false
+}

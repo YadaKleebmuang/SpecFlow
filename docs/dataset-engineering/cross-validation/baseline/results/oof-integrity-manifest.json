@@ -1,0 +1,103 @@
+{
+  "creation_method": "concatenate_verified_fold_predictions_v1",
+  "source_fold_csvs": [
+    {
+      "fold": 0,
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-0-predictions.csv",
+      "sha256": "5f89ce4fc2076542115d3e3ae9f03877122bd0ef74eeb61e5a5d7d5fc02d8d5d",
+      "size_bytes": 101413,
+      "rows": 160,
+      "unique_ids": 160
+    },
+    {
+      "fold": 1,
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-1-predictions.csv",
+      "sha256": "63068c55e02a4da42d6916298796babcf3dc40a0a08a6af7bd77975bc893d05b",
+      "size_bytes": 85020,
+      "rows": 160,
+      "unique_ids": 160
+    },
+    {
+      "fold": 2,
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-2-predictions.csv",
+      "sha256": "3d7f60fd14fc0ca6ef9905bfd20dd36c1b738ad5915f373ac5723fdb031908fd",
+      "size_bytes": 85642,
+      "rows": 160,
+      "unique_ids": 160
+    },
+    {
+      "fold": 3,
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-3-predictions.csv",
+      "sha256": "d28804c7d4194789441a99b467054a5eb34ea69891243ca9f8e273ea95b3107a",
+      "size_bytes": 81672,
+      "rows": 160,
+      "unique_ids": 160
+    },
+    {
+      "fold": 4,
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-4-predictions.csv",
+      "sha256": "6aaa715d8cccef84fd8fd3281c0c88e830007e2bf93698392e5dea7a22301fa7",
+      "size_bytes": 85508,
+      "rows": 160,
+      "unique_ids": 160
+    }
+  ],
+  "oof_path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+  "oof_size_bytes": 438859,
+  "oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+  "oof_prediction_vector_sha256": "5f4465ffe53a572cf8d77804612635c65f8012e69f608d0a248cd59bc567a713",
+  "oof_prediction_vector_hash_method": "sha256_canonical_json_v1",
+  "rows": 800,
+  "unique_example_ids": 800,
+  "fold_counts": {
+    "0": 160,
+    "1": 160,
+    "2": 160,
+    "3": 160,
+    "4": 160
+  },
+  "correct": 730,
+  "errors": 70,
+  "pairwise_id_overlap": {
+    "fold_0_vs_fold_1": 0,
+    "fold_0_vs_fold_2": 0,
+    "fold_0_vs_fold_3": 0,
+    "fold_0_vs_fold_4": 0,
+    "fold_1_vs_fold_2": 0,
+    "fold_1_vs_fold_3": 0,
+    "fold_1_vs_fold_4": 0,
+    "fold_2_vs_fold_3": 0,
+    "fold_2_vs_fold_4": 0,
+    "fold_3_vs_fold_4": 0
+  },
+  "development_rows": 800,
+  "development_unique_ids": 800,
+  "development_id_set_equals_oof": true,
+  "true_intent_support": {
+    "greet": 19,
+    "goodbye": 20,
+    "build_pc": 145,
+    "upgrade_pc": 117,
+    "inform_budget": 61,
+    "inform_usage": 73,
+    "inform_current_specs": 68,
+    "ask_cpu_info": 23,
+    "ask_gpu_info": 23,
+    "ask_ram_info": 23,
+    "ask_ssd_hdd_diff": 23,
+    "optimize_performance": 98,
+    "inform_future_upgrade": 58,
+    "affirm": 24,
+    "deny": 25
+  },
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "holdout_evaluated": false,
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4",
+    "thai_tokenizer_import": "PASS"
+  }
+}

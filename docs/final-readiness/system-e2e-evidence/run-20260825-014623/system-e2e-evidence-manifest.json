@@ -1,0 +1,35 @@
+{
+  "evidence_id": "specflow_system_e2e_evidence_v1",
+  "timestamp": "2026-08-25T01:46:37.774806+07:00",
+  "final_model": {
+    "path": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "sha256": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7"
+  },
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+  },
+  "holdout": {
+    "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+    "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "status": "FINAL_EVALUATED_CLOSED"
+  },
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "functional_tests_summary": {
+    "total": 16,
+    "passed": 16,
+    "failed": 0,
+    "not_live_verified": 0
+  },
+  "e2e_level": "BACKEND_E2E_VERIFIED_LIVE_LINE_NOT_VERIFIED",
+  "post_holdout": {
+    "training_executed": false,
+    "holdout_reevaluated": false,
+    "tuning_performed": false
+  }
+}

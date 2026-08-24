@@ -1,0 +1,115 @@
+{
+  "source_oof_path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+  "source_oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+  "generated_artifacts": {
+    "oof-metrics.json": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/oof-metrics.json",
+      "size_bytes": 917,
+      "sha256": "4c8065655cd85cecafd258c39e8af00a4fe1fca7241efc6968c6547fc8b56aa4"
+    },
+    "fold-metrics.csv": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-metrics.csv",
+      "size_bytes": 742,
+      "sha256": "1ec0b445d1ed50ca1b1f78c852ba06377b407c0a2ab9446c3400fc1854276836"
+    },
+    "fold-metrics.json": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-metrics.json",
+      "size_bytes": 1694,
+      "sha256": "fcef690b54a8a312ec617fc5eac1c1fe213d3bbdaf177237f7bc582382eaa745"
+    },
+    "aggregate_metrics.json": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/aggregate_metrics.json",
+      "size_bytes": 2178,
+      "sha256": "bd6f2b3a2598c4b6f32355687abe84e8a7aea59f902634c66fab8ba552b20cf3"
+    },
+    "per-intent-metrics.csv": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/per-intent-metrics.csv",
+      "size_bytes": 1288,
+      "sha256": "50738ddff10d5ffb0be4dce708a69a2f1235e1f4467bc680ebcf1755048b3456"
+    },
+    "error-inventory.csv": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/error-inventory.csv",
+      "size_bytes": 24634,
+      "sha256": "b0f0bdcef0b044dec3f8df7ffa96e59cfb19a23d5b9d9d61f728e661523228e6"
+    },
+    "confusion-matrix-oof.json": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/confusion-matrix-oof.json",
+      "size_bytes": 2726,
+      "sha256": "dc02326b5e28fb6131ab96f5889afcf9ccf429a2532d3cc65c7656cdc53ab62e"
+    },
+    "confusion-matrix-oof.png": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/confusion-matrix-oof.png",
+      "size_bytes": 343433,
+      "sha256": "cd342ee125dfbfa018134e1a9fa35902286a80f642187956aeaee872303ee691"
+    }
+  },
+  "oof_counts": {
+    "rows": 800,
+    "correct": 730,
+    "errors": 70
+  },
+  "oof_metrics": {
+    "accuracy": 0.9125,
+    "macro_precision": 0.9345608109110651,
+    "macro_recall": 0.8956767774165221,
+    "macro_f1": 0.9135585501536688,
+    "weighted_precision": 0.9147424739898833,
+    "weighted_recall": 0.9125,
+    "weighted_f1": 0.9124703273835406
+  },
+  "fold_metrics_source": {
+    "fold_0": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-0-predictions.csv",
+      "sha256": "5f89ce4fc2076542115d3e3ae9f03877122bd0ef74eeb61e5a5d7d5fc02d8d5d"
+    },
+    "fold_1": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-1-predictions.csv",
+      "sha256": "63068c55e02a4da42d6916298796babcf3dc40a0a08a6af7bd77975bc893d05b"
+    },
+    "fold_2": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-2-predictions.csv",
+      "sha256": "3d7f60fd14fc0ca6ef9905bfd20dd36c1b738ad5915f373ac5723fdb031908fd"
+    },
+    "fold_3": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-3-predictions.csv",
+      "sha256": "d28804c7d4194789441a99b467054a5eb34ea69891243ca9f8e273ea95b3107a"
+    },
+    "fold_4": {
+      "path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-4-predictions.csv",
+      "sha256": "6aaa715d8cccef84fd8fd3281c0c88e830007e2bf93698392e5dea7a22301fa7"
+    }
+  },
+  "aggregate": {
+    "n_folds": 5,
+    "ddof": 1,
+    "means": {
+      "accuracy": 0.9125,
+      "macro_precision": 0.9388348081725045,
+      "macro_recall": 0.8943676269722193,
+      "macro_f1": 0.9084687603081395,
+      "weighted_precision": 0.9184752965172084,
+      "weighted_recall": 0.9125,
+      "weighted_f1": 0.9104473070729041
+    },
+    "sample_sds": {
+      "accuracy": 0.013975424859373673,
+      "macro_precision": 0.015666177636600897,
+      "macro_recall": 0.026186122919244045,
+      "macro_f1": 0.020698541496574855,
+      "weighted_precision": 0.014297712158026443,
+      "weighted_recall": 0.013975424859373673,
+      "weighted_f1": 0.01349371583821993
+    }
+  },
+  "confusion": {
+    "total": 800,
+    "diagonal": 730,
+    "off_diagonal": 70
+  },
+  "error_inventory_rows": 70,
+  "per_intent_support_total": 800,
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "holdout_evaluated": false,
+  "training_executed": false
+}

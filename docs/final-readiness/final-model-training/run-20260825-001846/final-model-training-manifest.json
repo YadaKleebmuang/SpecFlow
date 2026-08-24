@@ -1,0 +1,79 @@
+{
+  "run_id": "run-20260825-001846",
+  "training_type": "full_rasa_final_model",
+  "training_scope": "all_locked_development_800",
+  "training_start_timestamp": "2026-08-25T00:18:46.889687+07:00",
+  "training_end_timestamp": "2026-08-25T01:18:41.553860+07:00",
+  "elapsed_seconds": 3594.66,
+  "training_command": "PYTHONPATH=\"$(pwd)/app/rasa\" .venv-rasa-cv/bin/rasa train --config app/rasa/config.yml --domain app/rasa/domain.yml --data app/rasa/data/nlu.yml app/rasa/data/rules.yml app/rasa/data/stories.yml --out final_models/run-20260825-001846",
+  "training_exit_code": 0,
+  "training_log_path": "docs/final-readiness/final-model-training/run-20260825-001846/training.log",
+  "training_log_sha256": "9895f35176c8722edd4bf5ca66b89cc2b50eca2bc0def25730e6119d0390da4b",
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4"
+  },
+  "freeze": {
+    "manifest_path": "docs/final-readiness/final-configuration-freeze/final-configuration-freeze-manifest.json",
+    "manifest_sha256": "aaa9aaf7408032147995bd42c1f1ed822d26bc837e405c093727a0843769cc2c"
+  },
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "rows": 800,
+    "intents": 15,
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+  },
+  "holdout": {
+    "path": "docs/dataset-engineering/holdout/locked-holdout-v1.yml",
+    "rows": 200,
+    "sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+    "evaluated": false
+  },
+  "training_inputs": {
+    "config": {
+      "path": "app/rasa/config.yml",
+      "sha256": "61349072d42b1529459c14452743e3f68b571167291efef90b58c5ef1f541ad0"
+    },
+    "domain": {
+      "path": "app/rasa/domain.yml",
+      "sha256": "c2a76780257345efc57dd32a8f261ac610745a4f21bad08bb308ad9b74717857"
+    },
+    "nlu": {
+      "path": "app/rasa/data/nlu.yml",
+      "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d"
+    },
+    "rules": {
+      "path": "app/rasa/data/rules.yml",
+      "sha256": "37325e428ddcec108ff10cc3ec93b1d0e667c54f23d59c23f3c710ece7db22e5"
+    },
+    "stories": {
+      "path": "app/rasa/data/stories.yml",
+      "sha256": "45e869d2b571bec45926228cf9537d099b3d6002484a985a0bcf09913c492985"
+    }
+  },
+  "final_model": {
+    "path": "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz",
+    "filename": "20260825-001851-woolen-billet.tar.gz",
+    "size_bytes": 43774326,
+    "mtime": "2026-08-25T01:18:40.300901+07:00",
+    "sha256": "86a76534116c8298b39aaa8ddbaddc257d0fb8276da905da68675f7fdeff6dd7"
+  },
+  "pre_training_models": {},
+  "post_training_new_models": [
+    "final_models/run-20260825-001846/20260825-001851-woolen-billet.tar.gz"
+  ],
+  "new_model_count": 1,
+  "baseline_oof": {
+    "path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+    "sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+    "status": "FINAL_LOCKED"
+  },
+  "development_modified": false,
+  "configuration_modified": false,
+  "holdout_used": false,
+  "cross_validation_executed": false,
+  "final_model_runtime_verified": false,
+  "final_holdout_evaluated": false
+}

@@ -1,5 +1,9 @@
 # Environment Variables (CRITICAL: Do not commit your LINE secrets!)
+.env
+.env.*
+!.env.example
 config/.env
+.specflow-recovery/
 
 # Python Virtual Environments
 .venv/
@@ -51,3 +55,34 @@ app/rasa/story_graph.dot
 app/rasa/graph.html
 
 .agents
+# Additional ignore patterns
+# Virtual environments
+.venv/
+.venv-*/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# MyPy cache
+.mypy_cache/
+
+# Lockfiles
+poetry.lock
+Pipfile.lock
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Rasa models and training artifacts
+app/rasa/models/
+cv_results/
+cv_folds/
+*.db
+
+# Logs and temporary files
+*.log
+logs/

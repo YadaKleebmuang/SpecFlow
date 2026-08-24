@@ -1,0 +1,59 @@
+{
+  "source_oof_path": "docs/dataset-engineering/cross-validation/baseline/results/oof-predictions.csv",
+  "source_oof_sha256": "b66e9e0eeda35ac7b45ac6b8ddcfaad0976cd770a38b7007428db0b73586cf47",
+  "source_error_inventory_path": "docs/dataset-engineering/cross-validation/baseline/results/error-inventory.csv",
+  "source_error_inventory_sha256": "b0f0bdcef0b044dec3f8df7ffa96e59cfb19a23d5b9d9d61f728e661523228e6",
+  "source_confusion_matrix_path": "docs/dataset-engineering/cross-validation/baseline/results/confusion-matrix-oof.json",
+  "source_per_intent_metrics_path": "docs/dataset-engineering/cross-validation/baseline/results/per-intent-metrics.csv",
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "error_rows": 70,
+  "unique_error_ids": 70,
+  "confusion_pair_count": 40,
+  "analysis_category_counts": {
+    "CATEGORY_B: MULTI_INTENT_OR_AMBIGUOUS_UTTERANCE": 17,
+    "CATEGORY_A: SEMANTIC_OVERLAP": 13,
+    "CATEGORY_G: MODEL_GENERALIZATION_ERROR": 3,
+    "CATEGORY_C: CONTEXT_DEPENDENT_SHORT_REPLY": 15,
+    "CATEGORY_D: LEXICAL_OR_SURFACE_PATTERN_CONFUSION": 17,
+    "CATEGORY_E: TRAINING_COVERAGE_GAP": 5
+  },
+  "annotation_review_count": 0,
+  "systematic_pattern_count": 5,
+  "recommended_decision": "NO TUNING REQUIRED",
+  "generated_artifacts": {
+    "confusion-pairs.csv": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/confusion-pairs.csv",
+      "size_bytes": 1476,
+      "sha256": "5e70c067c7dca5784697e17ae8b1b9c012077fc39d1ae928af4f906177c0acfe"
+    },
+    "error-by-intent.csv": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/error-by-intent.csv",
+      "size_bytes": 624,
+      "sha256": "7c0e475c4fa6043b95616dc2104ac02bf69f7f9bac0eb46a422b467739692703"
+    },
+    "error-analysis-detailed.csv": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/error-analysis-detailed.csv",
+      "size_bytes": 28216,
+      "sha256": "57b216395c8c2ed95a94c566613bb25bb6bbf43eaa8a87722a2fffbc49876f7b"
+    },
+    "error-category-summary.csv": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/error-category-summary.csv",
+      "size_bytes": 441,
+      "sha256": "ce4d379074760192ef2eca5b8821a2a07c0471654ca52b33fd5a5f477c8b0f4b"
+    },
+    "annotation-review-queue.csv": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/annotation-review-queue.csv",
+      "size_bytes": 77,
+      "sha256": "67785a231a315ac625495e448be01cfeca416b4c484cf8729131eb7757600608"
+    },
+    "development-oof-error-analysis.md": {
+      "path": "docs/dataset-engineering/error-analysis/baseline-error-analysis/development-oof-error-analysis.md",
+      "size_bytes": 11673,
+      "sha256": "b8733bcd3eba87030e6dd52cb516e4a9e13e3f0680b1fe4c27f875bda4f634f5"
+    }
+  },
+  "holdout_used": false,
+  "training_executed": false,
+  "dataset_modified": false,
+  "config_modified": false
+}

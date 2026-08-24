@@ -59,20 +59,23 @@ class LineInput(InputChannel):
         return "line"
 
     @classmethod
-    def from_credentials(cls, credentials: Dict[Text, Any]) -> "LineInput":
+    def from_credentials(cls, credentials: Optional[Dict[Text, Any]]) -> "LineInput":
         if not credentials:
-            cls.raise_missing_credentials_exception()
+            credentials = {}
+
+        channel_secret = credentials.get("channel_secret") or os.environ.get("LINE_CHANNEL_SECRET", "")
+        channel_access_token = credentials.get("channel_access_token") or os.environ.get("LINE_CHANNEL_ACCESS_TOKEN", "")
 
         return cls(
-            credentials.get("channel_secret"),
-            credentials.get("channel_access_token")
+            channel_secret,
+            channel_access_token
         )
 
-    def __init__(self, channel_secret: Text, channel_access_token: Text):
-        self.channel_secret = channel_secret
-        self.channel_access_token = channel_access_token
-        self.line_bot_api = LineBotApi(channel_access_token)
-        self.parser = WebhookParser(channel_secret)
+    def __init__(self, channel_secret: Optional[Text], channel_access_token: Optional[Text]):
+        self.channel_secret = channel_secret or ""
+        self.channel_access_token = channel_access_token or ""
+        self.line_bot_api = LineBotApi(self.channel_access_token) if self.channel_access_token else None
+        self.parser = WebhookParser(self.channel_secret) if self.channel_secret else None
 
     def blueprint(self, on_new_message: Callable[[UserMessage], Awaitable[None]]) -> Blueprint:
         custom_webhook = Blueprint(

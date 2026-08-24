@@ -1,0 +1,8 @@
+{
+  "current_tracked_active_secrets": 0,
+  "signature_verification": "IMPLEMENTED (linebot.WebhookHandler HMAC-SHA256)",
+  "environment_variable_credentials": true,
+  "credential_rotation_required": true,
+  "credential_rotation_completed": "UNKNOWN (External manual action in LINE Developers Console required for production)",
+  "production_status": "PRODUCTION SECURITY ACTION OUTSTANDING (Requires key rotation before public deployment)"
+}

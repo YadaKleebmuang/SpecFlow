@@ -1,0 +1,132 @@
+nlu:
+  - intent: greet
+    examples: |
+      - สวัสดีค่ะ
+      - สวัสดีครับ ผมสนใจคอมใหม่
+  - intent: goodbye
+    examples: |
+      - ขอบคุณครับ แล้วพบกันใหม่
+      - ลาก่อนค่ะ แล้วเจอกันอีก
+  - intent: build_pc
+    examples: |
+      - อยากได้คอมเกมราคาประมาณ [38,000](budget) บาท ใช้[เล่น FPS](usage)
+      - ขอคอมสำหรับงานตัดต่อวิดีโอราคา [55k](budget) มี [RTX 3060 Ti](component_type)
+      - ต้องการคอมสำหรับการสตรีมมิ่งราคา [45,000](budget) บาท อยากได้ [16GB RAM](component_type)
+      - ช่วยจัดสเปคคอมสำหรับโปรแกรมมิ่ง ราคา 30k มี SSD 512GB
+      - อยากได้คอมทำงานทั่วไปงบ [25,000](budget) บาท มี [i5](component_type) และ [256GB SSD](component_type)
+      - ขอคอมที่เหมาะกับการทำงานกราฟิกราคา [60k](budget) มี [RTX 3070](component_type)
+      - คอมใหม่สำหรับเล่นเกมและทำงานราคา [40k](budget) อยากได้ [GTX 1660 Super](component_type)
+      - อยากได้คอมสำหรับ AI researchงบ [80,000](budget) มี [RTX 3080](component_type)
+      - คอมที่ใช้สำหรับงาน CADราคา [70k](budget) มี [RTX 3070](component_type)
+      - ต้องการคอมสำหรับทำงานหลายอย่างงบ [50k](budget) มี [RTX 3060](component_type)
+      - ขอคอมสำหรับเล่นเกม 1080pราคา [35k](budget) มี [GTX 1660](component_type)
+      - คอมที่เหมาะกับการทำงานสำนักงานและเกมราคา [30,000](budget) บาท
+      - ช่วยจัดสเปคคอมใหม่ราคา [42k](budget) ใช้เพื่อทำแอนิเมชัน
+      - อยากได้คอมสำหรับการทำงานวิจัยราคา [75k](budget) มี [RTX 3080 Ti](component_type)
+      - คอมสำหรับสตรีมเกมและตัดต่อวิดีโองบ [65k](budget) มี [RTX 3070](component_type)
+      - ต้องการคอมราคาประมาณ [28k](budget) ใช้เล่นเกมแนว MOBA
+      - อยากได้คอมที่มี [1TB SSD](component_type) และ [32GB RAM](component_type) ราคา [90k](budget)
+      - คอมใหม่สำหรับทำงาน data scienceราคา [85k](budget) มี [RTX 3080](component_type)
+      - ขอคอมสำหรับงานกราฟิก 3Dราคา [70k](budget) มี [RTX 3070](component_type)
+      - อยากได้คอมที่รองรับ VRราคา [100k](budget) มี [RTX 3080 Ti](component_type)
+  - intent: upgrade_pc
+    examples: |
+      - ตอนนี้ใช้ i5 8400 อยากอัปเกรดเป็น i7 10700F
+      - อยากเปลี่ยน GPU จาก GTX 1050 เป็น RTX 3060
+      - ต้องการเพิ่ม RAM จาก 8GB เป็น 16GB
+      - อยากอัปเกรด SSD 256GB เป็น 1TB NVMe
+      - ต้องการเปลี่ยนเมนบอร์ดเป็น B560 เพื่ออัปเกรด CPU
+      - อยากอัปเกรด GPU เพื่อรองรับหลายจอแสดงผล
+      - ต้องการอัปเกรด PSU เป็น 750W
+      - อยากเปลี่ยนเคสเป็นแบบระบายอากาศดีขึ้น
+      - ต้องการอัปเกรด BIOS เพื่อรองรับ CPU ใหม่
+      - อยากอัปเกรด RAM DDR4 2400 เป็น DDR4 3200
+      - อยากอัปเกรดคูลเลอร์ CPU เป็นระบบระบายความร้อนด้วยน้ำ
+      - ต้องการอัปเกรด GPU เพื่อทำงาน AI
+      - อยากเปลี่ยน HDD เป็น SSD
+      - อยากอัปเกรดเมโมรีเป็น 32GB DDR4
+      - ต้องการอัปเกรดคอมเพื่อรองรับ VR
+      - อยากอัปเกรดจอแสดงผลเป็น 4K
+      - ต้องการอัปเกรด RAM เป็น 32GB เพื่อสตรีมมิ่ง
+  - intent: inform_budget
+    examples: |
+      - มีงบประมาณประมาณ [30,000](budget) บาท
+      - งบของผมอยู่ที่ [45k](budget)
+      - สามารถใช้เงินสูงสุด [60,000](budget) บาทได้
+      - มีประมาณ [50,000](budget) บาท
+      - งบประมาณ [70k](budget) ไม่เกิน
+      - มี [25k](budget) สำหรับคอมใหม่
+      - งบประมาณประมาณ [50,000](budget) บาท
+      - มีเงินประมาณ [80,000](budget) บาท
+  - intent: inform_usage
+    examples: |
+      - จะใช้คอมสำหรับ[เล่นเกมและสตรีมมิ่ง](usage)
+      - ใช้คอมเพื่อ[ทำงานกราฟิกและออกแบบ](usage)
+      - ผมต้องการคอมสำหรับ[โปรแกรมมิ่งและทำงาน data science](usage)
+      - จะใช้คอมสำหรับ[เขียนโค้ด Python และ Java](usage)
+      - ใช้ [ทำงาน AI กับ machine learning](usage)
+      - ต้องการคอมสำหรับ[งานตัดต่อวิดีโอและสตรีมมิ่ง](usage)
+      - ต้องการคอมเพื่อ[เล่นเกมแนว RPGและทำงานโปรแกรมมิ่ง](usage)
+      - ต้องการคอมสำหรับ[ทำงานกราฟิกและเล่นเกม](usage)
+  - intent: inform_current_specs
+    examples: |
+      - ตอนนี้ฉันใช้ [Intel i5 8400](component_type), [GTX 1050](component_type), [8GB RAM](component_type), [256GB SSD](component_type)
+      - คอมของฉันมี [AMD Ryzen 5 3600](component_type), [RTX 2060](component_type), [16GB RAM](component_type)
+      - ฉันใช้ [i7 9700K](component_type), [GTX 1660 Ti](component_type), [12GB RAM](component_type)
+      - ปัจจุบันเครื่องมี [i3 10100](component_type), [GTX 1050 Ti](component_type), [4GB RAM](component_type), [1TB HDD](component_type)
+      - ฉันมีคอมที่มี [i9 9900K](component_type), [RTX 3080](component_type), [32GB RAM](component_type), [2TB SSD](component_type)
+      - ใช้คอม [AMD Ryzen 7 3700X](component_type), [RTX 2070](component_type), [16GB RAM](component_type), [512GB SSD](component_type)
+      - คอมของผมเป็น [i5 10400](component_type), [GTX 1650](component_type), [8GB RAM](component_type), [512GB SSD](component_type)
+      - ปัจจุบันคอมใช้ [AMD Ryzen 5 5600X](component_type), [RTX 3060](component_type), [16GB RAM](component_type), [1TB SSD](component_type)
+  - intent: ask_cpu_info
+    examples: |
+      - CPU ควรเลือกอย่างไรสำหรับเกม?
+      - อยากรู้ว่า CPU รุ่นไหนเหมาะกับการทำงาน Python?
+      - ควรเลือก CPU Intel หรือ AMD สำหรับงานกราฟิก?
+  - intent: ask_gpu_info
+    examples: |
+      - GPU ที่เหมาะกับการทำงาน AI คืออะไร?
+      - อยากทราบว่า RTX 3060 เหมาะกับเกม 1080p หรือไม่?
+      - ควรเลือก GPU ใดสำหรับการทำงาน 3D rendering?
+  - intent: ask_ram_info
+    examples: |
+      - RAM ขนาด 16GB พอสำหรับการตัดต่อวิดีโอไหม?
+      - อยากรู้ว่าควรเลือก RAM DDR4 หรือ DDR5?
+      - RAM ที่ดีสำหรับการทำงานหลายงานพร้อมกันคืออะไร?
+  - intent: ask_ssd_hdd_diff
+    examples: |
+      - SSD กับ HDD มีความแตกต่างอย่างไร?
+      - ควรใช้ SSD หรือ HDD สำหรับระบบปฏิบัติการ?
+      - อยากรู้ว่า SSD NVMe ดีกว่า SATA มากแค่ไหน?
+  - intent: optimize_performance
+    examples: |
+      - คอมของผมช้าเมื่อเปิดหลายแอป ทำอย่างไร?
+      - ทำอย่างไรให้เกมรันได้ราบรื่นขึ้นโดยไม่เปลี่ยนฮาร์ดแวร์?
+      - วิธีเพิ่มประสิทธิภาพ Windows ให้เร็วขึ้น
+      - มีวิธีลดอุณหภูมิ CPU ขณะเล่นเกมไหม?
+      - อยากให้คอมบูตเร็วขึ้น
+      - ปรับแต่ง BIOS เพื่อเพิ่มประสิทธิภาพ
+      - วิธีปิดโปรเซสที่กิน RAM มาก
+      - แนะนำการอัพเดตไดรเวอร์เพื่อประสิทธิภาพ
+      - ทำอย่างไรให้ GPU ใช้งานเต็มที่ในเกม
+      - วิธีลบซอฟท์แวร์ที่ทำให้ระบบช้า
+      - ปรับการตั้งค่าไฟฟ้าเพื่อประสิทธิภาพสูงสุด
+      - แก้ปัญหา stuttering ในเกมโดยไม่อัพเกรดฮาร์ดแวร์
+  - intent: inform_future_upgrade
+    examples: |
+      - [ปีหน้าอยากอัพเกรด RAM เป็น 32GB](future_upgrade)
+      - [คิดจะเพิ่ม GPU ในอนาคตสำหรับงาน AI](future_upgrade)
+      - [คิดจะเพิ่ม GPU อีกตัวสำหรับการเรนเดอร์](future_upgrade)
+      - [เผื่ออัปเกรด SSD ให้เป็น NVMe ในปีหน้า](future_upgrade)
+      - [ต้องการอัปเกรด CPU เป็น i9 ในอนาคต](future_upgrade)
+      - [คาดว่าจะอัปเกรด RAM เป็น 64GB ในปีต่อไป](future_upgrade)
+      - [อยากอัปเกรด storage เป็น NVMe SSD ในปีหน้า](future_upgrade)
+
+  - intent: affirm
+    examples: |
+      - ใช่ครับ
+      - ครับ
+  - intent: deny
+    examples: |
+      - ไม่ครับ
+      - ไม่ใช่

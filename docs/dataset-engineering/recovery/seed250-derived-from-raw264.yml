@@ -1,0 +1,506 @@
+version: '3.1'
+nlu:
+- intent: greet
+  examples: '- สวัสดี'
+- intent: greet
+  examples: '- ดี'
+- intent: greet
+  examples: '- หวัด ดี'
+- intent: greet
+  examples: '- ฮัลโหล'
+- intent: greet
+  examples: '- เริ่มต้น ใช้งาน'
+- intent: greet
+  examples: '- ทักทาย'
+- intent: greet
+  examples: '- ใคร อยู่ ไหม'
+- intent: greet
+  examples: '- สวัสดี สอบถาม'
+- intent: greet
+  examples: '- สวัสดี แอดมิน'
+- intent: greet
+  examples: '- สวัสดี บอ ท'
+- intent: goodbye
+  examples: '- บาย'
+- intent: goodbye
+  examples: '- บ๊ายบาย'
+- intent: goodbye
+  examples: '- ลาก่อน'
+- intent: goodbye
+  examples: '- ไป แล้ว'
+- intent: goodbye
+  examples: '- ขอบคุณ มาก'
+- intent: goodbye
+  examples: '- ขอบคุณ สำหรับ คำแนะนำ'
+- intent: goodbye
+  examples: '- ขอบคุณ'
+- intent: goodbye
+  examples: '- โอเค ขอบคุณ'
+- intent: goodbye
+  examples: '- ไว้ เจอกัน ใหม่'
+- intent: goodbye
+  examples: '- ขอบพระคุณ'
+- intent: goodbye
+  examples: '- เรียบร้อย ขอบคุณ'
+- intent: build_pc
+  examples: '- จัด สเปค คอม'
+- intent: build_pc
+  examples: '- จัด สเปค คอม ใหม่'
+- intent: build_pc
+  examples: '- แนะนำ สเปค คอมพิวเตอร์'
+- intent: build_pc
+  examples: '- คำแนะนำ จัด สเปค คอม'
+- intent: build_pc
+  examples: '- ต้องการ คอม ประกอบ ใหม่'
+- intent: build_pc
+  examples: '- จัด สเปค คอม พิวเตอร์ ใหม่ ทั้ง ชุด'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [30000](budget) ไว้ [เล่น เกม](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [20000](budget) เน้น [ทำงาน กราฟิก หรือ วิดีโอ](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [40000](budget) เอา ไป [ทำงาน สำนักงาน](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [เล่น เกม](usage) [50000](budget)'
+- intent: build_pc
+  examples: '- จัด สเปค [15000](budget) [เล่น เกม](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [25000](budget) เอาไว้ [เล่น เกม genshin กับ valorant](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [15000](budget) สำหรับ [ทำ งานเอกสาร และ ดู หนัง](usage)'
+- intent: build_pc
+  examples: '- สเปค คอม [35000](budget) [เน้น เล่น เก มลื่น ๆ](usage)'
+- intent: build_pc
+  examples: '- แนะนำ สเปค คอม [50000](budget) สำหรับ [สตรีม เกม ไป เล่น ไป](usage)'
+- intent: build_pc
+  examples: '- แนะนำ สเปค คอม [20000](budget) เอา มา [ตัดต่อ วิดีโอ ลง youtube](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [30000](budget) เอาไว้ [เขียน โปรแกรม กับ รัน โมเดล](usage)'
+- intent: build_pc
+  examples: '- [45000](budget) สเปค คอม ไว้ [ทำงาน กราฟิก 3 d](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [12000](budget) เน้น [ใช้งาน ทั่วไป พิมพ์ งาน ส่ง เมล](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [60000](budget) ไว้ [เล่น เกม ปรับ สุด ทุก เกม](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [40000](budget) เอา ไป [ตัดต่อ วิดีโอ 4 k](usage)'
+- intent: build_pc
+  examples: '- แนะนำ คอม ประกอบ [18000](budget) เน้น [ทำงาน ออฟฟิศ และ เทรด หุ้น](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [70000](budget) สำหรับ [สตรีม เมอร์ส ตรี ม เกม 2 k](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม ประกอบ ใหม่ [10000](budget) [เน้น ดู หนัง ฟังเพลง พิมพ์
+    งาน](usage)'
+- intent: build_pc
+  examples: '- แนะนำ คอม [55000](budget) เอาไว้ [เรนเดอร์ งาน สถาปัตย์ 3 d](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอมพิวเตอร์ [32000](budget) [เล่น เกมส์ เป็นหลัก](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม ไว้ [ทำงาน ตัดต่อภาพ และ กราฟิก](usage) อยู่ [25000](budget)'
+- intent: build_pc
+  examples: '- สเปค คอม [15000](budget) เน้น [ใช้งาน ใน สำนักงาน พิมพ์ งาน ทั่วไป](usage)'
+- intent: build_pc
+  examples: '- แนะนำ สเปค คอม [40000](budget) เอาไว้ [เล่น เกม aaa](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [น้อย](budget) จัด สเปค คอม พิวเตอร์ ทำงาน [พิมพ์ งาน
+    ทั่วไป](usage)'
+- intent: build_pc
+  examples: '- แนะนำ สเปค คอมพิวเตอร์ [ทำงาน ออฟฟิศ](usage) แบบ [ประหยัด](budget)'
+- intent: build_pc
+  examples: '- สเปค คอม [ต่ำ](budget) สำหรับ [พิมพ์ งาน ทั่วไป](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [ปานกลาง](budget) สำหรับ [ทำงาน กราฟิก](usage)'
+- intent: build_pc
+  examples: '- สเปค คอม [สูง](budget) เอา ไป [เล่น เกมส์ แบบ ปรับ สุด](usage)'
+- intent: build_pc
+  examples: '- จัด สเปค คอม [35 k](budget) เอาไว้ [เล่น เกม ดอท เอ](usage)'
+- intent: upgrade_pc
+  examples: '- อัปเกรด คอม'
+- intent: upgrade_pc
+  examples: '- ควร อัปเกรด อะไร ดี'
+- intent: upgrade_pc
+  examples: '- ดู ว่า ควร อัปเกรด อะไร'
+- intent: upgrade_pc
+  examples: '- คอม ช้า อัปเกรด'
+- intent: upgrade_pc
+  examples: '- อัปเกรด gpu ดี ไหม'
+- intent: upgrade_pc
+  examples: '- คำแนะนำ อัปเกรด pc'
+- intent: upgrade_pc
+  examples: '- อัปเกรด สเปค คอม'
+- intent: upgrade_pc
+  examples: '- อัปเกรด เดิม'
+- intent: upgrade_pc
+  examples: '- คำแนะนำ ใน การ อัปเกรด อุปกรณ์ คอมพิวเตอร์'
+- intent: upgrade_pc
+  examples: '- คอมพิวเตอร์ สเปค เดิม เริ่ม อืด อัปเกรด ชิ้นส่วน'
+- intent: upgrade_pc
+  examples: '- ควร เปลี่ยน gpu หรือ เปลี่ยน cpu ก่อน ดี'
+- intent: upgrade_pc
+  examples: '- เพิ่ม ความเร็ว คอมพิวเตอร์ เก่า'
+- intent: upgrade_pc
+  examples: '- อัป คอมพิวเตอร์ ที่ อยู่ ให้แรง ขึ้น'
+- intent: upgrade_pc
+  examples: '- อัปเกรด ชิ้นส่วน ไหน คุ้ม ที่สุด'
+- intent: upgrade_pc
+  examples: '- แนะนำ การ อัปเกรด ฮาร์ดแวร์'
+- intent: upgrade_pc
+  examples: '- คอม ใช้ มา 4 ปี อัปเกรด เล่น เกม ยุคใหม่ ได้'
+- intent: upgrade_pc
+  examples: '- เปลี่ยน อะไหล่ คอมพิวเตอร์ เร็ว ขึ้น'
+- intent: upgrade_pc
+  examples: '- คอมพิวเตอร์ เดิม ทำงาน ช้า วิเคราะห์ การ อัปเกรด ที'
+- intent: upgrade_pc
+  examples: '- คอม อยู่แล้ว อัปเกรด บาง ชิ้นส่วน'
+- intent: upgrade_pc
+  examples: '- อัปเกรด คอมพิวเตอร์ ประหยัด'
+- intent: upgrade_pc
+  examples: '- ดู สเปค เดิม แล้ว แนะนำ ทางเลือก อัปเกรด'
+- intent: upgrade_pc
+  examples: '- อัป ไป [เล่น เกม หนัก ๆ](usage)'
+- intent: upgrade_pc
+  examples: '- ต้องการ อัป สเปค ไว้ [ตัดต่อ วิดีโอ 4 k](usage)'
+- intent: inform_budget
+  examples: '- [30000](budget)'
+- intent: inform_budget
+  examples: '- [25000](budget)'
+- intent: inform_budget
+  examples: '- ไม่ เกิน [40000](budget)'
+- intent: inform_budget
+  examples: '- [15000](budget)'
+- intent: inform_budget
+  examples: '- อยู่ [20000](budget)'
+- intent: inform_budget
+  examples: '- จำกัด ที่ [35000](budget)'
+- intent: inform_budget
+  examples: '- ประมาณ [50000](budget)'
+- intent: inform_budget
+  examples: '- [30,000](budget)'
+- intent: inform_budget
+  examples: '- [30 k](budget)'
+- intent: inform_budget
+  examples: '- [3 หมื่น](budget)'
+- intent: inform_budget
+  examples: '- [สาม หมื่น](budget)'
+- intent: inform_budget
+  examples: '- ประมาณ [สอง หมื่น](budget)'
+- intent: inform_budget
+  examples: '- [15 k](budget)'
+- intent: inform_budget
+  examples: '- [น้อย](budget)'
+- intent: inform_budget
+  examples: '- [ประหยัด](budget)'
+- intent: inform_budget
+  examples: '- [ปานกลาง](budget)'
+- intent: inform_budget
+  examples: '- [สูง](budget)'
+- intent: inform_usage
+  examples: '- เอา มา [เล่น เกม](usage)'
+- intent: inform_usage
+  examples: '- เน้น [ทำงาน กราฟิก หรือ วิดีโอ](usage)'
+- intent: inform_usage
+  examples: '- ใช้ [ทำงาน สำนักงาน](usage)'
+- intent: inform_usage
+  examples: '- เอาไว้ [สตรีม เกม](usage)'
+- intent: inform_usage
+  examples: '- [เล่น เกม หนัก ๆ](usage)'
+- intent: inform_usage
+  examples: '- ใช้ [เขียน โปรแกรม](usage)'
+- intent: inform_usage
+  examples: '- [ตัดต่อ วิดีโอ 4 k](usage)'
+- intent: inform_usage
+  examples: '- เอาไว้ [ทำงาน ออฟฟิศ และ พิมพ์ งาน ทั่วไป](usage)'
+- intent: inform_usage
+  examples: '- [เล่น เก มลื่น ๆ ปรับ กราฟิก สูง ๆ](usage)'
+- intent: inform_usage
+  examples: '- เน้น [ทำงาน กราฟิก 3 d และ เรนเดอร์](usage)'
+- intent: inform_usage
+  examples: '- [ใช้งาน ทั่วไป ใน บ้าน ดู หนัง ฟังเพลง](usage)'
+- intent: inform_usage
+  examples: '- เอาไว้ [เขียนแบบ autocad และ สถาปัตย์](usage)'
+- intent: inform_usage
+  examples: '- [ตัดต่อ วิดีโอ และ ทำ กราฟิก ลง youtube](usage)'
+- intent: inform_usage
+  examples: '- ใช้ [เรียน ออนไลน์ พิมพ์ งาน ส่ง อีเมล](usage)'
+- intent: inform_usage
+  examples: '- [เล่น เกม valorant gta v pubg](usage)'
+- intent: inform_usage
+  examples: '- เอา มา [เทรด หุ้น และ เปิด เว็บ หลาย แท็บ](usage)'
+- intent: inform_usage
+  examples: '- [แต่ง รูปภาพ photoshop lightroom](usage)'
+- intent: inform_usage
+  examples: '- เอาไว้ [ไลฟ์ สตรีม มิ่ง และ สตรีม เกม](usage)'
+- intent: inform_usage
+  examples: '- [รัน โปรแกรม เขียน โค้ด พัฒนา ซอฟต์แวร์](usage)'
+- intent: inform_usage
+  examples: '- [ใช้งาน ทั่วไป ใน ชีวิตประจำวัน](usage)'
+- intent: inform_usage
+  examples: '- เน้น [ตัดต่อ วิดีโอ และ แต่ง รูป](usage)'
+- intent: inform_usage
+  examples: '- ใช้ [พิมพ์ เอกสาร และ ใช้งาน ออฟฟิศ](usage)'
+- intent: inform_usage
+  examples: '- เอาไว้ [เล่น เกมส์ ออนไลน์ ทั่วไป](usage)'
+- intent: inform_usage
+  examples: '- [ประมวลผล โมเดล และ เขียน โค้ด](usage)'
+- intent: inform_usage
+  examples: '- [เล่น เกม สาม มิติ ยุคใหม่](usage)'
+- intent: inform_current_specs
+  examples: '- ตอนนี้ ใช้ i 5 10400 f'
+- intent: inform_current_specs
+  examples: '- สเปค ตอนนี้ gtx 1050 ti'
+- intent: inform_current_specs
+  examples: '- ใช้ [gpu](component_type) rtx 2060'
+- intent: inform_current_specs
+  examples: '- แค่ [ram](component_type) 8 gb'
+- intent: inform_current_specs
+  examples: '- ใช้ [hdd](component_type) 1 tb'
+- intent: inform_current_specs
+  examples: '- สเปค เดิม คือ ryzen 5 3600'
+- intent: inform_current_specs
+  examples: '- ใช้ i 3 gen 10 [gpu](component_type) 1650'
+- intent: inform_current_specs
+  examples: '- ปัจจุบัน ใช้ โน้ตบุ๊ก i 7'
+- intent: inform_current_specs
+  examples: '- สเปค คอม ตอนนี้ คือ i 5 gen 4 [ram](component_type) 8 gb gtx 970'
+- intent: inform_current_specs
+  examples: '- ปัจจุบัน ใช้ i 5 - 4570 [ram](component_type) 8 gb'
+- intent: inform_current_specs
+  examples: '- เดิม ใช้ gt 1030'
+- intent: inform_current_specs
+  examples: '- สเปค ปัจจุบัน intel core i 3 gen 8'
+- intent: inform_current_specs
+  examples: '- ใช้ ryzen 3 1200 gpu rx 570'
+- intent: inform_current_specs
+  examples: '- ปัจจุบัน [ram](component_type) 4 gb กับ [hdd](component_type) 500 gb'
+- intent: inform_current_specs
+  examples: '- คอม เดิม ใช้ i 5 7500 [gpu](component_type) gtx 1060 3 gb'
+- intent: inform_current_specs
+  examples: '- ตอนนี้ cpu i 3 9100 f'
+- intent: inform_current_specs
+  examples: '- ที่ บ้าน ใช้ ryzen 5 2600 [ram](component_type) 16 gb'
+- intent: inform_current_specs
+  examples: '- สเปก ปัจจุบัน i 7 4790 [gpu](component_type) gtx 750 ti'
+- intent: inform_current_specs
+  examples: '- ใช้ i 5 gen 3 motherboard socket 1155'
+- intent: inform_current_specs
+  examples: '- สเปค เดิม คือ ryzen 3 3200 g ใช้ ชิป จอ ใน ตัว'
+- intent: inform_current_specs
+  examples: '- ปัจจุบัน ใช้ gpu gtx 1050 ti 4 gb'
+- intent: inform_current_specs
+  examples: '- เดิม [ssd](component_type) 120 gb กับ [hdd](component_type) 1 tb'
+- intent: ask_cpu_info
+  examples: '- [cpu](component_type) คือ อะไร'
+- intent: ask_cpu_info
+  examples: '- [cpu](component_type) ทำหน้าที่ อะไร'
+- intent: ask_cpu_info
+  examples: '- อยากรู้ ว่า [cpu](component_type) สำคัญ ยังไง'
+- intent: ask_cpu_info
+  examples: '- [cpu](component_type) มีผล กับ อะไร บ้าง'
+- intent: ask_cpu_info
+  examples: '- อธิบาย [cpu](component_type) ฟัง'
+- intent: ask_cpu_info
+  examples: '- cpu ทำหน้าที่ อะไร ใน คอมพิวเตอร์'
+- intent: ask_cpu_info
+  examples: '- ข้อมูล เกี่ยวกับ [cpu](component_type)'
+- intent: ask_cpu_info
+  examples: '- ความเร็ว [cpu](component_type) ghz มีผล อย่างไร'
+- intent: ask_cpu_info
+  examples: '- เลือก [cpu](component_type) intel หรือ amd ดีกว่า กัน'
+- intent: ask_cpu_info
+  examples: '- [cpu](component_type) multi core เรื่อง อะไร'
+- intent: ask_cpu_info
+  examples: '- หน้าที่ หลัก ของ cpu คือ อะไร'
+- intent: ask_cpu_info
+  examples: '- ทำไม ต้อง เลือก [cpu](component_type) เหมาะกับ การใช้งาน'
+- intent: ask_cpu_info
+  examples: '- [cpu](component_type) i 5 กับ i 7 ต่างกัน มาก ไหม'
+- intent: ask_cpu_info
+  examples: '- cpu รุ่นใหม่ คอม เร็ว ขึ้น อย่างไร'
+- intent: ask_gpu_info
+  examples: '- [gpu](component_type) คือ อะไร'
+- intent: ask_gpu_info
+  examples: '- [gpu](component_type) สำคัญ ยังไง'
+- intent: ask_gpu_info
+  examples: '- [gpu](component_type) เอาไว้ ทำ อะไร'
+- intent: ask_gpu_info
+  examples: '- ทำไม ต้อง ซื้อ [gpu](component_type) แพง ๆ'
+- intent: ask_gpu_info
+  examples: '- อธิบาย [gpu](component_type) ฟัง'
+- intent: ask_gpu_info
+  examples: '- gpu แยก กับ ชิป กราฟิก ใน ตัว ต่างกัน อย่างไร'
+- intent: ask_gpu_info
+  examples: '- vram บน [gpu](component_type) ไว้ ทำ อะไร'
+- intent: ask_gpu_info
+  examples: '- ข้อมูล เกี่ยวกับ [gpu](component_type) ใน การ เล่น เกม'
+- intent: ask_gpu_info
+  examples: '- gpu nvidia กับ amd ค่าย ไหน ดีกว่า'
+- intent: ask_gpu_info
+  examples: '- [gpu](component_type) มีผลต่อ การตัดต่อ วิดีโอ อย่างไร'
+- intent: ask_gpu_info
+  examples: '- ทำไม การ เล่น เกม 3 d ต้อง ใช้ [gpu](component_type) แรง ๆ'
+- intent: ask_gpu_info
+  examples: '- หน้าที่ การทำงาน ของ [gpu](component_type) คือ อะไร'
+- intent: ask_gpu_info
+  examples: '- gpu เรนเดอร์ งาน กราฟิก อย่างไร'
+- intent: ask_gpu_info
+  examples: '- ซื้อ [gpu](component_type) ต้อง ดู สเปก อะไร บ้าง'
+- intent: ask_ram_info
+  examples: '- [ram](component_type) คือ อะไร'
+- intent: ask_ram_info
+  examples: '- ทำไม ต้อง เพิ่ม [ram](component_type)'
+- intent: ask_ram_info
+  examples: '- [ram](component_type) เยอะ ดี อย่างไร'
+- intent: ask_ram_info
+  examples: '- [ram](component_type) 16 gb ต่าง กับ 8 gb ยังไง'
+- intent: ask_ram_info
+  examples: '- อธิบาย [ram](component_type) ฟัง'
+- intent: ask_ram_info
+  examples: '- ddr 4 กับ ddr 5 บน [ram](component_type) ต่างกัน อย่างไร'
+- intent: ask_ram_info
+  examples: '- ใส่ [ram](component_type) 8 gb สอง ตัว กับ 16 gb ตัว เดียว แบบ ไหน
+    ดีกว่า'
+- intent: ask_ram_info
+  examples: '- [ram](component_type) bus มีผลต่อ ความเร็ว คอมพิวเตอร์ ไหม'
+- intent: ask_ram_info
+  examples: '- [ram](component_type) ไม่ พอ จะ เกิด อาการ อย่างไร'
+- intent: ask_ram_info
+  examples: '- ทำไม เปิด หลาย โปรแกรม แล้ว [ram](component_type) เต็ม'
+- intent: ask_ram_info
+  examples: '- หน้าที่ ของ [ram](component_type) ใน คอมพิวเตอร์ คือ อะไร'
+- intent: ask_ram_info
+  examples: '- ควร ใช้ [ram](component_type) ขนาด กี่ gb ใน ปัจจุบัน'
+- intent: ask_ram_info
+  examples: '- ram ทำหน้าที่ อะไร ใน การประมวลผล'
+- intent: ask_ram_info
+  examples: '- ความเร็ว bus ของ [ram](component_type) สำคัญ อย่างไร'
+- intent: ask_ssd_hdd_diff
+  examples: '- [ssd](component_type) กับ [hdd](component_type) ต่างกัน ยังไง'
+- intent: ask_ssd_hdd_diff
+  examples: '- ควร ใช้ [ssd](component_type) หรือ [hdd](component_type)'
+- intent: ask_ssd_hdd_diff
+  examples: '- [hdd](component_type) กับ [ssd](component_type) อัน ไหน ดีกว่า กัน'
+- intent: ask_ssd_hdd_diff
+  examples: '- ทำไม [ssd](component_type) ถึง แพง กว่า'
+- intent: ask_ssd_hdd_diff
+  examples: '- [hdd](component_type) ธรรมดา กับ [ssd](component_type) ต่างกัน ตรงไหน'
+- intent: ask_ssd_hdd_diff
+  examples: '- ssd nvme m .2 เร็ว กว่า hdd hdd แค่ ไหน'
+- intent: ask_ssd_hdd_diff
+  examples: '- ข้อดี ของ การ ลง windows บน [ssd](component_type) คือ อะไร'
+- intent: ask_ssd_hdd_diff
+  examples: '- ควร ซื้อ [ssd](component_type) storage เท่าไหร่ ดี'
+- intent: ask_ssd_hdd_diff
+  examples: '- ทำไม [hdd](component_type) ถึง เหมาะกับ การ เก็บ ไฟล์ งาน ขนาดใหญ่'
+- intent: ask_ssd_hdd_diff
+  examples: '- อธิบาย ความแตกต่าง ระหว่าง [ssd](component_type) และ [hdd](component_type)'
+- intent: ask_ssd_hdd_diff
+  examples: '- ssd อ่าน เขียน ข้อมูล ไว กว่า hdd จริง ไหม'
+- intent: ask_ssd_hdd_diff
+  examples: '- เลือก ใช้ [ssd](component_type) หรือ [hdd](component_type) ใน การ เก็บ
+    ข้อมูล ดี'
+- intent: ask_ssd_hdd_diff
+  examples: '- ssd m .2 กับ ssd sata ต่างกัน อย่างไร'
+- intent: ask_ssd_hdd_diff
+  examples: '- อายุการใช้งาน ของ [ssd](component_type) และ [hdd](component_type)'
+- intent: optimize_performance
+  examples: '- คอม ช้า มาก ทำ ไง ดี'
+- intent: optimize_performance
+  examples: '- ตั้งค่า เล่น เก มลื่น ขึ้น'
+- intent: optimize_performance
+  examples: '- ปรับ ทำงาน เร็ว ขึ้น'
+- intent: optimize_performance
+  examples: '- คอม อืด วิธี แก้ ไหม'
+- intent: optimize_performance
+  examples: '- เพิ่ม ความเร็ว คอม ยังไง'
+- intent: optimize_performance
+  examples: '- คอม เรนเดอร์ ไว ขึ้น ต้อง ตั้งค่า อะไร'
+- intent: optimize_performance
+  examples: '- คอม แล ค มาก'
+- intent: optimize_performance
+  examples: '- วิธี แก้ คอมพิวเตอร์ ทำงาน ช้า'
+- intent: optimize_performance
+  examples: '- ทำ อย่างไร windows รัน ได้ ไว ขึ้น'
+- intent: optimize_performance
+  examples: '- วิธี เคลียร์ ไฟล์ ขยะ เพิ่ม ความเร็ว คอม'
+- intent: optimize_performance
+  examples: '- ปิด startup programs ทำ อย่างไร'
+- intent: optimize_performance
+  examples: '- คอม กระตุก เวลาเล่น เกม แก้ไข อย่างไร'
+- intent: optimize_performance
+  examples: '- วิธี ปรับ แต่ง ระบบปฏิบัติการ ทำงาน ลื่นไหล'
+- intent: optimize_performance
+  examples: '- คอมพิวเตอร์ ค้าง บ่อย วิธี ตั้งค่า แก้ไข ไหม'
+- intent: optimize_performance
+  examples: '- ตั้งค่า ไดรเวอร์ gpu ประสิทธิภาพ สูงสุด'
+- intent: optimize_performance
+  examples: '- วิธี แก้ปัญหา คอม อืด โดย ไม่ต้อง ซื้อ อะไหล่ เพิ่ม'
+- intent: optimize_performance
+  examples: '- ตอบสนอง เร็ว ขึ้น ต้อง ปรับ แต่ง อะไร'
+- intent: optimize_performance
+  examples: '- คอม เปิด ช้า มาก แก้ไข อย่างไร ดี'
+- intent: optimize_performance
+  examples: '- ตั้งค่า power plan ทำงาน เต็ม ประสิทธิภาพ'
+- intent: optimize_performance
+  examples: '- วิธี จัดการ disk cleanup เบา ลง'
+- intent: optimize_performance
+  examples: '- ปรับ แต่งการ ตั้งค่า เกม เฟรม เรต นิ่ง ขึ้น'
+- intent: optimize_performance
+  examples: '- คอมพิวเตอร์ หน่วง มาก เวลาเปิด หลาย หน้าต่าง'
+- intent: inform_future_upgrade
+  examples: '- [เผื่อ อัปเกรด](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [ใช้ นานๆ](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [รองรับ อนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [เผื่อ อนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [รุ่นใหม่ ๆ](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- ต้องการ [เผื่อ อัปเกรด ในอนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- เลือก motherboard และ ram รุ่นใหม่ [เผื่อ อัปเกรด](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- สเปก ที่ [รองรับ การ อัปเกรด อนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [เผื่อ เปลี่ยน อะไหล่ ในอนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- เลือก แบบ [ใช้ ยาว ๆ](future_upgrade) ไม่ต้อง เปลี่ยน บ่อย'
+- intent: inform_future_upgrade
+  examples: '- จัด สเปค แบบ [เผื่อ อัปเกรด gpu วันหน้า](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- เอา สเปก ที่ [เผื่อ อัปเกรด ได้ ง่าย](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- เน้น motherboard ซ็อกเก็ต ใหม่ [เผื่อ อนาคต](future_upgrade)'
+- intent: inform_future_upgrade
+  examples: '- [เผื่อ อัปเกรด cpu รุ่นใหม่](future_upgrade)'
+- intent: affirm
+  examples: '- ใช่'
+- intent: affirm
+  examples: '- เอา'
+- intent: affirm
+  examples: '- เผื่อ'
+- intent: affirm
+  examples: '- ต้องการ'
+- intent: affirm
+  examples: '- ตกลง'
+- intent: affirm
+  examples: '- เอา ตามนั้น เลย'
+- intent: affirm
+  examples: '- ถูกต้อง'
+- intent: deny
+  examples: '- ไม่'
+- intent: deny
+  examples: '- ไม่ จำเป็น'
+- intent: deny
+  examples: '- ไม่ต้อง เผื่อ'
+- intent: deny
+  examples: '- เอา ประหยัด'
+- intent: deny
+  examples: '- ไม่ เอา'
+- intent: deny
+  examples: '- เน้น ประหยัด พอ'
+- intent: deny
+  examples: '- ไม่ เอา ดีกว่า'
+- intent: deny
+  examples: '- เอา แบบ ธรรมดา พอ'

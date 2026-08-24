@@ -1,0 +1,13 @@
+## SpecFlow Development Dataset v4 – Clean Rebuild
+- Timestamp: 20260819171356
+- SHA‑256: 37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d
+- Status: FINAL LOCKED
+- Method: Clean rebuild after legacy corruption
+- Reused examples: 252
+- Generated examples: 548
+- Generated percentage: 68.5%
+- Excluded corrupt/ambiguous count: 0
+- Exact duplicate rows: 0
+- Cross‑intent duplicate rows: 0
+- Entity validation: PASS
+- Forensic backup location: .specflow-recovery/pre-clean-rebuild-20260819171356

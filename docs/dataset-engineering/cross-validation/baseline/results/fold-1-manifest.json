@@ -1,0 +1,53 @@
+{
+  "fold": 1,
+  "train_path": "cv_folds/fold_1/train/nlu.yml",
+  "train_sha256": "885b7ebd13cc89533628db4e8e7d84c485e0251f4a7483b0e527d8a4cb1482e9",
+  "validation_path": "cv_folds/fold_1/val.yml",
+  "validation_sha256": "414495b780107a2af34a94d42a8f92a5fe9a9c2ed0425cca6a7dee873a5e0e62",
+  "validation_rows": 160,
+  "model_path": "cv_results/model_fold_1/nlu-20260820-131003-adventurous-stress.tar.gz",
+  "model_size_bytes": 38740949,
+  "model_sha256": "ca54b67aae5b5e486bd04d7a931436558ea117a02cbbffe1c335018624dc02a5",
+  "model_mtime": 1787208889,
+  "training_exit_code": "EXIT_CODE_NOT_PERSISTED",
+  "existing_intent_report_path": "cv_results/fold_1/intent_report.json",
+  "fresh_intent_report_path": "tmp_salvage/fold_1/candidate_nlu-20260820-131003-adventurous-stress/intent_report.json",
+  "fresh_inference_exit_code": 0,
+  "prediction_csv_path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-1-predictions.csv",
+  "prediction_csv_size_bytes": 85020,
+  "prediction_csv_sha256": "63068c55e02a4da42d6916298796babcf3dc40a0a08a6af7bd77975bc893d05b",
+  "prediction_rows": 160,
+  "unique_example_ids": 160,
+  "prediction_vector_sha256": "d5bad39cc4bd1f45a5a7eef233a01e8c0e7aa07c2be0fd99328a17d138145e15",
+  "prediction_vector_hash_method": "sha256_canonical_json_v1",
+  "correct": 149,
+  "errors": 11,
+  "accuracy": 0.93125,
+  "macro_precision": 0.9558296492779251,
+  "macro_recall": 0.9339970374453134,
+  "macro_f1": 0.9385682288799616,
+  "weighted_precision": 0.9384970238095237,
+  "weighted_recall": 0.93125,
+  "weighted_f1": 0.9298651330616942,
+  "metric_reconciliation_max_delta": 1.1102230246251565e-16,
+  "model_selection_status": "EQUIVALENT_ON_VALIDATION",
+  "model_selection_basis": "identical_160_prediction_vectors_across_2_candidates_selected_canonical_first",
+  "candidate_models_checked": [
+    "cv_results/model_fold_1/nlu-20260820-131003-adventurous-stress.tar.gz",
+    "cv_results/model_fold_1/nlu-20260820-135455-fuchsia-chain.tar.gz"
+  ],
+  "matching_candidates": [
+    "cv_results/model_fold_1/nlu-20260820-131003-adventurous-stress.tar.gz",
+    "cv_results/model_fold_1/nlu-20260820-135455-fuchsia-chain.tar.gz"
+  ],
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "holdout_evaluated": false,
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4",
+    "thai_tokenizer_import": "PASS"
+  }
+}

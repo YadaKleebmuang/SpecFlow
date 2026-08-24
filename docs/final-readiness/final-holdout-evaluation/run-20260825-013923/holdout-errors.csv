@@ -1,0 +1,60 @@
+example_id,utterance,true_intent,predicted_intent,confidence,confusion_pair
+c7f4575e58b540dc8caea0d3099320cb6b569e43228a7d40a8868db17a57bdb9,สวัสดีตอนลาง [CKW5],goodbye,greet,0.9871,goodbye -> greet
+0535f29d161f69553030cfd967098caff9e3f12e06c955e61c10664bd90c618a,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [WNNH],build_pc,inform_budget,0.5920,build_pc -> inform_budget
+05ab2f677a93abea6777797f68845bcb04574a71da373b552d76e4b637bb2371,อยากได้คอมที่รองรับ VR [ZYCW],build_pc,upgrade_pc,0.5236,build_pc -> upgrade_pc
+3c1f9363fa10234b29f8c49a0271253ce364cd7744cace6c6636622a79eae156,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [FF0T],build_pc,inform_budget,0.6816,build_pc -> inform_budget
+2a2ecb3fb03f6028c42e1192f253edb9c8da12e06547c9f526345a92dd556b66,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [T84A],build_pc,inform_budget,0.5898,build_pc -> inform_budget
+c4fbeda9879231dd8e1b6a79a1a55460e74cdb922d8e3820d621b91098b81adb,อยากได้คอมที่รองรับ VR [REN9],build_pc,upgrade_pc,0.5809,build_pc -> upgrade_pc
+e83521cd59775f3a719dc16b9b3710d4e4e9445e35646c967a5a2316402eee9b,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [39TE],build_pc,inform_budget,0.6708,build_pc -> inform_budget
+86b58b467e667c76000f90ec31947bb4c26dffcc1da5552cac67b1114a14e0ce,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [8FSV],build_pc,inform_budget,0.6507,build_pc -> inform_budget
+5ee899db5b427712d0a98704eb4091da023bb2953a41506a9fa913bcd2c5d26e,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [9XPS],build_pc,inform_budget,0.6125,build_pc -> inform_budget
+70edf4d72cb46a4a0cf137117fa78607676be852d814659b058176b0f4bb10e9,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [MO5B],build_pc,inform_budget,0.6638,build_pc -> inform_budget
+8284269365f703345e1e0a57dd98595a2cdfc0a85b545e32754944f50883bc7f,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [KZ02],build_pc,inform_budget,0.8218,build_pc -> inform_budget
+32f11d2a93b5ce27ed2b464762f8a67e0236749a88614e9460529b235bc83b9d,ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [FK8U],build_pc,inform_budget,0.7901,build_pc -> inform_budget
+ccbeb7f91d6fbeb196044e69522926ffa647097681740d72cbbe738191174c83,อัพเกรด CPU เป็น i9 [3BME],upgrade_pc,ask_cpu_info,0.6681,upgrade_pc -> ask_cpu_info
+da61750c199c03e900c4b04463342b7a6fe411f08ec43af0342176c091603e9f,อัพเกรด CPU เป็น i9 [I3QK],upgrade_pc,ask_cpu_info,0.8305,upgrade_pc -> ask_cpu_info
+c60c496865258464c2fabde8c99100301a11ff5f0f0d732a57e6cab6504fca9c,ต้องการคอมในงบ 50000,inform_budget,build_pc,1.0000,inform_budget -> build_pc
+19db3914bb4cf4bcc3789e93398fbc743ef75d42c3ed3f22f4feef35d6e7391d,งบ 20000 อยากได้คอมเกม,inform_budget,build_pc,0.9897,inform_budget -> build_pc
+f240976e317ca9e501fb380606ed427ee2a61cc0fed982d6e142caf8fcf915d9,ต้องการคอมในงบ 50000 [XE6S],inform_budget,build_pc,1.0000,inform_budget -> build_pc
+a8f8184d84bdea0c90b5b5699369323b9be293a88a0c263596f434c426389594,งบ 20000 อยากได้คอมเกม [LZTG],inform_budget,build_pc,0.9936,inform_budget -> build_pc
+3adc34c9ee1552880ca8500b4a2038fe771e5ae01e90901c3ea0b19f8a3506e5,งบ 20000 อยากได้คอมเกม [Y6WK],inform_budget,build_pc,0.9776,inform_budget -> build_pc
+fa7a3133f7d0eb56cccad2e259d07d0ad0269c3a7351a4e561078f76df6c2fac,ต้องการคอมในงบ 50000 [QPHR],inform_budget,build_pc,1.0000,inform_budget -> build_pc
+ebff41d308b2026fe979cb5f920ff74d6950d6a7e6311f659c23c65e70da8c61,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [RIXA],inform_usage,build_pc,0.9779,inform_usage -> build_pc
+9b5c3b6dbbbfdb9f39f4e0e7813b7c56b996f69359fab87a923d4185d071b3fa,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [BI4Q],inform_usage,build_pc,0.9831,inform_usage -> build_pc
+981ecbb2541c0d2615be856f7f8b0523160d1feaf658cd7592f17b61be14f4ff,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [Y9V8],inform_usage,build_pc,0.9530,inform_usage -> build_pc
+2b16de0607b745c341bf2aa24e2403c4e726fbace4258aa9034f24e503b053a2,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [WZS3],inform_usage,build_pc,0.9109,inform_usage -> build_pc
+4d1d8b195ece56fa84e4346081d1f10aa6022f6b9f2e66cd2677c1ceec93d0dc,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [C3O1],inform_usage,build_pc,0.9510,inform_usage -> build_pc
+6ed88fbeee00ef5d36796519a8f7fee02faeb018c2777fcc0bf4fbb4f71c945a,ต้องการคอมที่รัน Docker คอนเทนเนอร์ [0479],inform_usage,build_pc,0.9962,inform_usage -> build_pc
+f5b4e528c48b72400d34eba5918e30dc7adbf1d7e9b571221ad451e085e0e257,CPU มี turbo boost หรือไม่? [ZJA8],ask_cpu_info,optimize_performance,0.7734,ask_cpu_info -> optimize_performance
+3c8f674f8c41e9aeec23a6eaf8766d3bbee3eab4b64d52ca50838a117e4d007f,GPU มีพอร์ต HDMI? [TP0L],ask_gpu_info,inform_current_specs,0.6595,ask_gpu_info -> inform_current_specs
+c207fc3aefa34b8879ab1ee643a1d4a11239c0834e2fbda3c26303eacd7a92ce,GPU มี TDP เท่าไหร่? [JJEG],ask_gpu_info,inform_current_specs,0.4559,ask_gpu_info -> inform_current_specs
+73a7c5ce31f4db57797e4f8ea34a4b55f56c2c8dd1e856db103821840a65d62c,GPU มี TDP เท่าไหร่? [JV1V],ask_gpu_info,inform_current_specs,0.4324,ask_gpu_info -> inform_current_specs
+a4901303d2a65ac5bf47bac072cadff63eda5509c7a727104d518cfa386b16be,GPU มีพอร์ต HDMI? [EBBK],ask_gpu_info,inform_current_specs,0.5128,ask_gpu_info -> inform_current_specs
+10cddfe8e91e39365d5c5b3f8cdc7e0d1bdebe4b120eb264817173c408ec22aa,RAM มี latency ต่ำหรือไม่? [ECRU],ask_ram_info,optimize_performance,1.0000,ask_ram_info -> optimize_performance
+fc479fd17d235de78520d041558c28d1032d7ed7fd8098b24eda05010c2a55df,การเลือก SSD ควรพิจารณาอะไรบ้าง? [9KWV],ask_ssd_hdd_diff,ask_gpu_info,0.4216,ask_ssd_hdd_diff -> ask_gpu_info
+6202bdb51b5b39d2685d977fae0de5025bec85f202d2b223e87ad8d640e46205,ควรทำ overclock CPU หรือ GPU? [V37P],optimize_performance,ask_cpu_info,0.5349,optimize_performance -> ask_cpu_info
+24296fe060f74156b14a304bccc99b55d1fd9e0cc448903a6a0f59f149d98a98,ทำอย่างไรให้ระบบระบายความร้อนดี? [YZ7S],optimize_performance,upgrade_pc,0.9915,optimize_performance -> upgrade_pc
+2308a85c13b80618b5c3a1b8450c4bdd270e1e71a667b5998d6d9fbf5c19ad70,ทำอย่างไรให้ระบบระบายความร้อนดี? [PV60],optimize_performance,upgrade_pc,0.9898,optimize_performance -> upgrade_pc
+9af0289307e9e3e2b7686fb7b4eaf8f7ac006cab3bc2a6102f64f6ccd58cffce,ควรทำ overclock CPU หรือ GPU? [GVWR],optimize_performance,ask_cpu_info,0.4958,optimize_performance -> ask_cpu_info
+a0ac8a4dcf9fc69f22091830f156193ee839a958500f031400a40cceada450d5,ทำอย่างไรให้ระบบระบายความร้อนดี? [53A5],optimize_performance,upgrade_pc,0.9889,optimize_performance -> upgrade_pc
+a7863a56c313281ffce8bb711d7cd8d0b282c8488b950c8a3103483ebd0b26ff,ทำอย่างไรให้ระบบระบายความร้อนดี? [OGN1],optimize_performance,upgrade_pc,0.9839,optimize_performance -> upgrade_pc
+a1361dc13b4b5c90116c74a63602d0b12814bcc36f6bd8af56a5635a5a6ba89e,ทำอย่างไรให้ระบบระบายความร้อนดี? [1HT7],optimize_performance,upgrade_pc,0.9868,optimize_performance -> upgrade_pc
+4f6fe35b7d20fc65e7d6470a9874ecae40e5cc8b3209f20949d2af4b74480ed8,ทำอย่างไรให้ระบบระบายความร้อนดี? [5RBW],optimize_performance,upgrade_pc,0.9846,optimize_performance -> upgrade_pc
+8243e543c1b4dd1f3f31b0ff7320dae9711a88e37ebd58f3674d473b49fad82d,ทำอย่างไรให้ระบบระบายความร้อนดี? [9ITN],optimize_performance,upgrade_pc,0.9829,optimize_performance -> upgrade_pc
+b1dd234d58c861c7b690e1d9ccae3c82286594988d2f05758a7fc5000966de86,ทำอย่างไรให้ระบบระบายความร้อนดี? [M2JA],optimize_performance,upgrade_pc,0.9903,optimize_performance -> upgrade_pc
+835b90927a3281e3c21c97296e52eb8ec2579a87aa405c1f8699859411a1b092,ควรทำ overclock CPU หรือ GPU? [4UX5],optimize_performance,ask_cpu_info,0.5467,optimize_performance -> ask_cpu_info
+381fcc0d4d1834a21326d562ecf36f8de02ff4b506cc3bac6a9d36bcb569f702,ทำอย่างไรให้ระบบระบายความร้อนดี? [TMTT],optimize_performance,upgrade_pc,0.9592,optimize_performance -> upgrade_pc
+3d98839ae95ecf03b47b92883395e3f207ac2b15cd37ed346a29012dbc6d60ef,ทำอย่างไรให้ระบบระบายความร้อนดี? [759I],optimize_performance,upgrade_pc,0.9874,optimize_performance -> upgrade_pc
+d8029d3e5970476685fd8a4a7d9a87591b4000ef31829e1bc9ff84cb4d5664d3,ทำอย่างไรให้ระบบระบายความร้อนดี? [I1B0],optimize_performance,upgrade_pc,0.9893,optimize_performance -> upgrade_pc
+814ad41f69d516c0ba9a59c2eb14ffc5077a204b7c2de484452fd0f5986a4302,อยากเปลี่ยนเมนบอร์ดเป็น Z690 [NX39],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+8cb1b13efc111265085c1f63346154a7070a4ca73d5a8a83b9572199d13e1fc0,อยากเปลี่ยนเมนบอร์ดเป็น Z690 [8E8L],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+3d91748598acf43f1f17c138187dd8b3fe97233481ed8856d13dfc69bca80642,อยากเพิ่ม RAM เป็น 32GB [OXFQ],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+99c0591d2e068a67517816302ae60e40e0fabc9294e4d690f15c6bac006ec7d5,ต้องการเพิ่มจอ 4K [MYX4],inform_future_upgrade,upgrade_pc,0.9995,inform_future_upgrade -> upgrade_pc
+6f31bc16fa20ea122890a313f91fdac4de9007aa6a661a99768a43a10d8122ff,อยากเพิ่ม RAM เป็น 32GB [0PDW],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+dbd9e6cca37ce98c9ca4bf75f2f4f104b8544536fe34c8eaa30b4df69659dd57,อยากเปลี่ยนเมนบอร์ดเป็น Z690 [WI6F],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+5f656cfd097af78ba4372ca5b1c6dcd78f207b395f8610a4445f970754c51665,อยากเปลี่ยนเมนบอร์ดเป็น Z690 [WQY6],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+902be4584d595562fd3cf40c2f4eef4c2a6edcaa965645cf4855affd380f645a,อยากเปลี่ยนเมนบอร์ดเป็น Z690 [6YFP],inform_future_upgrade,upgrade_pc,1.0000,inform_future_upgrade -> upgrade_pc
+c40c669e55771ef042604657f1b039174696aa257b65dbb9b27c9c6399bc3ca0,ตกลง [9K8Y],affirm,inform_budget,0.2049,affirm -> inform_budget
+9a38ab0b063f45891797846b705d26ab07d36cc19ba5601cf76e09246c9d65a2,พอจะทำได้ [4HNR],affirm,inform_future_upgrade,0.3197,affirm -> inform_future_upgrade
+ded1ebc1bc33ca8a7598c210ebae14314605724ffe7259da1ebd438df18f6caa,ปฏิเสธ [0GET],deny,goodbye,0.1329,deny -> goodbye
+b490ec27a41b42a2a972b69f61e7e0e9333e5d362e5b1920aab3675bcb8973bb,ปฏิเสธ [T63J],deny,affirm,0.1463,deny -> affirm

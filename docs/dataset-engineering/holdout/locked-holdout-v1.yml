@@ -1,0 +1,402 @@
+nlu:
+- intent: greet
+  text: สวัสดีครับ [AJI0]
+- intent: greet
+  text: สวัสดีจ้า [DPBH]
+- intent: greet
+  text: สวัสดีจ้า [VUZZ]
+- intent: greet
+  text: สวัสดีเจ้า [HV3A]
+- intent: greet
+  text: สวัสดีค่ะ [ZMF8]
+- intent: goodbye
+  text: แล้วพบกันใหม่ [DNMM]
+- intent: goodbye
+  text: แล้วพบกันใหม่ [30T9]
+- intent: goodbye
+  text: สวัสดีตอนลาง [CKW5]
+- intent: goodbye
+  text: แล้วพบกันใหม่ [UZBI]
+- intent: goodbye
+  text: แล้วพบกันใหม่ [945N]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [WNNH]
+- intent: build_pc
+  text: อยากได้คอมที่รองรับ VR [ZYCW]
+- intent: build_pc
+  text: ต้องการคอมราคาประหยัดแต่ดี [0FN9]
+- intent: build_pc
+  text: ต้องการคอมราคาประหยัดแต่ดี [HL1C]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [2OC6]
+- intent: build_pc
+  text: ต้องการคอมราคาประหยัดแต่ดี [5LXO]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [FF0T]
+- intent: build_pc
+  text: ต้องการคอมราคาประหยัดแต่ดี [PVN9]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [SDBD]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [2PCN]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [T84A]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [YTJX]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [KFAZ]
+- intent: build_pc
+  text: อยากได้คอมที่รองรับ VR [81SD]
+- intent: build_pc
+  text: อยากได้คอมที่รองรับ VR [4SHN]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [T2TA]
+- intent: build_pc
+  text: อยากได้คอมที่รองรับ VR [REN9]
+- intent: build_pc
+  text: อยากได้คอมที่รองรับ VR [IIUC]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [39TE]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [8FSV]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [71YZ]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [9XPS]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [ICAT]
+- intent: build_pc
+  text: ต้องการคอมราคาประหยัดแต่ดี [HCWI]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [4CIY]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [T05U]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [23GD]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [MO5B]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [C02D]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [GQPK]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [5C34]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [B948]
+- intent: build_pc
+  text: ช่วยแนะนำคอมสำหรับเกม 4K [FRHO]
+- intent: build_pc
+  text: อยากประกอบคอมใหม่สเปคสูง [FAO7]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [KZ02]
+- intent: build_pc
+  text: ขอคอมที่เร็วที่สุดสำหรับตัดต่อ [FK8U]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [CLBR]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [F8CG]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [C5O7]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [IVWP]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [ULJY]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [IOYK]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [77AW]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [9CHJ]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [55NF]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [ZW9X]
+- intent: upgrade_pc
+  text: อยากอัพเกรดกราฟิกการ์ดเป็น RTX 3080 [YT7D]
+- intent: upgrade_pc
+  text: ต้องการเพิ่ม RAM 8GB [J60F]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [VZHW]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [SJ6B]
+- intent: upgrade_pc
+  text: อัพเกรด CPU เป็น i9 [3BME]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [FPZU]
+- intent: upgrade_pc
+  text: อยากอัพเกรดกราฟิกการ์ดเป็น RTX 3080 [C56T]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [UFEL]
+- intent: upgrade_pc
+  text: อยากอัพเกรดกราฟิกการ์ดเป็น RTX 3080 [6HID]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [5OWF]
+- intent: upgrade_pc
+  text: ต้องการเพิ่ม RAM 8GB [5935]
+- intent: upgrade_pc
+  text: อยากอัพเกรดกราฟิกการ์ดเป็น RTX 3080 [G72O]
+- intent: upgrade_pc
+  text: ต้องการเพิ่ม RAM 8GB [J2D5]
+- intent: upgrade_pc
+  text: อัพเกรด CPU เป็น i9 [I3QK]
+- intent: upgrade_pc
+  text: ต้องการเพิ่ม RAM 8GB [IXOK]
+- intent: upgrade_pc
+  text: อยากอัพเกรดกราฟิกการ์ดเป็น RTX 3080 [8KXO]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [LA5J]
+- intent: upgrade_pc
+  text: เพิ่มพาวเวอร์ให้รองรับการโอเวอร์คล็อก [8JDP]
+- intent: upgrade_pc
+  text: เปลี่ยน SSD เป็น NVMe [P9E6]
+- intent: inform_budget
+  text: มีงบ [30000](budget) บาทสำหรับคอม
+- intent: inform_budget
+  text: ต้องการคอมในงบ [50000](budget)
+- intent: inform_budget
+  text: งบประมาณของฉันคือ [15000](budget) บาท
+- intent: inform_budget
+  text: งบ [20000](budget) อยากได้คอมเกม
+- intent: inform_budget
+  text: งบประมาณของฉันคือ [15000](budget) บาท [S3Y7]
+- intent: inform_budget
+  text: มีงบ [30000](budget) บาทสำหรับคอม [NCXL]
+- intent: inform_budget
+  text: ต้องการคอมในงบ [50000](budget) [XE6S]
+- intent: inform_budget
+  text: งบ [20000](budget) อยากได้คอมเกม [LZTG]
+- intent: inform_budget
+  text: งบ [20000](budget) อยากได้คอมเกม [Y6WK]
+- intent: inform_budget
+  text: งบประมาณสูงสุด [75000](budget)
+- intent: inform_budget
+  text: งบประมาณของฉันคือ [15000](budget) บาท [KH2V]
+- intent: inform_budget
+  text: ต้องการคอมในงบ [50000](budget) [QPHR]
+- intent: inform_budget
+  text: มีงบ [30000](budget) บาทสำหรับคอม [XKXW]
+- intent: inform_budget
+  text: งบประมาณของฉันคือ [15000](budget) บาท [31YI]
+- intent: inform_budget
+  text: มีงบ [30000](budget) บาทสำหรับคอม [FB9W]
+- intent: inform_usage
+  text: ใช้คอมเพื่อเล่นเกมและตัดต่อวิดีโอ [Q5UZ]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [RIXA]
+- intent: inform_usage
+  text: ใช้คอมเพื่อเล่นเกมและตัดต่อวิดีโอ [2H2Z]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [BI4Q]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [Y9V8]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [WZS3]
+- intent: inform_usage
+  text: คอมสำหรับการออกแบบ 3D [QF5Q]
+- intent: inform_usage
+  text: ต้องการคอมสำหรับการทำงานเอกสาร [4J1R]
+- intent: inform_usage
+  text: ต้องการคอมสำหรับการทำงานเอกสาร [JCKJ]
+- intent: inform_usage
+  text: คอมสำหรับการเขียนโค้ดเป็นหลัก [6CFN]
+- intent: inform_usage
+  text: ต้องการคอมสำหรับการทำงานเอกสาร [ZCOT]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [C3O1]
+- intent: inform_usage
+  text: ใช้คอมเพื่อเล่นเกมและตัดต่อวิดีโอ [41NA]
+- intent: inform_usage
+  text: คอมสำหรับการเขียนโค้ดเป็นหลัก [KO64]
+- intent: inform_usage
+  text: คอมสำหรับการออกแบบ 3D [0TVH]
+- intent: inform_usage
+  text: ต้องการคอมสำหรับการทำงานเอกสาร [JRNY]
+- intent: inform_usage
+  text: ต้องการคอมที่รัน Docker คอนเทนเนอร์ [0479]
+- intent: inform_usage
+  text: คอมสำหรับการออกแบบ 3D [AOUA]
+- intent: inform_current_specs
+  text: CPU เป็น Intel i7, RAM 12GB [EQBN]
+- intent: inform_current_specs
+  text: สเปคปัจจุบันคือ AMD Ryzen 5, 16GB, RTX 2060 [QM5K]
+- intent: inform_current_specs
+  text: CPU เป็น Intel i7, RAM 12GB [JCAT]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [IC8B]
+- intent: inform_current_specs
+  text: คอมของฉันตอนนี้เป็น i5, 8GB RAM, GTX 1650 [8HAF]
+- intent: inform_current_specs
+  text: สเปคปัจจุบันคือ AMD Ryzen 5, 16GB, RTX 2060 [RE8Q]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [1GV0]
+- intent: inform_current_specs
+  text: คอมของฉันตอนนี้เป็น i5, 8GB RAM, GTX 1650 [2FLU]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [U6N7]
+- intent: inform_current_specs
+  text: สเปคปัจจุบันคือ AMD Ryzen 5, 16GB, RTX 2060 [CYWD]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [4VE9]
+- intent: inform_current_specs
+  text: คอมของฉันตอนนี้เป็น i5, 8GB RAM, GTX 1650 [MPNS]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [APRP]
+- intent: inform_current_specs
+  text: ใช้ SSD 256GB กับ HDD 1TB [W3ZP]
+- intent: inform_current_specs
+  text: มีการ์ดจอ RTX 3070 [8J3T]
+- intent: inform_current_specs
+  text: CPU เป็น Intel i7, RAM 12GB [Q3VL]
+- intent: inform_current_specs
+  text: สเปคปัจจุบันคือ AMD Ryzen 5, 16GB, RTX 2060 [3D5I]
+- intent: ask_cpu_info
+  text: CPU รองรับ Hyper-Threading ไหม? [UYMR]
+- intent: ask_cpu_info
+  text: CPU มีจำนวน core กี่ตัว? [GH2M]
+- intent: ask_cpu_info
+  text: CPU มี turbo boost หรือไม่? [ZJA8]
+- intent: ask_cpu_info
+  text: CPU ของคอมนี้มีความเร็วเท่าไหร่? [IOTI]
+- intent: ask_cpu_info
+  text: CPU รองรับ Hyper-Threading ไหม? [XR2D]
+- intent: ask_cpu_info
+  text: CPU รุ่นไหนที่เหมาะกับงานกราฟิก? [OIXN]
+- intent: ask_gpu_info
+  text: GPU มีพอร์ต HDMI? [TP0L]
+- intent: ask_gpu_info
+  text: GPU มี TDP เท่าไหร่? [JJEG]
+- intent: ask_gpu_info
+  text: GPU รุ่นไหนเหมาะกับการเล่นเกม 1080p? [08YG]
+- intent: ask_gpu_info
+  text: GPU มี TDP เท่าไหร่? [JV1V]
+- intent: ask_gpu_info
+  text: GPU รุ่นไหนเหมาะกับการเล่นเกม 1080p? [3KMK]
+- intent: ask_gpu_info
+  text: GPU มีพอร์ต HDMI? [EBBK]
+- intent: ask_ram_info
+  text: RAM DDR4 หรือ DDR5 ดีกว่า? [W1DA]
+- intent: ask_ram_info
+  text: RAM มีความเร็วเท่าไหร่ (MHz)? [QPGB]
+- intent: ask_ram_info
+  text: RAM มี latency ต่ำหรือไม่? [ECRU]
+- intent: ask_ram_info
+  text: RAM ที่แนะนำสำหรับทำงานหนักคือกี่ GB? [F38D]
+- intent: ask_ram_info
+  text: RAM DDR4 หรือ DDR5 ดีกว่า? [E1V2]
+- intent: ask_ram_info
+  text: RAM DDR4 หรือ DDR5 ดีกว่า? [1N6K]
+- intent: ask_ssd_hdd_diff
+  text: การเลือก SSD ควรพิจารณาอะไรบ้าง? [9KWV]
+- intent: ask_ssd_hdd_diff
+  text: SSD ดีกว่ามากไหมในเรื่องความเร็ว? [8HHX]
+- intent: ask_ssd_hdd_diff
+  text: ฮาร์ดดิสก์มีข้อดีอะไร? [ITFO]
+- intent: ask_ssd_hdd_diff
+  text: การเลือก SSD ควรพิจารณาอะไรบ้าง? [QBKK]
+- intent: ask_ssd_hdd_diff
+  text: SSD มีอายุการใช้งานนานแค่ไหน? [CIJ2]
+- intent: ask_ssd_hdd_diff
+  text: การเลือก SSD ควรพิจารณาอะไรบ้าง? [X7PT]
+- intent: optimize_performance
+  text: ปรับตั้งค่าใดให้เกม FPS สูงสุด? [63CF]
+- intent: optimize_performance
+  text: ควรทำ overclock CPU หรือ GPU? [V37P]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [YZ7S]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [PV60]
+- intent: optimize_performance
+  text: ทำอย่างไรให้บูตเครื่องเร็วขึ้น? [JD84]
+- intent: optimize_performance
+  text: ทำอย่างไรให้บูตเครื่องเร็วขึ้น? [VA13]
+- intent: optimize_performance
+  text: ทำอย่างไรให้บูตเครื่องเร็วขึ้น? [B1QX]
+- intent: optimize_performance
+  text: ควรทำ overclock CPU หรือ GPU? [GVWR]
+- intent: optimize_performance
+  text: ทำอย่างไรให้คอมทำงานเร็วขึ้น? [QOLD]
+- intent: optimize_performance
+  text: ปรับตั้งค่าใดให้เกม FPS สูงสุด? [LYK8]
+- intent: optimize_performance
+  text: ทำอย่างไรให้บูตเครื่องเร็วขึ้น? [BDJE]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [53A5]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [OGN1]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [1HT7]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [5RBW]
+- intent: optimize_performance
+  text: ปรับตั้งค่าใดให้เกม FPS สูงสุด? [ZLAO]
+- intent: optimize_performance
+  text: ปรับตั้งค่าใดให้เกม FPS สูงสุด? [96QE]
+- intent: optimize_performance
+  text: ปรับตั้งค่าใดให้เกม FPS สูงสุด? [RZSJ]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [9ITN]
+- intent: optimize_performance
+  text: ทำอย่างไรให้บูตเครื่องเร็วขึ้น? [S55J]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [M2JA]
+- intent: optimize_performance
+  text: ควรทำ overclock CPU หรือ GPU? [4UX5]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [TMTT]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [759I]
+- intent: optimize_performance
+  text: ทำอย่างไรให้ระบบระบายความร้อนดี? [I1B0]
+- intent: inform_future_upgrade
+  text: อยากเปลี่ยนเมนบอร์ดเป็น Z690 [NX39]
+- intent: inform_future_upgrade
+  text: อยากเปลี่ยนเมนบอร์ดเป็น Z690 [8E8L]
+- intent: inform_future_upgrade
+  text: ในอนาคตอยากอัพเกรดเป็น RTX 4090 [5PSQ]
+- intent: inform_future_upgrade
+  text: อยากเพิ่ม RAM เป็น 32GB [OXFQ]
+- intent: inform_future_upgrade
+  text: ต้องการเพิ่มจอ 4K [MYX4]
+- intent: inform_future_upgrade
+  text: วางแผนอัพเกรดสเปคในปีหน้า [NLZ1]
+- intent: inform_future_upgrade
+  text: วางแผนอัพเกรดสเปคในปีหน้า [BCW7]
+- intent: inform_future_upgrade
+  text: อยากเพิ่ม RAM เป็น 32GB [0PDW]
+- intent: inform_future_upgrade
+  text: ในอนาคตอยากอัพเกรดเป็น RTX 4090 [PY6B]
+- intent: inform_future_upgrade
+  text: ในอนาคตอยากอัพเกรดเป็น RTX 4090 [KNFT]
+- intent: inform_future_upgrade
+  text: วางแผนอัพเกรดสเปคในปีหน้า [YGGV]
+- intent: inform_future_upgrade
+  text: อยากเปลี่ยนเมนบอร์ดเป็น Z690 [WI6F]
+- intent: inform_future_upgrade
+  text: อยากเปลี่ยนเมนบอร์ดเป็น Z690 [WQY6]
+- intent: inform_future_upgrade
+  text: อยากเปลี่ยนเมนบอร์ดเป็น Z690 [6YFP]
+- intent: affirm
+  text: ตกลง [9K8Y]
+- intent: affirm
+  text: พอจะทำได้ [4HNR]
+- intent: affirm
+  text: แน่นอน [NMKZ]
+- intent: affirm
+  text: ใช่ครับ [9XJU]
+- intent: affirm
+  text: ใช่ครับ [6036]
+- intent: affirm
+  text: แน่นอน [VMWW]
+- intent: deny
+  text: ไม่ต้องการ [W6XL]
+- intent: deny
+  text: ไม่เป็นไปได้ [BNE6]
+- intent: deny
+  text: ปฏิเสธ [0GET]
+- intent: deny
+  text: ปฏิเสธ [T63J]
+- intent: deny
+  text: ไม่เป็นไปได้ [8K52]
+- intent: deny
+  text: ไม่เป็นไปได้ [8F84]
+version: '2.0'

@@ -1,0 +1,86 @@
+{
+  "development": {
+    "path": "app/rasa/data/nlu.yml",
+    "sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+    "rows": 800,
+    "annotation_total": 187,
+    "annotation_counts_by_entity": {
+      "budget": 46,
+      "component_type": 96,
+      "usage": 33,
+      "future_upgrade": 12
+    }
+  },
+  "fold_artifacts": [
+    {
+      "fold": 0,
+      "report_path": "cv_results/fold_0/DIETClassifier_report.json",
+      "report_sha256": "06e5befdd8dcaa6c5e66846d03dc9f8f93413a252f8ff8ffee0c932eb272f639",
+      "errors_path": "cv_results/fold_0/DIETClassifier_errors.json",
+      "errors_sha256": "788311a60517c365c8d4da012b981b72ecf96f8927f97d8c5c43b44bef97dcbe",
+      "status": "LINEAGE_VERIFIED",
+      "support": 129
+    },
+    {
+      "fold": 1,
+      "report_path": "cv_results/fold_1/DIETClassifier_report.json",
+      "report_sha256": "ac2f554f566c87425530b4eb8210cb38abf43b250230d350658b5b60641ec650",
+      "errors_path": "cv_results/fold_1/DIETClassifier_errors.json",
+      "errors_sha256": "7f05515317bf8b3c2881e6b709d3a90e09afdf112a34799f0f53b81406ed632a",
+      "status": "LINEAGE_VERIFIED",
+      "support": 91
+    },
+    {
+      "fold": 2,
+      "report_path": "cv_results/fold_2/DIETClassifier_report.json",
+      "report_sha256": "ca7d521a6b419e69d5773f9cd67776d04bbbc7c4d9a337563f39a9bedc9c9158",
+      "errors_path": "cv_results/fold_2/DIETClassifier_errors.json",
+      "errors_sha256": "42c30716a96b4a31ed5263c3d24ea1e2d9cadbadc684b128d3192e6d017928c9",
+      "status": "LINEAGE_VERIFIED",
+      "support": 80
+    },
+    {
+      "fold": 3,
+      "report_path": "cv_results/fold_3/DIETClassifier_report.json",
+      "report_sha256": "4388e595502b3a898af11605aae53891e8521382848cc3ae2aea5d577b89faa7",
+      "errors_path": "cv_results/fold_3/DIETClassifier_errors.json",
+      "errors_sha256": "31af13f1c7754d0e4db6f3b1d74bb81af098284903af26d20f03b3b2b2f8e7f9",
+      "status": "LINEAGE_VERIFIED",
+      "support": 63
+    },
+    {
+      "fold": 4,
+      "report_path": "cv_results/fold_4/DIETClassifier_report.json",
+      "report_sha256": "633cdab9352044c3ec4abb8151c2fa7ff2f33532227d3471e3d7b95f6ea78de3",
+      "errors_path": "cv_results/fold_4/DIETClassifier_errors.json",
+      "errors_sha256": "0f1d9f833ec324bfcbb0bdc9c9a2e9cb81b2302e643b023b57b33689c0bf857c",
+      "status": "LINEAGE_VERIFIED",
+      "support": 104
+    }
+  ],
+  "metric_semantics": "token_level_entity_classification (DIETClassifier token evaluation)",
+  "aggregate_possible": true,
+  "aggregate_decision": "AUTHORITATIVE ENTITY 5-FOLD AGGREGATION POSSIBLE",
+  "chapter4_entity_metrics_approved": true,
+  "metrics_summary": {
+    "macro_precision_mean": 0.41992908384376265,
+    "macro_precision_sd": 0.09208159924973024,
+    "macro_recall_mean": 0.5937562850269874,
+    "macro_recall_sd": 0.15822271988471248,
+    "macro_f1_mean": 0.4567519297895192,
+    "macro_f1_sd": 0.07606145114874271,
+    "weighted_f1_mean": 0.5264412626001832,
+    "weighted_f1_sd": 0.04809083605551722
+  },
+  "entity_error_inventory": {
+    "status": "PRESENT",
+    "fold_0_errors_path": "cv_results/fold_0/DIETClassifier_errors.json",
+    "fold_1_errors_path": "cv_results/fold_1/DIETClassifier_errors.json",
+    "fold_2_errors_path": "cv_results/fold_2/DIETClassifier_errors.json",
+    "fold_3_errors_path": "cv_results/fold_3/DIETClassifier_errors.json",
+    "fold_4_errors_path": "cv_results/fold_4/DIETClassifier_errors.json"
+  },
+  "holdout_used": false,
+  "training_executed": false,
+  "development_modified": false
+}

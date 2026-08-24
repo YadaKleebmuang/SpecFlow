@@ -1,0 +1,53 @@
+{
+  "fold": 3,
+  "train_path": "cv_folds/fold_3/train/nlu.yml",
+  "train_sha256": "e3d5c604e6e8c6874d2edff0cc94175e10cdc1aaaa972544f4b1a9ed2a0e2fce",
+  "validation_path": "cv_folds/fold_3/val.yml",
+  "validation_sha256": "14a32eeb515e69ac4581b951601e2aba20e80912ccd1f182dfdb36fdce0148b3",
+  "validation_rows": 160,
+  "model_path": "cv_results/model_fold_3/nlu-20260820-144028-direct-valve.tar.gz",
+  "model_size_bytes": 38843837,
+  "model_sha256": "4c066542e83bc98f87fad04d766211df19e67eeb125ee8286e5d8ee95f04069c",
+  "model_mtime": 1787215379,
+  "training_exit_code": "EXIT_CODE_NOT_PERSISTED",
+  "existing_intent_report_path": "cv_results/fold_3/intent_report.json",
+  "fresh_intent_report_path": "tmp_salvage/fold_3/candidate_nlu-20260820-144028-direct-valve/intent_report.json",
+  "fresh_inference_exit_code": 0,
+  "prediction_csv_path": "docs/dataset-engineering/cross-validation/baseline/results/fold-predictions/fold-3-predictions.csv",
+  "prediction_csv_size_bytes": 81672,
+  "prediction_csv_sha256": "d28804c7d4194789441a99b467054a5eb34ea69891243ca9f8e273ea95b3107a",
+  "prediction_rows": 160,
+  "unique_example_ids": 160,
+  "prediction_vector_sha256": "29834426a6ab1fa8518fc07241a087d624660a2130afd1c65913019dc980e16d",
+  "prediction_vector_hash_method": "sha256_canonical_json_v1",
+  "correct": 145,
+  "errors": 15,
+  "accuracy": 0.90625,
+  "macro_precision": 0.9394545559300551,
+  "macro_recall": 0.8977306083800205,
+  "macro_f1": 0.9091622309710634,
+  "weighted_precision": 0.9115744047619048,
+  "weighted_recall": 0.90625,
+  "weighted_f1": 0.9038497960372961,
+  "metric_reconciliation_max_delta": 1.1102230246251565e-16,
+  "model_selection_status": "EQUIVALENT_ON_VALIDATION",
+  "model_selection_basis": "identical_160_prediction_vectors_across_2_candidates_selected_canonical_first",
+  "candidate_models_checked": [
+    "cv_results/model_fold_3/nlu-20260820-144028-direct-valve.tar.gz",
+    "cv_results/model_fold_3/nlu-20260820-154305-rowdy-poset.tar.gz"
+  ],
+  "matching_candidates": [
+    "cv_results/model_fold_3/nlu-20260820-144028-direct-valve.tar.gz",
+    "cv_results/model_fold_3/nlu-20260820-154305-rowdy-poset.tar.gz"
+  ],
+  "development_sha256": "37b05d1f44de9153321b86e9a7eae1984e21fb0b12bbfac01a4e895c66077b7d",
+  "holdout_sha256": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961",
+  "holdout_evaluated": false,
+  "runtime": {
+    "python_version": "3.9.6",
+    "rasa_version": "3.6.21",
+    "rasa_sdk_version": "3.6.2",
+    "pythainlp_version": "5.3.4",
+    "thai_tokenizer_import": "PASS"
+  }
+}
