@@ -13,12 +13,12 @@
   - 4 macOS cache files: `.DS_Store` across repository tree
   - 4 Intermediate recovery YAMLs: `nlu_350_recovered.yml`, `nlu_600.yml`, `nlu_800.yml`, `nlu_pre_clean_rebuild.yml`
   - 2 Scratch scripts: `recover_and_build.py`, `run_cv.py` (authoritative scripts preserved in `docs/dataset-engineering/scripts/`)
-- **Directories Deleted (14)**:
-  - Local runtime cache: `.rasa`
-  - Temporary evaluation scratch dirs: `tmp_holdout_eval_20260825-013559`, `tmp_holdout_eval_20260825-013611`, `tmp_holdout_eval_20260825-013629`, `tmp_holdout_eval_20260825-013835`
-  - Temporary development scratch dirs: `tmp`, `tmp_salvage`, `cv_canary`
-  - Incomplete/technical preparation Holdout runs: `final-holdout-evaluation/run-20260825-013559`, `run-20260825-013611`, `run-20260825-013629`, `run-20260825-013835`
-  - Incomplete/preliminary System E2E runs: `system-e2e-evidence/run-20260825-014327`, `run-20260825-014416`, `run-20260825-014455`, `run-20260825-014535`
+- **Directories Deleted (16)**:
+  - Local runtime cache: `.rasa` (1)
+  - Temporary evaluation scratch dirs: `tmp_holdout_eval_20260825-013559`, `tmp_holdout_eval_20260825-013611`, `tmp_holdout_eval_20260825-013629`, `tmp_holdout_eval_20260825-013835` (4)
+  - Temporary development scratch dirs: `tmp`, `tmp_salvage`, `cv_canary` (3)
+  - Incomplete/technical preparation Holdout runs: `final-holdout-evaluation/run-20260825-013559`, `run-20260825-013611`, `run-20260825-013629`, `run-20260825-013835` (4)
+  - Incomplete/preliminary System E2E runs: `system-e2e-evidence/run-20260825-014327`, `run-20260825-014416`, `run-20260825-014455`, `run-20260825-014535` (4)
 
 ---
 
