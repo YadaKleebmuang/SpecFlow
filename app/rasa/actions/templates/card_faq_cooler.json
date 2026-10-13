@@ -1,0 +1,398 @@
+[
+  {
+    "type": "flex",
+    "altText": "❄️ CPU Cooler สำคัญอย่างไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❄️ CPU Cooler สำคัญอย่างไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "CPU Cooler ช่วยนำความร้อนออกจาก CPU ครับ หากความร้อนสูงจนถึงขีดจำกัด CPU อาจลดความเร็วเพื่อควบคุมอุณหภูมิ เรียกว่า Thermal Throttling จึงควรเลือกชุดระบายความร้อนที่เหมาะกับภาระงานและติดตั้งให้แนบกับ CPU ตามคู่มือ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: ซิงก์ต้องใส่กับ Socket ของ CPU และเคสได้ ลองถาม 'CPU คืออะไร', 'เคสคอมคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "❄️ ชุดลมหรือชุดน้ำ AIO?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❄️ ชุดลมหรือชุดน้ำ AIO?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ชุดลม (Air Cooler) ใช้ฮีตซิงก์และพัดลม ส่วนชุดน้ำปิด AIO ใช้ปั๊มหมุนเวียนของเหลวไปยังหม้อน้ำครับ ทั้งสองแบบต้องมีพื้นที่และทางลมที่เหมาะสม ผลการระบายความร้อนขึ้นกับรุ่น ขนาด และการติดตั้ง ชุดน้ำไม่ได้เย็นกว่าชุดลมทุกกรณี",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: เปรียบเทียบการระบายความร้อนกับอุปกรณ์หลัก ลองถาม 'CPU คืออะไร', 'เมนบอร์ดคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "❄️ เช็กก่อนติดตั้ง Cooler",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "❄️ เช็กก่อนติดตั้ง Cooler",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "ก่อนติดตั้ง Cooler ให้ตรวจชุดขายึดว่ารองรับ Socket ของ CPU และเช็กความสูงฮีตซิงก์กับเคส รวมถึงพื้นที่ชนกับ RAM ครับ สำหรับ AIO ต้องตรวจขนาดและตำแหน่งหม้อน้ำ ติดตั้งซิลิโคน พัดลม และสายปั๊มตามคู่มือผู้ผลิต แล้วตรวจอุณหภูมิระหว่างใช้งาน",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: ตรวจสอบขนาดหม้อน้ำและความสูงซิงก์ ลองถาม 'เคสคอมคืออะไร', 'RAM คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        }
+      ]
+    }
+  }
+]

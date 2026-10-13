@@ -99,21 +99,21 @@ class TestThaiNLPPreprocessing(unittest.TestCase):
         import sqlite3
         import os
         
-        # ลบไฟล์ DB เก่าถ้ามีอยู่ เพื่อความถูกต้องในการทดสอบ
-        if os.path.exists(DB_PATH):
-            try:
-                os.remove(DB_PATH)
-            except Exception:
-                pass
-                
-        # เรียกใช้งาน log_search บันทึกข้อมูลจำลอง
-        log_search(
-            user_id="U1234567890abcdef",
-            usage_type="เล่นเกม",
-            budget_requested=25000,
-            allocated_total_price=24500
-        )
-        
+        import tempfile
+        from unittest.mock import patch
+        from app.rasa.actions import actions
+
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        DB_PATH = os.path.join(temporary.name, "analytics.db")
+        with patch.object(actions, "DB_PATH", DB_PATH):
+            log_search(
+                user_id="U1234567890abcdef",
+                usage_type="เล่นเกม",
+                budget_requested=25000,
+                allocated_total_price=24500,
+            )
+
         # ตรวจสอบว่าไฟล์ถูกสร้างขึ้นจริง
         self.assertTrue(os.path.exists(DB_PATH))
         

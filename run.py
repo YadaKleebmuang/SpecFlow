@@ -48,11 +48,17 @@ VENV_DIR = PROJECT_ROOT / ".venv-rasa-deploy"
 VENV_PYTHON = VENV_DIR / "bin" / "python"
 VENV_RASA = VENV_DIR / "bin" / "rasa"
 
-FINAL_MODEL = (
-    PROJECT_ROOT
-    / "final_models"
-    / "run-20260825-001846"
-    / "20260825-001851-woolen-billet.tar.gz"
+FINAL_MODEL = Path(
+    os.environ.get(
+        "SPECFLOW_MODEL_PATH",
+        str(
+            PROJECT_ROOT
+            / "models"
+            / "five-categories"
+            / "candidate"
+            / "candidate.tar.gz"
+        ),
+    )
 )
 ENDPOINTS_FILE = PROJECT_ROOT / "app" / "rasa" / "endpoints.yml"
 CREDENTIALS_FILE = PROJECT_ROOT / "app" / "rasa" / "credentials.yml"
@@ -531,7 +537,8 @@ def main():
     time.sleep(6.0)
 
     public_healthy = False
-    for attempt in range(30):
+    last_error = ""
+    for attempt in range(45):
         try:
             req = urllib.request.Request(
                 public_health_url,
@@ -544,12 +551,14 @@ def main():
                         public_healthy = True
                         break
         except Exception as e:
+            last_error = str(e)
             if (attempt + 1) % 5 == 0:
-                print(f"    ... still propagating ({attempt + 1}/30)...", flush=True)
-            time.sleep(1.5)
+                print(f"    ... still propagating ({attempt + 1}/45)...", flush=True)
+            time.sleep(2.0)
 
     if not public_healthy:
-        print(f"❌ Public health check failed at {public_health_url}")
+        print(f"❌ Public health check failed at {public_health_url} (Last error: {last_error})")
+        print("💡 แนะนำ: Cloudflare Edge DNS ในรอบนี้อาจใช้เวลา propagate ช้ากว่าปกติ ให้กดรัน run.py ใหม่อีกครั้งเพื่อรับโดเมนใหม่ได้ทันทีครับ")
         terminate_all_processes()
         sys.exit(1)
 

@@ -1,0 +1,398 @@
+[
+  {
+    "type": "flex",
+    "altText": "⚡ PSU ทำหน้าที่อะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ PSU ทำหน้าที่อะไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "PSU (พาวเวอร์ซัพพลาย) แปลงไฟจากเต้ารับเป็นไฟที่อุปกรณ์คอมพิวเตอร์ใช้ครับ ควรเลือกกำลังไฟและหัวต่อให้เหมาะกับ CPU, GPU และอุปกรณ์ทั้งหมด พร้อมตรวจขนาด PSU ให้ติดตั้งในเคสได้",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: PSU ต้องจ่ายไฟให้พอดีกับการ์ดจอและ CPU ลองถาม 'การ์ดจอคืออะไร', 'เคสคอมคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' เพื่อคำนวณวัตต์ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "⚡ เลือกกำลังไฟให้พอ",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ เลือกกำลังไฟให้พอ",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "การประเมิน PSU ต้องรวมกำลังไฟของ CPU, GPU และอุปกรณ์อื่น พร้อมเผื่อภาระสูงสุดครับ SpecFlow ใช้ CPU TDP + GPU Power + 100W เป็นกฎเบื้องต้น แต่ควรตรวจคำแนะนำ PSU จากผู้ผลิตการ์ดจอและหัวต่อไฟของรุ่นที่จะใช้ด้วย เพราะ TDP ไม่ใช่กำลังไฟสูงสุดของทุกสถานการณ์",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: หากสนใจประเมินกำลังไฟร่วมกับฮาร์ดแวร์หลัก ลองถาม 'การ์ดจอคืออะไร', 'CPU คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "⚡ 80 PLUS และระบบป้องกัน",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "⚡ 80 PLUS และระบบป้องกัน",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "80 PLUS เช่น Standard/White, Bronze และ Gold เป็นระดับประสิทธิภาพการแปลงพลังงาน ไม่ใช่จำนวนวัตต์ที่ PSU จ่ายได้ครับ ควรดูระบบป้องกันแยกด้วย เช่น OVP ป้องกันแรงดันเกิน, OCP ป้องกันกระแสเกิน และ SCP ป้องกันลัดวงจร โดยตรวจข้อมูลของ PSU รุ่นนั้น",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: ตรวจสอบขนาด PSU และการจัดสายไฟในเคส ลองถาม 'เคสคอมคืออะไร', 'การ์ดจอคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  }
+]

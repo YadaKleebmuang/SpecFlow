@@ -1,8 +1,29 @@
 import json
 import os
 import re
+from app.services.recommendation.usage import classify_usage
 
 class UpgradeAdvisor:
+    @staticmethod
+    def _ram_capacity(specs: str):
+        """Read explicitly labelled system RAM, without mistaking VRAM for RAM."""
+        label = r"(?<![a-z])(?:ram|แรม)\s*[:=]?\s*(?:ddr[345]\s*)?"
+        size = r"(\d+)\s*(?:gb|กิ๊ก|กิกะไบต์)"
+        patterns = [
+            label + r"(\d+)\s*[x×*]\s*" + size,
+            label + size + r"(?:\s*[x×*]\s*(\d+))?",
+            size + r"\s*(?:ram|แรม)\b",
+            label + r"(\d+)(?!\d)",
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, specs.lower())
+            if match:
+                capacity = 1
+                for count in match.groups():
+                    capacity *= int(count or 1)
+                return capacity
+        return None
+
     def __init__(self):
         # Load hardware_db.json
         db_path = os.path.join(os.path.dirname(__file__), 'hardware_db.json')
@@ -29,7 +50,15 @@ class UpgradeAdvisor:
         total_price = 0
 
         # 1. Check RAM
-        if "4gb" in specs_normalized or "8gb" in specs_normalized or "ram4" in specs_normalized or "ram8" in specs_normalized:
+        ram_capacity = self._ram_capacity(specs_lower)
+        if ram_capacity is not None and 0 < ram_capacity <= 8 and classify_usage(usage) == "programming":
+            upgrades.append("RAM")
+            recommendations.append(
+                "**เพิ่ม RAM**: แนะนำ 16GB–32GB สำหรับ IDEs, Docker และ VMs "
+                "ตรวจสอบชนิด DDR และสล็อตว่างของเมนบอร์ดก่อนเลือกซื้อ "
+                "(ยังไม่รวมราคา RAM เพราะต้องยืนยันรุ่นเมนบอร์ดก่อน)"
+            )
+        elif ram_capacity is not None and 0 < ram_capacity <= 8:
             upgrades.append("RAM")
             ram_options = self.db.get('ram', [])
             if ram_options:

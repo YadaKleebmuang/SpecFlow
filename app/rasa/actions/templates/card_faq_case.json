@@ -1,0 +1,398 @@
+[
+  {
+    "type": "flex",
+    "altText": "🖥️ Case มีไว้ทำอะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🖥️ Case มีไว้ทำอะไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Case (เคสคอมพิวเตอร์) เป็นโครงสำหรับยึดและปกป้องอุปกรณ์ พร้อมจัดพื้นที่เดินสายและระบายอากาศครับ ก่อนเลือกให้ตรวจว่ารองรับเมนบอร์ด ATX, Micro-ATX หรือ Mini-ITX ที่ต้องการ รวมถึงขนาด PSU และช่องติดตั้งไดรฟ์",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: เคสต้องมีพื้นที่พอดีกับชิ้นส่วนหลัก ลองถาม 'ชุดระบายความร้อนคืออะไร', 'เมนบอร์ดคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "🖥️ เช็กพื้นที่ติดตั้งอุปกรณ์",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🖥️ เช็กพื้นที่ติดตั้งอุปกรณ์",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "นอกจากขนาดเมนบอร์ด ต้องตรวจความยาวและความหนาของ GPU ความสูงชุดระบายความร้อน CPU และตำแหน่งติดตั้งหม้อน้ำ AIO ด้วยครับ พื้นที่จริงอาจลดลงเมื่อติดพัดลมหรือหม้อน้ำ ควรเทียบขนาดอุปกรณ์กับคู่มือเคสรุ่นนั้นก่อนประกอบ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: อยากรู้ระยะความยาวการ์ดจอหรือหม้อน้ำ ลองถาม 'การ์ดจอคืออะไร', 'ชุดระบายความร้อนคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "🖥️ Airflow ภายในเคส",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🖥️ Airflow ภายในเคส",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Airflow คือการไหลเวียนอากาศผ่านอุปกรณ์เพื่อพาความร้อนออกจากเคสครับ การจัดพัดลมรับลมด้านหน้าหรือด้านล่าง และระบายออกด้านหลังหรือด้านบนเป็นแนวทางทั่วไป แต่ต้องดูโครงสร้างเคสด้วย จัดสายไม่ให้ขวางลมและทำความสะอาดแผ่นกรองฝุ่นเป็นระยะ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: เพื่อการระบายความร้อนและเลือกพาวเวอร์ซัพพลาย ลองถาม 'พาวเวอร์ซัพพลายคืออะไร', 'ชุดระบายความร้อนคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -41,8 +41,9 @@ class LineOutput(OutputChannel):
         try:
             logger.info(f"Sending custom JSON to LINE: {json.dumps(json_message, ensure_ascii=False)}")
             if json_message.get("type") == "flex":
-                alt_text = json_message.get("altText", "This is a Flex Message")
-                message = FlexSendMessage(alt_text=alt_text, contents=json_message.get("contents"))
+                if "altText" not in json_message:
+                    json_message["altText"] = "This is a Flex Message"
+                message = FlexSendMessage.new_from_json_dict(json_message)
                 self.line_bot_api.push_message(recipient_id, message)
             elif json_message.get("type") == "text":
                 # รองรับข้อความธรรมดาที่มี Quick Reply ด้วยโครงสร้างแบบ JSON

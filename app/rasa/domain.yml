@@ -1,27 +1,31 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - build_pc
-  - upgrade_pc
-  - inform_budget
-  - inform_usage
-  - inform_current_specs
-  - ask_cpu_info
-  - ask_gpu_info
-  - ask_ram_info
-  - ask_ssd_hdd_diff
-  - optimize_performance
-  - inform_future_upgrade
-  - affirm
-  - deny
+- greet
+- goodbye
+- build_pc
+- upgrade_pc
+- inform_budget
+- inform_usage
+- inform_current_specs
+- ask_cpu_info
+- ask_gpu_info
+- ask_ram_info
+- ask_ssd_hdd_diff
+- optimize_performance
+- inform_future_upgrade
+- affirm
+- deny
+- ask_bot_capabilities
+- ask_mainboard_info
+- ask_storage_info
+- ask_psu_info
+- ask_case_info
+- ask_cooler_info
 entities:
-  - budget
-  - usage
-  - component_type
-  - future_upgrade
-
+- budget
+- usage
+- component_type
+- future_upgrade
 slots:
   budget:
     type: text
@@ -29,22 +33,82 @@ slots:
     mappings:
     - type: from_entity
       entity: budget
+      not_intent:
+      - ask_cpu_info
+      - ask_gpu_info
+      - ask_ram_info
+      - ask_ssd_hdd_diff
+      - ask_bot_capabilities
+      - ask_mainboard_info
+      - ask_storage_info
+      - ask_psu_info
+      - ask_case_info
+      - ask_cooler_info
+      - greet
+      - goodbye
+      - optimize_performance
+      - nlu_fallback
     - type: from_text
       conditions:
       - active_loop: build_pc_form
         requested_slot: budget
+      not_intent:
+      - ask_cpu_info
+      - ask_gpu_info
+      - ask_ram_info
+      - ask_ssd_hdd_diff
+      - ask_bot_capabilities
+      - ask_mainboard_info
+      - ask_storage_info
+      - ask_psu_info
+      - ask_case_info
+      - ask_cooler_info
+      - greet
+      - goodbye
+      - optimize_performance
+      - nlu_fallback
   usage:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: usage
+      not_intent:
+      - ask_cpu_info
+      - ask_gpu_info
+      - ask_ram_info
+      - ask_ssd_hdd_diff
+      - ask_bot_capabilities
+      - ask_mainboard_info
+      - ask_storage_info
+      - ask_psu_info
+      - ask_case_info
+      - ask_cooler_info
+      - greet
+      - goodbye
+      - optimize_performance
+      - nlu_fallback
     - type: from_text
       conditions:
       - active_loop: build_pc_form
         requested_slot: usage
       - active_loop: upgrade_pc_form
         requested_slot: usage
+      not_intent:
+      - ask_cpu_info
+      - ask_gpu_info
+      - ask_ram_info
+      - ask_ssd_hdd_diff
+      - ask_bot_capabilities
+      - ask_mainboard_info
+      - ask_storage_info
+      - ask_psu_info
+      - ask_case_info
+      - ask_cooler_info
+      - greet
+      - goodbye
+      - optimize_performance
+      - nlu_fallback
   current_specs:
     type: text
     influence_conversation: false
@@ -53,6 +117,21 @@ slots:
       conditions:
       - active_loop: upgrade_pc_form
         requested_slot: current_specs
+      not_intent:
+      - ask_cpu_info
+      - ask_gpu_info
+      - ask_ram_info
+      - ask_ssd_hdd_diff
+      - ask_bot_capabilities
+      - ask_mainboard_info
+      - ask_storage_info
+      - ask_psu_info
+      - ask_case_info
+      - ask_cooler_info
+      - greet
+      - goodbye
+      - optimize_performance
+      - nlu_fallback
   future_upgrade:
     type: bool
     influence_conversation: true
@@ -75,31 +154,59 @@ slots:
       conditions:
       - active_loop: build_pc_form
         requested_slot: future_upgrade
-
 forms:
   build_pc_form:
     required_slots:
-      - budget
-      - usage
-      - future_upgrade
+    - budget
+    - usage
+    - future_upgrade
+    ignored_intents:
+    - ask_cpu_info
+    - ask_gpu_info
+    - ask_ram_info
+    - ask_ssd_hdd_diff
+    - ask_bot_capabilities
+    - ask_mainboard_info
+    - ask_storage_info
+    - ask_psu_info
+    - ask_case_info
+    - ask_cooler_info
+    - greet
+    - goodbye
+    - optimize_performance
+    - nlu_fallback
   upgrade_pc_form:
     required_slots:
-      - usage
-      - current_specs
-
+    - usage
+    - current_specs
+    ignored_intents:
+    - ask_cpu_info
+    - ask_gpu_info
+    - ask_ram_info
+    - ask_ssd_hdd_diff
+    - ask_bot_capabilities
+    - ask_mainboard_info
+    - ask_storage_info
+    - ask_psu_info
+    - ask_case_info
+    - ask_cooler_info
+    - greet
+    - goodbye
+    - optimize_performance
+    - nlu_fallback
 actions:
-  - action_recommend_pc
-  - action_recommend_upgrade
-  - action_greet
-  - action_goodbye
-  - action_faq
-  - action_optimize_performance
-  - action_ask_usage
-  - action_ask_current_specs
-  - action_ask_future_upgrade
-
+- action_recommend_pc
+- action_recommend_upgrade
+- action_greet
+- action_goodbye
+- action_faq
+- action_optimize_performance
+- action_ask_usage
+- action_ask_current_specs
+- action_ask_future_upgrade
 responses:
   utter_ask_budget:
-  - text: "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+  - text: คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?
   utter_fallback:
-  - text: "ขออภัยครับ ผมยังไม่เข้าใจข้อความนี้ รบกวนลองพิมพ์ใหม่อีกครั้ง หรือระบุว่าต้องการจัดสเปคคอม อัปเกรดคอม หรือสอบถามข้อมูลอุปกรณ์ได้เลยครับ"
+  - text: ขออภัยครับ ผมยังไม่เข้าใจข้อความนี้ รบกวนลองพิมพ์ใหม่อีกครั้ง หรือระบุว่าต้องการจัดสเปคคอม
+      อัปเกรดคอม หรือสอบถามข้อมูลอุปกรณ์ได้เลยครับ

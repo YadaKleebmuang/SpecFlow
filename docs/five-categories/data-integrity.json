@@ -1,0 +1,35 @@
+{
+  "train_rows": 868,
+  "new_test_rows": 105,
+  "new_test_counts": {
+    "ask_bot_capabilities": 10,
+    "ask_mainboard_info": 10,
+    "ask_storage_info": 10,
+    "ask_psu_info": 10,
+    "ask_case_info": 10,
+    "ask_cooler_info": 10,
+    "greet": 3,
+    "goodbye": 3,
+    "build_pc": 3,
+    "upgrade_pc": 3,
+    "inform_budget": 3,
+    "inform_usage": 3,
+    "inform_current_specs": 3,
+    "ask_cpu_info": 3,
+    "ask_gpu_info": 3,
+    "ask_ram_info": 3,
+    "ask_ssd_hdd_diff": 3,
+    "optimize_performance": 3,
+    "inform_future_upgrade": 3,
+    "affirm": 3,
+    "deny": 3
+  },
+  "normalized_train_test_overlap": 0,
+  "normalized_test_duplicates": 0,
+  "hashes": {
+    "app/rasa/data/nlu.yml": "f7ca01fdb2e76aa01383f7af9d23fe768802e1dc1dbd567ea8af12980b4e7d1b",
+    "app/rasa/tests/five_categories_nlu.yml": "56ce3e9c3de4669a72f9d329b66126464e72729a72886b012d630ffc11fb6b38",
+    "app/rasa/tests/nlu_test.yml": "6d45c400a2423879eb7e56d82c7c346f31a20d7d4eee5d1e4641597149d68312",
+    "docs/dataset-engineering/holdout/locked-holdout-v1.yml": "61d0c3c237d7dda727631ba3bc6a5343929045042dbb61945876fdd41ec7f961"
+  }
+}

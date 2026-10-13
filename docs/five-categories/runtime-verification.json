@@ -1,0 +1,3087 @@
+{
+  "scope": "offline NLU/Core/SDK actions; no live LINE API",
+  "cases": 90,
+  "passed": 90,
+  "results": [
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "บอททำอะไรได้บ้าง",
+      "expected": "ask_bot_capabilities",
+      "actual": "ask_bot_capabilities",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "เมนบอร์ดคืออะไร",
+      "expected": "ask_mainboard_info",
+      "actual": "ask_mainboard_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "storage คืออะไร",
+      "expected": "ask_storage_info",
+      "actual": "ask_storage_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "PSU คืออะไร",
+      "expected": "ask_psu_info",
+      "actual": "ask_psu_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "เคสคอมคืออะไร",
+      "expected": "ask_case_info",
+      "actual": "ask_case_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "CPU cooler คืออะไร",
+      "expected": "ask_cooler_info",
+      "actual": "ask_cooler_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "อยากจัดสเปคคอม",
+      "expected": "build_pc",
+      "actual": "build_pc",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "อยากอัปเกรดคอม",
+      "expected": "upgrade_pc",
+      "actual": "upgrade_pc",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "CPU คืออะไร",
+      "expected": "ask_cpu_info",
+      "actual": "ask_cpu_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "คอมช้าทำอย่างไร",
+      "expected": "optimize_performance",
+      "actual": "optimize_performance",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "เล่นเกม",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "งานกราฟิก",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "ตัดต่อวิดีโอ",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "เขียนโปรแกรม",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "raw",
+      "text": "งานสำนักงาน",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "บอททำอะไรได้บ้าง",
+      "expected": "ask_bot_capabilities",
+      "actual": "ask_bot_capabilities",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "เมนบอร์ดคืออะไร",
+      "expected": "ask_mainboard_info",
+      "actual": "ask_mainboard_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "storage คืออะไร",
+      "expected": "ask_storage_info",
+      "actual": "ask_storage_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "PSU คืออะไร",
+      "expected": "ask_psu_info",
+      "actual": "ask_psu_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "เคสคอมคืออะไร",
+      "expected": "ask_case_info",
+      "actual": "ask_case_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "CPU cooler คืออะไร",
+      "expected": "ask_cooler_info",
+      "actual": "ask_cooler_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "อยากจัดสเปคคอม",
+      "expected": "build_pc",
+      "actual": "build_pc",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "อยากอัปเกรดคอม",
+      "expected": "upgrade_pc",
+      "actual": "upgrade_pc",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "CPU คืออะไร",
+      "expected": "ask_cpu_info",
+      "actual": "ask_cpu_info",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "คอมช้าทำอย่างไร",
+      "expected": "optimize_performance",
+      "actual": "optimize_performance",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "เล่นเกม",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "งานกราฟิก",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "ตัดต่อวิดีโอ",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "เขียนโปรแกรม",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "nlu_smoke",
+      "mode": "line",
+      "text": "งานสำนักงาน",
+      "expected": "inform_usage",
+      "actual": "inform_usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_bot_capabilities",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_case_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_cooler_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_cpu_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_gpu_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_mainboard_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_psu_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_ram_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_ssd_hdd_diff",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "budget",
+      "intent": "ask_storage_info",
+      "before_requested": "budget",
+      "after_requested": "budget",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_bot_capabilities",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_case_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_cooler_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_cpu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_gpu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_mainboard_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_psu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_ram_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_ssd_hdd_diff",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "usage",
+      "intent": "ask_storage_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_bot_capabilities",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_case_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_cooler_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_cpu_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_gpu_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_mainboard_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_psu_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_ram_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_ssd_hdd_diff",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "build_pc_form",
+      "slot": "future_upgrade",
+      "intent": "ask_storage_info",
+      "before_requested": "future_upgrade",
+      "after_requested": "future_upgrade",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_bot_capabilities",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_case_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_cooler_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_cpu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_gpu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_mainboard_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_psu_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_ram_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_ssd_hdd_diff",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "usage",
+      "intent": "ask_storage_info",
+      "before_requested": "usage",
+      "after_requested": "usage",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_bot_capabilities",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_case_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_cooler_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_cpu_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_gpu_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_mainboard_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_psu_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_ram_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_ssd_hdd_diff",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "form_interruption",
+      "form": "upgrade_pc_form",
+      "slot": "current_specs",
+      "intent": "ask_storage_info",
+      "before_requested": "current_specs",
+      "after_requested": "current_specs",
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "raw",
+      "usage": "เล่นเกม",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิก, ตัดต่อวิดีโอ, เขียนโปรแกรม, งานสำนักงาน)"
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "เล่นเกม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "เล่นเกม",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "จากงบประมาณ 35,000 บาท และเน้นการใช้งาน เล่นเกม\nผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:"
+            },
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "💻 **สเปคที่แนะนำ** (ราคารวมประมาณ 32,090 บาท):\n- **CPU**: AMD Ryzen 5 7600 (7,500 บาท)\n- **Mainboard**: ASRock A620M-HDV/M.2 (3,500 บาท)\n- **RAM**: Kingston FURY Beast 16GB (8x2) DDR5 5200MHz (2,400 บาท)\n- **GPU**: AMD Radeon RX 7600 (10,500 บาท)\n- **Storage**: WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 บาท)\n- **PSU**: Corsair CV650 650W 80+ Bronze (2,100 บาท)\n- **Case**: Montech AIR 100 ARGB (1,500 บาท)\n- **Cooler**: DeepCool AG400 ARGB (790 บาท)"
+            },
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
+            },
+            {
+              "recipient_id": "flow-raw-เล่นเกม",
+              "text": "⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "raw",
+      "usage": "งานกราฟิก",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิก, ตัดต่อวิดีโอ, เขียนโปรแกรม, งานสำนักงาน)"
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "งานกราฟิก",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "งานกราฟิก",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "จากงบประมาณ 35,000 บาท และเน้นการใช้งาน งานกราฟิก\nผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:"
+            },
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "💻 **สเปคที่แนะนำ** (ราคารวมประมาณ 31,590 บาท):\n- **CPU**: AMD Ryzen 5 7600 (7,500 บาท)\n- **Mainboard**: ASRock A620M-HDV/M.2 (3,500 บาท)\n- **RAM**: G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 บาท)\n- **GPU**: AMD Radeon RX 6600 (7,500 บาท)\n- **Storage**: WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 บาท)\n- **PSU**: Corsair CV650 650W 80+ Bronze (2,100 บาท)\n- **Case**: Montech AIR 100 ARGB (1,500 บาท)\n- **Cooler**: DeepCool AG400 ARGB (790 บาท)"
+            },
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
+            },
+            {
+              "recipient_id": "flow-raw-งานกราฟิก",
+              "text": "⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "raw",
+      "usage": "ตัดต่อวิดีโอ",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิก, ตัดต่อวิดีโอ, เขียนโปรแกรม, งานสำนักงาน)"
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "ตัดต่อวิดีโอ",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "ตัดต่อวิดีโอ",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "จากงบประมาณ 35,000 บาท และเน้นการใช้งาน ตัดต่อวิดีโอ\nผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:"
+            },
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "💻 **สเปคที่แนะนำ** (ราคารวมประมาณ 29,290 บาท):\n- **CPU**: AMD Ryzen 5 7600 (7,500 บาท)\n- **Mainboard**: ASRock A620M-HDV/M.2 (3,500 บาท)\n- **RAM**: G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 บาท)\n- **GPU**: AMD Radeon RX 6500 XT (5,200 บาท)\n- **Storage**: WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 บาท)\n- **PSU**: Corsair CV650 650W 80+ Bronze (2,100 บาท)\n- **Case**: Montech AIR 100 ARGB (1,500 บาท)\n- **Cooler**: DeepCool AG400 ARGB (790 บาท)"
+            },
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
+            },
+            {
+              "recipient_id": "flow-raw-ตัดต่อวิดีโอ",
+              "text": "⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "raw",
+      "usage": "เขียนโปรแกรม",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิก, ตัดต่อวิดีโอ, เขียนโปรแกรม, งานสำนักงาน)"
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "เขียนโปรแกรม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "เขียนโปรแกรม",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "จากงบประมาณ 35,000 บาท และเน้นการใช้งาน เขียนโปรแกรม\nผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:"
+            },
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "💻 **สเปคที่แนะนำ** (ราคารวมประมาณ 28,590 บาท):\n- **CPU**: AMD Ryzen 5 7600 (7,500 บาท)\n- **Mainboard**: ASRock A620M-HDV/M.2 (3,500 บาท)\n- **RAM**: G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 บาท)\n- **GPU**: NVIDIA GTX 1650 (4,500 บาท)\n- **Storage**: WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 บาท)\n- **PSU**: Corsair CV650 650W 80+ Bronze (2,100 บาท)\n- **Case**: Montech AIR 100 ARGB (1,500 บาท)\n- **Cooler**: DeepCool AG400 ARGB (790 บาท)"
+            },
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
+            },
+            {
+              "recipient_id": "flow-raw-เขียนโปรแกรม",
+              "text": "⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "raw",
+      "usage": "งานสำนักงาน",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? (เช่น เล่นเกม, งานกราฟิก, ตัดต่อวิดีโอ, เขียนโปรแกรม, งานสำนักงาน)"
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "งานสำนักงาน",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) ตอบ ใช่/ไม่ หรือพิมพ์บอกได้เลยครับ"
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "งานสำนักงาน",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "จากงบประมาณ 35,000 บาท และเน้นการใช้งาน งานสำนักงาน\nผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:"
+            },
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "💻 **สเปคที่แนะนำ** (ราคารวมประมาณ 28,590 บาท):\n- **CPU**: AMD Ryzen 5 7600 (7,500 บาท)\n- **Mainboard**: ASRock A620M-HDV/M.2 (3,500 บาท)\n- **RAM**: G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 บาท)\n- **GPU**: NVIDIA GTX 1650 (4,500 บาท)\n- **Storage**: WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 บาท)\n- **PSU**: Corsair CV650 650W 80+ Bronze (2,100 บาท)\n- **Case**: Montech AIR 100 ARGB (1,500 บาท)\n- **Cooler**: DeepCool AG400 ARGB (790 บาท)"
+            },
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
+            },
+            {
+              "recipient_id": "flow-raw-งานสำนักงาน",
+              "text": "⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "line",
+      "usage": "เล่นเกม",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เล่นเกม",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เล่นเกม",
+              "custom": {
+                "type": "text",
+                "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เล่นเกม 🎮",
+                        "text": "เล่นเกม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานกราฟิก 🎨",
+                        "text": "งานกราฟิก"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ตัดต่อวิดีโอ 🎬",
+                        "text": "ตัดต่อวิดีโอ"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เขียนโปรแกรม 💻",
+                        "text": "เขียนโปรแกรม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานสำนักงาน 💼",
+                        "text": "งานสำนักงาน"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "เล่นเกม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เล่นเกม",
+              "custom": {
+                "type": "text",
+                "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) 🚀",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เผื่ออัปเกรด 🚀",
+                        "text": "ใช่"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ไม่เผื่ออัปเกรด ❌",
+                        "text": "ไม่"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "เล่น เกม",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เล่นเกม",
+              "custom": {
+                "type": "flex",
+                "altText": "SpecFlow: สเปคคอมพิวเตอร์ที่แนะนำ",
+                "contents": {
+                  "type": "bubble",
+                  "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#2C3E50",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "SpecFlow PC Build",
+                        "color": "#FFFFFF",
+                        "weight": "bold",
+                        "size": "xl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สำหรับ: เล่น เกม",
+                        "color": "#1ABC9C",
+                        "size": "sm"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "อุปกรณ์ที่แนะนำ",
+                        "weight": "bold",
+                        "size": "md",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "CPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Ryzen 5 7600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Mainboard",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "ASRock A620M-HDV/M.2 (3,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "RAM",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Kingston FURY Beast 16GB (8x2) DDR5 5200MHz (2,400 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "GPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Radeon RX 7600 (10,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Storage",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "PSU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Corsair CV650 650W 80+ Bronze (2,100 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Case",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Montech AIR 100 ARGB (1,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Cooler",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "DeepCool AG400 ARGB (790 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราคารวมโดยประมาณ",
+                            "size": "xs",
+                            "color": "#aaaaaa",
+                            "flex": 0
+                          },
+                          {
+                            "type": "text",
+                            "text": "฿32,090",
+                            "color": "#E74C3C",
+                            "size": "md",
+                            "align": "end",
+                            "weight": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "text",
+                        "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+                        "color": "#95A5A6",
+                        "size": "xxs",
+                        "wrap": true,
+                        "margin": "md"
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "color": "#3498DB",
+                        "action": {
+                          "type": "message",
+                          "label": "ขอคำแนะนำอัปเกรด",
+                          "text": "อัปเกรดคอม"
+                        }
+                      }
+                    ],
+                    "flex": 0
+                  }
+                }
+              }
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "line",
+      "usage": "งานกราฟิก",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานกราฟิก",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานกราฟิก",
+              "custom": {
+                "type": "text",
+                "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เล่นเกม 🎮",
+                        "text": "เล่นเกม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานกราฟิก 🎨",
+                        "text": "งานกราฟิก"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ตัดต่อวิดีโอ 🎬",
+                        "text": "ตัดต่อวิดีโอ"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เขียนโปรแกรม 💻",
+                        "text": "เขียนโปรแกรม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานสำนักงาน 💼",
+                        "text": "งานสำนักงาน"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "งานกราฟิก",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานกราฟิก",
+              "custom": {
+                "type": "text",
+                "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) 🚀",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เผื่ออัปเกรด 🚀",
+                        "text": "ใช่"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ไม่เผื่ออัปเกรด ❌",
+                        "text": "ไม่"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "งาน กราฟิก",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานกราฟิก",
+              "custom": {
+                "type": "flex",
+                "altText": "SpecFlow: สเปคคอมพิวเตอร์ที่แนะนำ",
+                "contents": {
+                  "type": "bubble",
+                  "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#2C3E50",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "SpecFlow PC Build",
+                        "color": "#FFFFFF",
+                        "weight": "bold",
+                        "size": "xl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สำหรับ: งาน กราฟิก",
+                        "color": "#1ABC9C",
+                        "size": "sm"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "อุปกรณ์ที่แนะนำ",
+                        "weight": "bold",
+                        "size": "md",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "CPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Ryzen 5 7600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Mainboard",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "ASRock A620M-HDV/M.2 (3,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "RAM",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "GPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Radeon RX 6600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Storage",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "PSU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Corsair CV650 650W 80+ Bronze (2,100 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Case",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Montech AIR 100 ARGB (1,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Cooler",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "DeepCool AG400 ARGB (790 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราคารวมโดยประมาณ",
+                            "size": "xs",
+                            "color": "#aaaaaa",
+                            "flex": 0
+                          },
+                          {
+                            "type": "text",
+                            "text": "฿31,590",
+                            "color": "#E74C3C",
+                            "size": "md",
+                            "align": "end",
+                            "weight": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "text",
+                        "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+                        "color": "#95A5A6",
+                        "size": "xxs",
+                        "wrap": true,
+                        "margin": "md"
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "color": "#3498DB",
+                        "action": {
+                          "type": "message",
+                          "label": "ขอคำแนะนำอัปเกรด",
+                          "text": "อัปเกรดคอม"
+                        }
+                      }
+                    ],
+                    "flex": 0
+                  }
+                }
+              }
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "line",
+      "usage": "ตัดต่อวิดีโอ",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-ตัดต่อวิดีโอ",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-line-ตัดต่อวิดีโอ",
+              "custom": {
+                "type": "text",
+                "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เล่นเกม 🎮",
+                        "text": "เล่นเกม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานกราฟิก 🎨",
+                        "text": "งานกราฟิก"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ตัดต่อวิดีโอ 🎬",
+                        "text": "ตัดต่อวิดีโอ"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เขียนโปรแกรม 💻",
+                        "text": "เขียนโปรแกรม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานสำนักงาน 💼",
+                        "text": "งานสำนักงาน"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "ตัดต่อวิดีโอ",
+          "messages": [
+            {
+              "recipient_id": "flow-line-ตัดต่อวิดีโอ",
+              "custom": {
+                "type": "text",
+                "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) 🚀",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เผื่ออัปเกรด 🚀",
+                        "text": "ใช่"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ไม่เผื่ออัปเกรด ❌",
+                        "text": "ไม่"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "ตัดต่อ วิดีโอ",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-line-ตัดต่อวิดีโอ",
+              "custom": {
+                "type": "flex",
+                "altText": "SpecFlow: สเปคคอมพิวเตอร์ที่แนะนำ",
+                "contents": {
+                  "type": "bubble",
+                  "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#2C3E50",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "SpecFlow PC Build",
+                        "color": "#FFFFFF",
+                        "weight": "bold",
+                        "size": "xl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สำหรับ: ตัดต่อ วิดีโอ",
+                        "color": "#1ABC9C",
+                        "size": "sm"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "อุปกรณ์ที่แนะนำ",
+                        "weight": "bold",
+                        "size": "md",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "CPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Ryzen 5 7600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Mainboard",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "ASRock A620M-HDV/M.2 (3,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "RAM",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "GPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Radeon RX 6500 XT (5,200 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Storage",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "PSU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Corsair CV650 650W 80+ Bronze (2,100 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Case",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Montech AIR 100 ARGB (1,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Cooler",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "DeepCool AG400 ARGB (790 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราคารวมโดยประมาณ",
+                            "size": "xs",
+                            "color": "#aaaaaa",
+                            "flex": 0
+                          },
+                          {
+                            "type": "text",
+                            "text": "฿29,290",
+                            "color": "#E74C3C",
+                            "size": "md",
+                            "align": "end",
+                            "weight": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "text",
+                        "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+                        "color": "#95A5A6",
+                        "size": "xxs",
+                        "wrap": true,
+                        "margin": "md"
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "color": "#3498DB",
+                        "action": {
+                          "type": "message",
+                          "label": "ขอคำแนะนำอัปเกรด",
+                          "text": "อัปเกรดคอม"
+                        }
+                      }
+                    ],
+                    "flex": 0
+                  }
+                }
+              }
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "line",
+      "usage": "เขียนโปรแกรม",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เขียนโปรแกรม",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เขียนโปรแกรม",
+              "custom": {
+                "type": "text",
+                "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เล่นเกม 🎮",
+                        "text": "เล่นเกม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานกราฟิก 🎨",
+                        "text": "งานกราฟิก"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ตัดต่อวิดีโอ 🎬",
+                        "text": "ตัดต่อวิดีโอ"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เขียนโปรแกรม 💻",
+                        "text": "เขียนโปรแกรม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานสำนักงาน 💼",
+                        "text": "งานสำนักงาน"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "เขียนโปรแกรม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เขียนโปรแกรม",
+              "custom": {
+                "type": "text",
+                "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) 🚀",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เผื่ออัปเกรด 🚀",
+                        "text": "ใช่"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ไม่เผื่ออัปเกรด ❌",
+                        "text": "ไม่"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "เขียน โปรแกรม",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-line-เขียนโปรแกรม",
+              "custom": {
+                "type": "flex",
+                "altText": "SpecFlow: สเปคคอมพิวเตอร์ที่แนะนำ",
+                "contents": {
+                  "type": "bubble",
+                  "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#2C3E50",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "SpecFlow PC Build",
+                        "color": "#FFFFFF",
+                        "weight": "bold",
+                        "size": "xl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สำหรับ: เขียน โปรแกรม",
+                        "color": "#1ABC9C",
+                        "size": "sm"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "อุปกรณ์ที่แนะนำ",
+                        "weight": "bold",
+                        "size": "md",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "CPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Ryzen 5 7600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Mainboard",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "ASRock A620M-HDV/M.2 (3,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "RAM",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "GPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "NVIDIA GTX 1650 (4,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Storage",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "PSU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Corsair CV650 650W 80+ Bronze (2,100 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Case",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Montech AIR 100 ARGB (1,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Cooler",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "DeepCool AG400 ARGB (790 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราคารวมโดยประมาณ",
+                            "size": "xs",
+                            "color": "#aaaaaa",
+                            "flex": 0
+                          },
+                          {
+                            "type": "text",
+                            "text": "฿28,590",
+                            "color": "#E74C3C",
+                            "size": "md",
+                            "align": "end",
+                            "weight": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "text",
+                        "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+                        "color": "#95A5A6",
+                        "size": "xxs",
+                        "wrap": true,
+                        "margin": "md"
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "color": "#3498DB",
+                        "action": {
+                          "type": "message",
+                          "label": "ขอคำแนะนำอัปเกรด",
+                          "text": "อัปเกรดคอม"
+                        }
+                      }
+                    ],
+                    "flex": 0
+                  }
+                }
+              }
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "kind": "build_flow",
+      "mode": "line",
+      "usage": "งานสำนักงาน",
+      "transcript": [
+        {
+          "input": "อยากจัดสเปคคอม",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานสำนักงาน",
+              "text": "คุณมีงบประมาณสำหรับจัดคอมประมาณเท่าไหร่ครับ?"
+            }
+          ],
+          "requested_slot": "budget",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "35000",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานสำนักงาน",
+              "custom": {
+                "type": "text",
+                "text": "คุณเน้นนำไปใช้งานด้านไหนเป็นหลักครับ? 💻🎮💼",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เล่นเกม 🎮",
+                        "text": "เล่นเกม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานกราฟิก 🎨",
+                        "text": "งานกราฟิก"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ตัดต่อวิดีโอ 🎬",
+                        "text": "ตัดต่อวิดีโอ"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เขียนโปรแกรม 💻",
+                        "text": "เขียนโปรแกรม"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "งานสำนักงาน 💼",
+                        "text": "งานสำนักงาน"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "usage",
+          "usage": null,
+          "intent": "build_pc"
+        },
+        {
+          "input": "งานสำนักงาน",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานสำนักงาน",
+              "custom": {
+                "type": "text",
+                "text": "คุณต้องการเผื่ออัปเกรดในอนาคตด้วยไหมครับ? (เช่น เลือกเมนบอร์ดและแรมรุ่นใหม่ๆ เผื่อไว้) 🚀",
+                "quickReply": {
+                  "items": [
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "เผื่ออัปเกรด 🚀",
+                        "text": "ใช่"
+                      }
+                    },
+                    {
+                      "type": "action",
+                      "action": {
+                        "type": "message",
+                        "label": "ไม่เผื่ออัปเกรด ❌",
+                        "text": "ไม่"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "requested_slot": "future_upgrade",
+          "usage": "งาน สำนักงาน",
+          "intent": "build_pc"
+        },
+        {
+          "input": "ไม่",
+          "messages": [
+            {
+              "recipient_id": "flow-line-งานสำนักงาน",
+              "custom": {
+                "type": "flex",
+                "altText": "SpecFlow: สเปคคอมพิวเตอร์ที่แนะนำ",
+                "contents": {
+                  "type": "bubble",
+                  "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "backgroundColor": "#2C3E50",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "SpecFlow PC Build",
+                        "color": "#FFFFFF",
+                        "weight": "bold",
+                        "size": "xl"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สำหรับ: งาน สำนักงาน",
+                        "color": "#1ABC9C",
+                        "size": "sm"
+                      }
+                    ]
+                  },
+                  "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "อุปกรณ์ที่แนะนำ",
+                        "weight": "bold",
+                        "size": "md",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "vertical",
+                        "margin": "xxl",
+                        "spacing": "sm",
+                        "contents": [
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "CPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "AMD Ryzen 5 7600 (7,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Mainboard",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "ASRock A620M-HDV/M.2 (3,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "RAM",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "G.Skill Trident Z5 RGB 32GB (16x2) DDR5 6000MHz (4,900 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "GPU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "NVIDIA GTX 1650 (4,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Storage",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "WD Black SN850X 1TB PCIe 4.0 NVMe (3,800 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "PSU",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Corsair CV650 650W 80+ Bronze (2,100 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Case",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "Montech AIR 100 ARGB (1,500 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          },
+                          {
+                            "type": "box",
+                            "layout": "baseline",
+                            "spacing": "sm",
+                            "contents": [
+                              {
+                                "type": "text",
+                                "text": "Cooler",
+                                "color": "#aaaaaa",
+                                "size": "sm",
+                                "flex": 2
+                              },
+                              {
+                                "type": "text",
+                                "text": "DeepCool AG400 ARGB (790 ฿)",
+                                "wrap": true,
+                                "color": "#666666",
+                                "size": "sm",
+                                "flex": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "xxl"
+                      },
+                      {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "margin": "md",
+                        "contents": [
+                          {
+                            "type": "text",
+                            "text": "ราคารวมโดยประมาณ",
+                            "size": "xs",
+                            "color": "#aaaaaa",
+                            "flex": 0
+                          },
+                          {
+                            "type": "text",
+                            "text": "฿28,590",
+                            "color": "#E74C3C",
+                            "size": "md",
+                            "align": "end",
+                            "weight": "bold"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "separator",
+                        "margin": "md"
+                      },
+                      {
+                        "type": "text",
+                        "text": "⚠️ หมายเหตุ: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง",
+                        "color": "#95A5A6",
+                        "size": "xxs",
+                        "wrap": true,
+                        "margin": "md"
+                      }
+                    ]
+                  },
+                  "footer": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "spacing": "sm",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "color": "#3498DB",
+                        "action": {
+                          "type": "message",
+                          "label": "ขอคำแนะนำอัปเกรด",
+                          "text": "อัปเกรดคอม"
+                        }
+                      }
+                    ],
+                    "flex": 0
+                  }
+                }
+              }
+            }
+          ],
+          "requested_slot": null,
+          "usage": null,
+          "intent": "build_pc"
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

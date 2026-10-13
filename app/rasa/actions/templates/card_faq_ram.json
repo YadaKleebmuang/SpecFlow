@@ -12,15 +12,17 @@
           {
             "type": "text",
             "text": "⚡ RAM (แรม) คืออะไร?",
+            "wrap": true,
+            "size": "lg",
             "color": "#FFFFFF",
-            "weight": "bold",
-            "size": "lg"
+            "weight": "bold"
           }
         ]
       },
       "body": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "md",
         "contents": [
           {
             "type": "text",
@@ -28,9 +30,105 @@
             "wrap": true,
             "size": "sm",
             "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: แนะนำให้เช็กความเข้ากันได้โดยถาม 'เมนบอร์ดคืออะไร' (ดู DDR4/DDR5) หรือ 'SSD ต่างกับ HDD ยังไง' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
           }
         ]
       }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
     }
   },
   {
@@ -46,15 +144,17 @@
           {
             "type": "text",
             "text": "⚡ สาระน่ารู้: DDR4 vs DDR5",
+            "wrap": true,
+            "size": "lg",
             "color": "#FFFFFF",
-            "weight": "bold",
-            "size": "lg"
+            "weight": "bold"
           }
         ]
       },
       "body": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "md",
         "contents": [
           {
             "type": "text",
@@ -62,9 +162,105 @@
             "wrap": true,
             "size": "sm",
             "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: อยากรู้ว่าเมนบอร์ดหรือ CPU รุ่นไหนรองรับบัส DDR5 ลองถาม 'เมนบอร์ดคืออะไร', 'CPU คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
           }
         ]
       }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
     }
   },
   {
@@ -80,15 +276,17 @@
           {
             "type": "text",
             "text": "⚡ ควรเลือก RAM ขนาดเท่าไหร่ดี?",
+            "wrap": true,
+            "size": "lg",
             "color": "#FFFFFF",
-            "weight": "bold",
-            "size": "lg"
+            "weight": "bold"
           }
         ]
       },
       "body": {
         "type": "box",
         "layout": "vertical",
+        "spacing": "md",
         "contents": [
           {
             "type": "text",
@@ -96,9 +294,105 @@
             "wrap": true,
             "size": "sm",
             "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: สำหรับการทำงานหลายอย่างพร้อมกัน ลองถามเรื่อง 'Storage คืออะไร', 'CPU คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
           }
         ]
       }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
     }
   }
 ]

@@ -1,0 +1,398 @@
+[
+  {
+    "type": "flex",
+    "altText": "🧩 Mainboard ทำหน้าที่อะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧩 Mainboard ทำหน้าที่อะไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Mainboard (เมนบอร์ด) คือแผงวงจรหลักที่เชื่อม CPU, RAM, การ์ดจอ และอุปกรณ์เก็บข้อมูลเข้าด้วยกันครับ ก่อนเลือกควรดู CPU ที่รองรับ ชนิด RAM จำนวนสล็อต M.2/SATA และพอร์ตที่ต้องใช้ให้ตรงกับงาน",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: เมนบอร์ดต้องเข้าคู่กับอุปกรณ์อื่นๆ ลองถาม 'CPU คืออะไร' (เช็ก Socket), 'RAM คืออะไร' (DDR4/5) หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "🧩 เลือกบอร์ดให้ตรงกับ CPU",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧩 เลือกบอร์ดให้ตรงกับ CPU",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "การเลือกเมนบอร์ดต้องตรวจ Socket เช่น AM4, AM5 หรือ LGA1700 ให้ตรงกับ CPU และตรวจรายชื่อ CPU ที่รองรับกับเวอร์ชัน BIOS ของบอร์ดรุ่นนั้นด้วยครับ Socket ตรงกันอย่างเดียวไม่ได้ยืนยันว่าใช้ร่วมกันได้ทุกกรณี",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: อยากรู้ขนาดบอร์ดและการลงเคส ลองถาม 'เคสคอมคืออะไร', 'ชุดระบายความร้อนคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "🧩 ขนาดบอร์ดและชนิด RAM",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🧩 ขนาดบอร์ดและชนิด RAM",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "เมนบอร์ดมีขนาด เช่น ATX, Micro-ATX และ Mini-ITX ซึ่งต้องตรงกับขนาดที่เคสรองรับครับ ส่วน DDR4 กับ DDR5 ใช้แทนกันในสล็อตเดียวกันไม่ได้ ต้องตรวจชนิด RAM ที่เมนบอร์ดรุ่นนั้นและ CPU รองรับก่อนซื้อ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: ตรวจสอบความเข้ากันได้ของระบบ ลองถาม 'CPU คืออะไร', 'เคสคอมคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "Storage คืออะไร",
+            "text": "Storage คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  }
+]

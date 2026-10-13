@@ -1,0 +1,252 @@
+{
+  "status": "complete",
+  "stages": [
+    {
+      "name": "validate",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "data",
+        "validate",
+        "--config",
+        "app/rasa/config.yml",
+        "--domain",
+        "app/rasa/domain.yml",
+        "--data",
+        "app/rasa/data",
+        "--max-history",
+        "5"
+      ],
+      "start": 1791888939.734726,
+      "exit_code": 0,
+      "seconds": 2.8913471698760986
+    },
+    {
+      "name": "train-fold-0",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "nlu",
+        "--config",
+        "app/rasa/config.yml",
+        "--nlu",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-0/train.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-0",
+        "--fixed-model-name",
+        "fold-0"
+      ],
+      "start": 1791888942.626677,
+      "exit_code": 0,
+      "seconds": 70.76426386833191
+    },
+    {
+      "name": "evaluate-fold-0",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-0/fold-0.tar.gz",
+        "--data",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-0/validation.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-0/evaluation.json"
+      ],
+      "start": 1791889013.396021,
+      "exit_code": 0,
+      "seconds": 12.942853927612305
+    },
+    {
+      "name": "train-fold-1",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "nlu",
+        "--config",
+        "app/rasa/config.yml",
+        "--nlu",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-1/train.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-1",
+        "--fixed-model-name",
+        "fold-1"
+      ],
+      "start": 1791889026.339435,
+      "exit_code": 0,
+      "seconds": 93.649573802948
+    },
+    {
+      "name": "evaluate-fold-1",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-1/fold-1.tar.gz",
+        "--data",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-1/validation.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-1/evaluation.json"
+      ],
+      "start": 1791889119.993129,
+      "exit_code": 0,
+      "seconds": 13.927855014801025
+    },
+    {
+      "name": "train-fold-2",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "nlu",
+        "--config",
+        "app/rasa/config.yml",
+        "--nlu",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-2/train.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-2",
+        "--fixed-model-name",
+        "fold-2"
+      ],
+      "start": 1791889133.921566,
+      "exit_code": 0,
+      "seconds": 103.81758093833923
+    },
+    {
+      "name": "evaluate-fold-2",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-2/fold-2.tar.gz",
+        "--data",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-2/validation.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-2/evaluation.json"
+      ],
+      "start": 1791889237.744416,
+      "exit_code": 0,
+      "seconds": 12.611457109451294
+    },
+    {
+      "name": "train-fold-3",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "nlu",
+        "--config",
+        "app/rasa/config.yml",
+        "--nlu",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-3/train.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-3",
+        "--fixed-model-name",
+        "fold-3"
+      ],
+      "start": 1791889250.356432,
+      "exit_code": 0,
+      "seconds": 106.15733909606934
+    },
+    {
+      "name": "evaluate-fold-3",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-3/fold-3.tar.gz",
+        "--data",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-3/validation.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-3/evaluation.json"
+      ],
+      "start": 1791889356.519129,
+      "exit_code": 0,
+      "seconds": 13.441444873809814
+    },
+    {
+      "name": "train-fold-4",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "nlu",
+        "--config",
+        "app/rasa/config.yml",
+        "--nlu",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-4/train.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-4",
+        "--fixed-model-name",
+        "fold-4"
+      ],
+      "start": 1791889369.962241,
+      "exit_code": 0,
+      "seconds": 106.66432905197144
+    },
+    {
+      "name": "evaluate-fold-4",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/cv/fold-4/fold-4.tar.gz",
+        "--data",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-4/validation.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/cv/fold-4/evaluation.json"
+      ],
+      "start": 1791889476.6318321,
+      "exit_code": 0,
+      "seconds": 13.78556489944458
+    },
+    {
+      "name": "train-candidate",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/rasa",
+        "train",
+        "--config",
+        "app/rasa/config.yml",
+        "--domain",
+        "app/rasa/domain.yml",
+        "--data",
+        "app/rasa/data/nlu.yml",
+        "app/rasa/data/rules.yml",
+        "app/rasa/data/stories.yml",
+        "--out",
+        "models/five-categories/candidate",
+        "--fixed-model-name",
+        "candidate"
+      ],
+      "start": 1791889491.262808,
+      "exit_code": 0,
+      "seconds": 131.41121101379395
+    },
+    {
+      "name": "evaluate-new-test",
+      "command": [
+        "/Users/ploy/Desktop/mini_project/SpecFlow/.venv-rasa-deploy/bin/python",
+        "-B",
+        "scripts/evaluate_five_category_model.py",
+        "--model",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/candidate/candidate.tar.gz",
+        "--data",
+        "app/rasa/tests/five_categories_nlu.yml",
+        "--out",
+        "/Users/ploy/Desktop/mini_project/SpecFlow/docs/five-categories/new-test-evaluation.json"
+      ],
+      "start": 1791889622.6952472,
+      "exit_code": 0,
+      "seconds": 17.593702793121338
+    }
+  ],
+  "source_hashes": {
+    "app/rasa/data/nlu.yml": "a690631842381c6d719521d05d830494152153d3e8ecd38ce440a2e9a7a3490d",
+    "app/rasa/config.yml": "cb9fd261e343955461d6f9a8ee57212ae6dcf35243ff2d7cc6b45a22a1db0adf",
+    "app/rasa/domain.yml": "d1beda9585cdeb7ddc6292180f4273f0d1c77b89a162f27076db6c6b51506de6",
+    "app/rasa/data/rules.yml": "5b1048e018b9989f36800bc472892a9610ad338d71e081a95f5a5da8ea00bc0e",
+    "app/rasa/tests/five_categories_nlu.yml": "56ce3e9c3de4669a72f9d329b66126464e72729a72886b012d630ffc11fb6b38"
+  },
+  "candidate_sha256": "99bee590237d1ede3af9337b2913ee992f70340cbd1274da52ada5b36a5656ea",
+  "development_gate_passed": true
+}

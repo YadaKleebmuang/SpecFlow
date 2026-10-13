@@ -1,0 +1,398 @@
+[
+  {
+    "type": "flex",
+    "altText": "💾 Storage คืออะไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 Storage คืออะไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Storage คืออุปกรณ์เก็บระบบปฏิบัติการ โปรแกรม และไฟล์ไว้แม้ปิดเครื่อง เช่น SSD และ HDD ครับ ความจุกำหนดว่าเก็บข้อมูลได้มากแค่ไหน ส่วนความเร็วอ่านเขียนมีผลกับการโหลดและย้ายไฟล์ หากต้องการเปรียบเทียบสองชนิดนี้ ถามว่า SSD กับ HDD ต่างกันอย่างไรได้เลยครับ",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: อยากรู้ความแตกต่างเชิงลึกระหว่างไดรฟ์แต่ละประเภท ลองถาม 'SSD ต่างกับ HDD ยังไง', 'เมนบอร์ดคืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "💾 M.2, SATA และ NVMe",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 M.2, SATA และ NVMe",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "M.2 เป็นรูปแบบตัวอุปกรณ์ ไม่ได้หมายความว่าเป็น NVMe เสมอไปครับ SSD แบบ M.2 มีทั้ง SATA และ PCIe NVMe จึงต้องตรวจว่าเมนบอร์ดรองรับชนิดใด ความเร็วจริงขึ้นกับรุ่นไดรฟ์ การเชื่อมต่อ และลักษณะงาน ไม่ใช่ดูคำว่า M.2 อย่างเดียว",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: เพื่อเลือกความจุและช่อง M.2 ให้ตรงกับงาน ลองถาม 'เมนบอร์ดคืออะไร', 'RAM คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "flex",
+    "altText": "💾 แบ่งไดรฟ์และเก็บไฟล์อย่างไร?",
+    "contents": {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "backgroundColor": "#2C3E50",
+        "contents": [
+          {
+            "type": "text",
+            "text": "💾 แบ่งไดรฟ์และเก็บไฟล์อย่างไร?",
+            "wrap": true,
+            "size": "lg",
+            "color": "#FFFFFF",
+            "weight": "bold"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "md",
+        "contents": [
+          {
+            "type": "text",
+            "text": "การจัดไดรฟ์ควรแยกให้ง่ายต่อการดูแล เช่น ใช้ SSD ลงระบบปฏิบัติการและโปรแกรม แล้วเลือกพื้นที่เก็บไฟล์งานให้พอกับการใช้งานครับ การแบ่งพาร์ทิชันในไดรฟ์เดียวไม่ใช่การสำรองข้อมูล ควรมีสำเนาไฟล์สำคัญแยกไว้อีกอุปกรณ์หรือบริการสำรองข้อมูลด้วย",
+            "wrap": true,
+            "size": "sm",
+            "color": "#333333"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "💡 สอบถามเพิ่มเติม: สำหรับการจัดพื้นที่เก็บไฟล์และการสำรองข้อมูล ลองถาม 'SSD ต่างกับ HDD ยังไง', 'RAM คืออะไร' หรือพิมพ์ 'อยากจัดสเปคคอม' ได้เลยครับ",
+            "wrap": true,
+            "size": "xs",
+            "color": "#666666"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "เริ่มจัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          }
+        ]
+      }
+    },
+    "quickReply": {
+      "items": [
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "CPU คืออะไร",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "การ์ดจอคืออะไร",
+            "text": "การ์ดจอคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "RAM คืออะไร",
+            "text": "RAM คืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "SSD ต่างกับ HDD",
+            "text": "SSD ต่างกับ HDD ยังไง"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เมนบอร์ดคืออะไร",
+            "text": "เมนบอร์ดคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "พาวเวอร์ซัพพลาย",
+            "text": "พาวเวอร์ซัพพลายคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "เคสคอมคืออะไร",
+            "text": "เคสคอมคืออะไร"
+          }
+        },
+        {
+          "type": "action",
+          "action": {
+            "type": "message",
+            "label": "ชุดระบายความร้อน",
+            "text": "ชุดระบายความร้อนคืออะไร"
+          }
+        }
+      ]
+    }
+  }
+]

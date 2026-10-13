@@ -1,0 +1,3633 @@
+{
+  "model": "/Users/ploy/Desktop/mini_project/SpecFlow/models/five-categories/candidate/candidate.tar.gz",
+  "model_sha256": "99bee590237d1ede3af9337b2913ee992f70340cbd1274da52ada5b36a5656ea",
+  "data": "app/rasa/tests/five_categories_nlu.yml",
+  "data_sha256": "56ce3e9c3de4669a72f9d329b66126464e72729a72886b012d630ffc11fb6b38",
+  "metrics": {
+    "raw_all": {
+      "count": 105,
+      "accuracy": 0.8285714285714286,
+      "macro_f1": 0.8226385290958488,
+      "per_intent": {
+        "affirm": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "ask_bot_capabilities": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "ask_case_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_cooler_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10
+        },
+        "ask_cpu_info": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "ask_gpu_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_mainboard_info": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 10
+        },
+        "ask_psu_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_ram_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ssd_hdd_diff": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_storage_info": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.7499999999999999,
+          "support": 10
+        },
+        "build_pc": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 3
+        },
+        "deny": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "goodbye": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "greet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_budget": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_current_specs": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "inform_future_upgrade": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "inform_usage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "optimize_performance": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.7499999999999999,
+          "support": 3
+        },
+        "upgrade_pc": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "micro avg": {
+          "precision": 0.8529411764705882,
+          "recall": 0.8285714285714286,
+          "f1-score": 0.8405797101449276,
+          "support": 105
+        },
+        "macro avg": {
+          "precision": 0.8769841269841271,
+          "recall": 0.8253968253968254,
+          "f1-score": 0.8226385290958488,
+          "support": 105
+        },
+        "weighted avg": {
+          "precision": 0.9195238095238095,
+          "recall": 0.8285714285714286,
+          "f1-score": 0.8514675343821739,
+          "support": 105
+        }
+      },
+      "fallbacks": 3,
+      "classifier_accuracy_without_fallback": 0.8380952380952381
+    },
+    "raw_existing": {
+      "count": 45,
+      "accuracy": 0.8222222222222222,
+      "macro_f1": 0.8380952380952382,
+      "per_intent": {
+        "affirm": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "ask_cpu_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_gpu_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ram_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ssd_hdd_diff": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "build_pc": {
+          "precision": 0.42857142857142855,
+          "recall": 1.0,
+          "f1-score": 0.6,
+          "support": 3
+        },
+        "deny": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "goodbye": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "greet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_budget": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_current_specs": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "inform_future_upgrade": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_usage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "optimize_performance": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "upgrade_pc": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "micro avg": {
+          "precision": 0.8409090909090909,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8314606741573033,
+          "support": 45
+        },
+        "macro avg": {
+          "precision": 0.9119047619047619,
+          "recall": 0.8222222222222223,
+          "f1-score": 0.8380952380952382,
+          "support": 45
+        },
+        "weighted avg": {
+          "precision": 0.9119047619047619,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.838095238095238,
+          "support": 45
+        }
+      },
+      "fallbacks": 1,
+      "classifier_accuracy_without_fallback": 0.8444444444444444
+    },
+    "raw_new": {
+      "count": 60,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8947110423116614,
+      "per_intent": {
+        "ask_bot_capabilities": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "ask_case_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_cooler_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10
+        },
+        "ask_mainboard_info": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 10
+        },
+        "ask_psu_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_storage_info": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.7499999999999999,
+          "support": 10
+        },
+        "micro avg": {
+          "precision": 0.9803921568627451,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9009009009009009,
+          "support": 60
+        },
+        "macro avg": {
+          "precision": 0.9833333333333334,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8947110423116614,
+          "support": 60
+        },
+        "weighted avg": {
+          "precision": 0.9833333333333333,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8947110423116614,
+          "support": 60
+        }
+      },
+      "fallbacks": 2,
+      "classifier_accuracy_without_fallback": 0.8333333333333334
+    },
+    "raw_usage_entity": {
+      "examples_with_gold": 6,
+      "tp": 4,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1": 0.7272727272727272,
+      "unit": "normalized entity type/value match (not token-level)"
+    },
+    "raw_budget_entity": {
+      "examples_with_gold": 6,
+      "tp": 3,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "unit": "normalized entity type/value match (not token-level)"
+    },
+    "line_all": {
+      "count": 105,
+      "accuracy": 0.8380952380952381,
+      "macro_f1": 0.8215033381773761,
+      "per_intent": {
+        "affirm": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.7499999999999999,
+          "support": 3
+        },
+        "ask_bot_capabilities": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "ask_case_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_cooler_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10
+        },
+        "ask_cpu_info": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "ask_gpu_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_mainboard_info": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 10
+        },
+        "ask_psu_info": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 10
+        },
+        "ask_ram_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ssd_hdd_diff": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_storage_info": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "build_pc": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "deny": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "goodbye": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "greet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_budget": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 3
+        },
+        "inform_current_specs": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "inform_future_upgrade": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "inform_usage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "optimize_performance": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.7499999999999999,
+          "support": 3
+        },
+        "upgrade_pc": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1-score": 0.6666666666666666,
+          "support": 3
+        },
+        "micro avg": {
+          "precision": 0.8627450980392157,
+          "recall": 0.8380952380952381,
+          "f1-score": 0.8502415458937198,
+          "support": 105
+        },
+        "macro avg": {
+          "precision": 0.8769841269841271,
+          "recall": 0.83015873015873,
+          "f1-score": 0.8215033381773761,
+          "support": 105
+        },
+        "weighted avg": {
+          "precision": 0.9128571428571428,
+          "recall": 0.8380952380952381,
+          "f1-score": 0.852530485878562,
+          "support": 105
+        }
+      },
+      "fallbacks": 3,
+      "classifier_accuracy_without_fallback": 0.8476190476190476
+    },
+    "line_existing": {
+      "count": 45,
+      "accuracy": 0.8222222222222222,
+      "macro_f1": 0.8342857142857144,
+      "per_intent": {
+        "affirm": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.7499999999999999,
+          "support": 3
+        },
+        "ask_cpu_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "ask_gpu_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ram_info": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "ask_ssd_hdd_diff": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "build_pc": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1-score": 0.7499999999999999,
+          "support": 3
+        },
+        "deny": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "goodbye": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "greet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_budget": {
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.5,
+          "support": 3
+        },
+        "inform_current_specs": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "inform_future_upgrade": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.8,
+          "support": 3
+        },
+        "inform_usage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3
+        },
+        "optimize_performance": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "upgrade_pc": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1-score": 0.8571428571428571,
+          "support": 3
+        },
+        "micro avg": {
+          "precision": 0.8604651162790697,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8409090909090908,
+          "support": 45
+        },
+        "macro avg": {
+          "precision": 0.9133333333333333,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8342857142857144,
+          "support": 45
+        },
+        "weighted avg": {
+          "precision": 0.9133333333333333,
+          "recall": 0.8222222222222222,
+          "f1-score": 0.8342857142857142,
+          "support": 45
+        }
+      },
+      "fallbacks": 1,
+      "classifier_accuracy_without_fallback": 0.8222222222222222
+    },
+    "line_new": {
+      "count": 60,
+      "accuracy": 0.85,
+      "macro_f1": 0.9069659442724457,
+      "per_intent": {
+        "ask_bot_capabilities": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "ask_case_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_cooler_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10
+        },
+        "ask_mainboard_info": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 10
+        },
+        "ask_psu_info": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1-score": 0.9473684210526316,
+          "support": 10
+        },
+        "ask_storage_info": {
+          "precision": 1.0,
+          "recall": 0.7,
+          "f1-score": 0.8235294117647058,
+          "support": 10
+        },
+        "micro avg": {
+          "precision": 0.9807692307692307,
+          "recall": 0.85,
+          "f1-score": 0.9107142857142857,
+          "support": 60
+        },
+        "macro avg": {
+          "precision": 0.9833333333333334,
+          "recall": 0.8500000000000001,
+          "f1-score": 0.9069659442724457,
+          "support": 60
+        },
+        "weighted avg": {
+          "precision": 0.9833333333333333,
+          "recall": 0.85,
+          "f1-score": 0.9069659442724458,
+          "support": 60
+        }
+      },
+      "fallbacks": 2,
+      "classifier_accuracy_without_fallback": 0.8666666666666667
+    },
+    "line_usage_entity": {
+      "examples_with_gold": 6,
+      "tp": 4,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1": 0.7272727272727272,
+      "unit": "normalized entity type/value match (not token-level)"
+    },
+    "line_budget_entity": {
+      "examples_with_gold": 6,
+      "tp": 2,
+      "fp": 0,
+      "fn": 4,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1": 0.5,
+      "unit": "normalized entity type/value match (not token-level)"
+    }
+  },
+  "predictions": [
+    {
+      "id": "0e0ed938847b16e13043bc02665e577d47c678d7b197abf2ad69e71b823d7ec8",
+      "text": "เพิ่งเข้ามาครั้งแรก บอทมีเครื่องมืออะไรให้ใช้บ้าง",
+      "query": "เพิ่งเข้ามาครั้งแรก บอทมีเครื่องมืออะไรให้ใช้บ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "optimize_performance",
+      "confidence": 0.5467612743377686,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0e0ed938847b16e13043bc02665e577d47c678d7b197abf2ad69e71b823d7ec8",
+      "text": "เพิ่งเข้ามาครั้งแรก บอทมีเครื่องมืออะไรให้ใช้บ้าง",
+      "query": "เพิ่ง เข้ามา ครั้งแรก บอ ท เครื่องมือ อะไร ใช้ บ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.7136988043785095,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "8d7e2b2af2fab10e434356cd961833bac8cc37371117431ee212f61b4633ecf9",
+      "text": "ก่อนเริ่มอยากทราบขอบเขตงานของ SpecFlow",
+      "query": "ก่อนเริ่มอยากทราบขอบเขตงานของ SpecFlow",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9714217782020569,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "8d7e2b2af2fab10e434356cd961833bac8cc37371117431ee212f61b4633ecf9",
+      "text": "ก่อนเริ่มอยากทราบขอบเขตงานของ SpecFlow",
+      "query": "ก่อน เริ่ม ทราบ ขอบเขต งาน ของ specflow",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9629483222961426,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5715d361f19a3eba05cf8170bc782daf0d8b15e6eb507ea5c3c0f735c7626ef5",
+      "text": "รวบรวมบริการที่ฉันขอจากคุณได้ให้ดูที",
+      "query": "รวบรวมบริการที่ฉันขอจากคุณได้ให้ดูที",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9889147877693176,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5715d361f19a3eba05cf8170bc782daf0d8b15e6eb507ea5c3c0f735c7626ef5",
+      "text": "รวบรวมบริการที่ฉันขอจากคุณได้ให้ดูที",
+      "query": "รวบรวม บริการ ที่ ฉัน จาก ได้ ดู ที",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9627015590667725,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "e43a51dbc494b46b2576e445975dc5b28e29e34a34a7ac66a4192a33a76b5a02",
+      "text": "แชทนี้ให้ความช่วยเหลือด้านคอมอย่างไรบ้าง",
+      "query": "แชทนี้ให้ความช่วยเหลือด้านคอมอย่างไรบ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9388691186904907,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "e43a51dbc494b46b2576e445975dc5b28e29e34a34a7ac66a4192a33a76b5a02",
+      "text": "แชทนี้ให้ความช่วยเหลือด้านคอมอย่างไรบ้าง",
+      "query": "แชท นี้ ความช่วยเหลือ ด้าน คอม อย่างไรบ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.8237837553024292,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "76337bb43d79eff2f99fa5c33a4a40f1acb07d495ca8879d9a63a2c1d064cad1",
+      "text": "หน้ารวมฟังก์ชันของคุณเปิดยังไง",
+      "query": "หน้ารวมฟังก์ชันของคุณเปิดยังไง",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.7971811294555664,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "76337bb43d79eff2f99fa5c33a4a40f1acb07d495ca8879d9a63a2c1d064cad1",
+      "text": "หน้ารวมฟังก์ชันของคุณเปิดยังไง",
+      "query": "หน้า รวม ฟังก์ชัน ของ เปิด ยังไง",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "optimize_performance",
+      "confidence": 0.6879406571388245,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "294cdbd19031f6fe380e6de5f02541b1e9da27610310c07e6580a51ebb630a93",
+      "text": "คุณตอบคำถามประเภทใดได้บ้าง",
+      "query": "คุณตอบคำถามประเภทใดได้บ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.8309903144836426,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "294cdbd19031f6fe380e6de5f02541b1e9da27610310c07e6580a51ebb630a93",
+      "text": "คุณตอบคำถามประเภทใดได้บ้าง",
+      "query": "ตอบคำถาม ประเภท ใด ได้ บ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.7494540810585022,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "dbdbaf4722172e9cfde8644c8c3089f5ebcc0230589241b8d26a4ee9b2f40def",
+      "text": "ฉันควรเริ่มต้นคุยกับผู้ช่วยนี้แบบไหน",
+      "query": "ฉันควรเริ่มต้นคุยกับผู้ช่วยนี้แบบไหน",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "dbdbaf4722172e9cfde8644c8c3089f5ebcc0230589241b8d26a4ee9b2f40def",
+      "text": "ฉันควรเริ่มต้นคุยกับผู้ช่วยนี้แบบไหน",
+      "query": "ฉัน ควร เริ่มต้น คุย กับ ผู้ช่วย นี้ แบบ ไหน",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7105d7a93d6a1d3ba1bff3285ef353b0c6a3078317b43f4f3eb42294affcc8f7",
+      "text": "มีตัวเลือกบริการอะไรให้ฉันกดบ้าง",
+      "query": "มีตัวเลือกบริการอะไรให้ฉันกดบ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9862674474716187,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7105d7a93d6a1d3ba1bff3285ef353b0c6a3078317b43f4f3eb42294affcc8f7",
+      "text": "มีตัวเลือกบริการอะไรให้ฉันกดบ้าง",
+      "query": "ตัวเลือก บริการ อะไร ฉัน กด บ้าง",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.966385543346405,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c8d295825c9fdd97d9577383d781da510c89c15ec25510260ba98ef94036d9a0",
+      "text": "ช่วยอธิบายว่าระบบ SpecFlow ทำงานอะไรได้",
+      "query": "ช่วยอธิบายว่าระบบ SpecFlow ทำงานอะไรได้",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9946759939193726,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c8d295825c9fdd97d9577383d781da510c89c15ec25510260ba98ef94036d9a0",
+      "text": "ช่วยอธิบายว่าระบบ SpecFlow ทำงานอะไรได้",
+      "query": "อธิบาย ว่า ระบบ specflow ทำงาน อะไร ได้",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "ask_bot_capabilities",
+      "confidence": 0.9897229671478271,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7c1f7f26a248d4b8947bb4eec1cc53f0910802ba7d5ffb47ac0d445689399173",
+      "text": "อยากดูภาพรวมเมนูของผู้ช่วยจัดคอม",
+      "query": "อยากดูภาพรวมเมนูของผู้ช่วยจัดคอม",
+      "intent": "ask_bot_capabilities",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 0.8629083037376404,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7c1f7f26a248d4b8947bb4eec1cc53f0910802ba7d5ffb47ac0d445689399173",
+      "text": "อยากดูภาพรวมเมนูของผู้ช่วยจัดคอม",
+      "query": "ดู ภาพรวม เมนู ของ ผู้ช่วย จัด สเปค คอม",
+      "intent": "ask_bot_capabilities",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 0.9997928738594055,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d71163511180d7c3bbbb0baba88ecfcff6d0780bf76b32edcf0956983f1cf828",
+      "text": "แผง mainboard ในเครื่องทำหน้าที่เชื่อมอะไร",
+      "query": "แผง mainboard ในเครื่องทำหน้าที่เชื่อมอะไร",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.998916745185852,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d71163511180d7c3bbbb0baba88ecfcff6d0780bf76b32edcf0956983f1cf828",
+      "text": "แผง mainboard ในเครื่องทำหน้าที่เชื่อมอะไร",
+      "query": "แผง mainboard ใน ทำหน้าที่ เชื่อม อะไร",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9993347525596619,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d6dbcad3b954710fa019c456ae875634cb8fd89c9f367c44b567e1c12679211c",
+      "text": "จะเช็กว่า CPU อยู่ในรายชื่อรองรับของบอร์ดยังไง",
+      "query": "จะเช็กว่า CPU อยู่ในรายชื่อรองรับของบอร์ดยังไง",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.6702975630760193,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d6dbcad3b954710fa019c456ae875634cb8fd89c9f367c44b567e1c12679211c",
+      "text": "จะเช็กว่า CPU อยู่ในรายชื่อรองรับของบอร์ดยังไง",
+      "query": "จะ เช็ก ว่า cpu อยู่ ใน รายชื่อ รองรับ ของ motherboard ยังไง",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.7588021755218506,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c611e4610e50168d88167da85157a660e452d221750c32c7b6f917134bd8080d",
+      "text": "ถ้า socket เหมือนกันยังต้องดู BIOS อีกหรือเปล่า",
+      "query": "ถ้า socket เหมือนกันยังต้องดู BIOS อีกหรือเปล่า",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.7772144675254822,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c611e4610e50168d88167da85157a660e452d221750c32c7b6f917134bd8080d",
+      "text": "ถ้า socket เหมือนกันยังต้องดู BIOS อีกหรือเปล่า",
+      "query": "ถ้า socket เหมือนกัน ยัง ต้อง ดู bios อีก หรือเปล่า",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.7687318325042725,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "86920580889c821f1f3e73a20f3134435ff6e231251aa70413d6221fcaba9a36",
+      "text": "ขอหลักการเลือกแผงวงจรหลักให้เข้ากับซีพียู",
+      "query": "ขอหลักการเลือกแผงวงจรหลักให้เข้ากับซีพียู",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9338698387145996,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "86920580889c821f1f3e73a20f3134435ff6e231251aa70413d6221fcaba9a36",
+      "text": "ขอหลักการเลือกแผงวงจรหลักให้เข้ากับซีพียู",
+      "query": "หลักการ เลือก แผง วงจร หลัก เข้ากับ cpu",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9611201882362366,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3845551120f2a1c9fb55c91c331cb16939524acef4ce767fbb0ec5edcf09b2df",
+      "text": "บอร์ดขนาด mATX เทียบกับ ATX มีข้อแตกต่างอะไร",
+      "query": "บอร์ดขนาด mATX เทียบกับ ATX มีข้อแตกต่างอะไร",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.8799569010734558,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3845551120f2a1c9fb55c91c331cb16939524acef4ce767fbb0ec5edcf09b2df",
+      "text": "บอร์ดขนาด mATX เทียบกับ ATX มีข้อแตกต่างอะไร",
+      "query": "motherboard ขนาด matx เทียบ กับ atx ข้อแตกต่าง อะไร",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9094060659408569,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "cd09f5f1eb0b53c64ced2751dc4bae5c3cf7f6e1cca3e39ffc37d754e54233a6",
+      "text": "ช่องต่ออุปกรณ์บน motherboard มีอะไรให้ดูบ้าง",
+      "query": "ช่องต่ออุปกรณ์บน motherboard มีอะไรให้ดูบ้าง",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9878944754600525,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "cd09f5f1eb0b53c64ced2751dc4bae5c3cf7f6e1cca3e39ffc37d754e54233a6",
+      "text": "ช่องต่ออุปกรณ์บน motherboard มีอะไรให้ดูบ้าง",
+      "query": "ช่อง ต่อ อุปกรณ์ บน motherboard อะไร ดู บ้าง",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9880776405334473,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "70514589929b87b32daec63cacb5d287e36b9c8d54bbbdd52b6a73f907c1a7b1",
+      "text": "จะรู้ได้จากไหนว่า mainboard รุ่นนี้รับแรมชนิดใด",
+      "query": "จะรู้ได้จากไหนว่า mainboard รุ่นนี้รับแรมชนิดใด",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.7502477169036865,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "70514589929b87b32daec63cacb5d287e36b9c8d54bbbdd52b6a73f907c1a7b1",
+      "text": "จะรู้ได้จากไหนว่า mainboard รุ่นนี้รับแรมชนิดใด",
+      "query": "จะ รู้ ได้ จาก ไหนว่า mainboard รุ่น นี้ รับ ram ชนิด ใด",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.8108595609664917,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7b415b5328f40566919d08f5203b75a42d3827c1611d87ee08a9a3dacf56b88d",
+      "text": "เมนบอร์ดคือศูนย์กลางเชื่อมต่อคอมใช่หรือไม่",
+      "query": "เมนบอร์ดคือศูนย์กลางเชื่อมต่อคอมใช่หรือไม่",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9819093942642212,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7b415b5328f40566919d08f5203b75a42d3827c1611d87ee08a9a3dacf56b88d",
+      "text": "เมนบอร์ดคือศูนย์กลางเชื่อมต่อคอมใช่หรือไม่",
+      "query": "motherboard คือ ศูนย์กลาง เชื่อมต่อ คอม ใช่ หรือไม่",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.8914422392845154,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "a774c70156baf82e53dc364e9f510da5a3022ef7a202609e49feddcc66b29d23",
+      "text": "ทำความเข้าใจคำว่า chipset บนบอร์ดให้ที",
+      "query": "ทำความเข้าใจคำว่า chipset บนบอร์ดให้ที",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.8747888207435608,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "a774c70156baf82e53dc364e9f510da5a3022ef7a202609e49feddcc66b29d23",
+      "text": "ทำความเข้าใจคำว่า chipset บนบอร์ดให้ที",
+      "query": "ทำความเข้าใจ คำ ว่า chipset บน motherboard ที",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.9285845160484314,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "534a41706a8740fdd9c01443da08644c839380f5a4d66916432bb9fb450a2dab",
+      "text": "อ่านสเปค motherboard ก่อนซื้อควรเริ่มตรงไหน",
+      "query": "อ่านสเปค motherboard ก่อนซื้อควรเริ่มตรงไหน",
+      "intent": "ask_mainboard_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.6881105899810791,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "534a41706a8740fdd9c01443da08644c839380f5a4d66916432bb9fb450a2dab",
+      "text": "อ่านสเปค motherboard ก่อนซื้อควรเริ่มตรงไหน",
+      "query": "อ่าน สเปค motherboard ก่อน ซื้อ ควร เริ่ม ตรงไหน",
+      "intent": "ask_mainboard_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.6881105899810791,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "760192e22d2651b672e401d7a814900ac8e286df6a6a0562147c3b7965281d20",
+      "text": "สงสัยว่าไดรฟ์ NVMe กับไดรฟ์ SATA ใช้การเชื่อมต่อเดียวกันไหม",
+      "query": "สงสัยว่าไดรฟ์ NVMe กับไดรฟ์ SATA ใช้การเชื่อมต่อเดียวกันไหม",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9988976716995239,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "760192e22d2651b672e401d7a814900ac8e286df6a6a0562147c3b7965281d20",
+      "text": "สงสัยว่าไดรฟ์ NVMe กับไดรฟ์ SATA ใช้การเชื่อมต่อเดียวกันไหม",
+      "query": "สงสัย ว่า ไดรฟ์ nvme กับ ไดรฟ์ sata ใช้การ เชื่อมต่อ เดียวกัน ไหม",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9989076852798462,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "b98e5a0e1a0922c88fd61d042db56dbf5ac06eb33105190788611cdcd67034d7",
+      "text": "อธิบายคำว่าสตอเรจสำหรับมือใหม่ที",
+      "query": "อธิบายคำว่าสตอเรจสำหรับมือใหม่ที",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.996557354927063,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "b98e5a0e1a0922c88fd61d042db56dbf5ac06eb33105190788611cdcd67034d7",
+      "text": "อธิบายคำว่าสตอเรจสำหรับมือใหม่ที",
+      "query": "อธิบาย คำ ว่า สตอ เร จ สำหรับ มือใหม่ ที",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.996557354927063,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "9ed2efcfeb0f3840fc60545504d79eec29c0b4f9b9268bb9ab3cf0c8f674bea9",
+      "text": "ถ้าเห็นคำว่า M.2 จะรู้ได้ไงว่าเป็น SATA หรือ NVMe",
+      "query": "ถ้าเห็นคำว่า M.2 จะรู้ได้ไงว่าเป็น SATA หรือ NVMe",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 0.8417413830757141,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "9ed2efcfeb0f3840fc60545504d79eec29c0b4f9b9268bb9ab3cf0c8f674bea9",
+      "text": "ถ้าเห็นคำว่า M.2 จะรู้ได้ไงว่าเป็น SATA หรือ NVMe",
+      "query": "ถ้า เห็น คำ ว่า m .2 จะ รู้ ได้ ไง ว่า เป็น sata หรือ nvme",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 0.8286706209182739,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "23be350e162ca7beceace9ee5ad7a3c7d5f6f90b27eddf97ae771a6b2bec3d30",
+      "text": "อยากแบ่งที่เก็บระบบกับไฟล์งานควรทำแบบใด",
+      "query": "อยากแบ่งที่เก็บระบบกับไฟล์งานควรทำแบบใด",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "ask_gpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "23be350e162ca7beceace9ee5ad7a3c7d5f6f90b27eddf97ae771a6b2bec3d30",
+      "text": "อยากแบ่งที่เก็บระบบกับไฟล์งานควรทำแบบใด",
+      "query": "แบ่ง ที่เก็บ ระบบ กับ ไฟล์ งาน ควร ทำ แบบ ใด",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d532cda6d4ecd33323e79e28f9fcdb6c9d72410c9224b105a487b3b58b612038",
+      "text": "พอปิดคอมแล้วไฟล์ยังอยู่ในอุปกรณ์เก็บข้อมูลใช่ไหม",
+      "query": "พอปิดคอมแล้วไฟล์ยังอยู่ในอุปกรณ์เก็บข้อมูลใช่ไหม",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.715124785900116,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d532cda6d4ecd33323e79e28f9fcdb6c9d72410c9224b105a487b3b58b612038",
+      "text": "พอปิดคอมแล้วไฟล์ยังอยู่ในอุปกรณ์เก็บข้อมูลใช่ไหม",
+      "query": "พอ ปิด คอม แล้ว ไฟล์ ยังอยู่ ใน อุปกรณ์ เก็บ ข้อมูล ใช่ไหม",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.715124785900116,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1053bfe6e0afe8246a32ccd5d389c4e6d9b677303f97fca305995a9a0f5cf863",
+      "text": "ความจุและความเร็วไดรฟ์ต่างกันในด้านไหน",
+      "query": "ความจุและความเร็วไดรฟ์ต่างกันในด้านไหน",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9826986789703369,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1053bfe6e0afe8246a32ccd5d389c4e6d9b677303f97fca305995a9a0f5cf863",
+      "text": "ความจุและความเร็วไดรฟ์ต่างกันในด้านไหน",
+      "query": "storage และ ความเร็ว ไดรฟ์ ต่างกัน ใน ด้าน ไหน",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9992901086807251,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7fe07dbf56882267f454be8d367ef5f807b766059430f7f3887263a31c24a09d",
+      "text": "การแบ่งไดรฟ์ D ในดิสก์เดียวช่วยสำรองไฟล์หรือเปล่า",
+      "query": "การแบ่งไดรฟ์ D ในดิสก์เดียวช่วยสำรองไฟล์หรือเปล่า",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.7256974577903748,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7fe07dbf56882267f454be8d367ef5f807b766059430f7f3887263a31c24a09d",
+      "text": "การแบ่งไดรฟ์ D ในดิสก์เดียวช่วยสำรองไฟล์หรือเปล่า",
+      "query": "การ แบ่ง ไดรฟ์ d ใน ดิสก์ เดียว สำรอง ไฟล์ หรือเปล่า",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.8625423312187195,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "bed88ab1411f0cbb2be806d096e0391498376aa356910a719ddd70d271615b74",
+      "text": "เวลาเลือก NVMe ต้องตรวจสล็อตบอร์ดเรื่องใด",
+      "query": "เวลาเลือก NVMe ต้องตรวจสล็อตบอร์ดเรื่องใด",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.5408634543418884,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "bed88ab1411f0cbb2be806d096e0391498376aa356910a719ddd70d271615b74",
+      "text": "เวลาเลือก NVMe ต้องตรวจสล็อตบอร์ดเรื่องใด",
+      "query": "เวลา เลือก nvme ต้อง ตรวจ สล็อต motherboard เรื่อง ใด",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_mainboard_info",
+      "confidence": 0.7442311644554138,
+      "classifier_prediction": "ask_mainboard_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "4f9a32f1bfa6a8e01761b3dfddb38c5510abf1e7a864dbbef6a1d41796df694b",
+      "text": "storage สำหรับเก็บรูปและงานหมายถึงอะไร",
+      "query": "storage สำหรับเก็บรูปและงานหมายถึงอะไร",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9980716109275818,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "4f9a32f1bfa6a8e01761b3dfddb38c5510abf1e7a864dbbef6a1d41796df694b",
+      "text": "storage สำหรับเก็บรูปและงานหมายถึงอะไร",
+      "query": "storage สำหรับ เก็บ รูป และ งาน หมายถึง อะไร",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.9980716109275818,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "62eda1586ec2ff95ab42c0f3cbeba6d00635765d244b6a5e97b82a03c0d8742b",
+      "text": "อยากเข้าใจความหมายของ read write บน SSD",
+      "query": "อยากเข้าใจความหมายของ read write บน SSD",
+      "intent": "ask_storage_info",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 0.6691807508468628,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "62eda1586ec2ff95ab42c0f3cbeba6d00635765d244b6a5e97b82a03c0d8742b",
+      "text": "อยากเข้าใจความหมายของ read write บน SSD",
+      "query": "เข้าใจ ความหมาย ของ read write บน ssd",
+      "intent": "ask_storage_info",
+      "mode": "line",
+      "prediction": "ask_storage_info",
+      "confidence": 0.7403954863548279,
+      "classifier_prediction": "ask_storage_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "38e2eb4069a1391aa5a47d78e5ed33315f9c9783e0781068c53229cdca87e2b5",
+      "text": "อุปกรณ์ power supply ส่งพลังงานให้เครื่องอย่างไร",
+      "query": "อุปกรณ์ power supply ส่งพลังงานให้เครื่องอย่างไร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9998003840446472,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "38e2eb4069a1391aa5a47d78e5ed33315f9c9783e0781068c53229cdca87e2b5",
+      "text": "อุปกรณ์ power supply ส่งพลังงานให้เครื่องอย่างไร",
+      "query": "อุปกรณ์ power supply ส่ง พลังงาน อย่างไร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9997854828834534,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2778386f57a302a1e300ef6a7a58777b8854b8afc077698fda002026b8200751",
+      "text": "ช่วยอธิบายฉลาก 80 PLUS Gold บนแหล่งจ่ายไฟ",
+      "query": "ช่วยอธิบายฉลาก 80 PLUS Gold บนแหล่งจ่ายไฟ",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9999557733535767,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2778386f57a302a1e300ef6a7a58777b8854b8afc077698fda002026b8200751",
+      "text": "ช่วยอธิบายฉลาก 80 PLUS Gold บนแหล่งจ่ายไฟ",
+      "query": "อธิบาย ฉลาก 80 plus gold บน แหล่ง จ่ายไฟ",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9999655485153198,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "231e706dcf85ae90a717fe3961b63f9ffaf7169b0be7ae3dbef2b00ed31f647b",
+      "text": "เลือก PSU ให้กำลังไฟเพียงพอต้องรวมส่วนใดบ้าง",
+      "query": "เลือก PSU ให้กำลังไฟเพียงพอต้องรวมส่วนใดบ้าง",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9993650317192078,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "231e706dcf85ae90a717fe3961b63f9ffaf7169b0be7ae3dbef2b00ed31f647b",
+      "text": "เลือก PSU ให้กำลังไฟเพียงพอต้องรวมส่วนใดบ้าง",
+      "query": "เลือก psu กำลัง ไฟ เพียงพอ ต้อง รวม ส่วน ใด บ้าง",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9993038177490234,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "860f8a4aee85197187b7b375edff2c846188b849e6e746df71cda32e017824ef",
+      "text": "พาวเวอร์ซัพพลายต้องเผื่อโหลดสูงสุดเท่าไร",
+      "query": "พาวเวอร์ซัพพลายต้องเผื่อโหลดสูงสุดเท่าไร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.784120500087738,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "860f8a4aee85197187b7b375edff2c846188b849e6e746df71cda32e017824ef",
+      "text": "พาวเวอร์ซัพพลายต้องเผื่อโหลดสูงสุดเท่าไร",
+      "query": "psu ต้อง เผื่อ โหลด สูงสุด เท่าไร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.8422826528549194,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1886ece2b04981cdb491d17b2b340ae544f0422e1b6968a2dc48514d89576d79",
+      "text": "หัวต่อสาย PSU กับการ์ดจอต้องตรงกันไหม",
+      "query": "หัวต่อสาย PSU กับการ์ดจอต้องตรงกันไหม",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9867772459983826,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1886ece2b04981cdb491d17b2b340ae544f0422e1b6968a2dc48514d89576d79",
+      "text": "หัวต่อสาย PSU กับการ์ดจอต้องตรงกันไหม",
+      "query": "หัว ต่อสาย psu กับ gpu ต้อง ตรงกัน ไหม",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9970945119857788,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 19,
+          "end": 22,
+          "confidence_entity": 0.9976429343223572,
+          "value": "gpu",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a7b5370300fc9e2f3379af7ef1f6c6ecc55df842a5405bba0d4719b3af5f9fb7",
+      "text": "ระบบตัดกระแสเกิน OCP ใน PSU ทำงานเพื่ออะไร",
+      "query": "ระบบตัดกระแสเกิน OCP ใน PSU ทำงานเพื่ออะไร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.998128354549408,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "a7b5370300fc9e2f3379af7ef1f6c6ecc55df842a5405bba0d4719b3af5f9fb7",
+      "text": "ระบบตัดกระแสเกิน OCP ใน PSU ทำงานเพื่ออะไร",
+      "query": "ระบบ ตัด กระแส เกิน ocp ใน psu ทำงาน เพื่อ อะไร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9981114864349365,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d75a256e4776b3d9be9c0f7a50e391e163ed426083654e2fbe9edbde187bd6f2",
+      "text": "ความหมายของ Bronze ที่กล่อง PSU คืออะไร",
+      "query": "ความหมายของ Bronze ที่กล่อง PSU คืออะไร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9986648559570312,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d75a256e4776b3d9be9c0f7a50e391e163ed426083654e2fbe9edbde187bd6f2",
+      "text": "ความหมายของ Bronze ที่กล่อง PSU คืออะไร",
+      "query": "ความหมาย ของ bronze ที่ กล่อง psu คือ อะไร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9986456036567688,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1b3f9c327b32d509ac2f1e2b8733d66ba8756107305f447ef5a4a2a4bdda6394",
+      "text": "แหล่งจ่ายไฟคอมแปลงไฟบ้านเป็นอะไร",
+      "query": "แหล่งจ่ายไฟคอมแปลงไฟบ้านเป็นอะไร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9998934268951416,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1b3f9c327b32d509ac2f1e2b8733d66ba8756107305f447ef5a4a2a4bdda6394",
+      "text": "แหล่งจ่ายไฟคอมแปลงไฟบ้านเป็นอะไร",
+      "query": "แหล่ง จ่ายไฟ คอม แปลงไฟ บ้าน เป็น อะไร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9998934268951416,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "592c390a2a0714707e4698d29e70cb860677ae1216872a9c8b812883349611b8",
+      "text": "PSU วัตต์เยอะกับประสิทธิภาพสูงคืออย่างเดียวกันไหม",
+      "query": "PSU วัตต์เยอะกับประสิทธิภาพสูงคืออย่างเดียวกันไหม",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.9699273705482483,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "592c390a2a0714707e4698d29e70cb860677ae1216872a9c8b812883349611b8",
+      "text": "PSU วัตต์เยอะกับประสิทธิภาพสูงคืออย่างเดียวกันไหม",
+      "query": "psu วัตต์ เยอะ กับ ประสิทธิภาพ สูง คือ อย่างเดียวกัน ไหม",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.970424473285675,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "f2b6de8d27fbd05c5d161c51d1d0d826169473814eddbe75d981692cb397a5aa",
+      "text": "ข้อมูลใดบอกว่า PSU มีวงจรป้องกันลัดวงจร",
+      "query": "ข้อมูลใดบอกว่า PSU มีวงจรป้องกันลัดวงจร",
+      "intent": "ask_psu_info",
+      "mode": "raw",
+      "prediction": "ask_psu_info",
+      "confidence": 0.7232003211975098,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "f2b6de8d27fbd05c5d161c51d1d0d826169473814eddbe75d981692cb397a5aa",
+      "text": "ข้อมูลใดบอกว่า PSU มีวงจรป้องกันลัดวงจร",
+      "query": "ข้อมูล ใด บอ กว่า psu วงจร ป้องกัน ลัดวงจร",
+      "intent": "ask_psu_info",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.6909159421920776,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "43ad0e25f234295c77553adb6991f5a49bad7203c9eb4bd6b4226a0a4f866509",
+      "text": "ตัวถังที่ครอบคอมมีหน้าที่นอกจากความสวยหรือไม่",
+      "query": "ตัวถังที่ครอบคอมมีหน้าที่นอกจากความสวยหรือไม่",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9112679362297058,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "43ad0e25f234295c77553adb6991f5a49bad7203c9eb4bd6b4226a0a4f866509",
+      "text": "ตัวถังที่ครอบคอมมีหน้าที่นอกจากความสวยหรือไม่",
+      "query": "ตัวถัง ที่ ครอบ คอม หน้าที่ นอกจาก ความ สวย หรือไม่",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9129357933998108,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "12be0a5bcc8601b231ca20f8a45a1d5d5f06b332b2760d29ca3573ec2a5cc624",
+      "text": "อ่านคู่มือเคสเพื่อดูระยะการ์ดจออย่างไร",
+      "query": "อ่านคู่มือเคสเพื่อดูระยะการ์ดจออย่างไร",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9369514584541321,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "12be0a5bcc8601b231ca20f8a45a1d5d5f06b332b2760d29ca3573ec2a5cc624",
+      "text": "อ่านคู่มือเคสเพื่อดูระยะการ์ดจออย่างไร",
+      "query": "อ่าน คู่มือ case เพื่อ ดู ระยะ gpu อย่างไร",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.906626284122467,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "4b4f6d9067bee5e6af408925bf5426e58d718847c16adf5fe4e257e593c1b837",
+      "text": "ควรวางพัดลมดูดเข้าเคสกับเป่าออกตรงใด",
+      "query": "ควรวางพัดลมดูดเข้าเคสกับเป่าออกตรงใด",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9994670748710632,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "4b4f6d9067bee5e6af408925bf5426e58d718847c16adf5fe4e257e593c1b837",
+      "text": "ควรวางพัดลมดูดเข้าเคสกับเป่าออกตรงใด",
+      "query": "ควร วาง พัดลม ดูด เข้า case กับ เป่า ออก ตรง ใด",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9988377690315247,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "340130990c7ccd44fd14379b4ba6778f941ab1a5ac5ee37fe9b30e3a461f39e0",
+      "text": "เคสที่ใส่บอร์ด ATX ได้ต้องดูข้อมูลช่องไหน",
+      "query": "เคสที่ใส่บอร์ด ATX ได้ต้องดูข้อมูลช่องไหน",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9957104921340942,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "340130990c7ccd44fd14379b4ba6778f941ab1a5ac5ee37fe9b30e3a461f39e0",
+      "text": "เคสที่ใส่บอร์ด ATX ได้ต้องดูข้อมูลช่องไหน",
+      "query": "case ที่ ใส่ motherboard atx ได้ ต้อง ดู ข้อมูล ช่อง ไหน",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9799209237098694,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5a3014ceadf5b139d336a51172c14bd46e50728ce94b28343bdfeaaabd2b5ca2",
+      "text": "สายไฟรกภายในตัวถังมีผลกับทางลมหรือเปล่า",
+      "query": "สายไฟรกภายในตัวถังมีผลกับทางลมหรือเปล่า",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.997413694858551,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5a3014ceadf5b139d336a51172c14bd46e50728ce94b28343bdfeaaabd2b5ca2",
+      "text": "สายไฟรกภายในตัวถังมีผลกับทางลมหรือเปล่า",
+      "query": "สายไฟ รก ภายใน ตัวถัง มีผล กับ ทาง ลม หรือเปล่า",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.997413694858551,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "67667416bea72e0aad499f0b96d9102252a425f394ac07de9dcba4db748e65dd",
+      "text": "ถ้าติดหม้อน้ำด้านหน้า case พื้นที่ GPU จะลดไหม",
+      "query": "ถ้าติดหม้อน้ำด้านหน้า case พื้นที่ GPU จะลดไหม",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 0.99413001537323,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "67667416bea72e0aad499f0b96d9102252a425f394ac07de9dcba4db748e65dd",
+      "text": "ถ้าติดหม้อน้ำด้านหน้า case พื้นที่ GPU จะลดไหม",
+      "query": "ถ้า ติด หม้อน้ำ ด้านหน้า case พื้นที่ gpu จะ ลด ไหม",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 0.9939075112342834,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0099d59b705e1e514993bbfe05d3935a7195d47b080ef2190fa86cbb182ea779",
+      "text": "เลือกเคสขนาดเล็กต้องตรวจระยะอะไรเป็นพิเศษ",
+      "query": "เลือกเคสขนาดเล็กต้องตรวจระยะอะไรเป็นพิเศษ",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9997568726539612,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0099d59b705e1e514993bbfe05d3935a7195d47b080ef2190fa86cbb182ea779",
+      "text": "เลือกเคสขนาดเล็กต้องตรวจระยะอะไรเป็นพิเศษ",
+      "query": "เลือก case ขนาดเล็ก ต้อง ตรวจ ระยะ อะไร เป็นพิเศษ",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9995720982551575,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2063b1076664083fd4872b17161b76b7a9735571002a62fec5bc57551c01253c",
+      "text": "ตัวกรองฝุ่นหน้าเคสมีประโยชน์ด้านใด",
+      "query": "ตัวกรองฝุ่นหน้าเคสมีประโยชน์ด้านใด",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9997385144233704,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2063b1076664083fd4872b17161b76b7a9735571002a62fec5bc57551c01253c",
+      "text": "ตัวกรองฝุ่นหน้าเคสมีประโยชน์ด้านใด",
+      "query": "ตัว กรอง ฝุ่น หน้า case มีประโยชน์ ด้าน ใด",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.999491810798645,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7b6d99225ed3429e85a0304e0600cf7cad51459cb7cff34756037b0b64b63ee5",
+      "text": "หลักการไหลของอากาศใน case เป็นอย่างไร",
+      "query": "หลักการไหลของอากาศใน case เป็นอย่างไร",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9873120784759521,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7b6d99225ed3429e85a0304e0600cf7cad51459cb7cff34756037b0b64b63ee5",
+      "text": "หลักการไหลของอากาศใน case เป็นอย่างไร",
+      "query": "หลักการ ไหล ของ อากาศ ใน case เป็น อย่างไร",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9873120784759521,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5b5a95bfb92d64f579cd4345ffc71c7ccddf158bfc289a4a58de373f71019a85",
+      "text": "ความสูงชุดลมที่เคสรองรับหาได้จากไหน",
+      "query": "ความสูงชุดลมที่เคสรองรับหาได้จากไหน",
+      "intent": "ask_case_info",
+      "mode": "raw",
+      "prediction": "ask_case_info",
+      "confidence": 0.9981474876403809,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5b5a95bfb92d64f579cd4345ffc71c7ccddf158bfc289a4a58de373f71019a85",
+      "text": "ความสูงชุดลมที่เคสรองรับหาได้จากไหน",
+      "query": "ความสูง ชุด ลม ที่ case รองรับ หา ได้ จาก ไหน",
+      "intent": "ask_case_info",
+      "mode": "line",
+      "prediction": "ask_case_info",
+      "confidence": 0.9907305836677551,
+      "classifier_prediction": "ask_case_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "a8c0947fe78b5d7ab612c3d101ad5e67a0b1835c451213c7c59a0b83a7ad35a7",
+      "text": "ซีพียูร้อนจนลด clock เรียกปรากฏการณ์อะไร",
+      "query": "ซีพียูร้อนจนลด clock เรียกปรากฏการณ์อะไร",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9925364255905151,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "a8c0947fe78b5d7ab612c3d101ad5e67a0b1835c451213c7c59a0b83a7ad35a7",
+      "text": "ซีพียูร้อนจนลด clock เรียกปรากฏการณ์อะไร",
+      "query": "cpu ร้อน จน ลด clock เรียก ปรากฏการณ์ อะไร",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9893089532852173,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 0,
+          "end": 3,
+          "confidence_entity": 0.9837585091590881,
+          "value": "cpu",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "163e485662c3ea85a488fc963ee261c2cea9e1be0ec77cb1be1bbac0a00241dd",
+      "text": "ช่วยอธิบายการถ่ายเทความร้อนของฮีตซิงก์",
+      "query": "ช่วยอธิบายการถ่ายเทความร้อนของฮีตซิงก์",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9969425797462463,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "163e485662c3ea85a488fc963ee261c2cea9e1be0ec77cb1be1bbac0a00241dd",
+      "text": "ช่วยอธิบายการถ่ายเทความร้อนของฮีตซิงก์",
+      "query": "อธิบาย การ ถ่ายเท ความร้อน ของ ฮี ตซิงก์",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.99857497215271,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "613a10d9a55219a07a0560c1ab59ed609763a9853fba0191ee1e2f89b191cbb5",
+      "text": "อุปกรณ์ AIO ใช้ปั๊มกับหม้อน้ำทำงานร่วมกันอย่างไร",
+      "query": "อุปกรณ์ AIO ใช้ปั๊มกับหม้อน้ำทำงานร่วมกันอย่างไร",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9952601790428162,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "613a10d9a55219a07a0560c1ab59ed609763a9853fba0191ee1e2f89b191cbb5",
+      "text": "อุปกรณ์ AIO ใช้ปั๊มกับหม้อน้ำทำงานร่วมกันอย่างไร",
+      "query": "อุปกรณ์ aio ใช้ ปั๊ม กับ หม้อน้ำ ทำงาน ร่วมกัน อย่างไร",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9954146146774292,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "696c9d34d1ec7ee801cb30e0db0c89fa7b6a82ab4d0ec535fa824841c9e2ee57",
+      "text": "ซื้อชุดน้ำแล้วจะเย็นกว่าชุดลมแน่นอนหรือเปล่า",
+      "query": "ซื้อชุดน้ำแล้วจะเย็นกว่าชุดลมแน่นอนหรือเปล่า",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9949359893798828,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "696c9d34d1ec7ee801cb30e0db0c89fa7b6a82ab4d0ec535fa824841c9e2ee57",
+      "text": "ซื้อชุดน้ำแล้วจะเย็นกว่าชุดลมแน่นอนหรือเปล่า",
+      "query": "ซื้อ ชุด น้ำ แล้ วจะ เย็น กว่า ชุด ลม แน่นอน หรือเปล่า",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9949359893798828,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "15b0f9acd2aa224229bbcd4f572ba2d8df8e073d31b9b1a2e612c55bfc77dfff",
+      "text": "ซิลิโคนระหว่าง CPU และ cooler มีบทบาทใด",
+      "query": "ซิลิโคนระหว่าง CPU และ cooler มีบทบาทใด",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9998296499252319,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "15b0f9acd2aa224229bbcd4f572ba2d8df8e073d31b9b1a2e612c55bfc77dfff",
+      "text": "ซิลิโคนระหว่าง CPU และ cooler มีบทบาทใด",
+      "query": "ซิลิโคน ระหว่าง cpu และ cooler มีบทบาท ใด",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.999840497970581,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "25533c9640f638708e17f91e477060904f190ed9dda5d728d76e597b996c3700",
+      "text": "ทำไมขายึดชุดระบายความร้อนต้องเข้ากับ socket",
+      "query": "ทำไมขายึดชุดระบายความร้อนต้องเข้ากับ socket",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9990930557250977,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "25533c9640f638708e17f91e477060904f190ed9dda5d728d76e597b996c3700",
+      "text": "ทำไมขายึดชุดระบายความร้อนต้องเข้ากับ socket",
+      "query": "ทำไม ขา ยึด ชุด ระบาย ความร้อน ต้อง เข้ากับ socket",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9990930557250977,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "34107776a0f1e193e7f20013eaf3f88d434b6f1bef57442681c693296d56d888",
+      "text": "ก่อนใส่ CPU cooler ต้องเช็กว่าจะชนแรมไหม",
+      "query": "ก่อนใส่ CPU cooler ต้องเช็กว่าจะชนแรมไหม",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9709832668304443,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "34107776a0f1e193e7f20013eaf3f88d434b6f1bef57442681c693296d56d888",
+      "text": "ก่อนใส่ CPU cooler ต้องเช็กว่าจะชนแรมไหม",
+      "query": "ก่อน ใส่ cpu cooler ต้อง เช็ก ว่า จะ ชน ram ไหม",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9851657748222351,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "870fc99b267cbad79bee7845bebb5206c82b25de3092a1f56cfa4843fe876b77",
+      "text": "ต้องพิจารณาอะไรเมื่อเปรียบเทียบ air cooler กับ AIO",
+      "query": "ต้องพิจารณาอะไรเมื่อเปรียบเทียบ air cooler กับ AIO",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9986617565155029,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "870fc99b267cbad79bee7845bebb5206c82b25de3092a1f56cfa4843fe876b77",
+      "text": "ต้องพิจารณาอะไรเมื่อเปรียบเทียบ air cooler กับ AIO",
+      "query": "ต้อง พิจารณา อะไร เมื่อ เปรียบเทียบ air cooler กับ aio",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.998671293258667,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "05f8da4f596374635833fa98fff2e306faae83ad5f9d31037731d01ab760e36d",
+      "text": "ชุดระบายความร้อนซีพียูช่วยป้องกัน throttling อย่างไร",
+      "query": "ชุดระบายความร้อนซีพียูช่วยป้องกัน throttling อย่างไร",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9998781681060791,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "05f8da4f596374635833fa98fff2e306faae83ad5f9d31037731d01ab760e36d",
+      "text": "ชุดระบายความร้อนซีพียูช่วยป้องกัน throttling อย่างไร",
+      "query": "ชุด ระบาย ความร้อน cpu ป้องกัน throttling อย่างไร",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.999886155128479,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2acec94e79cbfdbb5177c7e94facf10f6c6e2dbce9052e6044f71dcc4d5bff1b",
+      "text": "พัดลมฮีตซิงก์พาความร้อนออกจากซีพียูแบบไหน",
+      "query": "พัดลมฮีตซิงก์พาความร้อนออกจากซีพียูแบบไหน",
+      "intent": "ask_cooler_info",
+      "mode": "raw",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9998767375946045,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2acec94e79cbfdbb5177c7e94facf10f6c6e2dbce9052e6044f71dcc4d5bff1b",
+      "text": "พัดลมฮีตซิงก์พาความร้อนออกจากซีพียูแบบไหน",
+      "query": "พัดลม ฮี ตซิงก์ พา ความร้อน ออกจาก cpu แบบ ไหน",
+      "intent": "ask_cooler_info",
+      "mode": "line",
+      "prediction": "ask_cooler_info",
+      "confidence": 0.9998711347579956,
+      "classifier_prediction": "ask_cooler_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3e7df7e3c76126536e835ec04d9d24f9484c6b66f2c973f38389658c613af484",
+      "text": "หวัดดีผู้ช่วยจัดสเปค ยินดีที่ได้รู้จัก",
+      "query": "หวัดดีผู้ช่วยจัดสเปค ยินดีที่ได้รู้จัก",
+      "intent": "greet",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 0.9944504499435425,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3e7df7e3c76126536e835ec04d9d24f9484c6b66f2c973f38389658c613af484",
+      "text": "หวัดดีผู้ช่วยจัดสเปค ยินดีที่ได้รู้จัก",
+      "query": "หวัด ดี ผู้ช่วย จัด สเปค ยินดี ที่ ได้ รู้จัก",
+      "intent": "greet",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 0.9944504499435425,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "e4fa60b6d511d8dc86a77fcea0c40a7145448a811ec487e5a85595cd03fdd2aa",
+      "text": "สวัสดีตอนบ่าย แอดมิน SpecFlow",
+      "query": "สวัสดีตอนบ่าย แอดมิน SpecFlow",
+      "intent": "greet",
+      "mode": "raw",
+      "prediction": "greet",
+      "confidence": 0.5517244935035706,
+      "classifier_prediction": "greet",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "e4fa60b6d511d8dc86a77fcea0c40a7145448a811ec487e5a85595cd03fdd2aa",
+      "text": "สวัสดีตอนบ่าย แอดมิน SpecFlow",
+      "query": "สวัสดี ตอนบ่าย แอดมิน specflow",
+      "intent": "greet",
+      "mode": "line",
+      "prediction": "greet",
+      "confidence": 0.561431884765625,
+      "classifier_prediction": "greet",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7f813e5be8d46dc4f6d9db425d3b6f72d72e88775069942577efcb605ac9c804",
+      "text": "ฮัลโหลบอทคอมพิวเตอร์",
+      "query": "ฮัลโหลบอทคอมพิวเตอร์",
+      "intent": "greet",
+      "mode": "raw",
+      "prediction": "greet",
+      "confidence": 0.7478581070899963,
+      "classifier_prediction": "greet",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7f813e5be8d46dc4f6d9db425d3b6f72d72e88775069942577efcb605ac9c804",
+      "text": "ฮัลโหลบอทคอมพิวเตอร์",
+      "query": "ฮัลโหล บอ ท คอมพิวเตอร์",
+      "intent": "greet",
+      "mode": "line",
+      "prediction": "greet",
+      "confidence": 0.7478581070899963,
+      "classifier_prediction": "greet",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "56b7c7c4e7636581a99311cbb47b5295f7a7c60c2c4da5cee42d46e88e6fd930",
+      "text": "ได้ข้อมูลครบแล้ว ไว้มาคุยกันวันหลัง",
+      "query": "ได้ข้อมูลครบแล้ว ไว้มาคุยกันวันหลัง",
+      "intent": "goodbye",
+      "mode": "raw",
+      "prediction": "goodbye",
+      "confidence": 0.8957937955856323,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "56b7c7c4e7636581a99311cbb47b5295f7a7c60c2c4da5cee42d46e88e6fd930",
+      "text": "ได้ข้อมูลครบแล้ว ไว้มาคุยกันวันหลัง",
+      "query": "ได้ ข้อมูล ครบ แล้ว ไว้ มา คุย กัน วันหลัง",
+      "intent": "goodbye",
+      "mode": "line",
+      "prediction": "goodbye",
+      "confidence": 0.8957937955856323,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0ae613d3df10ab5ba205117ba7a5dde71f021b84965edd22b61616efc11b07b9",
+      "text": "ขอจบแชทไว้เท่านี้ บ๊ายบายผู้ช่วย",
+      "query": "ขอจบแชทไว้เท่านี้ บ๊ายบายผู้ช่วย",
+      "intent": "goodbye",
+      "mode": "raw",
+      "prediction": "goodbye",
+      "confidence": 0.614013671875,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0ae613d3df10ab5ba205117ba7a5dde71f021b84965edd22b61616efc11b07b9",
+      "text": "ขอจบแชทไว้เท่านี้ บ๊ายบายผู้ช่วย",
+      "query": "จบ แชท ไว้ เท่านี้ บ๊ายบาย ผู้ช่วย",
+      "intent": "goodbye",
+      "mode": "line",
+      "prediction": "goodbye",
+      "confidence": 0.6563271880149841,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "35f71e32d4818b8593586534d8dcec0ad035376d4ef0f17102e8da7f192eea1d",
+      "text": "ไปก่อนละ ไว้สอบถามใหม่พรุ่งนี้",
+      "query": "ไปก่อนละ ไว้สอบถามใหม่พรุ่งนี้",
+      "intent": "goodbye",
+      "mode": "raw",
+      "prediction": "goodbye",
+      "confidence": 0.7165563106536865,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "35f71e32d4818b8593586534d8dcec0ad035376d4ef0f17102e8da7f192eea1d",
+      "text": "ไปก่อนละ ไว้สอบถามใหม่พรุ่งนี้",
+      "query": "ไป ก่อน ไว้ สอบถาม ใหม่ พรุ่งนี้",
+      "intent": "goodbye",
+      "mode": "line",
+      "prediction": "goodbye",
+      "confidence": 0.7003864049911499,
+      "classifier_prediction": "goodbye",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "f8383c244ef9be7683cdea32a15eefb083b89afb027dae6f9eadacf256cf6ef9",
+      "text": "ช่วยจัดเครื่องใหม่งบ32500สำหรับเขียนโปรแกรม",
+      "query": "ช่วยจัดเครื่องใหม่งบ32500สำหรับเขียนโปรแกรม",
+      "intent": "build_pc",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 20,
+          "end": 25,
+          "value": "32500",
+          "entity": "budget"
+        },
+        {
+          "start": 31,
+          "end": 43,
+          "value": "เขียนโปรแกรม",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "budget",
+          "start": 20,
+          "end": 25,
+          "confidence_entity": 0.9982960820198059,
+          "value": "32500",
+          "extractor": "DIETClassifier"
+        },
+        {
+          "entity": "usage",
+          "start": 31,
+          "end": 43,
+          "confidence_entity": 0.9981961846351624,
+          "value": "เขียนโปรแกรม",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f8383c244ef9be7683cdea32a15eefb083b89afb027dae6f9eadacf256cf6ef9",
+      "text": "ช่วยจัดเครื่องใหม่งบ32500สำหรับเขียนโปรแกรม",
+      "query": "จัด ใหม่ 32500 สำหรับ เขียน โปรแกรม",
+      "intent": "build_pc",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 20,
+          "end": 25,
+          "value": "32500",
+          "entity": "budget"
+        },
+        {
+          "start": 31,
+          "end": 43,
+          "value": "เขียนโปรแกรม",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "budget",
+          "start": 9,
+          "end": 14,
+          "confidence_entity": 0.9974424839019775,
+          "value": "32500",
+          "extractor": "DIETClassifier"
+        },
+        {
+          "entity": "usage",
+          "start": 22,
+          "end": 35,
+          "confidence_entity": 0.9976791739463806,
+          "value": "เขียน โปรแกรม",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "08b2b5b1995f82813676d40fc9dcf757caa8907007c56202e87eeb9c84f10114",
+      "text": "ต้องการประกอบพีซีงานกราฟิกราคาไม่เกิน47500",
+      "query": "ต้องการประกอบพีซีงานกราฟิกราคาไม่เกิน47500",
+      "intent": "build_pc",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 17,
+          "end": 26,
+          "value": "งานกราฟิก",
+          "entity": "usage"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "value": "47500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "08b2b5b1995f82813676d40fc9dcf757caa8907007c56202e87eeb9c84f10114",
+      "text": "ต้องการประกอบพีซีงานกราฟิกราคาไม่เกิน47500",
+      "query": "ต้องการ ประกอบ พีซี งาน กราฟิก ราคา ไม่ เกิน 47500",
+      "intent": "build_pc",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 17,
+          "end": 26,
+          "value": "งานกราฟิก",
+          "entity": "usage"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "value": "47500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "a7cef456e75b36248435d8f52850ef2e7c66ded1585227f5659553cfcfa1c323",
+      "text": "ขอรายการสเปคคอมใหม่ไว้ตัดต่อวิดีโองบ38500",
+      "query": "ขอรายการสเปคคอมใหม่ไว้ตัดต่อวิดีโองบ38500",
+      "intent": "build_pc",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 22,
+          "end": 34,
+          "value": "ตัดต่อวิดีโอ",
+          "entity": "usage"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "value": "38500",
+          "entity": "budget"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 22,
+          "end": 34,
+          "confidence_entity": 0.5863193273544312,
+          "value": "ตัดต่อวิดีโอ",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        },
+        {
+          "entity": "budget",
+          "start": 36,
+          "end": 41,
+          "confidence_entity": 0.9535710215568542,
+          "value": "38500",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "a7cef456e75b36248435d8f52850ef2e7c66ded1585227f5659553cfcfa1c323",
+      "text": "ขอรายการสเปคคอมใหม่ไว้ตัดต่อวิดีโองบ38500",
+      "query": "รายการ สเปค คอม ใหม่ ไว้ ตัดต่อ วิดีโอ 38500",
+      "intent": "build_pc",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [
+        {
+          "start": 22,
+          "end": 34,
+          "value": "ตัดต่อวิดีโอ",
+          "entity": "usage"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "value": "38500",
+          "entity": "budget"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 25,
+          "end": 38,
+          "confidence_entity": 0.8242557048797607,
+          "value": "ตัดต่อ วิดีโอ",
+          "extractor": "DIETClassifier"
+        },
+        {
+          "entity": "budget",
+          "start": 39,
+          "end": 44,
+          "confidence_entity": 0.9952657222747803,
+          "value": "38500",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "7fbd4b915a1bab64a1eb3c7eccfade86eea0ff2bb97183681ca540c1bc24144d",
+      "text": "คอมเก่าอยากเปลี่ยนอะไหล่ให้แรงขึ้นควรเริ่มตรงไหน",
+      "query": "คอมเก่าอยากเปลี่ยนอะไหล่ให้แรงขึ้นควรเริ่มตรงไหน",
+      "intent": "upgrade_pc",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "7fbd4b915a1bab64a1eb3c7eccfade86eea0ff2bb97183681ca540c1bc24144d",
+      "text": "คอมเก่าอยากเปลี่ยนอะไหล่ให้แรงขึ้นควรเริ่มตรงไหน",
+      "query": "คอม เก่า เปลี่ยน อะไหล่ ให้แรง ขึ้น ควร เริ่ม ตรงไหน",
+      "intent": "upgrade_pc",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "dddd3a873d4cd164a686bdf8dd5a514c693c1b4e29fc210019d55c76a8815f11",
+      "text": "จะอัปเกรดพีซีที่มีอยู่ต้องแจ้งสเปคอะไรบ้าง",
+      "query": "จะอัปเกรดพีซีที่มีอยู่ต้องแจ้งสเปคอะไรบ้าง",
+      "intent": "upgrade_pc",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 0.9999784231185913,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "dddd3a873d4cd164a686bdf8dd5a514c693c1b4e29fc210019d55c76a8815f11",
+      "text": "จะอัปเกรดพีซีที่มีอยู่ต้องแจ้งสเปคอะไรบ้าง",
+      "query": "จะ อัปเกรด พีซี ที่ อยู่ ต้อง แจ้ง สเปค อะไร บ้าง",
+      "intent": "upgrade_pc",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 0.9999982118606567,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2bf4be99e232f7e49736444041e3e0378cea1e296884080e8893d89b2f3ccf0f",
+      "text": "ช่วยวางแผนเปลี่ยนชิ้นส่วนเครื่องเดิมให้ที",
+      "query": "ช่วยวางแผนเปลี่ยนชิ้นส่วนเครื่องเดิมให้ที",
+      "intent": "upgrade_pc",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "2bf4be99e232f7e49736444041e3e0378cea1e296884080e8893d89b2f3ccf0f",
+      "text": "ช่วยวางแผนเปลี่ยนชิ้นส่วนเครื่องเดิมให้ที",
+      "query": "วางแผน เปลี่ยน ชิ้นส่วน เดิม ที",
+      "intent": "upgrade_pc",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "6b9ecd80fe741560d8ae3f87c9a741d69ba719f3ebe6e3655298757d047fd4d2",
+      "text": "ตั้งงบไว้ที่32500",
+      "query": "ตั้งงบไว้ที่32500",
+      "intent": "inform_budget",
+      "mode": "raw",
+      "prediction": "inform_budget",
+      "confidence": 0.9922488927841187,
+      "classifier_prediction": "inform_budget",
+      "gold_entities": [
+        {
+          "start": 12,
+          "end": 17,
+          "value": "32500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "6b9ecd80fe741560d8ae3f87c9a741d69ba719f3ebe6e3655298757d047fd4d2",
+      "text": "ตั้งงบไว้ที่32500",
+      "query": "ตั้ง ไว้ ที่ 32500",
+      "intent": "inform_budget",
+      "mode": "line",
+      "prediction": "inform_budget",
+      "confidence": 0.8519116640090942,
+      "classifier_prediction": "inform_budget",
+      "gold_entities": [
+        {
+          "start": 12,
+          "end": 17,
+          "value": "32500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "9f2c37ba88add8a60e2a04f798d061198654603c04b634ee2fa83c4bb5a52f01",
+      "text": "จำนวนเงินที่จ่ายได้คือ47500",
+      "query": "จำนวนเงินที่จ่ายได้คือ47500",
+      "intent": "inform_budget",
+      "mode": "raw",
+      "prediction": "inform_budget",
+      "confidence": 0.7627067565917969,
+      "classifier_prediction": "inform_budget",
+      "gold_entities": [
+        {
+          "start": 22,
+          "end": 27,
+          "value": "47500",
+          "entity": "budget"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "budget",
+          "start": 22,
+          "end": 27,
+          "confidence_entity": 0.9274559617042542,
+          "value": "47500",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "9f2c37ba88add8a60e2a04f798d061198654603c04b634ee2fa83c4bb5a52f01",
+      "text": "จำนวนเงินที่จ่ายได้คือ47500",
+      "query": "จำนวน ที่ จ่าย ได้ คือ 47500",
+      "intent": "inform_budget",
+      "mode": "line",
+      "prediction": "ask_psu_info",
+      "confidence": 0.32956886291503906,
+      "classifier_prediction": "ask_psu_info",
+      "gold_entities": [
+        {
+          "start": 22,
+          "end": 27,
+          "value": "47500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "2ed5f7f403aa005986324e0a3af45a6077bdc9482d00ee1be046ea4be0e87b22",
+      "text": "มีวงเงิน38500สำหรับเครื่องนี้",
+      "query": "มีวงเงิน38500สำหรับเครื่องนี้",
+      "intent": "inform_budget",
+      "mode": "raw",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "inform_budget",
+      "gold_entities": [
+        {
+          "start": 8,
+          "end": 13,
+          "value": "38500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "2ed5f7f403aa005986324e0a3af45a6077bdc9482d00ee1be046ea4be0e87b22",
+      "text": "มีวงเงิน38500สำหรับเครื่องนี้",
+      "query": "วงเงิน 38500 สำหรับ นี้",
+      "intent": "inform_budget",
+      "mode": "line",
+      "prediction": "affirm",
+      "confidence": 0.4295903742313385,
+      "classifier_prediction": "affirm",
+      "gold_entities": [
+        {
+          "start": 8,
+          "end": 13,
+          "value": "38500",
+          "entity": "budget"
+        }
+      ],
+      "entities": []
+    },
+    {
+      "id": "0df572332f3b1aa3af0720b6d4ebf8c06ca443ca6d10c73b5a6777e11d43419a",
+      "text": "จุดประสงค์หลักคือเขียนโปรแกรมเว็บ",
+      "query": "จุดประสงค์หลักคือเขียนโปรแกรมเว็บ",
+      "intent": "inform_usage",
+      "mode": "raw",
+      "prediction": "inform_usage",
+      "confidence": 0.9975306391716003,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 17,
+          "end": 33,
+          "value": "เขียนโปรแกรมเว็บ",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 17,
+          "end": 33,
+          "confidence_entity": 0.4384230971336365,
+          "value": "เขียนโปรแกรมเว็บ",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "0df572332f3b1aa3af0720b6d4ebf8c06ca443ca6d10c73b5a6777e11d43419a",
+      "text": "จุดประสงค์หลักคือเขียนโปรแกรมเว็บ",
+      "query": "จุดประสงค์ หลัก คือ เขียน โปรแกรม เว็บ",
+      "intent": "inform_usage",
+      "mode": "line",
+      "prediction": "inform_usage",
+      "confidence": 0.9975306391716003,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 17,
+          "end": 33,
+          "value": "เขียนโปรแกรมเว็บ",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 20,
+          "end": 38,
+          "confidence_entity": 0.4384230971336365,
+          "value": "เขียน โปรแกรม เว็บ",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "d1940d303e422e171552092e4b5d8c32b4bbedbcedd56dbe3a4e168fd46d46c9",
+      "text": "งานประจำคือตัดต่อวิดีโอใน Premiere",
+      "query": "งานประจำคือตัดต่อวิดีโอใน Premiere",
+      "intent": "inform_usage",
+      "mode": "raw",
+      "prediction": "inform_usage",
+      "confidence": 0.9999994039535522,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 11,
+          "end": 34,
+          "value": "ตัดต่อวิดีโอใน Premiere",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 11,
+          "end": 34,
+          "confidence_entity": 0.8382282853126526,
+          "value": "ตัดต่อวิดีโอใน Premiere",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "d1940d303e422e171552092e4b5d8c32b4bbedbcedd56dbe3a4e168fd46d46c9",
+      "text": "งานประจำคือตัดต่อวิดีโอใน Premiere",
+      "query": "งานประจำ คือ ตัดต่อ วิดีโอ ใน premiere",
+      "intent": "inform_usage",
+      "mode": "line",
+      "prediction": "inform_usage",
+      "confidence": 0.9999994039535522,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 11,
+          "end": 34,
+          "value": "ตัดต่อวิดีโอใน Premiere",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 13,
+          "end": 38,
+          "confidence_entity": 0.8639930486679077,
+          "value": "ตัดต่อ วิดีโอ ใน premiere",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "21c9a4a41282b040679b6b9891fb53f04dc364331cd099100e3c0ec45d905295",
+      "text": "ใช้สำหรับพิมพ์เอกสารสำนักงานทุกวัน",
+      "query": "ใช้สำหรับพิมพ์เอกสารสำนักงานทุกวัน",
+      "intent": "inform_usage",
+      "mode": "raw",
+      "prediction": "inform_usage",
+      "confidence": 0.999998927116394,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 9,
+          "end": 28,
+          "value": "พิมพ์เอกสารสำนักงาน",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 9,
+          "end": 34,
+          "confidence_entity": 0.9827684760093689,
+          "value": "พิมพ์เอกสารสำนักงานทุกวัน",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "21c9a4a41282b040679b6b9891fb53f04dc364331cd099100e3c0ec45d905295",
+      "text": "ใช้สำหรับพิมพ์เอกสารสำนักงานทุกวัน",
+      "query": "ใช้ สำหรับ พิมพ์ เอกสาร สำนักงาน ทุกวัน",
+      "intent": "inform_usage",
+      "mode": "line",
+      "prediction": "inform_usage",
+      "confidence": 0.999998927116394,
+      "classifier_prediction": "inform_usage",
+      "gold_entities": [
+        {
+          "start": 9,
+          "end": 28,
+          "value": "พิมพ์เอกสารสำนักงาน",
+          "entity": "usage"
+        }
+      ],
+      "entities": [
+        {
+          "entity": "usage",
+          "start": 11,
+          "end": 39,
+          "confidence_entity": 0.9827684760093689,
+          "value": "พิมพ์ เอกสาร สำนักงาน ทุกวัน",
+          "extractor": "DIETClassifier"
+        }
+      ]
+    },
+    {
+      "id": "c34341a143a2a97b85e668140ecdb700fe16bfc9f647c9c61b0326a319a6c7ca",
+      "text": "เครื่องเดิม CPU Ryzen 5600 RAM 16GB กับ RTX 3060",
+      "query": "เครื่องเดิม CPU Ryzen 5600 RAM 16GB กับ RTX 3060",
+      "intent": "inform_current_specs",
+      "mode": "raw",
+      "prediction": "inform_current_specs",
+      "confidence": 0.999634861946106,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c34341a143a2a97b85e668140ecdb700fe16bfc9f647c9c61b0326a319a6c7ca",
+      "text": "เครื่องเดิม CPU Ryzen 5600 RAM 16GB กับ RTX 3060",
+      "query": "เดิม cpu ryzen 5600 ram 16 gb กับ rtx 3060",
+      "intent": "inform_current_specs",
+      "mode": "line",
+      "prediction": "inform_current_specs",
+      "confidence": 0.999705970287323,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 5,
+          "end": 8,
+          "confidence_entity": 0.9964345693588257,
+          "value": "cpu",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "43da7345b6118f9468eba5dc0babb0ee19833263744474dd83289a431280ead7",
+      "text": "สเปคปัจจุบันใช้ i5 12400 แรม 8GB SSD 256GB",
+      "query": "สเปคปัจจุบันใช้ i5 12400 แรม 8GB SSD 256GB",
+      "intent": "inform_current_specs",
+      "mode": "raw",
+      "prediction": "inform_current_specs",
+      "confidence": 0.9996097683906555,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "43da7345b6118f9468eba5dc0babb0ee19833263744474dd83289a431280ead7",
+      "text": "สเปคปัจจุบันใช้ i5 12400 แรม 8GB SSD 256GB",
+      "query": "สเปค ปัจจุบัน ใช้ i 5 12400 ram 8 gb ssd 256 gb",
+      "intent": "inform_current_specs",
+      "mode": "line",
+      "prediction": "inform_current_specs",
+      "confidence": 0.9997684359550476,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 28,
+          "end": 31,
+          "confidence_entity": 0.9937160611152649,
+          "value": "ram",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        },
+        {
+          "entity": "component_type",
+          "start": 37,
+          "end": 40,
+          "confidence_entity": 0.9096086025238037,
+          "value": "ssd",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad18a1fa5944f5c5f0f123f6446ed002a65510fddb28b3321586188788b2175",
+      "text": "ในเครื่องมี Ryzen 3600 การ์ด RX 6600 และ RAM 32GB",
+      "query": "ในเครื่องมี Ryzen 3600 การ์ด RX 6600 และ RAM 32GB",
+      "intent": "inform_current_specs",
+      "mode": "raw",
+      "prediction": "inform_current_specs",
+      "confidence": 0.9992105960845947,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "cad18a1fa5944f5c5f0f123f6446ed002a65510fddb28b3321586188788b2175",
+      "text": "ในเครื่องมี Ryzen 3600 การ์ด RX 6600 และ RAM 32GB",
+      "query": "ใน ryzen 3600 การ์ด rx 6600 และ ram 32 gb",
+      "intent": "inform_current_specs",
+      "mode": "line",
+      "prediction": "inform_current_specs",
+      "confidence": 0.9986341595649719,
+      "classifier_prediction": "inform_current_specs",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "55aa6ecbd79907444259ebbe37cbd89846035245df16a1013e31e2876026323c",
+      "text": "อธิบายบทบาทหน่วยประมวลผลกลางในคอมให้เข้าใจที",
+      "query": "อธิบายบทบาทหน่วยประมวลผลกลางในคอมให้เข้าใจที",
+      "intent": "ask_cpu_info",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 0.7815823554992676,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "55aa6ecbd79907444259ebbe37cbd89846035245df16a1013e31e2876026323c",
+      "text": "อธิบายบทบาทหน่วยประมวลผลกลางในคอมให้เข้าใจที",
+      "query": "อธิบาย บทบาท หน่วยประมวลผลกลาง ใน คอม เข้าใจ ที",
+      "intent": "ask_cpu_info",
+      "mode": "line",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.982464611530304,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "05ef3e6075989479515051817729e97fd6024e5123b2f5973648e0eb20885fce",
+      "text": "จำนวนคอร์กับเธรดของซีพียูบอกอะไร",
+      "query": "จำนวนคอร์กับเธรดของซีพียูบอกอะไร",
+      "intent": "ask_cpu_info",
+      "mode": "raw",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.9915717840194702,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "05ef3e6075989479515051817729e97fd6024e5123b2f5973648e0eb20885fce",
+      "text": "จำนวนคอร์กับเธรดของซีพียูบอกอะไร",
+      "query": "จำนวน คอร์ กับ เธรด ของ cpu บอก อะไร",
+      "intent": "ask_cpu_info",
+      "mode": "line",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.9897152781486511,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3dea979e0d1a2d7dc3ce7bea865f8d84da8943d96db655e14708db6a311d5478",
+      "text": "ทำไม CPU จึงถูกเรียกว่าสมองของเครื่อง",
+      "query": "ทำไม CPU จึงถูกเรียกว่าสมองของเครื่อง",
+      "intent": "ask_cpu_info",
+      "mode": "raw",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.9900145530700684,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "3dea979e0d1a2d7dc3ce7bea865f8d84da8943d96db655e14708db6a311d5478",
+      "text": "ทำไม CPU จึงถูกเรียกว่าสมองของเครื่อง",
+      "query": "ทำไม cpu จึง ถูก เรียก ว่า สมอง ของ",
+      "intent": "ask_cpu_info",
+      "mode": "line",
+      "prediction": "ask_cpu_info",
+      "confidence": 0.9867125749588013,
+      "classifier_prediction": "ask_cpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "270c4a5d67efcd9eab72937d7f541693247272a4c68518ed304c8f3e03d19c4c",
+      "text": "หน่วยประมวลผลกราฟิกช่วยสร้างภาพได้อย่างไร",
+      "query": "หน่วยประมวลผลกราฟิกช่วยสร้างภาพได้อย่างไร",
+      "intent": "ask_gpu_info",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 0.5931254029273987,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "270c4a5d67efcd9eab72937d7f541693247272a4c68518ed304c8f3e03d19c4c",
+      "text": "หน่วยประมวลผลกราฟิกช่วยสร้างภาพได้อย่างไร",
+      "query": "หน่วย ประมวลผล กราฟิก สร้างภาพ ได้ อย่างไร",
+      "intent": "ask_gpu_info",
+      "mode": "line",
+      "prediction": "nlu_fallback",
+      "confidence": 0.3,
+      "classifier_prediction": "ask_bot_capabilities",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "62c79b2a89aee9e6377369bda410d99421ca6b0f8e46db7e83b367c29f18b2f9",
+      "text": "หน่วยความจำบนการ์ดจอ VRAM มีหน้าที่ใด",
+      "query": "หน่วยความจำบนการ์ดจอ VRAM มีหน้าที่ใด",
+      "intent": "ask_gpu_info",
+      "mode": "raw",
+      "prediction": "ask_gpu_info",
+      "confidence": 0.9979678988456726,
+      "classifier_prediction": "ask_gpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "62c79b2a89aee9e6377369bda410d99421ca6b0f8e46db7e83b367c29f18b2f9",
+      "text": "หน่วยความจำบนการ์ดจอ VRAM มีหน้าที่ใด",
+      "query": "หน่วยความจำ บน gpu vram มีหน้า ที่ใด",
+      "intent": "ask_gpu_info",
+      "mode": "line",
+      "prediction": "ask_gpu_info",
+      "confidence": 0.9930398464202881,
+      "classifier_prediction": "ask_gpu_info",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 15,
+          "end": 18,
+          "confidence_entity": 0.9967693090438843,
+          "value": "gpu",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1d4c2ea08089a206f7a41c3c031cf9591f71a66063dbf5adaecc7630dc81aaa5",
+      "text": "อธิบายความสำคัญของ GPU ต่อภาพในเกมที",
+      "query": "อธิบายความสำคัญของ GPU ต่อภาพในเกมที",
+      "intent": "ask_gpu_info",
+      "mode": "raw",
+      "prediction": "ask_gpu_info",
+      "confidence": 0.9715545773506165,
+      "classifier_prediction": "ask_gpu_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1d4c2ea08089a206f7a41c3c031cf9591f71a66063dbf5adaecc7630dc81aaa5",
+      "text": "อธิบายความสำคัญของ GPU ต่อภาพในเกมที",
+      "query": "อธิบาย ความสำคัญ ของ gpu ต่อ ภาพ ใน เกม ที",
+      "intent": "ask_gpu_info",
+      "mode": "line",
+      "prediction": "ask_gpu_info",
+      "confidence": 0.9735532402992249,
+      "classifier_prediction": "ask_gpu_info",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 21,
+          "end": 24,
+          "confidence_entity": 0.9972383975982666,
+          "value": "gpu",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4bfe757389a1f3b1337e2d6b3a2cc05116e27daf12d87e68b38fcd4c631eacb9",
+      "text": "หน่วยความจำชั่วคราวแรมใช้เก็บอะไรขณะเปิดคอม",
+      "query": "หน่วยความจำชั่วคราวแรมใช้เก็บอะไรขณะเปิดคอม",
+      "intent": "ask_ram_info",
+      "mode": "raw",
+      "prediction": "ask_ram_info",
+      "confidence": 0.9729986786842346,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "4bfe757389a1f3b1337e2d6b3a2cc05116e27daf12d87e68b38fcd4c631eacb9",
+      "text": "หน่วยความจำชั่วคราวแรมใช้เก็บอะไรขณะเปิดคอม",
+      "query": "หน่วยความจำ ชั่วคราว ram ใช้ เก็บ อะไร ขณะ เปิด คอม",
+      "intent": "ask_ram_info",
+      "mode": "line",
+      "prediction": "ask_ram_info",
+      "confidence": 0.8680617809295654,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": [
+        {
+          "entity": "component_type",
+          "start": 21,
+          "end": 24,
+          "confidence_entity": 0.9134844541549683,
+          "value": "ram",
+          "extractor": "DIETClassifier",
+          "processors": [
+            "EntitySynonymMapper"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03124f4e0f06f49f98a7ba93272b1ebbacf554147f92dee3a1248febfc41369a",
+      "text": "การเพิ่มปริมาณ RAM ช่วยเวลาเปิดหลายแอปยังไง",
+      "query": "การเพิ่มปริมาณ RAM ช่วยเวลาเปิดหลายแอปยังไง",
+      "intent": "ask_ram_info",
+      "mode": "raw",
+      "prediction": "optimize_performance",
+      "confidence": 0.9999942779541016,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "03124f4e0f06f49f98a7ba93272b1ebbacf554147f92dee3a1248febfc41369a",
+      "text": "การเพิ่มปริมาณ RAM ช่วยเวลาเปิดหลายแอปยังไง",
+      "query": "การ เพิ่มปริมาณ ram เวลาเปิด หลาย แอ ป ยังไง",
+      "intent": "ask_ram_info",
+      "mode": "line",
+      "prediction": "optimize_performance",
+      "confidence": 0.9999963045120239,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "b7b194eaad7da877deb62e0873770bb2496565a6b5fde1c2c60c373ce79d617f",
+      "text": "แรม DDR5 เสียบแทน DDR4 ได้หรือไม่",
+      "query": "แรม DDR5 เสียบแทน DDR4 ได้หรือไม่",
+      "intent": "ask_ram_info",
+      "mode": "raw",
+      "prediction": "ask_ram_info",
+      "confidence": 0.9965332746505737,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "b7b194eaad7da877deb62e0873770bb2496565a6b5fde1c2c60c373ce79d617f",
+      "text": "แรม DDR5 เสียบแทน DDR4 ได้หรือไม่",
+      "query": "ram ddr 5 เสียบ แทน ddr 4 ได้ หรือไม่",
+      "intent": "ask_ram_info",
+      "mode": "line",
+      "prediction": "ask_ram_info",
+      "confidence": 0.9952666759490967,
+      "classifier_prediction": "ask_ram_info",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "76da634e2e0fc41c1f700d7303ccd3ce2270243160590bbe274b97fb900e123c",
+      "text": "เทียบจุดเด่น SSD และ HDD ให้คนเริ่มประกอบคอมที",
+      "query": "เทียบจุดเด่น SSD และ HDD ให้คนเริ่มประกอบคอมที",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "raw",
+      "prediction": "build_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "76da634e2e0fc41c1f700d7303ccd3ce2270243160590bbe274b97fb900e123c",
+      "text": "เทียบจุดเด่น SSD และ HDD ให้คนเริ่มประกอบคอมที",
+      "query": "เทียบ จุดเด่น ssd และ hdd คน เริ่ม จัด สเปค คอม ที",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "line",
+      "prediction": "build_pc",
+      "confidence": 0.9999991655349731,
+      "classifier_prediction": "build_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d3f2aa3524dc0892da08cedf2cf12dac532aa89abbfb0cde037622e5a05fe6af",
+      "text": "หากเลือกเก็บไฟล์ใน HDD เทียบ SSD ต่างกันด้านใด",
+      "query": "หากเลือกเก็บไฟล์ใน HDD เทียบ SSD ต่างกันด้านใด",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "raw",
+      "prediction": "ask_ssd_hdd_diff",
+      "confidence": 0.9963251948356628,
+      "classifier_prediction": "ask_ssd_hdd_diff",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "d3f2aa3524dc0892da08cedf2cf12dac532aa89abbfb0cde037622e5a05fe6af",
+      "text": "หากเลือกเก็บไฟล์ใน HDD เทียบ SSD ต่างกันด้านใด",
+      "query": "หาก เลือก เก็บ ไฟล์ ใน hdd เทียบ ssd ต่างกัน ด้าน ใด",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "line",
+      "prediction": "ask_ssd_hdd_diff",
+      "confidence": 0.9965117573738098,
+      "classifier_prediction": "ask_ssd_hdd_diff",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "9d3d507fe5b1438b5fd468638ed26c4f2767e4e5810dd57ff2633cb36b3285ae",
+      "text": "SSD เมื่อเทียบกับ HDD เปิดวินโดวส์ต่างกันไหม",
+      "query": "SSD เมื่อเทียบกับ HDD เปิดวินโดวส์ต่างกันไหม",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "raw",
+      "prediction": "ask_ssd_hdd_diff",
+      "confidence": 0.9941933751106262,
+      "classifier_prediction": "ask_ssd_hdd_diff",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "9d3d507fe5b1438b5fd468638ed26c4f2767e4e5810dd57ff2633cb36b3285ae",
+      "text": "SSD เมื่อเทียบกับ HDD เปิดวินโดวส์ต่างกันไหม",
+      "query": "ssd เมื่อ เทียบ กับ hdd เปิด วินโดวส์ ต่างกัน ไหม",
+      "intent": "ask_ssd_hdd_diff",
+      "mode": "line",
+      "prediction": "ask_ssd_hdd_diff",
+      "confidence": 0.9944931268692017,
+      "classifier_prediction": "ask_ssd_hdd_diff",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0459c2dd890c0c3b7c7cb0f69a3aca9be17b8f17735583d839f8858e7ea605b6",
+      "text": "เปิดคอมแล้วรอนานอยากปรับให้บูตไวขึ้น",
+      "query": "เปิดคอมแล้วรอนานอยากปรับให้บูตไวขึ้น",
+      "intent": "optimize_performance",
+      "mode": "raw",
+      "prediction": "optimize_performance",
+      "confidence": 0.9999996423721313,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "0459c2dd890c0c3b7c7cb0f69a3aca9be17b8f17735583d839f8858e7ea605b6",
+      "text": "เปิดคอมแล้วรอนานอยากปรับให้บูตไวขึ้น",
+      "query": "เปิด คอม แล้ว รอ นาน ปรับ บูต ไว ขึ้น",
+      "intent": "optimize_performance",
+      "mode": "line",
+      "prediction": "optimize_performance",
+      "confidence": 0.9999996423721313,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c7bd36717d9b4f5119b5b812baf17e255e2ba1a2157ae7cb1ff2fc083514b31f",
+      "text": "Windows หน่วงมากมีวิธีปรับแต่งเบื้องต้นหรือไม่",
+      "query": "Windows หน่วงมากมีวิธีปรับแต่งเบื้องต้นหรือไม่",
+      "intent": "optimize_performance",
+      "mode": "raw",
+      "prediction": "optimize_performance",
+      "confidence": 1.0,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c7bd36717d9b4f5119b5b812baf17e255e2ba1a2157ae7cb1ff2fc083514b31f",
+      "text": "Windows หน่วงมากมีวิธีปรับแต่งเบื้องต้นหรือไม่",
+      "query": "windows หน่วง มาก วิธี ปรับ แต่ง เบื้องต้น หรือไม่",
+      "intent": "optimize_performance",
+      "mode": "line",
+      "prediction": "optimize_performance",
+      "confidence": 1.0,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "067ef61acd62808adc4f80e630c6c899f859ec70c8f8eed0577ad9ec8e5b142c",
+      "text": "แอปเริ่มพร้อมระบบเยอะจนเครื่องช้าต้องทำยังไง",
+      "query": "แอปเริ่มพร้อมระบบเยอะจนเครื่องช้าต้องทำยังไง",
+      "intent": "optimize_performance",
+      "mode": "raw",
+      "prediction": "optimize_performance",
+      "confidence": 0.9985826015472412,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "067ef61acd62808adc4f80e630c6c899f859ec70c8f8eed0577ad9ec8e5b142c",
+      "text": "แอปเริ่มพร้อมระบบเยอะจนเครื่องช้าต้องทำยังไง",
+      "query": "แอ ป เริ่ม พร้อม ระบบ เยอะ จน ช้า ต้อง ทำ ยังไง",
+      "intent": "optimize_performance",
+      "mode": "line",
+      "prediction": "optimize_performance",
+      "confidence": 0.9990485310554504,
+      "classifier_prediction": "optimize_performance",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c9883542598e86d5c8f486c3654438b50e986b367d48940dd1fe45ff467299ce",
+      "text": "อยากให้สเปคนี้รองรับการเปลี่ยนอะไหล่ในปีถัดไป",
+      "query": "อยากให้สเปคนี้รองรับการเปลี่ยนอะไหล่ในปีถัดไป",
+      "intent": "inform_future_upgrade",
+      "mode": "raw",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "c9883542598e86d5c8f486c3654438b50e986b367d48940dd1fe45ff467299ce",
+      "text": "อยากให้สเปคนี้รองรับการเปลี่ยนอะไหล่ในปีถัดไป",
+      "query": "สเปค นี้ รองรับ การ เปลี่ยน อะไหล่ ใน ปี ถัดไป",
+      "intent": "inform_future_upgrade",
+      "mode": "line",
+      "prediction": "upgrade_pc",
+      "confidence": 1.0,
+      "classifier_prediction": "upgrade_pc",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "6daa41269d89a46bbcb34f08ad9a817c072855e234dd97c39dd49509d773e59a",
+      "text": "เลือกแพลตฟอร์มเผื่อเพิ่มสเปคภายหลังให้ที",
+      "query": "เลือกแพลตฟอร์มเผื่อเพิ่มสเปคภายหลังให้ที",
+      "intent": "inform_future_upgrade",
+      "mode": "raw",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.9938855767250061,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "6daa41269d89a46bbcb34f08ad9a817c072855e234dd97c39dd49509d773e59a",
+      "text": "เลือกแพลตฟอร์มเผื่อเพิ่มสเปคภายหลังให้ที",
+      "query": "เลือก แพลตฟอร์ม เผื่อ เพิ่ม สเปค ภายหลัง ที",
+      "intent": "inform_future_upgrade",
+      "mode": "line",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.9922553300857544,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1826b03c3bbd3f487f6f969039f6fda07cd2aae56294ad64a826a69a3c9701c7",
+      "text": "วางแผนขยายเครื่องในอนาคตจึงอยากเผื่อไว้ก่อน",
+      "query": "วางแผนขยายเครื่องในอนาคตจึงอยากเผื่อไว้ก่อน",
+      "intent": "inform_future_upgrade",
+      "mode": "raw",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.9889355301856995,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "1826b03c3bbd3f487f6f969039f6fda07cd2aae56294ad64a826a69a3c9701c7",
+      "text": "วางแผนขยายเครื่องในอนาคตจึงอยากเผื่อไว้ก่อน",
+      "query": "วางแผน ขยาย ในอนาคต จึง เผื่อ ไว้ ก่อน",
+      "intent": "inform_future_upgrade",
+      "mode": "line",
+      "prediction": "inform_future_upgrade",
+      "confidence": 0.9888821244239807,
+      "classifier_prediction": "inform_future_upgrade",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5215fa65f48493b5b27825cc9616c83e1d6380bc959b7cfdcfeaf2afeb51d770",
+      "text": "ตกลงตามที่ถามมาเลย",
+      "query": "ตกลงตามที่ถามมาเลย",
+      "intent": "affirm",
+      "mode": "raw",
+      "prediction": "affirm",
+      "confidence": 0.9971237778663635,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5215fa65f48493b5b27825cc9616c83e1d6380bc959b7cfdcfeaf2afeb51d770",
+      "text": "ตกลงตามที่ถามมาเลย",
+      "query": "ตกลง ตามที่ ถาม มา เลย",
+      "intent": "affirm",
+      "mode": "line",
+      "prediction": "affirm",
+      "confidence": 0.9971237778663635,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "54cc0c85031959e66cdd3742abdb1815e078ec6b764aece9cb14d2f90cfc4a06",
+      "text": "ยืนยันว่าเอาตามนั้น",
+      "query": "ยืนยันว่าเอาตามนั้น",
+      "intent": "affirm",
+      "mode": "raw",
+      "prediction": "affirm",
+      "confidence": 0.9974337220191956,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "54cc0c85031959e66cdd3742abdb1815e078ec6b764aece9cb14d2f90cfc4a06",
+      "text": "ยืนยันว่าเอาตามนั้น",
+      "query": "ยืนยัน ว่า เอา ตามนั้น",
+      "intent": "affirm",
+      "mode": "line",
+      "prediction": "affirm",
+      "confidence": 0.9974337220191956,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "978b00eabd35daa5d4ba5344e863ddb8ccecac7c81071697ad3c9cc3226aff8e",
+      "text": "ถูกต้องเลยครับใช่แล้ว",
+      "query": "ถูกต้องเลยครับใช่แล้ว",
+      "intent": "affirm",
+      "mode": "raw",
+      "prediction": "affirm",
+      "confidence": 0.9393131136894226,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "978b00eabd35daa5d4ba5344e863ddb8ccecac7c81071697ad3c9cc3226aff8e",
+      "text": "ถูกต้องเลยครับใช่แล้ว",
+      "query": "ถูกต้อง เลย ใช่ แล้ว",
+      "intent": "affirm",
+      "mode": "line",
+      "prediction": "affirm",
+      "confidence": 0.8980249166488647,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "8a4be6210e6eb58c927f570462cedc181a0d2a943f83ef9eb73198d9a79f7030",
+      "text": "ไม่เอาตัวเลือกนั้นนะ",
+      "query": "ไม่เอาตัวเลือกนั้นนะ",
+      "intent": "deny",
+      "mode": "raw",
+      "prediction": "deny",
+      "confidence": 0.9116894602775574,
+      "classifier_prediction": "deny",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "8a4be6210e6eb58c927f570462cedc181a0d2a943f83ef9eb73198d9a79f7030",
+      "text": "ไม่เอาตัวเลือกนั้นนะ",
+      "query": "ไม่ เอา ตัวเลือก นั้น",
+      "intent": "deny",
+      "mode": "line",
+      "prediction": "deny",
+      "confidence": 0.9147146940231323,
+      "classifier_prediction": "deny",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5f05a67b6afd1b1a09a27d8d9972d8937234d12514ddc9ab02993eda13a94313",
+      "text": "ปฏิเสธครับไม่ต้องการ",
+      "query": "ปฏิเสธครับไม่ต้องการ",
+      "intent": "deny",
+      "mode": "raw",
+      "prediction": "deny",
+      "confidence": 0.999321699142456,
+      "classifier_prediction": "deny",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "5f05a67b6afd1b1a09a27d8d9972d8937234d12514ddc9ab02993eda13a94313",
+      "text": "ปฏิเสธครับไม่ต้องการ",
+      "query": "ปฏิเสธ ไม่ต้องการ",
+      "intent": "deny",
+      "mode": "line",
+      "prediction": "deny",
+      "confidence": 0.9995119571685791,
+      "classifier_prediction": "deny",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "f345acd899fed8e045c296d9c0bedfd41dc97fb82f064c46d4b4924dd81cdc76",
+      "text": "ไม่ใช่ตามที่ถามมา",
+      "query": "ไม่ใช่ตามที่ถามมา",
+      "intent": "deny",
+      "mode": "raw",
+      "prediction": "affirm",
+      "confidence": 0.5730208158493042,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    },
+    {
+      "id": "f345acd899fed8e045c296d9c0bedfd41dc97fb82f064c46d4b4924dd81cdc76",
+      "text": "ไม่ใช่ตามที่ถามมา",
+      "query": "ไม่ ใช่ ตามที่ ถาม มา",
+      "intent": "deny",
+      "mode": "line",
+      "prediction": "affirm",
+      "confidence": 0.5730208158493042,
+      "classifier_prediction": "affirm",
+      "gold_entities": [],
+      "entities": []
+    }
+  ]
+}

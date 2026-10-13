@@ -1,17 +1,16 @@
-version: "3.1"
-
+version: '3.1'
 rules:
 - rule: Say hello whenever the user greets
   steps:
   - intent: greet
   - action: action_greet
-
+  condition:
+  - active_loop: null
 - rule: Activate build_pc form
   steps:
   - intent: build_pc
   - action: build_pc_form
   - active_loop: build_pc_form
-
 - rule: Submit build_pc form
   condition:
   - active_loop: build_pc_form
@@ -21,13 +20,11 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_recommend_pc
-
 - rule: Activate upgrade_pc form
   steps:
   - intent: upgrade_pc
   - action: upgrade_pc_form
   - active_loop: upgrade_pc_form
-
 - rule: Submit upgrade_pc form
   condition:
   - active_loop: upgrade_pc_form
@@ -37,38 +34,305 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_recommend_upgrade
-
 - rule: Answer FAQ CPU
   steps:
   - intent: ask_cpu_info
   - action: action_faq
-
+  condition:
+  - active_loop: null
 - rule: Answer FAQ GPU
   steps:
   - intent: ask_gpu_info
   - action: action_faq
-
+  condition:
+  - active_loop: null
 - rule: Answer FAQ RAM
   steps:
   - intent: ask_ram_info
   - action: action_faq
-
+  condition:
+  - active_loop: null
 - rule: Answer FAQ SSD vs HDD
   steps:
   - intent: ask_ssd_hdd_diff
   - action: action_faq
-
+  condition:
+  - active_loop: null
 - rule: Provide Performance Optimization Advice
   steps:
   - intent: optimize_performance
   - action: action_optimize_performance
-
+  condition:
+  - active_loop: null
 - rule: Say goodbye whenever the user says goodbye
   steps:
   - intent: goodbye
   - action: action_goodbye
-
+  condition:
+  - active_loop: null
 - rule: Handle NLU fallback
   steps:
   - intent: nlu_fallback
   - action: utter_fallback
+  condition:
+  - active_loop: null
+- rule: Answer ask_bot_capabilities
+  steps:
+  - intent: ask_bot_capabilities
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Answer ask_mainboard_info
+  steps:
+  - intent: ask_mainboard_info
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Answer ask_storage_info
+  steps:
+  - intent: ask_storage_info
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Answer ask_psu_info
+  steps:
+  - intent: ask_psu_info
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Answer ask_case_info
+  steps:
+  - intent: ask_case_info
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Answer ask_cooler_info
+  steps:
+  - intent: ask_cooler_info
+  - action: action_faq
+  condition:
+  - active_loop: null
+- rule: Interrupt build_pc_form with greet and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: greet
+  - action: action_greet
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with greet and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: greet
+  - action: action_greet
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_cpu_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_cpu_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_cpu_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_cpu_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_gpu_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_gpu_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_gpu_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_gpu_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_ram_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_ram_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_ram_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_ram_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_ssd_hdd_diff and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_ssd_hdd_diff
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_ssd_hdd_diff and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_ssd_hdd_diff
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with optimize_performance and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: optimize_performance
+  - action: action_optimize_performance
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with optimize_performance and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: optimize_performance
+  - action: action_optimize_performance
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with goodbye and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: goodbye
+  - action: action_goodbye
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with goodbye and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: goodbye
+  - action: action_goodbye
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with nlu_fallback and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with nlu_fallback and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_bot_capabilities and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_bot_capabilities
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_bot_capabilities and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_bot_capabilities
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_mainboard_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_mainboard_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_mainboard_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_mainboard_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_storage_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_storage_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_storage_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_storage_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_psu_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_psu_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_psu_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_psu_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_case_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_case_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_case_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_case_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form
+- rule: Interrupt build_pc_form with ask_cooler_info and resume
+  condition:
+  - active_loop: build_pc_form
+  steps:
+  - intent: ask_cooler_info
+  - action: action_faq
+  - action: build_pc_form
+  - active_loop: build_pc_form
+- rule: Interrupt upgrade_pc_form with ask_cooler_info and resume
+  condition:
+  - active_loop: upgrade_pc_form
+  steps:
+  - intent: ask_cooler_info
+  - action: action_faq
+  - action: upgrade_pc_form
+  - active_loop: upgrade_pc_form

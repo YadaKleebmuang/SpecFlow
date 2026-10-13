@@ -30,6 +30,44 @@
             "color": "#333333"
           }
         ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "จัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          },
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "อัปเกรดคอม",
+              "text": "อยากอัปเกรดคอม"
+            }
+          },
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "บอททำอะไรได้บ้าง",
+              "text": "บอททำอะไรได้บ้าง"
+            }
+          }
+        ]
       }
     }
   },
@@ -62,6 +100,44 @@
             "wrap": true,
             "size": "sm",
             "color": "#333333"
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "button",
+            "style": "primary",
+            "height": "sm",
+            "color": "#3498DB",
+            "action": {
+              "type": "message",
+              "label": "จัดสเปคคอม",
+              "text": "อยากจัดสเปคคอม"
+            }
+          },
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "อัปเกรดคอม",
+              "text": "อยากอัปเกรดคอม"
+            }
+          },
+          {
+            "type": "button",
+            "style": "secondary",
+            "height": "sm",
+            "action": {
+              "type": "message",
+              "label": "บอททำอะไรได้บ้าง",
+              "text": "บอททำอะไรได้บ้าง"
+            }
           }
         ]
       }

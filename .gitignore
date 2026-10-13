@@ -83,6 +83,10 @@ cv_results/
 cv_folds/
 *.db
 
+# Candidate training artifacts (hashes and evaluations live under docs/)
+/models/five-categories/
+/.rasa/
+
 # Logs and temporary files
 *.log
 logs/

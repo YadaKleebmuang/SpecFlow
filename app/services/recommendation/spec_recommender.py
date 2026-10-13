@@ -1,6 +1,9 @@
 import json
 import os
 import re
+from app.services.recommendation.usage import (
+    CORE_ALLOCATIONS, INTEGRATED_ALLOCATION, classify_usage,
+)
 
 class SpecRecommender:
     def __init__(self):
@@ -40,24 +43,7 @@ class SpecRecommender:
         return 0
 
     def _determine_usage_type(self, usage: str) -> str:
-        usage = usage.lower()
-        editing_keywords = [
-            'ตัดต่อ', 'เรนเดอร์', 'กราฟิก', 'วาดรูป', 'ออกแบบ', 'สตรีม', 'เขียนโค้ด', 'โปรแกรม', 
-            'เขียนแบบ', 'โมเดล', 'ทำเพลง', 'edit', 'render', 'work', 'graphic', 'design', 
-            'stream', 'code', 'develop', '3d', 'photoshop', 'illustrator', 'premiere', 
-            'after effect', 'autocad', 'blender', 'sketchup', 'lightroom', 'cad'
-        ]
-        office_keywords = [
-            'ทั่วไป', 'ออฟฟิศ', 'พิมพ์งาน', 'เอกสาร', 'เรียน', 'เทรด', 'ดูหนัง', 'ฟังเพลง', 
-            'สำนักงาน', 'บัญชี', 'ศึกษา', 'office', 'study', 'learn', 'trade', 'excel', 
-            'word', 'powerpoint', 'youtube', 'netflix', 'surf', 'browse'
-        ]
-        
-        if any(word in usage for word in editing_keywords):
-            return 'editing'
-        if any(word in usage for word in office_keywords):
-            return 'office'
-        return 'gaming' # Default
+        return classify_usage(usage)
 
     def get_recommendation(self, budget_str: str, usage: str, future_upgrade: bool = False) -> dict:
         if not budget_str or not usage:
@@ -79,13 +65,9 @@ class SpecRecommender:
         
         if use_integrated:
             # งบประหยัดมาก: ตัดค่าการ์ดจอแยกออกเป็น 0% เพื่อเอาไปลงกับ CPU (มีชิปจอในตัว), RAM, และ Storage แทน
-            alloc = {'gpu': 0.0, 'cpu': 0.45, 'ram': 0.25, 'storage': 0.30}
-        elif usage_type == 'gaming':
-            alloc = {'gpu': 0.40, 'cpu': 0.30, 'ram': 0.15, 'storage': 0.15}
-        elif usage_type == 'editing':
-            alloc = {'gpu': 0.30, 'cpu': 0.35, 'ram': 0.20, 'storage': 0.15}
-        else: # office
-            alloc = {'gpu': 0.20, 'cpu': 0.35, 'ram': 0.20, 'storage': 0.25}
+            alloc = INTEGRATED_ALLOCATION
+        else:
+            alloc = CORE_ALLOCATIONS[usage_type]
             
         budgets = {
             'gpu': core_budget * alloc['gpu'],
@@ -173,14 +155,61 @@ class SpecRecommender:
         # 8. Cooler (filter compatibility with socket)
         selected['cooler'] = get_best_part('cooler', budgets['cooler'], lambda x: cpu_socket in x.get('socket_support', []))
 
+        required = ['cpu', 'motherboard', 'ram', 'storage', 'case', 'psu', 'cooler']
+        if not use_integrated:
+            required.append('gpu')
+        missing = [category for category in required if not selected.get(category)]
+        if missing:
+            return {
+                "status": "error",
+                "text": "ไม่พบอุปกรณ์ที่เข้ากันได้ครบชุดในฐานข้อมูลครับ ขาด: " + ", ".join(missing),
+            }
+
         # Calculate final price
         total_price = sum(part['price'] for part in selected.values() if part)
+        # Reduce independent components before rejecting the selected platform.
+        # CPU/mainboard stay fixed; every replacement must preserve compatibility.
+        cheaper_filters = {
+            'ram': lambda x: x.get('type') == mb_ram_type,
+            'storage': lambda x: True,
+            'case': lambda x: mb_form_factor in x.get('form_factor_support', []),
+            'cooler': lambda x: cpu_socket in x.get('socket_support', []),
+            'gpu': lambda x: x.get('power_draw', 0) <= selected['gpu'].get('power_draw', 0),
+            'psu': lambda x: x.get('wattage', 0) >= (
+                cpu_tdp + (selected['gpu'].get('power_draw', 0) if selected['gpu'] else 0) + 100
+            ),
+        }
+        while total_price > budget:
+            alternatives = []
+            for category, compatible in cheaper_filters.items():
+                current = selected[category]
+                if current is None:
+                    continue
+                cheaper = [part for part in self.db[category]
+                           if part['price'] < current['price'] and compatible(part)]
+                if cheaper:
+                    replacement = max(cheaper, key=lambda part: part['price'])
+                    # Trim the category furthest above its allocation first.
+                    excess = current['price'] / budgets[category]
+                    alternatives.append((excess, category, replacement))
+            if not alternatives:
+                break
+            _, category, replacement = max(alternatives, key=lambda item: (item[0], item[1]))
+            total_price -= selected[category]['price'] - replacement['price']
+            selected[category] = replacement
+
+        if total_price * 100 > budget * 110:
+            return {
+                "status": "error",
+                "text": (f"สเปคที่ระบบเลือกมีราคา {total_price:,} บาท เกินงบ {budget:,} บาทมากกว่า 10% "
+                         "กรุณาปรับงบหรือเงื่อนไขเผื่ออัปเกรด แล้วลองจัดสเปคอีกครั้งครับ"),
+            }
         
         # Build response
         response = f"จากงบประมาณ {budget:,} บาท และเน้นการใช้งาน {usage}\n"
         if use_integrated:
             response += f"*(ระบบเลือกใช้ CPU ที่มีชิปประมวลผลกราฟิกในตัว (Integrated GPU) เพื่อประหยัดงบและไม่ใช้การ์ดจอแยก)*\n"
-        response += f"ผมได้จัดสรรงบและคัดกรองความเข้ากันได้ของอุปกรณ์ (Layer 1 & 2) ให้เรียบร้อยครับ:\n\n"
+        response += "ผมตรวจ Socket, ชนิด RAM, ขนาดเมนบอร์ดที่เคสรองรับ และกำลังไฟตามข้อมูลในระบบแล้วครับ:\n\n"
         response += f"💻 **สเปคที่แนะนำ** (ราคารวมประมาณ {total_price:,} บาท):\n"
         
         cat_names = {'cpu': 'CPU', 'motherboard': 'Mainboard', 'ram': 'RAM', 'gpu': 'GPU', 'storage': 'Storage', 'psu': 'PSU', 'case': 'Case', 'cooler': 'Cooler'}
@@ -192,14 +221,15 @@ class SpecRecommender:
         response += "\n(หมายเหตุ: การจัดสเปคนี้ใช้หลักการคำนวณงบประมาณและเช็ค Socket/Wattage อัตโนมัติแล้วครับ)"
         
         warning = ""
-        if total_price > budget * 1.1:
-            warning = "สเปคนี้มีราคาเกินงบไปเล็กน้อย เนื่องจากอุปกรณ์ในฐานข้อมูลมีจำกัดและต้องเลือกตัวที่ใช้งานร่วมกันได้ครับ"
+        if total_price > budget:
+            warning = f"สเปคนี้เกินงบ {total_price - budget:,} บาท (ไม่เกิน 10%) เนื่องจากต้องเลือกอุปกรณ์ในฐานข้อมูลที่ใช้งานร่วมกันได้ครับ"
             response += f"\n\n⚠️ **คำเตือน**: {warning}"
             
         response += "\n\n⚠️ **หมายเหตุ**: ราคาและสเปคคอมพิวเตอร์ที่แนะนำเป็นเพียงแนวทางทั่วไป ไม่สามารถรับประกันประสิทธิภาพการใช้งานจริงและราคาเชิงพาณิชย์ได้ กรุณาตรวจสอบกับผู้จัดจำหน่ายอีกครั้ง"
 
         return {
             "status": "success",
+            "usage_type": usage_type,
             "text": response,
             "components": selected,
             "total_price": total_price,

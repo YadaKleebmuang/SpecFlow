@@ -1,0 +1,164 @@
+{
+  "type": "flex",
+  "altText": "SpecFlow ช่วยอะไรได้บ้าง?",
+  "contents": {
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "backgroundColor": "#2C3E50",
+      "contents": [
+        {
+          "type": "text",
+          "text": "SpecFlow ช่วยอะไรได้บ้าง?",
+          "wrap": true,
+          "size": "lg",
+          "color": "#FFFFFF",
+          "weight": "bold"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "xs",
+          "contents": [
+            {
+              "type": "text",
+              "text": "💻 จัดสเปคคอมพิวเตอร์",
+              "wrap": true,
+              "size": "sm",
+              "color": "#333333",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "ตามงบและงาน 5 หมวด: เล่นเกม กราฟิก ตัดต่อวิดีโอ เขียนโปรแกรม และสำนักงาน",
+              "wrap": true,
+              "size": "xs",
+              "color": "#666666"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "xs",
+          "contents": [
+            {
+              "type": "text",
+              "text": "🔧 แนะนำการอัปเกรด",
+              "wrap": true,
+              "size": "sm",
+              "color": "#333333",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "วิเคราะห์สเปคเดิมและประเมินคอขวด CPU/GPU เบื้องต้น เพื่อช่วยวางแผนอัปเกรด",
+              "wrap": true,
+              "size": "xs",
+              "color": "#666666"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "xs",
+          "contents": [
+            {
+              "type": "text",
+              "text": "📚 ความรู้ฮาร์ดแวร์",
+              "wrap": true,
+              "size": "sm",
+              "color": "#333333",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "CPU, GPU, RAM, Mainboard, Storage, PSU, Case และ Cooler พร้อมหัวข้อ SSD/HDD",
+              "wrap": true,
+              "size": "xs",
+              "color": "#666666"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "xs",
+          "contents": [
+            {
+              "type": "text",
+              "text": "⚡ แก้ปัญหาคอมช้า",
+              "wrap": true,
+              "size": "sm",
+              "color": "#333333",
+              "weight": "bold"
+            },
+            {
+              "type": "text",
+              "text": "แนวทางปรับแต่ง Windows และดูแลฮาร์ดแวร์เบื้องต้น",
+              "wrap": true,
+              "size": "xs",
+              "color": "#666666"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "sm",
+      "contents": [
+        {
+          "type": "button",
+          "style": "primary",
+          "height": "sm",
+          "action": {
+            "type": "message",
+            "label": "จัดสเปคคอม",
+            "text": "อยากจัดสเปคคอม"
+          }
+        },
+        {
+          "type": "button",
+          "style": "secondary",
+          "height": "sm",
+          "action": {
+            "type": "message",
+            "label": "อัปเกรดคอม",
+            "text": "อยากอัปเกรดคอม"
+          }
+        },
+        {
+          "type": "button",
+          "style": "secondary",
+          "height": "sm",
+          "action": {
+            "type": "message",
+            "label": "เริ่มรู้จัก CPU",
+            "text": "CPU คืออะไร"
+          }
+        },
+        {
+          "type": "button",
+          "style": "secondary",
+          "height": "sm",
+          "action": {
+            "type": "message",
+            "label": "แก้ปัญหาคอมช้า",
+            "text": "คอมช้าทำอย่างไร"
+          }
+        }
+      ]
+    }
+  }
+}

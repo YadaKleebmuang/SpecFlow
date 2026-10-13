@@ -1,0 +1,132 @@
+{
+  "oof_coverage": 868,
+  "duplicate_validation_ids": 0,
+  "missing_validation_ids": 0,
+  "normalized_train_validation_overlap": 0,
+  "top_confusions": {
+    "raw": [
+      {
+        "actual": "inform_budget",
+        "predicted": "build_pc",
+        "count": 11
+      },
+      {
+        "actual": "ask_storage_info",
+        "predicted": "nlu_fallback",
+        "count": 5
+      },
+      {
+        "actual": "inform_future_upgrade",
+        "predicted": "upgrade_pc",
+        "count": 5
+      },
+      {
+        "actual": "affirm",
+        "predicted": "nlu_fallback",
+        "count": 4
+      },
+      {
+        "actual": "build_pc",
+        "predicted": "inform_budget",
+        "count": 3
+      },
+      {
+        "actual": "inform_usage",
+        "predicted": "build_pc",
+        "count": 3
+      },
+      {
+        "actual": "deny",
+        "predicted": "upgrade_pc",
+        "count": 3
+      },
+      {
+        "actual": "ask_psu_info",
+        "predicted": "nlu_fallback",
+        "count": 3
+      },
+      {
+        "actual": "ask_ram_info",
+        "predicted": "nlu_fallback",
+        "count": 3
+      },
+      {
+        "actual": "upgrade_pc",
+        "predicted": "inform_future_upgrade",
+        "count": 2
+      },
+      {
+        "actual": "ask_ram_info",
+        "predicted": "inform_current_specs",
+        "count": 2
+      },
+      {
+        "actual": "ask_storage_info",
+        "predicted": "build_pc",
+        "count": 2
+      }
+    ],
+    "line": [
+      {
+        "actual": "inform_budget",
+        "predicted": "build_pc",
+        "count": 10
+      },
+      {
+        "actual": "inform_future_upgrade",
+        "predicted": "upgrade_pc",
+        "count": 5
+      },
+      {
+        "actual": "ask_storage_info",
+        "predicted": "nlu_fallback",
+        "count": 4
+      },
+      {
+        "actual": "affirm",
+        "predicted": "nlu_fallback",
+        "count": 4
+      },
+      {
+        "actual": "inform_usage",
+        "predicted": "nlu_fallback",
+        "count": 4
+      },
+      {
+        "actual": "upgrade_pc",
+        "predicted": "inform_future_upgrade",
+        "count": 3
+      },
+      {
+        "actual": "inform_usage",
+        "predicted": "build_pc",
+        "count": 3
+      },
+      {
+        "actual": "build_pc",
+        "predicted": "inform_usage",
+        "count": 3
+      },
+      {
+        "actual": "deny",
+        "predicted": "upgrade_pc",
+        "count": 3
+      },
+      {
+        "actual": "ask_case_info",
+        "predicted": "nlu_fallback",
+        "count": 3
+      },
+      {
+        "actual": "ask_ram_info",
+        "predicted": "nlu_fallback",
+        "count": 3
+      },
+      {
+        "actual": "ask_psu_info",
+        "predicted": "nlu_fallback",
+        "count": 3
+      }
+    ]
+  }
+}

@@ -1,3 +1,5 @@
+> **เอกสารย้อนหลัง:** ตัวเลขด้านล่างเป็นผลของรุ่นเก่า ไม่ใช่ข้อมูล/โมเดล 21 intents ที่กำลังพัฒนา ดู [รายงานเฟส 3](five-categories/phase3-report.md) สำหรับสถานะล่าสุด และ [Master Final Values](final-readiness/master-final-values/master-final-values.md) สำหรับ baseline รุ่นที่ใช้งานอยู่
+
 # รายงานการประเมินประสิทธิภาพโมเดล Rasa NLU (Model Evaluation Report)
 
 > [!NOTE]

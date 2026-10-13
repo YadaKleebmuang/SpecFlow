@@ -15,8 +15,24 @@
         "type": "action",
         "action": {
           "type": "message",
-          "label": "งานกราฟิก/วิดีโอ 🎨",
+          "label": "งานกราฟิก 🎨",
           "text": "งานกราฟิก"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "ตัดต่อวิดีโอ 🎬",
+          "text": "ตัดต่อวิดีโอ"
+        }
+      },
+      {
+        "type": "action",
+        "action": {
+          "type": "message",
+          "label": "เขียนโปรแกรม 💻",
+          "text": "เขียนโปรแกรม"
         }
       },
       {
